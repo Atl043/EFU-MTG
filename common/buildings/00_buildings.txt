@@ -104,7 +104,8 @@ buildings = {
 	
 	anti_air_building = {
 		show_on_map = 3
-		base_cost = 2500
+		base_cost = 250
+		per_level_extra_cost = 250
 		icon_frame = 9
 		anti_air = yes
 		disabled_in_dmz = yes
@@ -152,13 +153,12 @@ buildings = {
 
 	nuclear_reactor = {
 		show_on_map = 1
-		base_cost = 30000
+		base_cost = 50000
 		icon_frame = 13
 		nuclear_reactor = yes
 		nuclear_production_factor = 1
 		max_level = 1 # This is the max unlock level
 		shares_slots = yes
 		value = 10
-		infrastructure_construction_effect = yes
 	}
 }
