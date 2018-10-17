@@ -27,6 +27,10 @@ leader_traits = {
 		
 		attack_skill_factor = 1
 		planning_skill_factor = 1
+
+		corps_commander_modifier = {
+			max_commander_army_size = 6
+		}
 	}
 	
 	
@@ -65,6 +69,9 @@ leader_traits = {
 		
 		new_commander_weight = {
 			factor = 0  # Scripted starting leaders only
+		}
+		corps_commander_modifier = {
+			max_commander_army_size = 6
 		}
 		attack_skill_factor = 1
 		planning_skill_factor = 1
@@ -217,6 +224,7 @@ leader_traits = {
 		cost = 1000
 		field_marshal_modifier = {
 			org_loss_when_moving = -0.10
+			planning_speed = 0.10
 		}
 		
 		ai_will_do = {
@@ -235,7 +243,7 @@ leader_traits = {
 		}
 		cost = 1000
 		field_marshal_modifier = {
-			max_dig_in_factor = 0.30
+			max_dig_in_factor = 0.20
 		}
 		
 		ai_will_do = {
@@ -376,7 +384,7 @@ leader_traits = {
 		cost = 1000
 		
 		field_marshal_modifier = {
-			max_army_group_size = 2
+			max_army_group_size = 3
 		}
 		
 		ai_will_do = {
@@ -525,7 +533,7 @@ leader_traits = {
 		}
 		cost = 1000
 		modifier = {
-			terrain_penalty_reduction = 0.5
+			terrain_penalty_reduction = 0.25
 			acclimatization_cold_climate_gain_factor = 0.1
 			acclimatization_hot_climate_gain_factor = 0.1
 		}
@@ -900,7 +908,7 @@ leader_traits = {
 		cost = 700
 		modifier = {
 			fort = {
-				attack = 0.2
+				attack = 0.1
 			}
 		}
 		enable_ability = siege_artillery
@@ -923,7 +931,7 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			equipment_capture = 0.03
+			equipment_capture = 0.05
 		}
 		
 		ai_will_do = {
@@ -965,7 +973,7 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			max_dig_in = 10
+			max_dig_in = 5
 			recon_factor_while_entrenched = 0.25
 		}
 		
@@ -1072,8 +1080,8 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			cas_damage_reduction = 0.5
-			air_superiority_bonus_in_combat = -0.5
+			cas_damage_reduction = 0.20
+			air_superiority_bonus_in_combat = -0.20
 		}
 		
 		ai_will_do = {
@@ -1321,20 +1329,20 @@ leader_traits = {
 		type = all
 		trait_type = status_trait
 		
-		attack_skill = -2
-		defense_skill = -2
-		logistics_skill = -2
-		planning_skill = -2
+		attack_skill = 0
+		defense_skill = 0
+		logistics_skill = 0
+		planning_skill = 0
 	}
 	
 	demoted = { 
 		type = all
 		trait_type = status_trait
 		
-		attack_skill = -1
-		defense_skill = -1
-		logistics_skill = -1
-		planning_skill = -1
+		attack_skill = 0
+		defense_skill = 0
+		logistics_skill = 0
+		planning_skill = 0
 	}
 	
 	substance_abuser = { 
@@ -1348,10 +1356,10 @@ leader_traits = {
 		allowed = {
 			has_trait = substance_abuser
 		}
-		attack_skill = -2
-		defense_skill = -2
-		logistics_skill = -2
-		planning_skill = -2
+		attack_skill = 0
+		defense_skill = 0
+		logistics_skill = 0
+		planning_skill = 0
 	}
 
 	hidden_sympathies = {
@@ -1363,10 +1371,10 @@ leader_traits = {
 		type = all
 		trait_type = status_trait
 		
-		attack_skill = -1
-		defense_skill = -1
-		logistics_skill = -1
-		planning_skill = -1
+		attack_skill = 0
+		defense_skill = 0
+		logistics_skill = 0
+		planning_skill = 0
 	}
 
 	# defective_geneseed = { #needs more code support, remove before launch
