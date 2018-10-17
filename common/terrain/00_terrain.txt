@@ -56,7 +56,7 @@ categories =  {
 		color = { 124 135 125 }
 		movement_cost = 2.0
 		attrition = 0.4
-		combat_width = -0.66
+		combat_width = -0.5
 		ai_terrain_importance_factor = 10.0
 		sound_type = desert
 
