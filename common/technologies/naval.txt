@@ -105,35 +105,7 @@ technologies = {
 		}
 	}
 	
-	advanced_destroyer = {
-
-		enable_equipments = { 
-			destroyer_4
-		}
-		
-		research_cost = 2
-
-		start_year = 1944
-		
-		folder = {
-			name = naval_folder
-			position = { x = 0 y = 19 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				tag = ENG
-			}
-		}
-		
-		categories = {
-			naval_equipment
-			dd_tech
-		}
-	}
+	
 	
 	
 	early_light_cruiser = {
@@ -270,45 +242,6 @@ technologies = {
 		}
 	}
 	
-	advanced_light_cruiser = {
-
-		enable_equipments = { 
-			light_cruiser_4
-		}
-		
-		path = {
-			leads_to_tech = advanced_heavy_cruiser 
-			research_cost_coeff = 0.75
-		}
-		
-		research_cost = 2
-
-		start_year = 1944
-		
-		folder = {
-			name = naval_folder
-			position = { x = -1 y = 19 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				tag = USA
-			}
-			
-			modifier = {
-				factor = 2
-				tag = JAP
-			}
-		}
-		
-		categories = {
-			naval_equipment
-			cl_tech
-		}
-	}
 	
 	
 	early_heavy_cruiser = {
@@ -415,35 +348,7 @@ technologies = {
 		}
 	}
 	
-	advanced_heavy_cruiser = {
-
-		enable_equipments = { 
-			heavy_cruiser_4
-		}
-
-		path = {
-			leads_to_tech = advanced_light_cruiser 
-			research_cost_coeff = 0.75
-		}
-		
-		research_cost = 2
-
-		start_year = 1944
-		
-		folder = {
-			name = naval_folder
-			position = { x = 1 y = 19 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			ca_tech
-		}
-	}
+	
 	
 	
 	early_battlecruiser = {
@@ -604,34 +509,7 @@ technologies = {
 		}
 	}
 	
-	advanced_battleship = {
-
-		enable_equipments = { 
-			battleship_4
-		}
-		
-		path = {
-			leads_to_tech = heavy_battleship2 
-			research_cost_coeff = 0.75
-		}
-		
-		research_cost = 2
-		start_year = 1944
-		
-		folder = {
-			name = naval_folder
-			position = { x = 1 y = 19 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			bb_tech
-		}
-	}
+	
 	
 	
 	heavy_battleship = {
@@ -663,30 +541,6 @@ technologies = {
 		}
 	}
 	
-	heavy_battleship2 = {
-
-		enable_equipments = { 
-			SH_battleship_2
-		}
-		
-		research_cost = 2
-
-		start_year = 1944
-		
-		folder = {
-			name = naval_folder
-			position = { x = 3 y = 19 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			shbb_tech
-		}
-	}
 	
 	transport = {
 
@@ -948,41 +802,7 @@ technologies = {
 		}
 	}
 	
-	advanced_carrier = {
-
-		enable_equipments = { 
-			carrier_4
-		}
-
-		
-		research_cost = 2
-
-		start_year = 1944
-		
-		folder = {
-			name = naval_folder
-			position = { x = 0 y = 19 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 5
-				tag = USA
-			}
-			
-			modifier = {
-				factor = 5
-				tag = JAP
-			}
-		}
-		
-		categories = {
-			naval_equipment
-			cv_tech
-		}
-	}
+	
 	
 	early_submarine = {
 
@@ -1071,36 +891,6 @@ technologies = {
 		folder = {
 			name = naval_folder
 			position = { x = 0 y = 13 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 5
-				tag = GER
-			}
-		}
-		
-		categories = {
-			naval_equipment
-			ss_tech
-		}
-	}
-	
-	advanced_submarine = {
-
-		enable_equipments = { 
-			submarine_4
-		}
-		
-		research_cost = 2
-
-		start_year = 1944
-		
-		folder = {
-			name = naval_folder
-			position = { x = 0 y = 19 }
 		}
 		
 		ai_will_do = {
