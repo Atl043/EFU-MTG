@@ -125,45 +125,6 @@ equipments = {
 			rubber = 2
 		}
 	}
-	
-	# Advanced strat_bomber
-	strat_bomber_equipment_3 = {
-		year = 1944
-
-		archetype = strat_bomber_equipment
-		parent = strat_bomber_equipment_2
-		priority = 140
-		
-		air_range = 5000
-		maximum_speed = 500
-		air_agility = 10
-		air_attack = 150
-		air_defence = 60
-		air_bombing = 60
-		
-		build_cost_ic = 64
-		resources = {
-			oil = 1
-			aluminium = 5
-			rubber = 2
-		}
-	}
-	
-	# Basic Jet strat_bomber
-	jet_strat_bomber_equipment_1 = {
-		year = 1950
-
-		archetype = jet_strat_bomber_equipment
-		priority = 150
-		
-		air_range = 7000
-		maximum_speed = 920
-		air_agility = 14
-		air_attack = 100
-		air_defence = 54
-		air_bombing = 64
-	}
-
 	# Transport plane ##########################
 	transport_plane_equipment = {
 		year = 1933
@@ -189,7 +150,7 @@ equipments = {
 		naval_strike_attack = 0.0
 		naval_strike_targetting = 0.0
 		
-		build_cost_ic = 180
+		build_cost_ic = 90
 		resources = {
 			oil = 1
 			aluminium = 3
@@ -207,7 +168,7 @@ equipments = {
 		active = yes
 		priority = 130
 		
-		air_range = 1000
+		air_range = 1500
 		maximum_speed = 300
 		air_agility = 10
 		air_defence = 20
