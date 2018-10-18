@@ -35,7 +35,7 @@ technologies = {
 		}
 		
 		doctrine = yes	
-		research_cost = 2
+		research_cost = 0
 		
 		categories = {
 			naval_doctrine
@@ -695,7 +695,7 @@ technologies = {
 		}
 		
 		doctrine = yes	
-		research_cost = 2
+		research_cost = 0
 		
 		categories = {
 			naval_doctrine
@@ -1389,7 +1389,7 @@ technologies = {
 		}
 		
 		doctrine = yes	
-		research_cost = 2
+		research_cost = 0
 		
 		categories = {
 			naval_doctrine
