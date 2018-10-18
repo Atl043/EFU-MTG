@@ -70,7 +70,10 @@ set_technology = {
 	}
 }
 
-set_convoys = 50
+set_convoys = 100
+add_ideas = {
+	free_trade
+}
 set_politics = {
 
 	parties = {

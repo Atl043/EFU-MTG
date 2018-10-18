@@ -10,6 +10,9 @@ set_technology = {
 	gw_artillery = 1
 	early_fighter = 1
 }
+add_ideas = {
+	trade_unionism
+}
 set_country_flag = monroe_doctrine
 
 1939.1.1 = {

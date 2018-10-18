@@ -16,6 +16,9 @@ set_technology = {
 	early_battleship = 1
 	transport = 1
 }
+add_ideas = {
+	trade_unionism
+}
 set_country_flag = monroe_doctrine
 
 set_convoys = 20

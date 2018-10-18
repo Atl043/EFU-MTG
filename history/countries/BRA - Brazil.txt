@@ -2,6 +2,9 @@
 
 
 oob = "BRA_1936"
+set_research_slots = 3
+set_stability = 0.8
+set_war_support = 0.3
 
 # Starting tech
 set_technology = {
@@ -180,9 +183,9 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
 	traits = { ranger  }
 	skill = 3
-	attack_skill = 2
+	attack_skill = 3
 	defense_skill = 3
-	planning_skill = 2
+	planning_skill = 3
 	logistics_skill = 3
 }
 
@@ -191,9 +194,9 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
 	traits = {  jungle_rat }
 	skill = 4
-	attack_skill = 2
+	attack_skill = 4
 	defense_skill = 4
-	planning_skill = 3
+	planning_skill = 4
 	logistics_skill = 4
 }
 

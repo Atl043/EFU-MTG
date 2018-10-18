@@ -12,6 +12,9 @@ set_technology = {
 	cv_early_fighter = 1
 	early_destroyer = 1
 }
+add_ideas = {
+	trade_unionism
+}
 set_country_flag = monroe_doctrine
 
 set_convoys = 10

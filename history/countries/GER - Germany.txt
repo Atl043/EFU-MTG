@@ -244,7 +244,7 @@ add_ideas = {
 	sour_loser
 	general_staff
 	limited_exports
-	limited_conscription
+	volunteer_only
 	partial_economic_mobilisation
 }
 add_ideas = GER_mefo_bills_1
