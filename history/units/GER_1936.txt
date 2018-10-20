@@ -13,12 +13,10 @@
         infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
-		infantry = { x = 2 y = 3 }
 	}
 	
 	support = {
         engineer = { x = 0 y = 0 }
-        recon = { x = 0 y = 0 }
         artillery = { x = 0 y = 1 }
 	}
 }
@@ -32,12 +30,8 @@ division_template = {
 		light_armor = { x = 0 y = 1 }
         light_armor = { x = 1 y = 0 }
 		light_armor = { x = 1 y = 1 }
-		light_armor = { x = 1 y = 2 }
 		motorized = { x = 2 y = 0 }
         motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
-        motorized = { x = 2 y = 3 }
-		motorized = { x = 2 y = 4 }
 	}
 	support = {
         recon = { x = 0 y = 0 }
@@ -62,7 +56,6 @@ division_template = {
 		motorized = { x = 2 y = 0 }
 	    motorized = { x = 2 y = 1 }
 		motorized = { x = 2 y = 2 }
-		motorized = { x = 2 y = 3 }
 	}
 	support = {
         recon = { x = 0 y = 0 }
@@ -82,14 +75,6 @@ division_template = {
 		mountaineers = { x = 1 y = 0 }
 		mountaineers = { x = 1 y = 1 }
 		mountaineers = { x = 1 y = 2 }
-		mountaineers = { x = 1 y = 3 }
-		artillery = { x = 2 y = 0 }
-		artillery = { x = 2 y = 1 }
-	}
-	support = {
-	    recon = { x = 0 y = 0 }
-	    artillery = { x = 0 y = 1 }
-		engineer = { x = 0 y = 2 }
 	}
 }
 division_template = {
@@ -102,7 +87,6 @@ division_template = {
         cavalry = { x = 0 y = 1 }
         cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
-		cavalry = { x = 1 y = 2 }
 	}
 	support = {
 	    recon = { x = 0 y = 0 }
@@ -122,7 +106,7 @@ units = {
 		}
 		location = 6334
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.5
+		start_experience_factor = 0.3
 	}
 	division= {	
 		division_name = {
@@ -131,7 +115,7 @@ units = {
 		}
 		location = 537
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.5
+		start_experience_factor = 0.3
 	}
 	# III. Armeekorps
 	division= {	
@@ -141,7 +125,7 @@ units = {
 		}
 		location = 478
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.5
+		start_experience_factor = 0.3
 	}
 	division= {	
 		division_name = {
@@ -150,7 +134,7 @@ units = {
 		}
 		location = 478
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.5
+		start_experience_factor = 0.3
 	}
 	# Panzertruppenkommando
 	division= {	
@@ -160,7 +144,8 @@ units = {
 		}
 		location = 6521
 		division_template = "Panzer-Division"
-		start_experience_factor = 0.5
+		start_experience_factor = 0.3
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" } }
 	}
 	division= {	
 		division_name = {
@@ -169,7 +154,8 @@ units = {
 		}
 		location = 6521
 		division_template = "Panzer-Division"
-		start_experience_factor = 0.5
+		start_experience_factor = 0.3
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" } }
 	}
 	division= {	
 		division_name = {
@@ -178,7 +164,8 @@ units = {
 		}
 		location = 6521
 		division_template = "Panzer-Division"
-		start_experience_factor = 0.5
+		start_experience_factor = 0.3
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" } }
 	}
 
 	division= {	

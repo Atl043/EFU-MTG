@@ -117,8 +117,8 @@ focus_tree = {
 		#}
 
 		available_if_capitulated = yes
+
 		completion_reward = {
-			add_ideas = special_forces
 			army_experience = 5
 			add_tech_bonus = {
 				name = special_bonus
@@ -920,7 +920,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_arsenal_of_democracy
-		cost = 5
+		cost = 10
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -954,7 +954,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = USA_prepare_intervention
-		cost = 1
+		cost = 10
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -983,7 +983,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_war_plan_black
-		cost = 1
+		cost = 10
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1019,7 +1019,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_embargo_germany
-		cost = 2
+		cost = 10
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1043,6 +1043,186 @@ focus_tree = {
 	}
 
 	focus = {
+		id = USA_war_plan_white
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = USA_prepare_intervention }
+		available = {
+			country_exists = SOV
+			OR = {
+				SOV = { has_offensive_war = yes }
+				communism > 0.3
+			}
+			NOT = { has_government = communism }
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_prepare_intervention
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			SOV = {
+				add_opinion_modifier = { target = USA modifier = war_plan_white }
+			}
+		}
+	}
+
+	focus = {
+		id = USA_embargo_USSR
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = USA_war_plan_white }
+		available = {
+			country_exists = SOV
+			OR = {
+				SOV = { has_added_tension_amount > 30 }
+				threat > 0.6
+			}
+		}
+
+		continue_if_invalid = yes
+		x = 0
+		y = 1
+		relative_position_id = USA_war_plan_white
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			SOV = {
+				add_opinion_modifier = { target = USA modifier = embargo }
+			}
+		}
+	}
+
+	focus = {
+		id = USA_war_plan_red
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = USA_prepare_intervention }
+		available = {
+			#any_other_country = {
+			#	has_defensive_war_with = ENG
+			#	has_government = democratic
+			#}
+			country_exists = ENG
+			NOT = { has_government = democratic }
+		}
+		x = 2
+		y = 1
+		relative_position_id = USA_prepare_intervention
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			ENG = {
+				add_opinion_modifier = { target = USA modifier = war_plan_red }
+			}
+		}
+	}
+
+	focus = {
+		id = USA_embargo_the_empire
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = USA_war_plan_red }
+		available = {
+			country_exists = ENG
+			OR = {
+				ENG = { has_added_tension_amount > 30 }
+				threat > 0.6
+			}
+		}
+
+		continue_if_invalid = yes
+		x = 0
+		y = 1
+		relative_position_id = USA_war_plan_red
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			ENG = {
+				add_opinion_modifier = { target = USA modifier = embargo }
+			}
+		}
+	}
+
+	focus = {
+		id = USA_anti_imperialism
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = USA_embargo_the_empire }
+		available = { 
+			country_exists = ENG
+			has_government = communism 
+			}
+
+		x = 0
+		y = 1
+		relative_position_id = USA_embargo_the_empire
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			SOV = {
+				add_opinion_modifier = { target = USA modifier = anti_imperialist }
+			}
+			hidden_effect = {
+				news_event = { hours = 6 id = news.206 }
+			}
+		}
+	}
+
+	focus = {
+		id = USA_war_plan_orange
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = USA_prepare_intervention }
+		available = {
+			JAP = { 
+				country_exists = JAP
+				OR = { 
+					has_offensive_war = yes
+					has_added_tension_amount > 30
+				}
+			}
+			NOT = { has_government = fascism }
+		}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		x = 4
+		y = 1
+		relative_position_id = USA_prepare_intervention
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+
+		completion_reward = {
+			JAP = {
+				add_opinion_modifier = { target = USA modifier = war_plan_orange }
+			}
+		}
+	}
+
+	focus = {
 		id = USA_embargo_japan
 		icon = GFX_goal_generic_trade
 		prerequisite = { focus = USA_war_plan_orange }
@@ -1060,7 +1240,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_war_plan_orange
-		cost = 1
+		cost = 10
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1180,7 +1360,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_embargo_japan
-		cost = 5
+		cost = 10
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1221,7 +1401,81 @@ focus_tree = {
 		}
 	}
 
-	
+	focus = {
+		id = USA_crusade_against_communism
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = USA_unholy_alliance }
+		prerequisite = { focus = USA_limited_intervention }
+		available = {
+			SOV = {
+				exists = yes
+				NOT = { has_government = ROOT }
+			}
+			date > 1942.1.1
+		}
+		will_lead_to_war_with = SOV
+		x = 0
+		y = 1
+		relative_position_id = USA_unholy_alliance
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = SOV
+				generator = { 644 637 562 } # Eastern Siberia, Kamchatka
+			}
+			hidden_effect = {
+				news_event = { hours = 6 id = news.207 }
+			}
+		}
+	}
+
+	focus = {
+		id = USA_strike_at_the_empire
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = USA_anti_imperialism }
+		prerequisite = { focus = USA_limited_intervention }
+		available = {
+			OR = {
+				ENG = {
+					exists = yes
+					NOT = { has_government = ROOT }
+				}
+				
+				CAN = {
+					exists = yes
+					NOT = { has_government = ROOT } 
+				}
+				
+			}
+			date > 1942.1.1
+		}
+		will_lead_to_war_with = ENG 
+		will_lead_to_war_with = CAN
+		x = 0
+		y = 1
+		relative_position_id = USA_anti_imperialism
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = CAN
+				generator = { 276 } # Southern Ontario
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = ENG
+				generator = { 689 690 693 308 691 692 696 } # Carribean Islands
+			}
+			
+		}
+	}
 
 	focus = {
 		id = USA_defense_of_the_pacific
