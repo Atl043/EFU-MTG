@@ -171,10 +171,12 @@ technologies = {
 	}
 	
 	mass_motorization = {
-		category_all_infantry = {
+		motorized = {
 			max_organisation = 10
-		}	
-		
+		}
+		mechanized = {
+			max_organisation = 10
+		}
 		
 		path = {
 			leads_to_tech = mechanised_offensive 
@@ -441,7 +443,10 @@ technologies = {
 			volkssturm
 		}
 		
-		category_all_infantry = {
+		motorized = {
+			max_organisation = 10
+		}
+		mechanized = {
 			max_organisation = 10
 		}
 		category_tanks = {
@@ -659,6 +664,9 @@ technologies = {
 		
 		category_front_line = {
 			 soft_attack = 0.2
+		}
+		category_line_artillery = {
+			soft_attack = 0.1
 		}
 		
 		enable_tactic = tactic_barrage
@@ -1114,7 +1122,7 @@ technologies = {
 		category_all_infantry = { 
 			soft_attack = 0.05 
 		}
-		category_artillery = { 
+		category_line_artillery = { 
 			soft_attack = 0.05
 		}
 		path = {
@@ -1189,7 +1197,7 @@ technologies = {
 			max_organisation = 10
 			default_morale = 0.05
 		}
-		category_tanks = {
+		category_line_artillery = {
 			max_organisation = 2
 		}
 
@@ -1234,7 +1242,7 @@ technologies = {
 			soft_attack = 0.05 
 			hard_attack = 0.05
 		}
-		category_artillery = { 
+		category_line_artillery = { 
 			soft_attack = 0.05
 			hard_attack = 0.05
 		}
