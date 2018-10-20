@@ -633,7 +633,6 @@ focus_tree = {
 				bonus = 0.5
 				technology = CAS1
 				technology = CAS2
-				technology = CAS3
 			}
 		}
 	}
@@ -681,7 +680,6 @@ focus_tree = {
 				bonus = 0.5
 				technology = strategic_bomber1
 				technology = strategic_bomber2
-				technology = strategic_bomber3
 			}
 		}
 	}
