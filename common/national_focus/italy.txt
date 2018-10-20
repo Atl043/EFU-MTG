@@ -767,8 +767,6 @@ focus_tree = {
 				technology = early_fighter
 				technology = fighter1
 				technology = fighter2
-				technology = jet_fighter1
-				technology = jet_fighter2
 			}
 			add_tech_bonus = {
 				name = air_doc_bonus
@@ -825,9 +823,7 @@ focus_tree = {
 				uses = 2
 				technology = basic_battleship
 				technology = improved_battleship
-				technology = advanced_battleship
 				technology = heavy_battleship
-				technology = heavy_battleship2
 			}
 			add_tech_bonus = {
 				name = cr_bonus
@@ -1012,7 +1008,6 @@ focus_tree = {
 				bonus = 0.5
 				uses = 1
 				technology = jet_engines
-				technology = jet_fighter1
 			}
 		}
 	}
@@ -1038,7 +1033,6 @@ focus_tree = {
 				technology = improved_destroyer
 				technology = advanced_destroyer
 				technology = improved_light_cruiser
-				technology = advanced_light_cruiser
 			}
 			add_tech_bonus = {
 				name = con_def_bonus
@@ -1071,7 +1065,6 @@ focus_tree = {
 				uses = 1
 				technology = basic_destroyer
 				technology = improved_destroyer
-				technology = advanced_destroyer
 			}
 			add_tech_bonus = {
 				name = ITA_escort_effort
@@ -1106,7 +1099,6 @@ focus_tree = {
 				uses = 1
 				technology = basic_submarine
 				technology = improved_submarine
-				technology = advanced_submarine
 			}
 			add_tech_bonus = {
 				name = sub_op_bonus
