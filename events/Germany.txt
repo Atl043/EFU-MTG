@@ -216,13 +216,37 @@ country_event = {
 		add_state_claim = 96
 		add_state_claim = 97
 		add_state_claim = 80
-		hidden_effect =  { add_timed_idea = { idea = SOV_molotov_ribbentrop_pact days = 730 } }
+		hidden_effect =  { 
+			add_timed_idea = { idea = SOV_molotov_ribbentrop_pact days = 730 } 
+		
+			SOV = {
+				country_event = { days = 3 id = soviet.4 }
+				country_event = { days = 1 id = soviet.6 }
+				country_event = { days = 1 id = soviet.8 }
+				country_event = { days = 1 id = soviet.10 }
+				country_event = { days = 5 id = soviet.31 }
+				
+			}
+
+			POL = {
+				remove_state_core = 78
+				remove_state_core = 89
+				remove_state_core = 91
+				remove_state_core = 93
+				remove_state_core = 94
+				remove_state_core = 95
+				remove_state_core = 96
+				remove_state_core = 80
+				remove_state_core = 73
+			}
+		}
 		GER = {
 			country_event = { days = 1 id = germany.12 }
 			effect_tooltip = {
 				add_opinion_modifier = { target = SOV modifier = MR_pact }# pact
 			}
 		}
+		add_named_threat = { threat = 5 name = SOV_molotov_ribbentrop_tension }
 		set_global_flag = sov_yes_pact
 	}
 	

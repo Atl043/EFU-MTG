@@ -185,10 +185,7 @@ technologies = {
 			fighter_equipment_2
 		}
 	
-		path = {
-			leads_to_tech = fighter3
-			research_cost_coeff = 1
-		}
+		
 				
 
 		research_cost = 2
@@ -281,10 +278,7 @@ technologies = {
 				date > "1941.6.1"
 			}
 
-			modifier = {
-				factor = 0
-				has_tech = fighter3
-			}
+			
 			modifier = {
 				factor = 2.5
 				has_navy_size = { type = carrier size > 3 }# if nation has carriers, more likely
@@ -726,10 +720,6 @@ technologies = {
 			heavy_fighter_equipment_2
 		}
 	
-		path = {
-			leads_to_tech = heavy_fighter3
-			research_cost_coeff = 1
-		}
 		
 		research_cost = 2
 		start_year = 1940
@@ -806,7 +796,6 @@ technologies = {
 		}
 	
 		path = {
-			leads_to_tech = tactical_bomber3
 			research_cost_coeff = 1
 		}
 		

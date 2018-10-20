@@ -954,7 +954,7 @@ focus_tree = {
 			has_government = fascism
 		}
 		x = 4
-		y = 3
+		y = 4
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1495,15 +1495,18 @@ focus_tree = {
 		id = GER_ussr_war_goal
 		icon = GFX_goal_generic_war_with_comintern
 		prerequisite = { focus = GER_anti_comitern_pact }
-		mutually_exclusive = { focus = GER_soviet_ally }
 		will_lead_to_war_with = SOV
+
+		available = {
+			date > 1941.4.1
+		}
 
 		cancel = {
 			NOT = { country_exists = SOV }
 		}
 		x = 17
 		y = 2
-		cost = 10
+		cost = 2
 		historical_ai = {
 			NOT = {
 				any_home_area_neighbor_country = {
@@ -1751,8 +1754,10 @@ focus_tree = {
 		id = GER_mol_rib_pact
 		icon = GFX_goal_molotov_ribbentrop_pact
 		prerequisite = { focus = GER_soviet_treaty }
-		mutually_exclusive = { focus = GER_anti_soviet_pact }
+		prerequisite = { focus = GER_demand_memel }
+		
 		available = {
+			date > 1939.1.1
 			is_puppet = no
 			has_government = fascism
 			has_army_manpower = { size > 849999 } #ca 90 div
@@ -1760,8 +1765,6 @@ focus_tree = {
 				NOT = { has_war_with = GER }
 				country_exists = SOV
 			}
-			NOT = { has_completed_focus = GER_bulwark_against_bolshevism }
-			NOT = { has_completed_focus = GER_the_great_red_menace }
 		}
 		cancel = {
 			OR = {

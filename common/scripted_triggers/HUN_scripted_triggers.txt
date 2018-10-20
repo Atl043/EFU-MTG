@@ -15,10 +15,6 @@ is_available_fighter_HUN = {
 			}
 		}
 		AND = {
-			has_tech = fighter3
-			HUN = { 
-				NOT = { has_tech = fighter3}
-			}
 		}
 	}
 	NOT = {
@@ -41,10 +37,6 @@ is_available_heavy_fighter_HUN = {
 			}
 		}
 		AND = {
-			has_tech = heavy_fighter3
-			HUN = { 
-				NOT = { has_tech = heavy_fighter3}
-			}
 		}
 	}
 	NOT = {
@@ -90,12 +82,6 @@ is_available_tac_HUN = {
 			has_tech = tactical_bomber2
 			HUN = { 
 				NOT = { has_tech = tactical_bomber2}
-			}
-		}
-		AND = {
-			has_tech = tactical_bomber3
-			HUN = { 
-				NOT = { has_tech = tactical_bomber3}
 			}
 		}
 	}

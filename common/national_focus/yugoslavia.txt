@@ -2801,8 +2801,6 @@ focus_tree = {
 
 		available = {
 			NOT = {
-				has_tech = fighter3
-				has_tech = heavy_fighter3
 			}
 			OR = {
 				GER = {
@@ -2888,8 +2886,6 @@ focus_tree = {
 		
 		available = {
 			NOT = {
-				has_tech = CAS3
-				has_tech = tactical_bomber3
 			}
 			OR = {
 				GER = {
