@@ -1787,7 +1787,6 @@ focus_tree = {
 			has_capitulated = yes
 		}
 		completion_reward = {
-			add_state_core = 539
 			add_political_power = 150
 			set_capital = 539
 			539 = {
@@ -1865,25 +1864,6 @@ focus_tree = {
 				technology = tech_mountaineers
 				technology = tech_mountaineers2
 			}
-		}
-	}
-	
-	focus = {
-		id = FRA_bring_out_the_museum_pieces
-		icon = GFX_goal_generic_small_arms
-		
-		cost = 10
-		
-		prerequisite = { focus = FRA_get_back_the_mainland }
-		relative_position_id = FRA_get_back_the_mainland 
-		
-		x = 0
-		y = 1
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 10000 producer = FRA }
 		}
 	}
 }

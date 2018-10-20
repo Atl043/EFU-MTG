@@ -351,7 +351,30 @@ ideas = {
 	}
 
 	# POLITICAL
-	political_advisor = {			
+	political_advisor = {
+		maurice_thorez = {
+			
+			
+			allowed = {
+				original_tag = "FRA"
+			}			
+			available = {
+				has_completed_focus = FRA_leftist_rhetoric
+			}
+			
+			traits = { communist_revolutionary }
+
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+			
 		leon_blum = {
 			
 			
@@ -374,6 +397,29 @@ ideas = {
 			}
 		}
 		
+		marcel_bucard = {
+			
+			
+			allowed = {
+				original_tag = "FRA"
+			}
+			available ={
+				has_completed_focus = FRA_right_wing_rhetoric
+			}
+			
+			traits = { fascist_demagogue }
+
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
 		FRA_gaston_henry_haye = {
 			
 			allowed = {
