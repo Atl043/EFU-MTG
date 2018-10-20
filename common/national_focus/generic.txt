@@ -886,7 +886,6 @@ focus_tree = {
 				technology = basic_battleship
 				technology = improved_battleship
 				technology = heavy_battleship
-				technology = heavy_battleship2
 				technology = early_carrier
 				technology = basic_carrier
 				technology = improved_carrier
