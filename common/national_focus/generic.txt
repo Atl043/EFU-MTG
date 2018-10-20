@@ -367,7 +367,6 @@ focus_tree = {
 				uses = 2
 				technology = strategic_bomber1
 				technology = strategic_bomber2
-				technology = strategic_bomber3
 				category = tactical_bomber
 			}
 		}
@@ -772,7 +771,6 @@ focus_tree = {
 				technology = early_submarine
 				technology = basic_submarine
 				technology = improved_submarine
-				technology = advanced_submarine
 			}
 		}
 	}
@@ -809,9 +807,7 @@ focus_tree = {
 				ahead_reduction = 1
 				uses = 1
 				technology = improved_light_cruiser
-				technology = advanced_light_cruiser
 				technology = improved_heavy_cruiser
-				technology = advanced_heavy_cruiser
 			}
 		}
 	}
@@ -850,7 +846,6 @@ focus_tree = {
 				technology = early_destroyer
 				technology = basic_destroyer
 				technology = improved_destroyer
-				technology = advanced_destroyer
 			}
 		}
 	}
@@ -890,13 +885,11 @@ focus_tree = {
 				technology = basic_battlecruiser
 				technology = basic_battleship
 				technology = improved_battleship
-				technology = advanced_battleship
 				technology = heavy_battleship
 				technology = heavy_battleship2
 				technology = early_carrier
 				technology = basic_carrier
 				technology = improved_carrier
-				technology = advanced_carrier
 			}
 		}
 	}
