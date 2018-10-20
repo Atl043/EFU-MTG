@@ -555,6 +555,28 @@ ideas = {
 	
 	
 	political_advisor = {
+		earl_browder = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+
+			
+			traits = { communist_revolutionary }
+
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+			
 		harold_ickes = {
 			
 			
@@ -577,6 +599,28 @@ ideas = {
 			}
 		}
 		
+		charles_coughlin = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+
+			
+			traits = { fascist_demagogue }
+	
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
 		USA_robert_taft = {
 			
 			picture = generic_political_advisor_europe_1

@@ -307,6 +307,7 @@ ideas = {
 	
 	
 	political_advisor = {
+					
 		clement_attlee = {
 			
 			allowed = {
