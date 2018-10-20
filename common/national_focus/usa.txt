@@ -1043,6 +1043,39 @@ focus_tree = {
 	}
 
 	focus = {
+		id = USA_war_plan_orange
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = USA_prepare_intervention }
+		available = {
+			JAP = { 
+				country_exists = JAP
+				OR = { 
+					has_offensive_war = yes
+					has_added_tension_amount > 30
+				}
+			}
+			NOT = { has_government = fascism }
+		}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		x = 4
+		y = 1
+		relative_position_id = USA_prepare_intervention
+		cost = 5
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+
+		completion_reward = {
+			JAP = {
+				add_opinion_modifier = { target = USA modifier = war_plan_orange }
+			}
+		}
+	}
+
+	focus = {
 		id = USA_embargo_japan
 		icon = GFX_goal_generic_trade
 		prerequisite = { focus = USA_war_plan_orange }
@@ -1122,30 +1155,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = USA_unholy_alliance
-		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = USA_embargo_USSR }
-		available = {
-			GER = { has_war_with = SOV }
-			has_government = fascism
-		}
-
-		x = 0
-		y = 1
-		relative_position_id = USA_embargo_USSR
-		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_opinion_modifier = { target = GER modifier = unholy_alliance_opinion }
-			add_opinion_modifier = { target = GER modifier = unholy_alliance_trade }
-		}
-	}
 
 
 	focus = {
