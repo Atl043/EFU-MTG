@@ -830,7 +830,6 @@ focus_tree = {
 				bonus = 0.5
 				uses = 1
 				technology = improved_heavy_cruiser
-				technology = advanced_heavy_cruiser
 			}
 			add_tech_bonus = {
 				name = bc_bonus
@@ -1031,7 +1030,6 @@ focus_tree = {
 				uses = 2
 				technology = basic_destroyer
 				technology = improved_destroyer
-				technology = advanced_destroyer
 				technology = improved_light_cruiser
 			}
 			add_tech_bonus = {
