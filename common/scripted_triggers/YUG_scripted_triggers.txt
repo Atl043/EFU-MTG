@@ -56,12 +56,6 @@ is_available_cas_YUG = {
 				NOT = { has_tech = CAS2}
 			}
 		}
-		AND = {
-			has_tech = CAS3
-			YUG = { 
-				NOT = { has_tech = CAS3}
-			}
-		}
 	}
 	NOT = {
 		has_war_with = YUG

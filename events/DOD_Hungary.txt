@@ -886,22 +886,6 @@ country_event = {
 	}
 
 
-	option = { #approach France
-		name = DOD_hungary.32.b
-		ai_chance = {
-			factor = 45
-		}
-		trigger = {
-			FRA = {
-				NOT = { has_war_with = HUN }
-				NOT = { has_completed_focus = FRA_little_entente } #would be super awkward
-				has_government = democratic
-			}
-		}
-		FRA = { 
-			country_event = { id = DOD_hungary.33 hours = 12 } 
-		}
-	}
 	option = { #approach Britain
 		name = DOD_hungary.32.c
 		ai_chance = {
@@ -6063,10 +6047,6 @@ country_event = {
 				has_tech = CAS2
 				add = -10
 			}
-			modifier = {
-				has_tech = CAS3
-				factor = 0
-			}
 		}
 		country_event = DOD_hungary.161 	
 	}
@@ -6101,10 +6081,6 @@ country_event = {
 			modifier = {
 				has_tech = tactical_bomber2
 				add = -10
-			}
-			modifier = {
-				has_tech = tactical_bomber3
-				factor = 0
 			}
 		}
 		country_event = DOD_hungary.162
@@ -6167,12 +6143,6 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				GER = {
-					has_tech = CAS3
-				}
-				add = 10
-			}
 		}
 		trigger = {
 			OR = {
@@ -6183,10 +6153,6 @@ country_event = {
 				AND = {
 					GER = { has_tech = CAS2}
 					HUN = { NOT = { has_tech = CAS2 } }
-				}
-				AND = {
-					GER = { has_tech = CAS3}
-					HUN = { NOT = { has_tech = CAS3 } }
 				}
 			}
 			NOT = { has_war_with = GER }
@@ -6219,12 +6185,6 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				ITA = {
-					has_tech = CAS3
-				}
-				add = 10
-			}
 		}
 		trigger = {
 			OR = {
@@ -6235,10 +6195,6 @@ country_event = {
 				AND = {
 					ITA = { has_tech = CAS2}
 					HUN = { NOT = { has_tech = CAS2 } }
-				}
-				AND = {
-					ITA = { has_tech = CAS3}
-					HUN = { NOT = { has_tech = CAS3 } }
 				}
 			}
 			NOT = { has_war_with = ITA }
@@ -6271,12 +6227,6 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				FRA = {
-					has_tech = CAS3
-				}
-				add = 10
-			}
 		}
 		trigger = {
 			OR = {
@@ -6287,10 +6237,6 @@ country_event = {
 				AND = {
 					FRA = { has_tech = CAS2}
 					HUN = { NOT = { has_tech = CAS2 } }
-				}
-				AND = {
-					FRA = { has_tech = CAS3}
-					HUN = { NOT = { has_tech = CAS3 } }
 				}
 			}
 			NOT = { has_war_with = FRA }
@@ -6322,12 +6268,6 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				ENG = {
-					has_tech = CAS3
-				}
-				add = 10
-			}
 		}
 		trigger = {
 			OR = {
@@ -6338,10 +6278,6 @@ country_event = {
 				AND = {
 					ENG = { has_tech = CAS2}
 					HUN = { NOT = { has_tech = CAS2 } }
-				}
-				AND = {
-					ENG = { has_tech = CAS3}
-					HUN = { NOT = { has_tech = CAS3 } }
 				}
 			}
 			NOT = { has_war_with = ENG }
@@ -6373,12 +6309,6 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				USA = {
-					has_tech = CAS3
-				}
-				add = 10
-			}
 		}
 		trigger = {
 			OR = {
@@ -6389,10 +6319,6 @@ country_event = {
 				AND = {
 					USA = { has_tech = CAS2}
 					HUN = { NOT = { has_tech = CAS2 } }
-				}
-				AND = {
-					USA = { has_tech = CAS3}
-					HUN = { NOT = { has_tech = CAS3 } }
 				}
 			}
 			NOT = { has_war_with = USA }
@@ -6487,12 +6413,6 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				GER = {
-					has_tech = tactical_bomber3
-				}
-				add = 10
-			}
 		}
 		trigger = {
 			OR = {
@@ -6503,10 +6423,6 @@ country_event = {
 				AND = {
 					GER = { has_tech = tactical_bomber2}
 					HUN = { NOT = { has_tech = tactical_bomber2 } }
-				}
-				AND = {
-					GER = { has_tech = tactical_bomber3}
-					HUN = { NOT = { has_tech = tactical_bomber3 } }
 				}
 			}
 			NOT = { has_war_with = GER }
@@ -6539,12 +6455,6 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				ITA = {
-					has_tech = tactical_bomber3
-				}
-				add = 10
-			}
 		}
 		trigger = {
 			OR = {
@@ -6555,10 +6465,6 @@ country_event = {
 				AND = {
 					ITA = { has_tech = tactical_bomber2}
 					HUN = { NOT = { has_tech = tactical_bomber2 } }
-				}
-				AND = {
-					ITA = { has_tech = tactical_bomber3}
-					HUN = { NOT = { has_tech = tactical_bomber3 } }
 				}
 			}
 			NOT = { has_war_with = ITA }
@@ -6591,12 +6497,6 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				FRA = {
-					has_tech = tactical_bomber3
-				}
-				add = 10
-			}
 		}
 		trigger = {
 			OR = {
@@ -6607,10 +6507,6 @@ country_event = {
 				AND = {
 					FRA = { has_tech = tactical_bomber2}
 					HUN = { NOT = { has_tech = tactical_bomber2 } }
-				}
-				AND = {
-					FRA = { has_tech = tactical_bomber3}
-					HUN = { NOT = { has_tech = tactical_bomber3 } }
 				}
 			}
 			NOT = { has_war_with = FRA }
@@ -6642,12 +6538,6 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				ENG = {
-					has_tech = tactical_bomber3
-				}
-				add = 10
-			}
 		}
 		trigger = {
 			OR = {
@@ -6658,10 +6548,6 @@ country_event = {
 				AND = {
 					ENG = { has_tech = tactical_bomber2}
 					HUN = { NOT = { has_tech = tactical_bomber2 } }
-				}
-				AND = {
-					ENG = { has_tech = tactical_bomber3}
-					HUN = { NOT = { has_tech = tactical_bomber3 } }
 				}
 			}
 			NOT = { has_war_with = ENG }
@@ -6693,12 +6579,6 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				USA = {
-					has_tech = tactical_bomber3
-				}
-				add = 10
-			}
 		}
 		trigger = {
 			OR = {
@@ -6709,10 +6589,6 @@ country_event = {
 				AND = {
 					USA = { has_tech = tactical_bomber2}
 					HUN = { NOT = { has_tech = tactical_bomber2 } }
-				}
-				AND = {
-					USA = { has_tech = tactical_bomber3}
-					HUN = { NOT = { has_tech = tactical_bomber3 } }
 				}
 			}
 			NOT = { has_war_with = USA }
@@ -6785,31 +6661,7 @@ country_event = {
 				cost_factor = 0
 			}
 		}
-		if = {
-			limit = {
-				has_tech = CAS2
-				NOT = { has_tech = CAS3 }
-			}
-			create_production_license = {
-				target = HUN 
-				equipment = {
-					type = CAS_equipment_2	
-				}
-				cost_factor = 0
-			}
-		}
-		if = {
-			limit = {
-				has_tech = CAS3
-			}
-			create_production_license = {
-				target = HUN 
-				equipment = {
-					type = CAS_equipment_3
-				}
-				cost_factor = 0
-			}
-		}
+		
 	}
 
 	option = {# no
@@ -6882,7 +6734,6 @@ country_event = {
 		if = {
 			limit = {
 				has_tech = tactical_bomber2
-				NOT = { has_tech = tactical_bomber3 }
 			}
 			create_production_license = {
 				target = HUN 
@@ -6892,18 +6743,7 @@ country_event = {
 				cost_factor = 0
 			}
 		}
-		if = {
-			limit = {
-				has_tech = tactical_bomber3
-			}
-			create_production_license = {
-				target = HUN 
-				equipment = {
-					type = tac_bomber_equipment_3
-				}
-				cost_factor = 0
-			}
-		}
+		
 	}
 
 	option = {# no
@@ -6976,13 +6816,6 @@ country_event = {
 				OR = {
 					exists = no
 					is_puppet = yes
-				}
-			}
-			FRA = {
-				OR = {
-					exists = no
-					is_puppet = yes
-					NOT = { has_completed_focus = FRA_little_entente }
 				}
 			}
 		}

@@ -55,12 +55,6 @@ is_available_cas_ROM = {
 				NOT = { has_tech = CAS2}
 			}
 		}
-		AND = {
-			has_tech = CAS3
-			ROM = { 
-				NOT = { has_tech = CAS3}
-			}
-		}
 	}
 	NOT = {
 		has_war_with = ROM

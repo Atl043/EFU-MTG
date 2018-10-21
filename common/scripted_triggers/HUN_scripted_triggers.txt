@@ -58,12 +58,6 @@ is_available_cas_HUN = {
 				NOT = { has_tech = CAS2}
 			}
 		}
-		AND = {
-			has_tech = CAS3
-			HUN = { 
-				NOT = { has_tech = CAS3}
-			}
-		}
 	}
 	NOT = {
 		has_war_with = HUN

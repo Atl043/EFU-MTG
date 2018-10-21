@@ -388,7 +388,7 @@ technologies = {
 		}
 	
 		path = {
-			leads_to_tech = CAS3
+			
 			research_cost_coeff = 1
 		}
 		
@@ -441,10 +441,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				has_tech = CAS3
-			}
 			modifier = {
 				factor = 2
 				OR = {
