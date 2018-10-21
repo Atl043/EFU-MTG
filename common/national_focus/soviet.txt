@@ -891,9 +891,7 @@ focus_tree = {
 	focus = {
 		id = SOV_peoples_commissariat
 		icon = GFX_goal_support_communism
-		prerequisite = { focus = SOV_improve_railway }
-		prerequisite = { focus = SOV_transpolar_flights }
-		prerequisite = { focus = SOV_ocean_going_navy }
+		prerequisite = { focus = SOV_improve_railway focus = SOV_transpolar_flights focus = SOV_ocean_going_navy  }
 		x = 2
 		y = 1
 		relative_position_id = SOV_improve_railway
@@ -901,12 +899,23 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		available = {
+			OR = {
+				date > 1937.7.1
+			}
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_political_power = 120
 			add_ideas = peoples_commissariat_focus
+			if = {
+				limit = {
+					NOT = { has_idea = war_economy }
+					NOT = { has_idea = tot_economic_mobilisation }
+				}
+				add_ideas = war_economy
+			}
 		}
 	}
 
