@@ -19,7 +19,7 @@ buildings = {
 		base_cost_conversion = 4000
 		military_production = 1
 		icon_frame = 2
-		max_level = 20
+		max_level = 40
 		shares_slots = yes
 		value = 8
 		infrastructure_construction_effect = yes
@@ -31,7 +31,7 @@ buildings = {
 		base_cost_conversion = 9000
 		general_production = 1
 		icon_frame = 1
-		max_level = 20
+		max_level = 40
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
@@ -45,6 +45,7 @@ buildings = {
 		max_level = 10
 		value = 1
 		damage_factor = 0.5
+		infrastructure_construction_effect = yes
 	}
 
 	naval_base = {
@@ -56,8 +57,9 @@ buildings = {
 		only_costal = yes
 		is_port = yes
 		icon_frame = 6
-		max_level = 10
+		max_level = 20
 		value = 1
+		infrastructure_construction_effect = yes
 	}
 
 	bunker = {
@@ -69,7 +71,7 @@ buildings = {
 		disabled_in_dmz = yes
 		icon_frame = 7
 		land_fort = 1
-		max_level = 10
+		max_level = 5
 		value = 1
 	}
 
@@ -83,7 +85,7 @@ buildings = {
 		only_costal = yes
 		icon_frame = 8
 		naval_fort = 1
-		max_level = 10
+		max_level = 5
 		value = 1
 	}
 
@@ -95,7 +97,7 @@ buildings = {
 		naval_production = 1
 		icon_frame = 4
 		only_costal = yes
-		max_level = 20
+		max_level = 40
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
@@ -111,8 +113,9 @@ buildings = {
 		disabled_in_dmz = yes
 		air_defence = 1
 		max_level = 5 # This is the max unlock level
-		damage_factor = 0.1
+		damage_factor = 0.01
 		value = 1
+		infrastructure_construction_effect = yes
 	}
 
 	synthetic_refinery = {
@@ -126,6 +129,7 @@ buildings = {
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
+		damage_factor = 0.5
 	}
 
 	radar_station = {
@@ -137,6 +141,7 @@ buildings = {
 		max_level = 6 # This is the max unlock level
 		damage_factor = 0.5
 		value = 4
+		infrastructure_construction_effect = yes
 	}
 
 	rocket_site = {
@@ -145,10 +150,9 @@ buildings = {
 		icon_frame = 12
 		rocket_production = 5
 		rocket_launch_capacity = 1
-		max_level = 5
+		max_level = 1
 		shares_slots = yes
 		value = 1
-		infrastructure_construction_effect = yes
 	}
 
 	nuclear_reactor = {
