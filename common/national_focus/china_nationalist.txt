@@ -850,7 +850,24 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = CHI_war_of_resistance
+
+			if = {
+				limit = { country_exists = PRC }
+				add_to_faction = PRC
+			}
+			annex_country = { target = GXC transfer_troops = yes }
+			annex_country = { target = XSM transfer_troops = yes }
+			annex_country = { target = YUN transfer_troops = yes }
+			if = {
+				limit = {
+					country_exists = SHX
+					country_exists = PRC
+				}
+				PRC = { annex_country = { target = SHX transfer_troops = yes } }
+			}
 		}
+
+
 	}
 
 	focus = {
