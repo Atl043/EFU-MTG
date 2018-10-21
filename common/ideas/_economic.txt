@@ -223,6 +223,7 @@ ideas = {
 
 
 			available = {
+				GER = { has_war_with = SOV }
 				has_war = yes
 				threat > 0.2
 				has_war_support > 0.8

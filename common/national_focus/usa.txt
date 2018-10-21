@@ -1445,7 +1445,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = USA_bureau_of_ships
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1469,7 +1469,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_battleship_primacy
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1493,7 +1493,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = USA_bureau_of_ships
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1517,7 +1517,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_carrier_primacy
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1541,7 +1541,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = USA_bureau_of_ships
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1560,7 +1560,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_escort_effort
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1584,7 +1584,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = USA_bureau_of_ships
-		cost = 10
+		cost = 5
 		prerequisite = { focus = USA_bureau_of_ships }
 		ai_will_do = {
 			factor = 1
@@ -1609,7 +1609,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_fund_the_navy
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1634,7 +1634,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_expand_the_USMC
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1656,7 +1656,7 @@ focus_tree = {
 		icon = GFX_goal_generic_positive_trade_relations
 		x = 31
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 2
 		}
@@ -2563,7 +2563,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = USA_south_america
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -2651,10 +2651,10 @@ focus_tree = {
 		id = USA_preemptive_intervention
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = USA_pax_americana }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = USA_pax_americana
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 			modifier = {
