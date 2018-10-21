@@ -331,10 +331,10 @@ create_field_marshal = {
 	picture = "Portrait_Britain_Bernard_Montgomery.dds"
 	traits = { logistics_wizard offensive_doctrine media_personality trait_cautious inflexible_strategist organizer }
 	skill = 4 
-	attack_skill = 2
+	attack_skill = 4
 	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 4
+	planning_skill = 5
+	logistics_skill = 5
 }
 
 create_corps_commander = {
@@ -419,7 +419,7 @@ create_corps_commander = {
 	picture = "Portrait_Britain_Harold_Alexander.dds"
 	traits = { politically_connected }
 	skill = 5
-	attack_skill = 4
+	attack_skill = 5
 	defense_skill = 4
 	planning_skill = 3
 	logistics_skill = 5

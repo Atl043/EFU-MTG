@@ -290,7 +290,7 @@ create_corps_commander = {
 	name = "Tomoyuki Yamashita"
 		picture = "Portrait_Japan_Tomoyuki_Yamashita.dds"
 	traits = {
-		trickster trait_engineer brilliant_strategist politically_connected
+		trickster trait_engineer brilliant_strategist 
 	}
 	skill = 5
 	attack_skill = 4

@@ -283,10 +283,10 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Omar Bradley"
 	picture = "Portrait_USA_Omar_Bradley.dds"
-	traits = {  trait_engineer trait_cautious brilliant_strategist harsh_leader }
+	traits = {  trait_engineer trait_cautious brilliant_strategist harsh_leader naval_invader  }
 	skill = 5
 
-	attack_skill = 3
+	attack_skill = 5
 	defense_skill = 5
 	planning_skill = 4
 	logistics_skill = 4
@@ -298,8 +298,8 @@ create_field_marshal = {
 	traits = { logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
 	skill = 5
 	id = 602
-	attack_skill = 3
-	defense_skill = 3
+	attack_skill = 4
+	defense_skill = 4
 	planning_skill = 5
 	logistics_skill = 5
 }
@@ -319,10 +319,10 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Lucian Truscott"
 	picture = "Portrait_USA_Lucian_Truscott.dds"
-	traits = { trait_engineer commando cavalry_officer }
+	traits = { trait_engineer commando infantry_officer naval_invader }
 	skill = 3
 
-	attack_skill = 3
+	attack_skill = 5
 	defense_skill = 3
 	planning_skill = 2
 	logistics_skill = 2
@@ -348,7 +348,7 @@ create_field_marshal = {
 	skill = 4
 
 	attack_skill = 4
-	defense_skill = 3
+	defense_skill = 4
 	planning_skill = 4
 	logistics_skill = 2
 }
@@ -356,7 +356,7 @@ create_field_marshal = {
 create_corps_commander = {
 	name = "Walter Krueger"
 	picture = "Portrait_USA_Walter_Krueger.dds"
-	traits = { armor_officer career_officer brilliant_strategist }
+	traits = { armor_officer career_officer brilliant_strategist naval_invader  }
 	skill = 3
 
 	attack_skill = 3
@@ -368,7 +368,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Lloyd Fredendall"
 	picture = "Portrait_USA_Lloyd_Fredendall.dds"
-	traits = { old_guard infantry_officer inflexible_strategist }
+	traits = { infantry_officer }
 	skill = 2
 
 	attack_skill = 3
