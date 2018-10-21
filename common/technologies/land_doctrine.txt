@@ -395,9 +395,13 @@ technologies = {
 	
 	kampfgruppe = {
 
-		category_all_infantry = {
-			default_morale = 0.2
+		motorized = {
 			max_organisation = 10
+			default_morale = 0.2
+		}
+		mechanized = {
+			max_organisation = 10
+			default_morale = 0.2
 		}
 		# faster planning
 		planning_speed = 0.2
@@ -443,10 +447,9 @@ technologies = {
 			volkssturm
 		}
 		
-		motorized = {
-			max_organisation = 10
-		}
-		mechanized = {
+		
+		category_all_infantry = {
+			default_morale = 0.2
 			max_organisation = 10
 		}
 		category_tanks = {
