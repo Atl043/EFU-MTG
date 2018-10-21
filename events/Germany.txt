@@ -249,31 +249,6 @@ country_event = {
 		add_named_threat = { threat = 5 name = SOV_molotov_ribbentrop_tension }
 		set_global_flag = sov_yes_pact
 	}
-	
-	option = {
-		name = germany.11.b	#no way 
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-				GER = {
-					NOT = { has_wargoal_against = SOV }
-					NOT = { is_justifying_wargoal_against = SOV }
-				}
-			}
-			modifier = {
-				factor = 0
-				is_in_faction_with = GER
-			}
-		}
-		add_political_power = -50	
-		add_opinion_modifier = { target = GER modifier = refused_MR_pact }# no pact 
-		GER = {
-			country_event = { days = 1 id = germany.13 }
-		}
-		set_global_flag = sov_no_pact
-	}
 }
 
 # Soviets Sign MR Pact
@@ -510,47 +485,6 @@ country_event = {
 			SOV = { transfer_state = 89 }
 		}
 		SOV = { country_event = germany.15 }
-	}
-	option = {
-		name = germany.14.b
-		ai_chance = {
-			base = 1
-			modifier = {
-				add = -1
-				is_historical_focus_on = yes
-				NOT = {
-					AND = {
-						POL = {
-							is_ai = no
-							has_civil_war = no
-						}
-						is_in_faction_with = POL
-					}
-				}
-			}
-		}
-		SOV = { country_event = germany.16 }
-		clr_global_flag = sov_yes_pact
-		diplomatic_relation = {
-			country = SOV
-			relation = non_aggression_pact
-			active = no
-		}		
-		SOV = {
-			add_state_claim = 96
-			add_state_claim = 95
-			add_state_claim = 94
-			add_state_claim = 93
-			add_state_claim = 91
-			add_state_claim = 97
-			add_state_claim = 89
-			effect_tooltip = {
-				create_wargoal = {
-					type = annex_everything
-					target = GER
-				}
-			}
-		}
 	}
 }
 
@@ -2943,17 +2877,6 @@ country_event = {
 			bonus = 0.5
 			uses = 1
 			category = armor
-		}
-	}
-	
-	option = {
-		name = germany.75.b	#no way 
-		add_timed_idea = { idea = SOV_scientist_defect days = 365 }
-		ai_chance = { factor = 0 }
-		add_political_power = -10
-		add_opinion_modifier = { target = GER modifier = refused_MR_pact }# no pact 
-		GER = {
-			country_event = { days = 1 id = germany.77 }
 		}
 	}
 }

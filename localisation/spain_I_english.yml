@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  SPR_Industry_focus:0 "Expand Civilian Industry"
  SPR_Industry_focus_desc:0 "To boost our economy we should encourage the construction of more civilian factories. In times of need these can be taken over by the state and used to build military factories, or even get converted into one!"
  SPR_Industry_focus_short_desc:0 "Expand civilian industry"
@@ -243,5 +243,5 @@ l_english:
  veren.5.d:0 "The Islero Bomba project was a Spanish nuclear effort, started by Spanish leader, Franco. Other nations will not look too kindly upon this."
  veren.5.a:0 "Spain will build a nuclear weapon!"
  veren.6.t:0 "Vicente Rojo Lluch to command our Troops"
- veren.6.d:0 "Despite being linked with the conservative Unión Militar Español, and despite him being a devout catholic, Vicente Rojo Lluch is stepping up to command our troops."
+ veren.6.d:0 "Despite being linked with the conservative UniÃ³n Militar EspaÃ±ol, and despite him being a devout catholic, Vicente Rojo Lluch is stepping up to command our troops."
  veren.6.a:0 "Wonderful! Lol"
