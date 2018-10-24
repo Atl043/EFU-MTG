@@ -847,28 +847,28 @@ air_wings = {
 		### No. 11 Fighter Command, Middlesex area -- Hawker Demons, Furys, Gloster Gauntlets
 		fighter_equipment_0 = {
 			owner = "ENG" 
-			amount = 216
+			amount = 300
 		}
 	}
 	130 = { 
 		### No. 11 Fighter Command, Essex area -- Hawker Demons, Furys, Gloster Gauntlets
 		fighter_equipment_0 = {
 			owner = "ENG" 
-			amount = 144
+			amount = 200
 		}
 	}	
 	127 = { 
 		### No. 12 Fighter Command, Nottingham area -- Hawker Demons, Furys, Gloster Gauntlets
 		fighter_equipment_0 = {
 			owner = "ENG" 
-			amount = 96
+			amount = 100
 		}
 	}	
 	131 = { 
 		### No. 13 Fighter Command, Newcastle -- Hawker Demons, Furys, Gloster Gauntlets
 		fighter_equipment_0 = {
 			owner = "ENG" 
-			amount = 72
+			amount = 100
 		}
 		
 	}
@@ -878,35 +878,35 @@ air_wings = {
 		### No. 1 Bomber Command, East Anglia area -- Fairey Gordons, Battles
 		CAS_equipment_1 = {
 			owner = "ENG" 
-			amount = 64
+			amount = 100
 		}
 	}
 	125 = { 
 		### No. 2 Bomber Command, East Anglia area -- HP Heyford, Harrows, AW Whitleys
 		tac_bomber_equipment_0 = {
 			owner = "ENG" 
-			amount = 48
+			amount = 100
 		}
 	}
 	126 = { 
 		### No. 3 Bomber Command, Suffolk area -- HP Heyford, Harrows, AW Whitleys
 		tac_bomber_equipment_0 = {
 			owner = "ENG" 
-			amount = 64
+			amount = 100
 		}
 	}
 	130 = { 
 		### No. 4 Bomber Command, York area -- HP Heyford, Harrows, AW Whitleys
 		tac_bomber_equipment_0 = {
 			owner = "ENG" 
-			amount = 80
+			amount = 100
 		}
 	}
 	128 = { 
 		### No. 5 Bomber Command, Lincoln area -- Fairey Gordons, Battles
 		CAS_equipment_1 = {
 			owner = "ENG" 
-			amount = 64
+			amount = 100
 		}
 	}
 
@@ -915,7 +915,7 @@ air_wings = {
 		### No. 16 Coastal Command -- Vickers Vildebeests
 		nav_bomber_equipment_1 = {
 			owner = "ENG" 
-			amount = 24
+			amount = 100
 		}
 	}
 
@@ -924,33 +924,29 @@ air_wings = {
 		### AHQ Egypt
 		fighter_equipment_0 = {
 			owner = "ENG" 
-			amount = 72
+			amount = 100
 		}
 		tac_bomber_equipment_0 = {
 			owner = "ENG" 
-			amount = 48
+			amount = 100
 		}
 		CAS_equipment_1 = {
 			owner = "ENG" 
-			amount = 64
+			amount = 100
 		}
 	}
 	454 = { 
 		### RAF Palestine & Iraq
 		CAS_equipment_1 = {
 			owner = "ENG" 
-			amount = 32
+			amount = 100
 		}
 	}
 	659 = { 
 		### RAF Aden
 		fighter_equipment_0 = {
 			owner = "ENG" 
-			amount = 24
-		}
-		CAS_equipment_1 = {
-			owner = "ENG" 
-			amount = 16
+			amount = 100
 		}
 	}
 
@@ -959,11 +955,11 @@ air_wings = {
 		### RAF Far East
 		nav_bomber_equipment_1 = {
 			owner = "ENG" 
-			amount = 24
+			amount = 200
 		}
 		CAS_equipment_1 = {
 			owner = "ENG" 
-			amount = 64
+			amount = 100
 		}
 	}
 }

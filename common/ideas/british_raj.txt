@@ -443,7 +443,6 @@ ideas = {
 			available = {
 				if = {
 					limit = { has_dlc = "Together for Victory" }	
-					has_completed_focus = RAJ_all_india_forward_bloc
 				}
 			}
 
@@ -471,8 +470,7 @@ ideas = {
 
 			available = {
 				if = {
-					limit = { has_dlc = "Together for Victory" }	
-					has_completed_focus = RAJ_all_india_forward_bloc
+					limit = { has_dlc = "Together for Victory" }
 				}
 			}
 

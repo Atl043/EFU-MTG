@@ -507,7 +507,7 @@ country_event = {
 	}
 }
 
-French ban on communism
+# French ban on communism
 country_event = {
 	id = france.24
 	title = france.24.t

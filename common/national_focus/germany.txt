@@ -1435,7 +1435,7 @@ focus_tree = {
 				limit = { FRA = { is_puppet = no } }
 				FRA = {
 					country_event = { id = germany.60 }
-					country_event = { election.3 }
+					country_event = { id = election.3 }
 					custom_effect_tooltip = may_provoke_hostility
 				}
 			}

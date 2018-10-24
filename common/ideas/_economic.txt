@@ -15,7 +15,6 @@ ideas = {
 				production_speed_arms_factory_factor = -0.5
 				production_speed_dockyard_factor = -0.5
 				conversion_cost_civ_to_mil_factor = 0.5
-				conversion_cost_mil_to_civ_factor = 0.5
 				generate_wargoal_tension = 1.00
 				join_faction_tension = 0.20
 				lend_lease_tension = 0.50
@@ -44,7 +43,6 @@ ideas = {
 				production_speed_arms_factory_factor = -0.4
 				production_speed_dockyard_factor = -0.4
 				conversion_cost_civ_to_mil_factor= 0.4
-				conversion_cost_mil_to_civ_factor = 0.4
 				generate_wargoal_tension = 1.00
 				join_faction_tension = 0.20
 				send_volunteers_tension = 0.20
@@ -240,12 +238,6 @@ ideas = {
 						has_dlc = "Death or Dishonor"
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
-				}
-				if = {
-					limit = {
-						original_tag = GER
-					}
-					NOT = { has_idea = GER_short_war }
 				}
 			}
 

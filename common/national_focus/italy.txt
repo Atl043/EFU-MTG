@@ -432,7 +432,7 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = oil
-				amount = 60
+				amount = 45
 				state = 662
 			}
 		}
@@ -1170,8 +1170,8 @@ focus_tree = {
 		id = ITA_slovenia_dalmatia_claims
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = ITA_albania_war_goal }
-				available = {
-		date > 1939.1.1
+		available = {
+			#date > 1939.1.1
 		}
 		x = 14
 		y = 2
@@ -1344,7 +1344,7 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = ITA_pact_of_steel }
 		available = {
-			date > 1939.1.1
+			#date > 1939.1.1
 			NOT = { is_in_faction_with = GRE }
 			country_exists = GRE
 		}

@@ -1916,10 +1916,7 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 2
-				has_completed_focus = JAP_strengthen_civilian_government
-			}
+
 		}
 
 		available = {
