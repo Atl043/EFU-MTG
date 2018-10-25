@@ -1539,46 +1539,6 @@ ideas = {
 				factor = 3
 			}
 		}
-
-		ernst_thalmann = {
-
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			traits = { communist_revolutionary }
-
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}	
-			
-		kurt_schumacher = {
-
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			traits = { democratic_reformer }
-
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
 		
 		joseph_goebbels = {
 
@@ -2052,7 +2012,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_mobile_warfare = 0.10
@@ -2069,7 +2029,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_battlefield_support = 0.10

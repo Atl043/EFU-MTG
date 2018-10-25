@@ -721,7 +721,7 @@ ideas = {
 			
 
 			
-			traits = { army_cavalry_2 }
+			traits = { army_armored_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -749,11 +749,12 @@ ideas = {
 			
 			allowed = {
 				original_tag = FRA
+				date > 1940.1.1
 			}
 			
 
 			
-			traits = { army_commando_2 }
+			traits = { army_infantry_2 }
 			
 			ai_will_do = {
 				factor = 1

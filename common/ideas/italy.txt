@@ -647,7 +647,7 @@ ideas = {
 				armor = 0.10
 			}
 			
-			traits = { tank_manufacturer }
+			traits = { fast_tank_manufacturer }
 		}
 	}
 	
@@ -808,13 +808,13 @@ ideas = {
 				original_tag = ITA
 			}
 			
-			cost = 250
+			cost = 100
 			
 			research_bonus = {
-				cat_mobile_warfare = 0.10
+				land_doctrine = 0.07
 			}
 			
-			traits = { mobile_warfare_expert }
+			traits = { military_theorist }
 		}
 		
 		rodolfo_graziani = {
@@ -823,7 +823,7 @@ ideas = {
 				original_tag = ITA
 			}
 			
-			cost = 250
+			cost = 150
 						
 			research_bonus = {
 				cat_grand_battle_plan = 0.10
@@ -842,7 +842,7 @@ ideas = {
 				original_tag = ITA
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_fleet_in_being = 0.10
@@ -870,7 +870,7 @@ ideas = {
 				original_tag = ITA
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_operational_integrity = 0.10
