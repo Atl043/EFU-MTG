@@ -214,6 +214,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_stability = 0.05
 			add_political_power = 150
 		}
 	}
@@ -1503,8 +1504,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_carrier_primacy
-				bonus = 0.5
-				uses = 2
+				bonus = 0.75
+				uses = 1
 				category = cv_tech
 			}
 		}

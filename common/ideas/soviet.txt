@@ -284,7 +284,6 @@ ideas = {
 			modifier = {
 				army_org_factor = -0.45
 				send_volunteer_factor = -0.74
-				industrial_capacity_factory = -0.18
 				training_time_factor = 0.45
 			}
 		}
@@ -310,7 +309,6 @@ ideas = {
 			modifier = {
 				army_org_factor = -0.4
 				send_volunteer_factor = -0.68
-				industrial_capacity_factory = -0.16
 				training_time_factor = 0.4
 			}
 		}
@@ -336,7 +334,6 @@ ideas = {
 			modifier = {
 				army_org_factor = -0.35
 				send_volunteer_factor = -0.62
-				industrial_capacity_factory = -0.14
 				training_time_factor = 0.35
 			}
 		}
@@ -362,7 +359,6 @@ ideas = {
 			modifier = {
 				army_org_factor = -0.30
 				send_volunteer_factor = -0.56
-				industrial_capacity_factory = -0.12
 				training_time_factor = 0.3
 			}
 		}
@@ -388,7 +384,6 @@ ideas = {
 			modifier = {
 				army_org_factor = -0.25
 				send_volunteer_factor = -0.5
-				industrial_capacity_factory = -0.10
 				training_time_factor = 0.25
 			}
 		}
@@ -414,7 +409,6 @@ ideas = {
 			modifier = {
 				army_org_factor = -0.20
 				send_volunteer_factor = -0.44
-				industrial_capacity_factory = -0.08
 				training_time_factor = 0.2
 			}
 		}
@@ -440,7 +434,6 @@ ideas = {
 			modifier = {
 				army_org_factor = -0.15
 				send_volunteer_factor = -0.38
-				industrial_capacity_factory = -0.06
 				training_time_factor = 0.15
 			}
 		}
@@ -466,7 +459,6 @@ ideas = {
 			modifier = {
 				army_org_factor = -0.10
 				send_volunteer_factor = -0.32
-				industrial_capacity_factory = -0.04
 				training_time_factor = 0.1
 			}
 		}
@@ -492,7 +484,6 @@ ideas = {
 			modifier = {
 				army_org_factor = -0.05
 				send_volunteer_factor = -0.26
-				industrial_capacity_factory = -0.02
 				training_time_factor = 0.05
 			}
 		}
@@ -835,7 +826,7 @@ ideas = {
 			
 
 			
-			traits = { army_chief_drill_1 }
+			traits = { army_chief_drill_2 }
 			
 			ai_will_do = {
 				factor = 1

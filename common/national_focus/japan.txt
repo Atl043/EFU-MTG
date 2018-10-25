@@ -187,6 +187,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_stability = 0.1
 			if = {
 				limit = {
 					CHI = { #if CHI owns one of these states, they get the event
@@ -1037,6 +1038,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = Japan_War_Doct
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
 			random_owned_controlled_state = {
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
@@ -2092,6 +2099,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = hajime_sugiyama
+			
 		}
 	}
 
@@ -2684,6 +2692,12 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = JAP_first_air_fleet
+			add_tech_bonus = {
+				name = USA_carrier_primacy
+				bonus = 0.75
+				uses = 1
+				category = cv_tech
+			}
 		}
 	}
 
