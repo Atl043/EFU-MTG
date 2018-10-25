@@ -4,7 +4,11 @@ oob = "MEN_1936"
 
 set_technology = {
 	infantry_weapons = 1
-	
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_bomber = 1
+	CAS1 = 1
 }
 
 1939.1.1 = {
@@ -64,7 +68,7 @@ set_politics = {
 		}
 
 		fascism = {
-			popularity = 80
+			popularity = 100
 		}
 		
 		communism = {
@@ -73,7 +77,7 @@ set_politics = {
 		}
 
 		neutrality = {
-			popularity = 20
+			popularity = 0
 		}
 	}
 	
