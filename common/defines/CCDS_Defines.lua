@@ -56,8 +56,7 @@ NDefines.NTechnology.BASE_TECH_COST = 100
 
 NDefines.NPolitics.DEFAULT_OCCUPATION_POLICY = 3
 
-NDefines.NMilitary.HOURLY_ORG_MOVEMENT_IMPACT = -0.15
-NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.65
+
 NDefines.NMilitary.LEADER_SKILL_FACTOR = 0.25
 NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0.04
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.15
@@ -77,7 +76,7 @@ NDefines.NMilitary.TACTIC_SWAP_FREQUENCEY = 4
 NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.2
 NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.3
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.40
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.40
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.30
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.00015
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0002
 NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.2, 0.3, 0.4, 0.5 }
@@ -93,22 +92,16 @@ NDefines.NMilitary.STRATEGIC_SPEED_BASE = 6.0
 NDefines.NMilitary.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.018
 
 
-NDefines.NAir.ACCIDENT_CHANCE_BASE = 0.02
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.2
-NDefines.NAir.AIR_WING_MAX_SIZE = 2000
+NDefines.NAir.AIR_WING_MAX_SIZE = 1600
 NDefines.NAir.ACE_WING_SIZE_MAX_BONUS = 10
 NDefines.NAir.STRATEGIC_BOMBER_NUKE_AIR_SUPERIORITY = 0.90
-NDefines.NAir.COMBAT_MULTIPLANE_CAP = 1.0
-NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 1
-NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.5
-NDefines.NAir.DISRUPTION_DEFENCE_ATTACK_FACTOR = 2.0
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.0
 NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1.0
 
 
 NDefines.NNavy.COMBAT_CHASE_RESIGNATION_HOURS = 24  --- before 16 testing 18
-NDefines.NNavy.COMBAT_MIN_DURATION = 24
+NDefines.NNavy.COMBAT_MIN_DURATION = 36
 NDefines.NNavy.COMBAT_SHIP_SPEED_TO_FIELD_FACTOR = 0.06
 NDefines.NNavy.CONVOY_EFFICIENCY_LOSS_MODIFIER = 3	-- Vanilla: 1.5 How much efficiency drops when losing convoys. If modifier is 0.5, then losing 100% of convoys in short period, the efficiency will drop by 50%.
 NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_AFTER_DAYS = 7	--Vanilla: 7 Convoy starts regaining it's efficiency after X days without any convoys being sink.
