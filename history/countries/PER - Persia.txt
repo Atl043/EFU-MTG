@@ -11,6 +11,7 @@ set_technology = {
 	CAS1 = 1
 }
 add_ideas = {
+	free_trade
 }
 1939.1.1 = {
 

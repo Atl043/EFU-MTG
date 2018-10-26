@@ -766,7 +766,7 @@ focus_tree = {
         	modify_building_resources = {
         	   building = synthetic_refinery
         	   resource = rubber
-        	   amount = 2
+        	   amount = 1
         	}
 		}
 	}
@@ -1800,7 +1800,8 @@ focus_tree = {
 	focus = {
 		id = GER_danzig_or_war
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = GER_mol_rib_pact focus = GER_end_of_czechoslovakia }
+		prerequisite = { focus = GER_mol_rib_pact}
+		prerequisite = { focus = GER_end_of_czechoslovakia }
 		will_lead_to_war_with = POL
 		available = {
 			is_puppet = no

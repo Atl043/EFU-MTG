@@ -2083,7 +2083,7 @@ focus_tree = {
 		y = 4
 		cost = 4.3
 
-		available = { 336 = { is_controlled_by = ENG } }
+		available = { }
 
 		ai_will_do = { factor = 1 }
 

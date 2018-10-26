@@ -1262,7 +1262,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			#add_ideas = {	FRA_support_the_centre_focus }
-			add_stability = 0.05
+			add_stability = 0.1
 		}
 	}
 
@@ -1366,6 +1366,7 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = FRA_disjointed_government
 			set_rule = { can_send_volunteers = yes }
+			add_to_tech_sharing_group = commonwealth_research
 		}
 	}
 

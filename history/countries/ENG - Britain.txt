@@ -50,6 +50,12 @@ add_ideas = {
 	ENG_the_war_to_end_all_wars
 	george_v
 }
+	give_guarantee = HOL
+	give_guarantee = BEL
+	give_guarantee = POL
+	give_guarantee = LUX
+	give_guarantee = DEN
+	give_guarantee = NOR
 
 set_convoys = 1000
 

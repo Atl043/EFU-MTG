@@ -986,72 +986,6 @@ country_event = {
 			}
 		}
 	}
-	option = { # Support the Czechs
-		name = germany.40.b	
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0
-				is_in_faction_with = GER
-			}
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}				
-			modifier = {
-				factor = 3
-				has_government = communism
-				CZE = { has_government = communism }
-			}
-		}
-		if = {
-			limit = {
-				is_in_faction_with = GER
-				is_faction_leader = yes
-			}
-			remove_from_faction = GER
-		}
-		if = {
-			limit = {
-				is_in_faction_with = GER
-				is_faction_leader = no
-			}
-			GER = { remove_from_faction = ENG }
-		}
-		add_political_power = -200
-		add_opinion_modifier = { target = GER modifier = condemn_aggression }
-		effect_tooltip = {
-			GER = {
-				create_wargoal = {
-					type = take_state_focus
-					target = CZE
-					generator = { 69 }
-				}
-			}
-		}
-		if = {
-			limit = { CZE = { is_in_faction = no } }
-			add_to_faction = CZE
-		}
-		CZE = {
-			add_ai_strategy = {
-				type = alliance
-				id = "ENG"
-				value = 200
-			}
-		}
-		if = {
-			limit = { 
-				FRA = { 
-					NOT = { has_war_with = CZE } 
-				} 
-			}
-			FRA = { country_event = germany.42 }
-		}
-		CZE = {
-			add_opinion_modifier = { target = ENG modifier = offered_support }
-		}
-	}
 }
 
 # France (Britain Backs Down)
@@ -1776,6 +1710,67 @@ country_event = {
 	
 	is_triggered_only = yes
 	
+	
+	option = {
+		name = germany.55.b
+		add_political_power = -20
+		ai_chance = { 
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		trigger = {
+			664 = { is_owned_by = HUN }
+			HUN = {
+				is_friend_or_potential_friend_of_GER = yes
+			}
+			NOT = { has_global_flag = GER_HUN_CZE_split }
+		}
+		HUN = { country_event = germany.56 }
+		add_war_support = 0.1
+		if = {
+			limit = {
+				72 = {
+					OR = {
+						is_owned_by = CZE
+						is_owned_by = GER
+					}
+				}
+			}
+			POL = { transfer_state = 72 } # Give Poland Zaolzie
+		}
+		custom_effect_tooltip = end_of_czechoslovakia_mefo_bills_tt
+		add_to_variable = { var = GER_mefo_bill_counter value = -5 }
+		GER_mefo_bills_level_down = yes
+	}
+	option = {
+		name = germany.55.c
+		add_political_power = -50
+		ai_chance = { 
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		if = {
+			limit = { country_exists = CZE }
+			annex_country = { target = CZE }
+			add_war_support = 0.1
+		}
+		if = {
+			limit = { has_global_flag = GER_HUN_CZE_split }
+			HUN = { country_event = DOD_hungary.106 }
+		}
+		hidden_effect = {
+			country_event = { hours = 6 id = news.62 }
+		}
+		custom_effect_tooltip = end_of_czechoslovakia_mefo_bills_tt
+		add_to_variable = { var = GER_mefo_bill_counter value = -5 }
+		GER_mefo_bills_level_down = yes
+	}
 	option = {
 		name = germany.55.a
 		ai_chance = { factor = 80 }
@@ -1900,66 +1895,6 @@ country_event = {
 				add_manpower = 9876
 			}
 		}
-	}
-	option = {
-		name = germany.55.b
-		add_political_power = -20
-		ai_chance = { 
-			factor = 10
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		trigger = {
-			664 = { is_owned_by = HUN }
-			HUN = {
-				is_friend_or_potential_friend_of_GER = yes
-			}
-			NOT = { has_global_flag = GER_HUN_CZE_split }
-		}
-		HUN = { country_event = germany.56 }
-		add_war_support = 0.1
-		if = {
-			limit = {
-				72 = {
-					OR = {
-						is_owned_by = CZE
-						is_owned_by = GER
-					}
-				}
-			}
-			POL = { transfer_state = 72 } # Give Poland Zaolzie
-		}
-		custom_effect_tooltip = end_of_czechoslovakia_mefo_bills_tt
-		add_to_variable = { var = GER_mefo_bill_counter value = -5 }
-		GER_mefo_bills_level_down = yes
-	}
-	option = {
-		name = germany.55.c
-		add_political_power = -50
-		ai_chance = { 
-			factor = 10
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		if = {
-			limit = { country_exists = CZE }
-			annex_country = { target = CZE }
-			add_war_support = 0.1
-		}
-		if = {
-			limit = { has_global_flag = GER_HUN_CZE_split }
-			HUN = { country_event = DOD_hungary.106 }
-		}
-		hidden_effect = {
-			country_event = { hours = 6 id = news.62 }
-		}
-		custom_effect_tooltip = end_of_czechoslovakia_mefo_bills_tt
-		add_to_variable = { var = GER_mefo_bill_counter value = -5 }
-		GER_mefo_bills_level_down = yes
 	}
 
 	option = {
