@@ -75,7 +75,7 @@ set_technology = {
 	}
 }
 
-set_convoys = 80		# biggest merchant marine in the world
+set_convoys = 100		# biggest merchant marine in the world
 set_stability = 0.7
 
 set_politics = {

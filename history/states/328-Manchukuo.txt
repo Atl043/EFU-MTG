@@ -7,7 +7,7 @@ state={
 	state_category = rural
 
 	resources={
-		aluminium=7 # was: 10
+		aluminium=20 # was: 10
 	}
 
 	history={
@@ -17,10 +17,10 @@ state={
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 4
-			#industrial_complex = 1
+			industrial_complex = 1
 		}
 		victory_points = {
-			4572 1
+			4572 15
 		}
 		victory_points = {
 			10433 1 

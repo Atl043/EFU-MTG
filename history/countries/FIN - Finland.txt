@@ -19,7 +19,7 @@ set_technology = {
 	early_heavy_cruiser = 1
 }
 
-set_convoys = 5
+set_convoys = 100
 
 add_ideas = {
 	limited_conscription

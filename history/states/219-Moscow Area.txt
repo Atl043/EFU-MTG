@@ -6,13 +6,13 @@ state={
 	
 	state_category = megalopolis
 	resources={
-		steel=16 # was: 28
+		steel=28 # was: 28
 	}
 
 	history={
 		owner = SOV
 		victory_points = {
-			6380 50 
+			6380 70
 		}
 		buildings = {
 			infrastructure = 8

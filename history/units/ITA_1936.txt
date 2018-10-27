@@ -828,14 +828,16 @@ air_wings = {
 	# 1a Squadra Aerea - SQA1 (Milan)
 	158 = { 
 		# 2a Divisione Aerea 'Borea'
-		fighter_equipment_0 = { 
-			amount = 80 
+		fighter_equipment_1 = { 
+			amount = 100
+			creator = "GER"
 			owner = "ITA" 
 		} 
 		# 4a Divisione Aerea 'Drago'
 		# 6a Divisione Aerea 'Falco'
-		tac_bomber_equipment_0 = { 
-			amount = 128 
+		tac_bomber_equipment_1 = { 
+			amount = 100
+			creator = "GER"
 			owner = "ITA" 
 		} 
 	} 
@@ -843,13 +845,15 @@ air_wings = {
 	# 3a Squadra Aerea - SQA3 (Rome)
 	2 = { 
 		# 5a Divisione Aerea 'Eolo'
-		tac_bomber_equipment_0 = { 
-			amount = 64 
+		tac_bomber_equipment_1 = { 
+			amount = 100
+			creator = "GER"
 			owner = "ITA" 
 		} 
 		# 8a Brigata Aerea 'Astore'
-		fighter_equipment_0 = { 
-			amount = 80 
+		fighter_equipment_1 = { 
+			amount = 100
+			creator = "GER"
 			owner = "ITA" 
 		} 
 	} 
@@ -857,13 +861,14 @@ air_wings = {
 	# 2a Squadra Aerea - SQA2 (Palermo)
 	115 = { 
 		# 1a Divisione Aerea 'Aquila'
-		fighter_equipment_0 = { 
-			amount = 80 
+		fighter_equipment_1 = { 
+			amount = 100
+			creator = "GER"
 			owner = "ITA" 
 		} 
 		# 3a Divisione Aerea 'Centauro'
 		tac_bomber_equipment_0 = { 
-			amount = 32 
+			amount = 100
 			owner = "ITA" 
 		} 
 	} 
@@ -872,7 +877,7 @@ air_wings = {
 	156 = { 
 		# 9a Divisione Aerea 'Leone'
 		nav_bomber_equipment_1 = { 
-			amount = 48 
+			amount = 50 
 			owner = "ITA" 
 		} 
 	} 
@@ -881,7 +886,7 @@ air_wings = {
 	114 = { 
 		# 10a Brigata Aerea 'Marte'
 		nav_bomber_equipment_1 = { 
-			amount = 24 
+			amount = 100
 			owner = "ITA" 
 		} 
 	} 
@@ -890,29 +895,34 @@ air_wings = {
 	# Aeronautica della Libia (Tripoli)
 	448 = { 
 		# 14a Brigata Aerea 'Rex'
-		fighter_equipment_0 = { 
-			amount = 20 
+		fighter_equipment_1 = { 
+			amount = 100
+			creator = "GER" 
 			owner = "ITA" 
 		} 
 		# 13a Divisione Aerea 'Pegaso'
-		tac_bomber_equipment_0 = { 
-			amount = 32 
+		tac_bomber_equipment_1 = { 
+			amount = 100
+			creator = "GER"
 			owner = "ITA" 
 		} 
 	} 
 
 	# Aeronautica dell'Africa Orientale (Eritrea)
 	550 = { 
-		fighter_equipment_0 = { 
-			amount = 40 
+		fighter_equipment_1 = { 
+			amount = 100
+			creator = "GER"
 			owner = "ITA" 
 		} 
-		tac_bomber_equipment_0 = { 
-			amount = 32 
+		tac_bomber_equipment_1 = { 
+			amount = 100
+			creator = "GER"
 			owner = "ITA" 
 		} 
 		CAS_equipment_1 = { 
-			amount = 48 
+			amount = 100 
+			
 			owner = "ITA" 
 		} 
 	} 
@@ -989,7 +999,7 @@ instant_effect = {
 			} 
 
 			requested_factories = 1 
-			progress = 0.20 
+			progress = 0.80
 			amount = 1 
 		} 
 
@@ -1001,7 +1011,29 @@ instant_effect = {
 			} 
 
 			requested_factories = 1 
-			progress = 0.20 
+			progress = 0.80
+			amount = 1 
+		} 
+		add_equipment_production = { 
+			equipment = { 
+				type = battleship_2 # Caio Duilio Class
+				creator = "ITA" 
+			} 
+
+			requested_factories = 1 
+			progress = 0.30
+			amount = 1 
+		} 
+
+		# BB: "RN Giulio Cesare" (Refitted & Recommissioned: 3-Jun, 1937)
+		add_equipment_production = { 
+			equipment = { 
+				type = battleship_2 # Caio Duilio Class
+				creator = "ITA" 
+			} 
+
+			requested_factories = 1 
+			progress = 0.30
 			amount = 1 
 		} 
 
@@ -1028,7 +1060,73 @@ instant_effect = {
 
 			requested_factories = 2 
 			progress = 0.70 
-			amount = 2 
+			amount = 1
+		} 
+		add_equipment_production = { 
+			equipment = { 
+				type = destroyer_1 
+				creator = "ITA" 
+				version_name = "Maestrale Class" 
+			} 
+
+			requested_factories = 2 
+			progress = 0.70 
+			amount = 1
+		} 
+		add_equipment_production = { 
+			equipment = { 
+				type = destroyer_1 
+				creator = "ITA" 
+				version_name = "Maestrale Class" 
+			} 
+
+			requested_factories = 2 
+			progress = 0.70 
+			amount = 1
+		} 
+		add_equipment_production = { 
+			equipment = { 
+				type = destroyer_1 
+				creator = "ITA" 
+				version_name = "Maestrale Class" 
+			} 
+
+			requested_factories = 2 
+			progress = 0.70 
+			amount = 1
+		} 
+		add_equipment_production = { 
+			equipment = { 
+				type = destroyer_1 
+				creator = "ITA" 
+				version_name = "Maestrale Class" 
+			} 
+
+			requested_factories = 2 
+			progress = 0.70 
+			amount = 1
+		} 
+		add_equipment_production = { 
+			equipment = { 
+				type = destroyer_1 
+				creator = "ITA" 
+				version_name = "Maestrale Class" 
+			} 
+
+			requested_factories = 2 
+			progress = 0.70 
+			amount = 1
+		} 
+		add_equipment_production = { 
+			equipment = { 
+				type = destroyer_1 
+				creator = "ITA" 
+				version_name = "Maestrale Class" 
+			} 
+
+			requested_factories = 2 
+			progress = 0.70 
+			amount = 1
 		} 
 
 		# SS: "RSmg Enrico Tazzoli"

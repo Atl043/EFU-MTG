@@ -17,6 +17,7 @@ set_technology = {
 set_convoys = 100
 add_ideas = {
 	free_trade
+	disarmed_nation
 }
 
 1939.1.1 = {
