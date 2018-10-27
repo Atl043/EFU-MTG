@@ -6322,7 +6322,6 @@ political_actions = {
 			}
 			is_in_faction = no
 			NOT = {
-				has_completed_focus = CHI_opposition
 			}
 		}
 		visible = {

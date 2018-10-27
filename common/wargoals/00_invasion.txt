@@ -22,7 +22,7 @@ wargoal_types = {
 		take_states_limit = 5
 		take_states_cost = -20
 		
-		expire = 60
+		expire = 120
 		
 		threat = 2
 	}

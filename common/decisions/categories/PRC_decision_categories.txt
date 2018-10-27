@@ -5,8 +5,7 @@ PRC_infiltrate_nationalist_areas = {
 		is_potentially_communist_china = yes
 	}
 
-	visible = {
-		has_completed_focus = PRC_infiltration		
+	visible = {	
 	}
 }
 
