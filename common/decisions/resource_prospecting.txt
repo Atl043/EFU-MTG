@@ -45,7 +45,7 @@ prospect_for_resources = {
 			597 = {
 				add_resource = {
 					type = aluminium
-					amount = 12
+					amount = 25
 				}
 			}
 		}
@@ -247,7 +247,7 @@ prospect_for_resources = {
 			325 = {
 				add_resource = {
 					type = aluminium
-					amount = 12
+					amount = 25
 				}
 			}
 		}
@@ -298,7 +298,7 @@ prospect_for_resources = {
 			328 = {
 				add_resource = {
 					type = aluminium
-					amount = 12
+					amount = 25
 				}
 			}
 		}
@@ -349,7 +349,7 @@ prospect_for_resources = {
 			605 = {
 				add_resource = {
 					type = aluminium
-					amount = 12
+					amount = 25
 				}
 			}
 		}
@@ -611,7 +611,7 @@ prospect_for_resources = {
 			671 = {
 				add_resource = {
 					type = aluminium
-					amount = 6
+					amount = 20
 				}
 			}
 		}
@@ -664,7 +664,7 @@ prospect_for_resources = {
 			336 = {
 				add_resource = {
 					type = aluminium
-					amount = 12
+					amount = 20
 				}
 			}
 		}
@@ -779,7 +779,7 @@ prospect_for_resources = {
 			450 = {
 				add_resource = {
 					type = oil
-					amount = 4
+					amount = 8
 				}
 			}
 		}
@@ -889,7 +889,7 @@ prospect_for_resources = {
 			556 = {
 				add_resource = {
 					type = aluminium
-					amount = 8
+					amount = 16
 				}
 			}
 		}
@@ -948,7 +948,7 @@ prospect_for_resources = {
 			556 = {
 				add_resource = {
 					type = aluminium
-					amount = 4
+					amount = 8
 				}
 			}
 		}
@@ -3880,7 +3880,7 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 40
+		days_remove = 20
 
 		modifier = {
 			civilian_factory_use = 7
@@ -3894,7 +3894,7 @@ prospect_for_resources = {
 			291 = {
 				add_resource = {
 					type = oil
-					amount = 30
+					amount = 10
 				}
 			}
 		}
@@ -3929,7 +3929,7 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 40
+		days_remove = 20
 
 		modifier = {
 			civilian_factory_use = 7
@@ -3943,7 +3943,7 @@ prospect_for_resources = {
 			291 = {
 				add_resource = {
 					type = oil
-					amount = 35
+					amount = 15
 				}
 			}
 		}
