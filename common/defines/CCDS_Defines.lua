@@ -47,6 +47,7 @@ NDefines.NProduction.MIN_FIELD_TO_TRAINING_MANPOWER_RATIO = 0.9
 NDefines.NProduction.CAPITULATE_STOCKPILES_RATIO = 0.75
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 5
+NDefines.NProduction.ANNEX_FIELD_EQUIPMENT_RATIO = 1.0
 
 NDefines.NBuildings.MAX_SHARED_SLOTS = 40
 NDefines.NBuildings.INFRA_TO_SUPPLY = 3
@@ -56,7 +57,8 @@ NDefines.NTechnology.BASE_TECH_COST = 100
 
 NDefines.NPolitics.DEFAULT_OCCUPATION_POLICY = 3
 
-
+NDefines.NMilitary.RECON_SKILL_IMPACT = 8
+NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.6
 NDefines.NMilitary.LEADER_SKILL_FACTOR = 0.25
 NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0.04
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.15
@@ -65,7 +67,7 @@ NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0.5
 NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 1.5
 NDefines.NMilitary.XP_GAIN_PER_OVERRUN_UNIT = 10.0
 NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 10.0
-NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 200
+NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 0 -- 200 before
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0
@@ -91,13 +93,18 @@ NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.01
 NDefines.NMilitary.STRATEGIC_SPEED_BASE = 6.0
 NDefines.NMilitary.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.018
 
-
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.2  -- Higher value = more shot down planes base 0.1
+NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.075	-- 0.1 base Anti Air Gun hit chance
 NDefines.NAir.AIR_WING_MAX_SIZE = 1600
-NDefines.NAir.ACE_WING_SIZE_MAX_BONUS = 10
+NDefines.NAir.ACE_WING_SIZE_MAX_BONUS = 1
 NDefines.NAir.STRATEGIC_BOMBER_NUKE_AIR_SUPERIORITY = 0.90
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.0
 NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1.0
+NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER =	0.1	-- base 0.192 How much efficiency to regain per day. Gain applied hourly.
+NDefines.NAir.AIR_COMBAT_FINAL_DAMAGE_SCALE = 0.5 -- 0.015	 % how many max disrupted only planes are allowed to die in a single combat
+NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = 0.19---0.12	5x levels = 60% defense from bombing
+NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.66 -- .75 Maximum damage reduction factor applied to incoming air attacks against units with AA.
 
 
 NDefines.NNavy.COMBAT_CHASE_RESIGNATION_HOURS = 24  --- before 16 testing 18
