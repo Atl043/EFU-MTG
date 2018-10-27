@@ -331,8 +331,8 @@ leader_traits = {
 			has_trait = brilliant_strategist
 		}
 		cost = 1000
-		modifier = {
-			attack = 0.1
+		field_marshal_modifier = {
+			offence = 0.1
 		}
 		custom_effect_tooltip = INCREASED_ASSAULT_AND_SHOCK_CHANCE
 		ai_will_do = {
