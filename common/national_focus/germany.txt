@@ -21,7 +21,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
-		
+		available = { has_completed_focus = GER_rhineland }
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_four_year_plan
@@ -982,7 +982,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		available = { has_completed_focus = GER_rhineland }
 		complete_tooltip = {
 			air_experience = 25
 			add_tech_bonus = {
@@ -1209,7 +1209,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		available = { has_completed_focus = GER_rhineland }
 		completion_reward = {
 			# Balance research bonus for 2 techs under land_doctrine
 			
@@ -1232,11 +1232,6 @@ focus_tree = {
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = GER_army_innovation }
 		available = {
-			NOT = { has_completed_focus = GER_anti_soviet_pact }
-			OR = {
-				NOT = { has_completed_focus = GER_bulwark_against_bolshevism }
-				NOT = { has_completed_focus = GER_the_great_red_menace }
-			}
 		}
 		#cancel = { 
 		#	OR = {
@@ -1248,8 +1243,6 @@ focus_tree = {
 			OR = {
 				has_war_with = SOV
 				NOT = { country_exists = SOV }
-				has_completed_focus = GER_bulwark_against_bolshevism
-				has_completed_focus = GER_the_great_red_menace
 			}
 		}
 
@@ -1462,7 +1455,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			SOV = { add_opinion_modifier = { target = ROOT modifier = pact_against_us } }
-			add_named_threat = { threat = 2 name = GER_anti_comitern_pact }
 			every_other_country = {
 				limit = {
 					NOT = { tag = GER }
@@ -2519,7 +2511,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		available = { has_completed_focus = GER_rhineland }
 		available_if_capitulated = yes
 
 		bypass = {
@@ -3004,6 +2996,11 @@ focus_tree = {
 			has_army_manpower = { size > 749999 } #ca 80 div
 			YUG = { owns_state = 102 }
 			NOT = { YUG = { is_puppet_of = GER } }
+		}
+		bypass = { 
+			OR = {
+				NOT {YUG = { owns_state = 102 }}
+			}
 		}
 		cancel_if_invalid = no
 		x = 3

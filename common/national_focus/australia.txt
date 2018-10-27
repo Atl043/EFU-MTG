@@ -2899,6 +2899,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_political_power = 120
 			modify_tech_sharing_bonus = {
  				id = commonwealth_research
  				bonus = 0.03
