@@ -28,7 +28,7 @@ buildings = {
 	industrial_complex = {
 		show_on_map = 6
 		base_cost = 10800
-		base_cost_conversion = 9000
+		base_cost_conversion = 6000
 		general_production = 1
 		icon_frame = 1
 		max_level = 40
@@ -106,7 +106,7 @@ buildings = {
 	
 	anti_air_building = {
 		show_on_map = 3
-		base_cost = 250
+		base_cost = 500
 		per_level_extra_cost = 250
 		icon_frame = 9
 		anti_air = yes
@@ -115,7 +115,6 @@ buildings = {
 		max_level = 5 # This is the max unlock level
 		damage_factor = 0.01
 		value = 1
-		infrastructure_construction_effect = yes
 	}
 
 	synthetic_refinery = {
@@ -129,7 +128,7 @@ buildings = {
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
-		damage_factor = 0.5
+		damage_factor = 0.1
 	}
 
 	radar_station = {
