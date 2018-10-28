@@ -115,7 +115,7 @@ ideas = {
 			}
 			
 			
-			traits = { army_chief_drill_2 }
+			traits = { army_chief_offensive_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -252,6 +252,29 @@ ideas = {
 			
 
 			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	tank_manufacturer = { 
+		
+		designer = yes
+		
+		tgaTank = {
+
+			picture = generic_tank_manufacturer_1
+			allowed = {
+				original_tag = MEX
+			}
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { fast_tank_manufacturer }
 			
 			ai_will_do = {
 				factor = 1
