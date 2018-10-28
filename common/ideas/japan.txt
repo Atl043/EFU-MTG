@@ -1281,7 +1281,7 @@ ideas = {
 				original_tag = JAP
 			}
 			
-			traits = { captain_of_industry }
+			traits = { quartermaster_general }
 		}
 
 		takuo_godo = {
