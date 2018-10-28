@@ -20,7 +20,7 @@ ideas = {
 				original_tag = BRA
 			}
 			
-			traits = { compassionate_gentleman }
+			traits = { captain_of_industry }
 		}
 
 		BRA_afranio_de_mello_franco = {

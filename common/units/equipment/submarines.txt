@@ -39,7 +39,6 @@ equipments = {
 		max_strength = 10
 		
 		port_capacity_usage = 0.5
-		
 		build_cost_ic = 450
 		resources = {
 			oil = 1
@@ -94,7 +93,6 @@ equipments = {
 		max_strength = 20
 		
 		port_capacity_usage = 0.5
-		
 		build_cost_ic = 500
 		resources = {
 			oil = 1
@@ -134,7 +132,6 @@ equipments = {
 		max_strength = 30
 
 		port_capacity_usage = 0.5
-		
 		build_cost_ic = 550
 		resources = {
 			oil = 2
@@ -174,7 +171,6 @@ equipments = {
 		max_strength = 35
 		
 		port_capacity_usage = 0.5
-		
 		build_cost_ic = 600
 		resources = {
 			oil = 2

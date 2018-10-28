@@ -348,7 +348,7 @@ ideas = {
 				original_tag = ENG
 			}
 			
-			traits = { backroom_backstabber }
+			traits = { captain_of_industry }
 		}
 
 		ENG_maxwell_aitken = {
@@ -689,7 +689,7 @@ ideas = {
 				naval_equipment = 0.10
 			}
 			
-			traits = { convoy_escort_naval_manufacturer }
+			traits = { yarrow_design }
 
 		}
 		
@@ -738,7 +738,7 @@ ideas = {
 				naval_equipment = 0.10
 			}
 			
-			traits = { coastal_defence_naval_manufacturer }
+			traits = { med_fleet_naval_manufacturer }
 		}	
 	}
 	

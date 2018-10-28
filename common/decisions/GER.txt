@@ -993,53 +993,6 @@ GER_military_buildup = {
 
 		
 	}
-
-	GER_jaegernotprogramm = {
-
-		icon = generic_air
-
-		available = {
-			has_war = yes
-			AND = {
-				has_deployed_air_force_size = {
-					type = fighter
-					size < 750
-				}
-				has_equipment = {
-					fighter_equipment < 250
-				}
-			}
-			NOT = {
-				has_idea = GER_jaegernotprogramm
-			}
-		}
-
-		cost = 50
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		visible = {
-			has_war = yes
-			AND = {
-				has_deployed_air_force_size = {
-					type = fighter
-					size < 750
-				}
-				has_equipment = {
-					fighter_equipment < 250
-				}
-			}
-			NOT = {
-				has_idea = GER_jaegernotprogramm
-			}
-		}
-
-		complete_effect = {
-			add_timed_idea = { idea = GER_jaegernotprogramm days = 180 }
-		}
-	}
 }
 
 special_projects = {

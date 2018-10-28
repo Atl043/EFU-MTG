@@ -1361,9 +1361,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = special_forces
 			add_tech_bonus = {
 				name = uk_amphibious_focus
-				bonus = 0.5
+				bonus = 0.75
 				uses = 1
 				category = marine_tech
 			}
@@ -1874,8 +1875,6 @@ focus_tree = {
 	focus = {
 		id = uk_asia_focus
 		prerequisite = { focus = uk_colonial_focus }
-
-		available = { 336 = { is_controlled_by = ENG } }
 
 		icon = GFX_goal_generic_construct_civilian
 		x = 16
