@@ -28,7 +28,7 @@ set_technology = {
 }
 
 set_convoys = 200
-set_stability = 0.65
+set_stability = 0.75
 set_war_support = 0.71
 1939.1.1 = {
 
@@ -86,7 +86,7 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 20
+			popularity = 0
 		}
 
 		fascism = {
@@ -94,12 +94,12 @@ set_politics = {
 		}
 		
 		communism = {
-			popularity = 20
+			popularity = 0
 			#banned = no #default is no
 		}
 		
 		neutrality = {
-			popularity = 20
+			popularity = 60
 		}
 	}
 	
