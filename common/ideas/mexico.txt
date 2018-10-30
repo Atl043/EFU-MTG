@@ -204,7 +204,7 @@ ideas = {
 			}
 			
 			
-			traits = { air_strategic_bombing_2 }
+			traits = { army_logistics_2 }
 			
 			ai_will_do = {
 				factor = 1
