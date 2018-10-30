@@ -267,7 +267,7 @@ create_corps_commander = {
 	skill = 4
 	attack_skill = 4
 	defense_skill = 4
-	planning_skill = 2
+	planning_skill = 4
 	logistics_skill = 4
 }
 
@@ -285,7 +285,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Lajos Veress"
 	gfx = GFX_Portrait_hungary_lajos_veress
-	traits = { armor_officer }
+	traits = { armor_officer panzer_leader}
 	skill = 2
 	attack_skill = 2
 	defense_skill = 1

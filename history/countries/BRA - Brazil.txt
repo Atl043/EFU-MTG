@@ -183,10 +183,10 @@ set_convoys = 40
 create_corps_commander = {
 	name = "Eurico Gaspar Dutra"
 	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
-	traits = { ranger  }
+	traits = { ranger panzer_leader  }
 	skill = 3
-	attack_skill = 3
-	defense_skill = 3
+	attack_skill = 4
+	defense_skill = 4
 	planning_skill = 3
 	logistics_skill = 3
 }

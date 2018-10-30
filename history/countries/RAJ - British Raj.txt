@@ -226,8 +226,8 @@ create_corps_commander = {
 	gfx = "GFX_RAJ_frank_messervy"
 	traits = { hill_fighter }
 	skill = 3
-	attack_skill = 2
-	defense_skill = 2
+	attack_skill = 4
+	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 3
 }

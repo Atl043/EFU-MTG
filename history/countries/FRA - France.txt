@@ -138,7 +138,7 @@ set_technology = {
 	}
 }
 
-set_convoys = 300
+set_convoys = 600
 
 
 set_politics = {
@@ -223,7 +223,7 @@ create_corps_commander = {
 	traits = { trickster brilliant_strategist cavalry_officer war_hero }
 	skill = 4
 	attack_skill = 4
-	defense_skill = 2
+	defense_skill = 4
 	planning_skill = 4
 	logistics_skill = 3
 }

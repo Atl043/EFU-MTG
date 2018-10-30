@@ -295,7 +295,7 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Dwight D. Eisenhower"
 	picture = "Portrait_USA_Dwight_D_Eisenhower.dds"
-	traits = { logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
+	traits = { logistics_wizard organizer offensive_doctrine trait_cautious panzer_leader politically_connected brilliant_strategist }
 	skill = 5
 	id = 602
 	attack_skill = 4
@@ -344,7 +344,7 @@ create_field_marshal = {
 	name = "Douglas MacArthur"
 	id = 57
 	picture = "Portrait_USA_Douglas_MacArthur.dds"
-	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
+	traits = {  offensive_doctrine brilliant_strategist jungle_rat media_personality politically_connected  trait_engineer commando infantry_leader naval_invader }
 	skill = 4
 
 	attack_skill = 4

@@ -294,12 +294,12 @@ create_corps_commander = {
 	name = "Konstantin Rokossovsky"
 	id = 402
 		picture = "Portrait_Soviet_Konstantin_Rokossovsky.dds"
-	traits = {  armor_officer trait_cautious brilliant_strategist  trait_engineer panzer_leader}
+	traits = {  armor_officer brilliant_strategist  trait_engineer panzer_leader media_personality war_hero}
 	skill = 4
 	
 	attack_skill = 6
 	defense_skill = 4
-	planning_skill = 2
+	planning_skill = 4
 	logistics_skill = 4
 }
 
@@ -390,7 +390,7 @@ create_field_marshal = {
 	name = "Mikhail Tukhachevsky"
 	id = 401
 		picture = "Portrait_Soviet_Mikhail_Tukhachevsky.dds"
-	traits = { offensive_doctrine brilliant_strategist career_officer infantry_officer trait_reckless }
+	traits = { offensive_doctrine career_officer infantry_officer trait_reckless }
 	skill = 4
 
 	
@@ -614,7 +614,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Markian Popov"
 		picture = "Portrait_Soviet_Matkian_Popov.dds"
-	traits = { winter_specialist infantry_officer brilliant_strategist }
+	traits = { winter_specialist infantry_officer  }
 	skill = 2
 
 	
@@ -702,7 +702,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Vasily Chuikov"
 		picture = "Portrait_Soviet_Vasily_Chuikov.dds"
-	traits = { brilliant_strategist career_officer }
+	traits = { career_officer }
 	skill = 1
 
 	
