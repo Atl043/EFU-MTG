@@ -232,7 +232,7 @@ political_actions = {
             OR = {
                 original_tag = ENG
                 original_tag = USA
-                original_tag = FRA
+                original_tag = NZL
                 original_tag = CAN
 				original_tag = AST
 				original_tag = BRA
@@ -281,7 +281,7 @@ political_actions = {
             OR = {
                 original_tag = ENG
                 original_tag = USA
-                original_tag = FRA
+                original_tag = NZL
                 original_tag = CAN
 				original_tag = AST
 				original_tag = BRA
@@ -458,7 +458,7 @@ political_actions = {
 		}
 
 		days_remove = -1
-		cost = 100
+		cost = 50
 
 		complete_effect = {
 			hidden_effect = {
@@ -508,7 +508,7 @@ political_actions = {
 		}
 
 		days_remove = -1
-		cost = 100
+		cost = 50
 
 		complete_effect = {
 			hidden_effect = {
@@ -558,7 +558,7 @@ political_actions = {
 		}
 
 		days_remove = -1
-		cost = 100
+		cost = 60
 
 		complete_effect = {
 			hidden_effect = {
@@ -604,7 +604,7 @@ political_actions = {
 		}
 
 		days_remove = 360
-		cost = 150
+		cost = 100
 
 		ai_will_do = {
 			factor = 0
@@ -627,7 +627,7 @@ political_actions = {
 		}
 
 		days_remove = 360
-		cost = 150
+		cost = 100
 
 		ai_will_do = {
 			factor = 0
@@ -650,7 +650,7 @@ political_actions = {
 		}
 
 		days_remove = 360
-		cost = 150
+		cost = 100
 
 		ai_will_do = {
 			factor = 0
@@ -673,30 +673,7 @@ political_actions = {
 		}
 
 		days_remove = 360
-		cost = 150
-
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	show_music_selection = {
-
-		icon = GFX_music_decision
-
-		allowed = {
-		}
-
-		available = {
-		}
-
-		visible = {
-			has_country_flag = hide_music_selection
-		}
-
-		complete_effect = {
-			clr_country_flag = hide_music_selection
-		}
+		cost = 100
 
 		ai_will_do = {
 			factor = 0

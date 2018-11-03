@@ -1,5 +1,26 @@
 political_actions = {
 
+	Puppet_Indonesia = {
+		ai_will_do = { factor = 0 }
+		cost = 25
+
+		visible = {
+			tag = ENG
+			country_exists = INS
+			ENG = { has_war_with = JAP }
+		}
+
+		complete_effect = {
+			INS = {
+					set_autonomy = {
+						target = INS
+						autonomy_state = autonomy_free
+					}
+				}
+			ENG = { puppet = INS }
+		}
+	}
+
 	hold_blood_toil_tears_sweat_speech = {
 
 		icon = generic_political_discourse
@@ -55,7 +76,7 @@ political_actions = {
 			}
 		}
 
-		cost = 50
+		cost = 25
 
 		fire_only_once = yes
 
@@ -94,7 +115,7 @@ political_actions = {
 			FRA = { has_capitulated = yes }
 		}
 
-		cost = 50
+		cost = 25
 
 		fire_only_once = yes
 
@@ -174,7 +195,7 @@ political_actions = {
 			POR = { is_in_faction = no }
 		}
 
-		cost = 100
+		cost = 1000
 		
 		visible = {
 			has_war = yes

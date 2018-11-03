@@ -2,7 +2,7 @@
 
 oob = "JAP_1936"
 
-set_stability = 0.3 #baseline, THE EMPEROR PROTECTS
+set_stability = 0.35 #baseline, THE EMPEROR PROTECTS
 set_war_support = 0.8
 
 set_research_slots = 4
@@ -10,7 +10,7 @@ set_research_slots = 4
 add_ideas = {
 	state_shintoism
 	limited_exports
-	volunteer_only
+	limited_conscription
 	partial_economic_mobilisation
 
 	JAP_zaibatsus

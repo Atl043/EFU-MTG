@@ -51,6 +51,8 @@ weather_sandstorm = { # on Region
 	air_bombing_targetting = -1
 	local_org_regain = -0.5
 	air_mission_efficiency = -0.5
+	army_speed_factor = -0.7
+	army_attack_factor = -0.7
 }
 weather_mud = { # on Province
 	attrition = 0.7
