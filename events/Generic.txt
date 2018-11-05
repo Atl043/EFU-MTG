@@ -950,7 +950,6 @@ country_event = {
 					has_opinion = { target = FROM value > -25 }
 					NOT = { has_opinion = { target = FROM value > 0 } }
 				}
-				add_political_power = -5
 			}
 			if = {
 				limit = {
@@ -958,11 +957,9 @@ country_event = {
 					NOT = { has_opinion = { target = FROM value > 50 } }
 	
 				}
-				add_political_power = -10
 			}
 			if = {
 				limit = { has_opinion = { target = FROM value > 50 } }
-				add_political_power = -15
 			}
 		}
 		if = {
@@ -975,7 +972,6 @@ country_event = {
 					has_opinion = { target = FROM value > -25 }
 					NOT = { has_opinion = { target = FROM value > 0 } }
 				}
-				add_political_power = -10
 			}
 			if = {
 				limit = {
@@ -983,11 +979,9 @@ country_event = {
 					NOT = { has_opinion = { target = FROM value > 50 } }
 	
 				}
-				add_political_power = -20
 			}
 			if = {
 				limit = { has_opinion = { target = FROM value > 50 } }
-				add_political_power = -30
 			}
 		}
 		if = {
@@ -1000,7 +994,6 @@ country_event = {
 					has_opinion = { target = FROM value > -25 }
 					NOT = { has_opinion = { target = FROM value > 0 } }
 				}
-				add_political_power = -15
 			}
 			if = {
 				limit = {
@@ -1008,11 +1001,9 @@ country_event = {
 					NOT = { has_opinion = { target = FROM value > 50 } }
 	
 				}
-				add_political_power = -30
 			}
 			if = {
 				limit = { has_opinion = { target = FROM value > 50 } }
-				add_political_power = -45
 			}
 		}
 		if = {
@@ -1025,7 +1016,6 @@ country_event = {
 					has_opinion = { target = FROM value > -25 }
 					NOT = { has_opinion = { target = FROM value > 0 } }
 				}
-				add_political_power = -20
 			}
 			if = {
 				limit = {
@@ -1033,11 +1023,9 @@ country_event = {
 					NOT = { has_opinion = { target = FROM value > 50 } }
 	
 				}
-				add_political_power = -40
 			}
 			if = {
 				limit = { has_opinion = { target = FROM value > 50 } }
-				add_political_power = -60
 			}
 		}
 		if = {
@@ -1049,7 +1037,6 @@ country_event = {
 					has_opinion = { target = FROM value > -25 }
 					NOT = { has_opinion = { target = FROM value > 0 } }
 				}
-				add_political_power = -25
 			}
 			if = {
 				limit = {
@@ -1057,11 +1044,9 @@ country_event = {
 					NOT = { has_opinion = { target = FROM value > 50 } }
 	
 				}
-				add_political_power = -50
 			}
 			if = {
 				limit = { has_opinion = { target = FROM value > 50 } }
-				add_political_power = -75
 			}
 		}
 		FROM = {
@@ -1265,7 +1250,7 @@ unit_leader_event = {
 			FROM = {
 				add_timed_unit_leader_trait = {
 					trait = sick
-					days = 30
+					days = 1
 				}
 			}
 		}
@@ -1288,7 +1273,7 @@ country_event = {
 			FROM = {
 				add_timed_unit_leader_trait = {
 					trait = wounded
-					days = 90
+					days = 7
 				}
 			}
 		}

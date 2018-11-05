@@ -350,7 +350,6 @@ country_event = {
 			ideology = democratic
 			popularity = 0.05
 		}
-		add_political_power = -80
 	}
 }
 
@@ -419,7 +418,6 @@ country_event = {
 				can_lose_unity = no
 			}
 		}
-		add_stability = -0.05
 		add_popularity = {
 			ideology = democratic
 			popularity = 0.03
@@ -493,7 +491,6 @@ country_event = {
 				can_lose_unity = no
 			}
 		}
-		add_stability = -0.05
 		add_popularity = {
 			ideology = democratic
 			popularity = 0.03

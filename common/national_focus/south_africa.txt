@@ -324,7 +324,6 @@ focus_tree = {
 
 		available = {
 			is_subject_of = ENG
-			ENG = { has_war = no }
 		}
 
 		bypass = {
@@ -340,7 +339,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		add_political_power = 120
+			add_political_power = 120
 		}
 	}
 
