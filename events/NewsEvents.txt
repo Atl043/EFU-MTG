@@ -12927,3 +12927,50 @@ news_event = {
 		}
 	}
 }
+
+# ITALY PIZZA TIME
+news_event = {
+	id = news.334
+	title = news.334.t
+	desc = news.334.d
+	picture = GFX_italy_Pizza_Time_news
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.334.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = FRA
+				TAG = ENG
+				is_in_faction_with = ITA
+			}
+		}
+	}
+	option = {
+		name = news.334.b
+		trigger = { TAG = GER }
+	}
+	option = {
+		name = news.334.c
+		trigger = { TAG = FRA }
+	}
+	option = {
+		name = news.334.e
+		trigger = { TAG = ENG }
+	}
+	option = {
+		name = news.334.d
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = FRA
+				TAG = ENG
+			}
+			is_in_faction_with = ITA
+		}
+	}
+}
