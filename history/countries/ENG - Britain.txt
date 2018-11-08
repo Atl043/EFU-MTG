@@ -67,6 +67,7 @@ if = {
 	set_autonomy = {
 		target = MAL
 		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.01
 	}
 	set_autonomy = {
 		target = RAJ
