@@ -12,6 +12,7 @@ set_technology = {
 add_ideas = {
 	free_trade
 }
+set_convoys = 150
 1939.1.1 = {
 
 	add_political_power = 1198
@@ -66,7 +67,6 @@ add_ideas = {
 	}
 }
 
-set_convoys = 10
 set_politics = {
 
 	parties = {

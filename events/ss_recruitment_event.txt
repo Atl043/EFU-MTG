@@ -1616,10 +1616,10 @@ country_event = {
 					compare = greater_than_or_equals
 				}
 			}
-			start_civil_war = { #now it's a party...a nazi party 
-				ideology = neutrality
-				size = 0.4
-			}
+			#start_civil_war = { #now it's a party...a nazi party 
+			#	ideology = neutrality
+			#	size = 0.4
+			#}
 		}
 	}
 
@@ -1656,10 +1656,10 @@ country_event = {
 					compare = greater_than_or_equals
 				}
 			}
-			start_civil_war = { #now it's a party...a nazi party 
-				ideology = neutrality
-				size = 0.4
-			}
+			#start_civil_war = { #now it's a party...a nazi party 
+			#	ideology = neutrality
+			#	size = 0.4
+			#}
 		}
 	}
 	option = { #Government backs Wehrmacht
@@ -1680,12 +1680,12 @@ country_event = {
 			traits = {
 			}
 		}
-		set_party_name = { ideology = neutrality long_name = GER_neutrality_party_civil_war name = GER_neutrality_party_civil_war }
-		start_civil_war = {
-			ruling_party = neutrality
-			ideology = fascism
-			size = 0.4
-		}
+		#set_party_name = { ideology = neutrality long_name = GER_neutrality_party_civil_war name = GER_neutrality_party_civil_war }
+		#start_civil_war = {
+		#	ruling_party = neutrality
+		#	ideology = fascism
+		#	size = 0.4
+		#}
 		hidden_effect = {
 		}
 		set_variable = { var = wehrmacht_anger value = 0 }

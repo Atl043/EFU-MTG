@@ -64,6 +64,15 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+	easy_surrender = {
+		random = no
+		surrender_limit = -0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
 	ww_one_trauma = {
 		random = no
