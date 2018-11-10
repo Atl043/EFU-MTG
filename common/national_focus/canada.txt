@@ -881,7 +881,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = steel
-					amount = 20
+					amount = 15
 				}
 			}
 			random_owned_controlled_state = {
@@ -891,7 +891,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = steel
-					amount = 29
+					amount = 15
 				}
 			}
 			random_owned_controlled_state = {
@@ -1830,7 +1830,9 @@ focus_tree = {
 	focus = {
 		id = CAN_war_fueled_economy
 		icon = GFX_goal_generic_trade
-		prerequisite = { focus = CAN_national_steel_car }
+		prerequisite = { focus = CAN_national_steel_car}
+		prerequisite = { focus = CAN_if_day}
+		 
 		x = 1
 		y = 7
 		relative_position_id = CAN_defence_of_canada_regulations
@@ -3623,7 +3625,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_halifax_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25

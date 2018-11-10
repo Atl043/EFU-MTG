@@ -3193,7 +3193,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation2
-			num_of_civilian_factories_available_for_projects > 8
+			num_of_civilian_factories_available_for_projects > 2
 			owns_state = 220
 			controls_state = 220
 		}
@@ -3217,7 +3217,7 @@ prospect_for_resources = {
 		days_remove = SOV_kursk_steel_duration
 
 		modifier = {
-			civilian_factory_use = 9
+			civilian_factory_use = 3
 		}
 
 		ai_will_do = {
@@ -3276,7 +3276,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 11
+			num_of_civilian_factories_available_for_projects > 3
 			owns_state = 220
 			controls_state = 220
 		}
@@ -3304,7 +3304,7 @@ prospect_for_resources = {
 		days_remove = SOV_kursk_steel_duration_2
 
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 4
 		}
 
 		ai_will_do = {
@@ -3335,7 +3335,7 @@ prospect_for_resources = {
 			220 = {
 				add_resource = {
 					type = steel
-					amount = 25
+					amount = 40
 				}
 			}
 		}
@@ -3422,7 +3422,7 @@ prospect_for_resources = {
 			220 = {
 				add_resource = {
 					type = steel
-					amount = 25
+					amount = 30
 				}
 			}
 		}
@@ -3505,7 +3505,7 @@ prospect_for_resources = {
 			240 = {
 				add_resource = {
 					type = steel
-					amount = 25
+					amount = 40
 				}
 			}
 		}
@@ -3740,7 +3740,7 @@ prospect_for_resources = {
 			407 = {
 				add_resource = {
 					type = chromium
-					amount = 10
+					amount = 20
 				}
 			}
 		}
@@ -3793,7 +3793,7 @@ prospect_for_resources = {
 			407 = {
 				add_resource = {
 					type = chromium
-					amount = 15
+					amount = 25
 				}
 			}
 		}

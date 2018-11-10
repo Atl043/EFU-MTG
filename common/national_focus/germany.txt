@@ -976,7 +976,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_airforce
 		x = 12
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1095,7 +1095,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_strategic_air_effort }
 		x = 13
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 0.25
 		}
@@ -1103,6 +1103,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_political_power = 150
 			add_tech_bonus = {
 				name = op_dest_bonus
 				bonus = 0.5
@@ -1113,7 +1114,6 @@ focus_tree = {
 				name = bomber_bonus
 				bonus = 0.5
 				uses = 1
-				category = tactical_bomber
 				category = cas_bomber			
 			}
 		}

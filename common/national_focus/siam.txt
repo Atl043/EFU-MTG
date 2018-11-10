@@ -386,7 +386,6 @@ focus_tree = {
 	 x=7
 	 y=0
 	 cost = 10
-
 	 ai_will_do = {
 	  factor = 5
 	 }
@@ -573,7 +572,9 @@ focus_tree = {
 	 x=11
 	 y=0
 	 cost = 10
-
+	available = {
+		 SIA = { is_ai = no }
+	 }
 	 ai_will_do = {
 	  factor = 5
 	 }

@@ -106,7 +106,7 @@ NDefines.NAir.AIR_COMBAT_FINAL_DAMAGE_SCALE = 0.5 -- 0.015	 % how many max disru
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = 0.15---0.12	5x levels = 60% defense from bombing
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.66 -- .75 Maximum damage reduction factor applied to incoming air attacks against units with AA.
 
-NDefines.NNavy.NAVAL_SUPREMACY_CAN_INVADE = 0.85
+NDefines.NNavy.NAVAL_SUPREMACY_CAN_INVADE = 0.70
 NDefines.NNavy.COMBAT_CHASE_RESIGNATION_HOURS = 24  --- before 16 testing 18
 NDefines.NNavy.COMBAT_MIN_DURATION = 36
 NDefines.NNavy.COMBAT_SHIP_SPEED_TO_FIELD_FACTOR = 0.06

@@ -275,6 +275,7 @@ units = {
 		division_template = "Colonial Garrison"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
 		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
 	}
 	#Palestine & Transjordan
 	division= {	
@@ -283,6 +284,7 @@ units = {
 		division_template = "Colonial Garrison"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
 		start_experience_factor = 0.4
+		start_equipment_factor = 0.3
 
 	}
 	#Aden
@@ -292,6 +294,7 @@ units = {
 		division_template = "Colonial Garrison"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
 		start_experience_factor = 0.4
+		start_equipment_factor = 0.3
 
 	}
 	#Egypt
@@ -300,6 +303,7 @@ units = {
 		location = 7011
 		division_template = "Colonial Garrison"
 		start_experience_factor = 0.4
+		start_equipment_factor = 0.3
 
 	}
 	division= {	
@@ -307,6 +311,7 @@ units = {
 		location = 1155
 		division_template = "Colonial Garrison"
 		start_experience_factor = 0.4
+		start_equipment_factor = 0.3
 
 	}
 	division= {	
@@ -314,6 +319,7 @@ units = {
 		location = 4076
 		division_template = "Cavalry Brigade"
 		start_experience_factor = 0.4
+		start_equipment_factor = 0.3
 
 	}
 	#Gibraltar
@@ -322,6 +328,7 @@ units = {
 		location = 4135
 		division_template = "Colonial Garrison"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
 
 	}
 	
@@ -331,6 +338,7 @@ units = {
 		location = 12003
 		division_template = "Colonial Garrison"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
 
 	}
 	

@@ -203,7 +203,7 @@ set_technology = {
 }
 
 
-set_convoys = 50
+set_convoys = 400
 
 set_politics = {
 
@@ -213,11 +213,11 @@ set_politics = {
 		}
 
 		fascism = {
-			popularity = 2
+			popularity = 0
 		}
 		
 		communism = {
-			popularity = 88
+			popularity = 90
 		}
 	}
 	
