@@ -271,12 +271,12 @@ country_event = {
 	trigger = {
 		tag = FIN
 		has_war_with = SOV
-		surrender_progress > 0.25
+		surrender_progress > 0.12
 		has_civil_war = no
 		is_in_faction = no
 	}
 
-	mean_time_to_happen = { days = 20 }
+	mean_time_to_happen = { days = 0 }
 
 	fire_only_once = yes
 
@@ -299,18 +299,6 @@ country_event = {
 			}
 			transfer_state = 146
 			transfer_state = 147
-		}
-	}
-
-	#Never give up!
-	option = {
-		name = finland.7.b
-		ai_chance = {
-			base = 2
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
 		}
 	}
 }
