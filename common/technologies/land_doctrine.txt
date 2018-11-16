@@ -1957,7 +1957,7 @@ technologies = {
 
 		max_dig_in = 5
 
-		category_light_infantry = {
+		category_all_infantry = {
 			max_organisation = 5
 		}
 		

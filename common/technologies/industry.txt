@@ -941,11 +941,11 @@ technologies = {
 			modify_building_resources = {
 				building = synthetic_refinery
 				resource = oil
-				amount = 1
+				amount = 2
 			}
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 		start_year = 1943
 		
 		folder = {
@@ -1141,11 +1141,11 @@ technologies = {
 			modify_building_resources = {
 				building = synthetic_refinery
 				resource = rubber
-				amount = 1
+				amount = 2
 			}
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 		start_year = 1943
 		
 		folder = {

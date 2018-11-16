@@ -1,17 +1,21 @@
-﻿capital = 307
+﻿capital = 300
 
-oob = "VEN_1936"
-add_ideas = {
-	free_trade
-	extensive_conscription
-}
+oob = "URG_1936"
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
 	gw_artillery = 1
 	early_fighter = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
 }
 set_country_flag = monroe_doctrine
+add_ideas = {
+	limited_conscription
+	trade_unionism
+}
+set_convoys = 5
 
 1939.1.1 = {
 
@@ -28,11 +32,9 @@ set_country_flag = monroe_doctrine
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "VEN_1939"
+	oob = "URG_1939"
 	set_technology = {
-		interwar_artillery = 1
 		infantry_weapons1 = 1
-		infantry_weapons2 = 1
 		support_weapons = 1
 
 		#doctrines
@@ -55,7 +57,6 @@ set_country_flag = monroe_doctrine
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
 		oil_processing = 1
-		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1
@@ -63,12 +64,11 @@ set_country_flag = monroe_doctrine
 	}
 }
 
-set_convoys = 10
 set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 0
+			popularity = 97
 		}
 
 		fascism = {
@@ -76,37 +76,23 @@ set_politics = {
 		}
 		
 		communism = {
-			popularity = 0
+			popularity = 3
 			#banned = no #default is no
-		}
-		neutrality = { 
-			popularity = 100
 		}
 	}
 	
-	ruling_party = neutrality
-	last_election = "1936.1.1"
+	ruling_party = democratic
+	last_election = "1934.4.19"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Eleazar López Contreras"
-	desc = "POLITICS_ELEAZAR_LOPEZ_CONTRERAS_DESC"
-	picture = "Portrait_Venezuela_Elezar_Lopez_Contreras.dds"
+	name = "Gabriel Terra"
+	desc = "POLITICS_GABRIEL_TERRA_DESC"
+	picture = "GFX_portrait_uruguay_portrait_gabriel_terra"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Juan Bautista Fuenmayor"
-	desc = "POLITICS_JUAN_BAUTISTA_FUENMAYOR_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
-	expire = "1965.1.1"
-	ideology = marxism
+	ideology = liberalism
 	traits = {
 		#
 	}
@@ -117,22 +103,33 @@ create_country_leader = {
 
 		parties = {
 			democratic = { 
-				popularity = 5
+				popularity = 97
 			}
 
 			fascism = {
-				popularity = 80
+				popularity = 0
 			}
 			
 			communism = {
-				popularity = 15
+				popularity = 2
 				#banned = no #default is no
 			}
 		}
 		
-		ruling_party = fascism
-		last_election = "1936.1.1"
+		ruling_party = democratic
+		last_election = "1938.3.28"
 		election_frequency = 48
-		elections_allowed = no
+		elections_allowed = yes
+	}
+
+	create_country_leader = {
+		name = "Alfredo Baldomir Ferrari"
+		desc = "POLITICS_ALFREDO_BALDOMIR_FERRARI_DESC"
+		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
+		expire = "1965.1.1"
+		ideology = liberalism
+		traits = {
+			#
+		}
 	}
 }

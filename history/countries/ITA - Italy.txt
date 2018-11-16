@@ -16,6 +16,7 @@ add_ideas = {
 
 # Starting tech
 set_technology = {
+	interwar_antitank = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1		
@@ -32,9 +33,12 @@ set_technology = {
 	naval_bomber1 = 1
 	CAS1 = 1
 	early_submarine = 1
+	basic_submarine = 1
 	early_destroyer = 1
+	basic_destroyer = 1
 	early_light_cruiser = 1
 	early_heavy_cruiser = 1
+	basic_heavy_cruiser = 1
 	early_battleship = 1
 	basic_battleship = 1
 	early_battlecruiser = 1
@@ -209,9 +213,9 @@ create_field_marshal = {
 	traits = { defensive_doctrine old_guard politically_connected inflexible_strategist }
 	skill = 1
 	attack_skill = 1
-	defense_skill = 1
+	defense_skill = 2
 	planning_skill = 1
-	logistics_skill = 1
+	logistics_skill = 2
 }
 
 create_field_marshal = {
@@ -231,7 +235,7 @@ create_corps_commander = {
 	traits = {  old_guard trait_cautious career_officer }
 	skill = 2
 	rank = 1
-	attack_skill = 1
+	attack_skill = 2
 	defense_skill = 1
 	planning_skill = 2
 	logistics_skill = 3
@@ -240,8 +244,8 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Giovanni Messe"
 	picture = "Portrait_Italy_Giovanni_Messe.dds"
-	traits = {  armor_officer war_hero panzer_leader}
-	skill = 3
+	traits = { war_hero desert_fox skilled_staffer infantry_leader }
+	skill = 4
 	rank = 1
 	attack_skill = 4
 	defense_skill = 3
@@ -254,10 +258,10 @@ create_corps_commander = {
 	picture = "Portrait_Italy_Sebastiano_Visconti_Prasca.dds"
 	traits = { career_officer inflexible_strategist }
 	skill = 1
-	attack_skill = 1
-	defense_skill = 1
+	attack_skill = 2
+	defense_skill = 2
 	planning_skill = 1
-	logistics_skill = 1
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -265,8 +269,8 @@ create_corps_commander = {
 	picture = "Portrait_Italy_Ubaldo_Soddu.dds"
 	traits = { career_officer trait_cautious }
 	skill = 1
-	attack_skill = 2
-	defense_skill = 2
+	attack_skill = 1
+	defense_skill = 1
 	planning_skill = 1
 	logistics_skill = 1
 }
@@ -274,7 +278,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Italo Balbo"
 	picture = "portrait_italy_italo_balbo.dds"
-	traits = { career_officer}
+	traits = { career_officer politically_connected }
 	skill = 1
 	attack_skill = 1
 	defense_skill = 1
@@ -285,9 +289,9 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Rodolfo Graziani"
 	picture = "portrait_italy_radolfo_graziani.dds"
-	traits = { offensive_doctrine }
-	skill = 1
-	attack_skill = 2
+	traits = { offensive_doctrine politically_connected trait_cautious organizer }
+	skill = 3
+	attack_skill = 3
 	defense_skill = 2
 	planning_skill = 2
 	logistics_skill = 1
@@ -304,7 +308,7 @@ create_navy_leader = {
 	name = "Alberto Da Zara"
 		picture = "Portrait_Italy_Alberto_Da_Zara.dds"
 	traits = { superior_tactician }
-	skill = 4
+	skill = 3
 }
 
 create_navy_leader = {
@@ -335,9 +339,9 @@ create_equipment_variant = {
 	type = submarine_1
 	upgrades = {
 		ship_reliability_upgrade = 1
-		sub_engine_upgrade = 1
+		sub_engine_upgrade = 4
 		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 1
+		sub_torpedo_upgrade = 4
 	}
 	obsolete = yes
 }
@@ -347,9 +351,9 @@ create_equipment_variant = {
 	type = submarine_1
 	upgrades = {
 		ship_reliability_upgrade = 2
-		sub_engine_upgrade = 2
+		sub_engine_upgrade = 5
 		sub_stealth_upgrade = 2
-		sub_torpedo_upgrade = 2
+		sub_torpedo_upgrade = 5
 	}
 }
 
@@ -357,10 +361,10 @@ create_equipment_variant = {
 	name = "Navigatori Class"
 	type = destroyer_1
 	upgrades = {
-		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 1
-		ship_ASW_upgrade = 1
-		ship_anti_air_upgrade = 1
+		ship_torpedo_upgrade = 5
+		destroyer_engine_upgrade = 5
+		ship_ASW_upgrade = 5
+		ship_anti_air_upgrade = 5
 	}
 	obsolete = yes
 }
@@ -380,10 +384,10 @@ create_equipment_variant = {
 	name = "Giussano Class"
 	type = light_cruiser_1
 	upgrades = {
-		ship_reliability_upgrade = 1
-		ship_engine_upgrade = 1
-		ship_gun_upgrade = 1
-		ship_anti_air_upgrade = 1
+		ship_reliability_upgrade = 5
+		ship_engine_upgrade = 5
+		ship_gun_upgrade = 5
+		ship_anti_air_upgrade = 5
 	}
 	obsolete = yes
 }
@@ -403,10 +407,10 @@ create_equipment_variant = {
 	name = "Zara Class"
 	type = heavy_cruiser_1
 	upgrades = {
-		ship_reliability_upgrade = 2
-		ship_engine_upgrade = 2
-		ship_armor_upgrade = 2
-		ship_gun_upgrade = 2
+		ship_reliability_upgrade = 4
+		ship_engine_upgrade = 4
+		ship_armor_upgrade = 4
+		ship_gun_upgrade = 4
 	}
 }
 
@@ -421,7 +425,16 @@ create_equipment_variant = {
 			plane_reliability_upgrade = 1
 		}
 	}
-
+create_equipment_variant = {
+		name = "Marcello Class"
+		type = submarine_2
+		upgrades = {
+			ship_reliability_upgrade = 1
+			sub_engine_upgrade = 5
+			sub_stealth_upgrade = 1
+			sub_torpedo_upgrade = 5
+		}
+	}
 1939.1.1 = {
 	create_equipment_variant = {
 		name = "Marcello Class"

@@ -9,7 +9,7 @@ set_technology = {
 	infantry_weapons1 = 1
 }
 
-set_convoys = 100
+set_convoys = 10
 
 1939.1.1 = {
 
@@ -153,10 +153,21 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Michael Costello"
 	portrait_path = "gfx/leaders/ENG/Portrait_Britain_Generic_land_4.dds"
-	traits = {  }
+	traits = { career_officer trait_engineer naval_invader }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Michael McGregor"
+	portrait_path = "gfx/leaders/ENG/Portrait_Britain_Generic_land_2.dds"
+	traits = { brilliant_strategist }
 	skill = 2
 	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
+	defense_skill = 4
+	planning_skill = 2
 	logistics_skill = 2
 }
