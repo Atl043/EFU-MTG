@@ -185,7 +185,10 @@ technologies = {
 			fighter_equipment_2
 		}
 	
-		
+		path = {
+			leads_to_tech = fighter3
+			research_cost_coeff = 1
+		}
 				
 
 		research_cost = 2
