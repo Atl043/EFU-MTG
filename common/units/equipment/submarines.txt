@@ -31,7 +31,7 @@ equipments = {
 		sub_detection = 0
 		surface_visibility = 10
 		sub_visibility = 30
-		naval_speed = 14
+		naval_speed = 16
 		reliability = 0.60
 		
 		naval_range = 2500
@@ -39,6 +39,7 @@ equipments = {
 		max_strength = 10
 		
 		port_capacity_usage = 0.5
+		
 		build_cost_ic = 450
 		resources = {
 			oil = 1
@@ -85,7 +86,7 @@ equipments = {
 		sub_detection = 0
 		surface_visibility = 10
 		sub_visibility = 25
-		naval_speed = 14
+		naval_speed = 16
 		reliability = 0.70
 
 		naval_range = 4000
@@ -93,6 +94,7 @@ equipments = {
 		max_strength = 20
 		
 		port_capacity_usage = 0.5
+		
 		build_cost_ic = 500
 		resources = {
 			oil = 1
@@ -124,7 +126,7 @@ equipments = {
 		sub_detection = 0
 		surface_visibility = 10
 		sub_visibility = 15
-		naval_speed = 16
+		naval_speed = 18
 		reliability = 0.75
 		
 		naval_range = 5000
@@ -132,6 +134,7 @@ equipments = {
 		max_strength = 30
 
 		port_capacity_usage = 0.5
+		
 		build_cost_ic = 550
 		resources = {
 			oil = 2
@@ -163,7 +166,7 @@ equipments = {
 		sub_detection = 0
 		surface_visibility = 8
 		sub_visibility = 10
-		naval_speed = 16
+		naval_speed = 18
 		reliability = 0.80
 
 		naval_range = 6000
@@ -171,6 +174,7 @@ equipments = {
 		max_strength = 35
 		
 		port_capacity_usage = 0.5
+		
 		build_cost_ic = 600
 		resources = {
 			oil = 2

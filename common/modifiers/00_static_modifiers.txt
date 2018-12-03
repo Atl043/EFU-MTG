@@ -3,91 +3,100 @@
 # These names can NOT be removed or changes, as the code uses them....
 
 weather_rain_light = { # on Region 
-	air_detection = -0.1
-	naval_detection = -0.1
+	air_detection = -0.15
+	naval_detection = -0.2
 	naval_hit_chance = -0.05
 	naval_speed_factor = -0.05
 	naval_strike = -0.2
 	air_accidents = 0.1
-	air_mission_efficiency = -0.1
+	air_bombing_targetting = -0.1
+	air_mission_efficiency = -0.2
 
 	local_org_regain = -0.05
 }
 weather_rain_heavy = { # on Region 
-	air_detection = -0.2
-	naval_detection = -0.2
+	air_detection = -0.3
+	naval_detection = -0.4
 	naval_hit_chance = -0.1
 	naval_speed_factor = -0.1
 	carrier_traffic = -1.0
 	air_accidents = 0.3
 	air_bombing_targetting = -0.5
 	local_org_regain = -0.2
-	air_mission_efficiency = -0.3
+	air_mission_efficiency = -0.5
 }
 weather_snow = { # on Region 
-	air_detection = -0.15
+	air_detection = -0.5
 	naval_detection = -0.15
 	naval_hit_chance = -0.05
 	naval_speed_factor = -0.05
 	naval_strike = -0.3
 	air_accidents = 0.1
-	local_org_regain = -0.05
-	air_mission_efficiency = -0.1
+	air_bombing_targetting = -0.5
+	local_org_regain = -0.20
+	air_mission_efficiency = -0.4
+	winter_attrition = 0.3
 }
 weather_blizzard = { # on Region 
-	air_detection = -0.3
-	naval_detection = -0.3
+	air_detection = -0.9
+	naval_detection = -0.9
 	naval_hit_chance = -0.1
 	naval_speed_factor = -0.1
 	carrier_traffic = -1.0
 	air_accidents = 0.3
-	air_bombing_targetting = -0.7
-	local_org_regain = -0.3
-	air_mission_efficiency = -0.3
+	air_bombing_targetting = -0.9
+	local_org_regain = -0.7
+	air_mission_efficiency = -0.9
+	winter_attrition = 0.3
 }
 weather_sandstorm = { # on Region 
 	air_detection = -0.9
 	air_accidents = 0.6
+	army_speed_factor = -0.7
+	army_attack_factor = -0.6
 	air_bombing_targetting = -1
 	local_org_regain = -0.5
 	air_mission_efficiency = -0.5
-	army_speed_factor = -0.7
-	army_attack_factor = -0.7
+	heat_attrition = 0.1
 }
 weather_mud = { # on Province
 	attrition = 0.7
-	army_speed_factor = -0.5
-	army_attack_factor = -0.4
+	army_speed_factor = -0.7
+	army_attack_factor = -0.6
 }
 weather_extreme_cold = { # on Province
-	winter_attrition = 0.2
+	winter_attrition = 0.5
 	dig_in_speed_factor = -0.6
-	local_org_regain = -0.05
-	army_attack_factor = -0.2
+	local_org_regain = -0.2
+	army_attack_factor = -0.4
+	army_speed_factor = -0.4
 }
 weather_very_cold = { # on Province
-	winter_attrition = 0.1
+	winter_attrition = 0.3
 	dig_in_speed_factor = -0.3
-	army_attack_factor = -0.1
+		local_org_regain = -0.1
+	army_attack_factor = -0.2
+	army_speed_factor = -0.25
 }
 weather_very_hot = { # on Province
-	heat_attrition = 0.1
-	local_org_regain = -0.05
-}
-weather_extreme_hot = { # on Province
 	heat_attrition = 0.2
 	local_org_regain = -0.1
-	supply_consumption_factor = 0.5
-	army_attack_factor = -0.1
+}
+weather_extreme_hot = { # on Province
+	heat_attrition = 0.25
+	local_org_regain = -0.2
 }
 weather_ground_snow_medium = { # on Province
-	army_speed_factor = -0.1
-	army_attack_factor = -0.1
+	army_speed_factor = -0.2
+	army_attack_factor = -0.35
+	local_org_regain = -0.2
+	winter_attrition = 0.3
 }
 weather_ground_snow_high = { # on Province
-	army_speed_factor = -0.25
-	local_org_regain = -0.05
-	army_attack_factor = -0.3
+	army_speed_factor = -0.4
+	local_org_regain = -0.4
+	army_attack_factor = -0.5
+	winter_attrition = 0.3
 }
 
 night = { # On province. Multiplied by amount of darkness.
@@ -97,31 +106,32 @@ night = { # On province. Multiplied by amount of darkness.
 }
 
 occupation_policy_1 = { # Gentlest
-	resistance_tick = -0.6
-	local_resources = -0.3
-	local_manpower = -0.7
-	local_factories = -0.6
+	resistance_tick = 0.0
+local_resources = 0.0
+local_manpower = -1.0
+local_factories = -0.1
+occupation_cost = 0.02
 }
 occupation_policy_2 = { # Gentle
-	resistance_tick = -0.4
-	local_resources = -0.2
-	local_manpower = -0.8
-	local_factories = -0.4
-	occupation_cost = 0.01
+	resistance_tick = 0.0
+local_resources = 0.0
+local_manpower = -1.0
+local_factories = -0.1
+occupation_cost = 0.02
 }
 occupation_policy_3 = { # Harsh
-	resistance_tick = -0.2
-	local_resources = -0.1
-	local_manpower = -0.9
-	local_factories = -0.2
-	occupation_cost = 0.02
+	resistance_tick = 0.0
+local_resources = 0.0
+local_manpower = -1.0
+local_factories = -0.1
+occupation_cost = 0.02
 }
 occupation_policy_4 = { # Harshest
-	#resistance_tick = 0.0
-	#local_resources = 0.0
-	local_manpower = -1.0
-	#local_factories = 0.0
-	occupation_cost = 0.03
+resistance_tick = 0.0
+local_resources = 0.0
+local_manpower = -1.0
+local_factories = -0.1
+occupation_cost = 0.02
 }
 
 # The following is multiplied by local resistance strength.
@@ -134,7 +144,7 @@ resistance_effect = {
 
 # On States
 non_core = {
-	local_building_slots_factor = -0.25
+	local_building_slots_factor = -0.5
 }
 
 
@@ -240,7 +250,6 @@ stability_good_modifier = {
 stability_bad_modifier = {
 	industrial_capacity_factory = -0.50
 	industrial_capacity_dockyard = -0.50
-	consumer_goods_factor = 0.05
 	political_power_factor = -0.2
 }
 
@@ -267,18 +276,32 @@ attache_sent = {
 # Difficulty modifiers
 
 diff_very_easy_player = {
+	production_factory_max_efficiency_factor = 0.3
+	research_time_factor = -0.1
+	political_power_factor = 0.5
+	production_lack_of_resource_penalty_factor = -0.8
 }
 
 diff_easy_player = {
+	production_factory_max_efficiency_factor = 0.2
+	research_time_factor = -0.05
+	political_power_factor = 0.25
+	production_lack_of_resource_penalty_factor = -0.3
 }
 
 diff_normal_player = {
 }
 
 diff_hard_player = {
+	production_factory_max_efficiency_factor = -0.2
+	research_time_factor = 0.10
+	political_power_factor = -0.2
 }
 
 diff_very_hard_player = {
+	production_factory_max_efficiency_factor = -0.3
+	research_time_factor = 0.2
+	political_power_factor = -0.3
 }
 
 
