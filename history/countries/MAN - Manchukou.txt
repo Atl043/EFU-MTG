@@ -42,6 +42,7 @@ if = {
 
 set_convoys = 100
 
+
 1939.1.1 = {
 
 	add_to_war = {
@@ -164,14 +165,13 @@ create_country_leader = {
 	ideology = despotism
 	traits = {
 		warrior_code
-		popular_figurehead
 	}
 }
 
 create_corps_commander = {
 	name = "Zhang Haipeng"
 	GFX = "GFX_portrait_man_zhang_haipeng"
-	traits = {  }
+	traits = { old_guard }
 	skill = 2
 	
 	attack_skill = 2
@@ -183,20 +183,20 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Zhang Jinghui"
 	GFX = "GFX_portrait_man_zhang_jinghui"
-	traits = { infantry_officer }
+	traits = { infantry_officer infantry_leader }
 	skill = 2
 	
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
 }
 
-create_corps_commander = {
-	name = "Aisin Gioro Xiqia"
+create_field_marshal = {
+	name = "Prince Aisin Gioro Xiqia"
 	GFX = "GFX_portrait_man_aisin_gioro_xiqia"
-	traits = { career_officer }
-	skill = 3
+	traits = { career_officer media_personality politically_connected hill_fighter }
+	skill = 4
 	attack_skill = 3
 	defense_skill = 3
 	planning_skill = 3
@@ -206,7 +206,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Yoshiko Kawashima"
 	gfx = "GFX_portrait_man_yoshiko_kawashima"
-	traits = { cavalry_officer }
+	traits = { infantry_officer trickster infantry_leader }
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3

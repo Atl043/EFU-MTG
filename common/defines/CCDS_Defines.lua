@@ -18,7 +18,7 @@ NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_KICKING_NEW_MEMBERS_OF_FACTION = 0
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_REINVITE_KICKED_NATIONS = 0
 NDefines.NDiplomacy.FRONT_IS_DANGEROUS = 0
 
-NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 10
+NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 15
 
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 100
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_TRASHHOLD = 0
@@ -41,6 +41,7 @@ NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.04
 NDefines.NCountry.NUM_DAYS_TO_FULLY_DELETE_STOCKPILED_EQUIPMENT = 999
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 70
 NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.10
+NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.25
 
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 500000
 NDefines.NProduction.MIN_FIELD_TO_TRAINING_MANPOWER_RATIO = 0.9
@@ -49,11 +50,13 @@ NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 5
 NDefines.NProduction.ANNEX_FIELD_EQUIPMENT_RATIO = 1.0
 
-NDefines.NBuildings.MAX_SHARED_SLOTS = 40
+NDefines.NBuildings.MAX_SHARED_SLOTS = 50
 NDefines.NBuildings.INFRA_TO_SUPPLY = 3
 
-NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 40
+NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 50
 NDefines.NTechnology.BASE_TECH_COST = 100
+NDefines.NTechnology.LICENSE_EQUIPMENT_BASE_SPEED = -0.20
+NDefines.NTechnology.LICENSE_EQUIPMENT_TECH_SPEED_PER_YEAR = -0.025
 
 NDefines.NPolitics.DEFAULT_OCCUPATION_POLICY = 3
 
@@ -108,10 +111,10 @@ NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.66 -- .75 Maximum dam
 
 NDefines.NNavy.NAVAL_SUPREMACY_CAN_INVADE = 0.70
 NDefines.NNavy.COMBAT_CHASE_RESIGNATION_HOURS = 24  --- before 16 testing 18
-NDefines.NNavy.COMBAT_MIN_DURATION = 36
-NDefines.NNavy.COMBAT_SHIP_SPEED_TO_FIELD_FACTOR = 0.06
-NDefines.NNavy.CONVOY_EFFICIENCY_LOSS_MODIFIER = 3	-- Vanilla: 1.5 How much efficiency drops when losing convoys. If modifier is 0.5, then losing 100% of convoys in short period, the efficiency will drop by 50%.
-NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_AFTER_DAYS = 7	--Vanilla: 7 Convoy starts regaining it's efficiency after X days without any convoys being sink.
+NDefines.NNavy.COMBAT_MIN_DURATION = 32
+NDefines.NNavy.COMBAT_SHIP_SPEED_TO_FIELD_FACTOR = 0.09
+NDefines.NNavy.CONVOY_EFFICIENCY_LOSS_MODIFIER = 2.5	-- Vanilla: 1.5 How much efficiency drops when losing convoys. If modifier is 0.5, then losing 100% of convoys in short period, the efficiency will drop by 50%.
+NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_AFTER_DAYS = 9	--Vanilla: 7 Convoy starts regaining it's efficiency after X days without any convoys being sink.
 NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_BASE_SPEED = 0.04 --Vanilla: 0.04 How much efficiency regains every day.
 NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.1
 NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.01
