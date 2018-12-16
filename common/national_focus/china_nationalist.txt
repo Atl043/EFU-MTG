@@ -684,7 +684,7 @@ focus_tree = {
 		id = CHI_foreign_threats
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = CHI_nationalism }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = CHI_nationalism
 
@@ -758,7 +758,7 @@ focus_tree = {
 		id = CHI_pick_a_fight_with_japan
 		icon = GFX_focus_AST_war_japan
 		prerequisite = { focus = CHI_united_front }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = CHI_united_front
 

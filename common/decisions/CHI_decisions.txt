@@ -50,7 +50,7 @@ CHI_army_reform = {
 		icon = generic_prepare_civil_war
 
 		available = {
-			has_army_experience > 99
+			has_army_experience > 50
 			has_completed_focus = CHI_army_reform
 		}
 
@@ -58,7 +58,7 @@ CHI_army_reform = {
 		ai_will_do = {
 			factor = 500
 		}
-		days_remove = 90
+		days_remove = 60
 
 		visible = {
 			OR = {
@@ -88,7 +88,7 @@ CHI_army_reform = {
 			}
 		}
 		complete_effect = {
-			army_experience = -100
+			army_experience = -49
 			custom_effect_tooltip = 90_days_tt
 						
 		}		

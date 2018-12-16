@@ -1,4 +1,4 @@
-﻿upgrades = {
+upgrades = {
 	
 	tank_gun_upgrade = {
 		max_level = 5

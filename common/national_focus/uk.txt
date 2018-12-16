@@ -311,7 +311,7 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			air_experience = 25
+			air_experience = 100
 			if = {
 				limit = { has_country_flag = air_defense_focus_built_max }
 				custom_effect_tooltip = air_defense_focus_tt
@@ -330,7 +330,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			air_experience = 25
+			air_experience = 100
 			if = {
 				limit = {
 					NOT = {
@@ -629,6 +629,7 @@ focus_tree = {
 			OR = {
 				threat > 0.1
 				has_war = yes
+				date > 1938.2.1
 			}
 			date > 1936.8.1
 		}
@@ -768,6 +769,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+
+			add_tech_bonus = {
+				name = uk_stein_guns
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
 			add_ideas = british_arms_discount
 		}
 	}
@@ -838,7 +846,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			air_experience = 25
+			add_ideas = ENG_the_plan
+			add_tech_bonus = {
+				name = op_dest_bonus
+				bonus = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+			air_experience = 100
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1022,7 +1037,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
+			air_experience = 100
 			add_tech_bonus = {
 				name = fighter_command_focus
 				bonus = 0.5
@@ -1052,7 +1067,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
+			air_experience = 100
 			add_tech_bonus = {
 				name = bomber_command_focus
 				bonus = 0.5
@@ -1176,53 +1191,11 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 50
-			random_owned_controlled_state = {
-				limit = {
-					is_coastal = yes
-					free_building_slots = {
-						building = dockyard
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
+			122 = {
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = ENG_naval_rearmament_focus_1dockyard
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_coastal = yes
-					free_building_slots = {
-						building = dockyard
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = ENG_naval_rearmament_focus_1dockyard
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_coastal = yes
-					free_building_slots = {
-						building = dockyard
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = ENG_naval_rearmament_focus_1dockyard
@@ -1417,6 +1390,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		add_war_support = 0.05
 			# Sussex
 			127 = {
 				if = {
@@ -1631,6 +1605,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			#Increase nat unity
+			add_war_support = 0.05
 			add_stability = 0.1
 			add_political_power = 150
 		}
@@ -1656,6 +1631,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			add_war_support = 0.05
 			add_political_power = 150
 			remove_ideas = ENG_the_war_to_end_all_wars
 			set_rule = { can_send_volunteers = yes }
@@ -1705,9 +1681,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			army_experience = 50
 			navy_experience = 25
-			air_experience = 25
+			air_experience = 50
 		}
 	}
 	focus = {
@@ -2082,7 +2058,6 @@ focus_tree = {
 		y = 4
 		cost = 4.3
 
-		available = { }
 
 		ai_will_do = { factor = 1 }
 
@@ -2119,7 +2094,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = { 336 = { is_controlled_by = ENG } }
+		available = { 336 = { is_controlled_by = MAL } }
 
 		available_if_capitulated = yes
 
@@ -2171,7 +2146,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = { 336 = { is_controlled_by = ENG } }
+		available = { 336 = { is_controlled_by = MAL } }
 
 		available_if_capitulated = yes
 

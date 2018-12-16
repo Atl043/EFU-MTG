@@ -941,6 +941,7 @@ war_measures = {
                 }
                 AND = {
                     has_government = fascism
+					NOT = { tag = GER }
                     OR = {
                         has_war_support > 0.89
                         surrender_progress > 0
@@ -950,6 +951,12 @@ war_measures = {
                     has_government = neutrality
                     has_war_support > 0.89
                     has_stability > 0.7
+                }
+				AND = {
+					tag = GER
+                    date > 1942.1.01
+					has_war_support > 0.89
+                    
                 }
             }
         }

@@ -1171,7 +1171,7 @@ focus_tree = {
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = ITA_albania_war_goal }
 		available = {
-			#date > 1939.1.1
+			date > 1939.5.1
 		}
 		x = 14
 		y = 2

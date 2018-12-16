@@ -278,8 +278,9 @@ country_event = {
 		ai_chance = {
 			factor = 75
 		}
-		add_political_power = 40
+		add_political_power = 150
 		remove_ideas = great_depression
+		add_ideas = war_bonds_focus
 	}
 
 	option = {

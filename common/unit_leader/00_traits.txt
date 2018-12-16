@@ -636,14 +636,14 @@ leader_traits = {
 		gain_xp = {
 			OR = {
 				temperature < -15
-				temperature > 27
+				temperature > 35
 				has_combat_modifier = paradrop
 				has_combat_modifier = amphibious_attack
 			}
 		}
 		cost = 700
 		modifier = {
-			out_of_supply_factor = -0.5
+			out_of_supply_factor = -0.10
 		}
 		
 		ai_will_do = {
@@ -1083,8 +1083,8 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			cas_damage_reduction = 0.20
-			air_superiority_bonus_in_combat = -0.20
+			cas_damage_reduction = 0.05
+			air_superiority_bonus_in_combat = -0.5
 		}
 		
 		ai_will_do = {

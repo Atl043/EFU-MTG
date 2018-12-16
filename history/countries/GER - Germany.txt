@@ -275,13 +275,13 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Walter Model"
 	picture = "Portrait_Germany_Walter_Model.dds"
-	traits = {  brilliant_strategist trait_cautious politically_connected }
-	skill = 3
+	traits = {  brilliant_strategist trait_cautious defensive_doctrine  }
+	skill = 5
 	id = 10
 	attack_skill = 3
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 2
+	defense_skill = 6
+	planning_skill = 4
+	logistics_skill = 4
 }
 
 create_corps_commander = {

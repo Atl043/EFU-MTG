@@ -232,6 +232,7 @@ ideas = {
 						ratio > 0.5
 					}
 				}
+				
 
 				if = {
 					limit = {
@@ -239,6 +240,12 @@ ideas = {
 						has_dlc = "Death or Dishonor"
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
+				}
+				if = {
+					limit = {
+						original_tag = GER
+					}
+					NOT = { has_idea = GER_short_war }
 				}
 			}
 

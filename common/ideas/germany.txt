@@ -20,6 +20,43 @@ ideas = {
 				can_create_factions = yes
 			}
 		}
+		GER_short_war = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_local_self_management
+
+			modifier = {
+				stability_factor = 0.15
+				army_attack_factor = 0.05
+				consumer_goods_factor = 0.05
+			}
+
+		}
+
+		speer_reforms = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = { # dispersed 3 times
+				line_change_production_efficiency_factor = 0.3
+				production_factory_start_efficiency_factor = 0.15
+			}
+		}
 		
 		general_staff = {
 			
@@ -2073,7 +2110,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_trade_interdiction = 0.20

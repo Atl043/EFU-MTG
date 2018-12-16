@@ -276,7 +276,7 @@ create_corps_commander = {
 	traits = {  trickster armor_officer panzer_leader war_hero trait_reckless organizer }
 	skill = 5
 
-	attack_skill = 5 
+	attack_skill = 6 
 	defense_skill = 3
 	planning_skill = 2
 	logistics_skill = 4
