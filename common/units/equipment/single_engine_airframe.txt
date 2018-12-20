@@ -476,7 +476,7 @@ equipments = {
 		build_cost_ic = 28.4 # cv_version costs 20% more of base archetype
 		resources = {
 			oil = 1
-			aluminium = 3
+			aluminium = 2
 			rubber = 1
 		}
 
@@ -500,7 +500,7 @@ equipments = {
 
 		build_cost_ic = 30.4 # cv_version costs 20% more of base archetype
 		resources = {
-			oil = 2
+			oil = 1
 			aluminium = 2
 			rubber = 1
 		}

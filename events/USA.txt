@@ -280,7 +280,6 @@ country_event = {
 		}
 		add_political_power = 150
 		remove_ideas = great_depression
-		add_ideas = war_bonds_focus
 	}
 
 	option = {
