@@ -29,7 +29,7 @@ focus_tree = {
 				uses = 2
 				category = industry
 			}
-			#add_ideas = schacht
+			add_ideas = hjalmar_schacht
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = hjalmar_schacht
 		}
@@ -989,7 +989,7 @@ focus_tree = {
 				name = air_sup_bonus
 				bonus = 0.5
 				uses = 2
-				category = battlefield_support_tree
+				category = air_doctrine
 			}
 			every_state = {
 				limit = { has_state_flag = GER_air_innovation_2air }
@@ -1019,7 +1019,7 @@ focus_tree = {
 				name = air_sup_bonus
 				bonus = 0.5
 				uses = 2
-				category = battlefield_support_tree
+				category = air_doctrine
 			}
 
 			if = {
@@ -1108,7 +1108,7 @@ focus_tree = {
 				name = op_dest_bonus
 				bonus = 0.5
 				uses = 2
-				category = battlefield_support_tree
+				category = air_doctrine
 			}
 			add_tech_bonus = {
 				name = bomber_bonus
@@ -1190,7 +1190,7 @@ focus_tree = {
 				name = strat_dest_bonus
 				bonus = 0.5
 				uses = 2
-				category = battlefield_support_tree
+				category = air_doctrine
 			}
 			add_tech_bonus = {
 				name = bomber_bonus
@@ -1551,7 +1551,7 @@ focus_tree = {
 		will_lead_to_war_with = SOV
 
 		available = {
-			date > 1942.6.1
+			date > 1943.2.1
 		}
 
 		cancel = {

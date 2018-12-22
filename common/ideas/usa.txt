@@ -16,7 +16,7 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 1
-				consumer_goods_factor = 0.35
+				consumer_goods_factor = 0.45
 				conscription_factor = -0.5
 				join_faction_tension = 0.20
 			}
@@ -54,7 +54,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				global_building_slots_factor = 0.5
+				
 				production_speed_infrastructure_factor = 0.2
 				stability_factor = 0.10
 			}
@@ -97,6 +97,26 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 1
+			}
+		}
+
+		wartime_industry_focus_us = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				conversion_cost_civ_to_mil_factor= -0.30
+				production_factory_start_efficiency_factor = 0.075
+				production_factory_efficiency_gain_factor = 0.075
 			}
 		}
 		
@@ -377,6 +397,7 @@ ideas = {
 			}
 			modifier = {
 				drift_defence_factor = 0.2
+				global_building_slots_factor = 0.5
 				ai_badass_factor = 0.03 # cares for 3% of normal threat
 			}
 		}

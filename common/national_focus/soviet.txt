@@ -103,6 +103,7 @@ focus_tree = {
 		}
 
 		available = {
+			GER = { has_war_with = SOV }
 			has_war = yes
 			573 = {
 				is_owned_and_controlled_by = SOV
@@ -425,84 +426,37 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			if = {
-				limit = {
-					all_owned_state = {
-						NOT = { infrastructure < 5 }
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = infrastructure
-							size > 2
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 3
-						instant_build = yes						
-					}
-					set_state_flag = SOV_infrastructure_effort_3Inf
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = infrastructure
-							size > 2
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 3
-						instant_build = yes
-					}
-					set_state_flag = SOV_infrastructure_effort_3Inf
-				}				
-			}
-			random_owned_controlled_state = {
-				limit = {
-					infrastructure < 5
-				}
+			254 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 3
 					instant_build = yes
 				}
-				set_state_flag = SOV_infrastructure_effort_3Inf	
+				set_state_flag = SOV_improve_railway_3Inf
 			}
-			random_owned_controlled_state = {
-				limit = {
-					infrastructure < 5
-				}
+			586 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 3
 					instant_build = yes
 				}
-				set_state_flag = SOV_infrastructure_effort_3Inf	
+				set_state_flag = SOV_improve_railway_3Inf
 			}
-			random_owned_controlled_state = {
-				limit = {
-					infrastructure < 5
-				}
+			653 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 3
 					instant_build = yes
 				}
-				set_state_flag = SOV_infrastructure_effort_3Inf	
+				set_state_flag = SOV_improve_railway_3Inf
 			}
-			random_owned_controlled_state = {
-				limit = {
-					infrastructure < 5
-				}
+			229 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 3
 					instant_build = yes
 				}
-				set_state_flag = SOV_infrastructure_effort_3Inf	
+				set_state_flag = SOV_improve_railway_3Inf
 			}
 		}
 	}
@@ -554,7 +508,7 @@ focus_tree = {
 		id = SOV_collectivist_propaganda
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = SOV_stalin_constitution }
-		mutually_exclusive = { focus = SOV_positive_heroism }
+		#mutually_exclusive = { focus = SOV_positive_heroism }
 		x = -2
 		y = 1
 		relative_position_id = SOV_stalin_constitution
@@ -624,7 +578,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
+			air_experience = 375
 			set_rule = {
 				can_generate_female_aces = yes
 			}
@@ -644,7 +598,7 @@ focus_tree = {
 		id = SOV_positive_heroism
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = SOV_stalin_constitution }
-		mutually_exclusive = { focus = SOV_collectivist_propaganda }
+		#mutually_exclusive = { focus = SOV_collectivist_propaganda }
 		x = 0
 		y = 1
 		relative_position_id = SOV_stalin_constitution
@@ -702,25 +656,25 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = SOV_extra_tech_slot
-		icon = GFX_focus_research
-		text = extra_tech_slot
-		prerequisite = { focus = SOV_socialist_science }
-		x = 0
-		y = 1
-		relative_position_id = SOV_socialist_science
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
+	#focus = {
+	#	id = SOV_extra_tech_slot
+	#	icon = GFX_focus_research
+	#	text = extra_tech_slot
+	#	prerequisite = { focus = SOV_socialist_science }
+	#	x = 0
+	#	y = 1
+	#	relative_position_id = SOV_socialist_science
+	#	cost = 10
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#
+	#	available_if_capitulated = yes
+	#
+	#	completion_reward = {
+	#		add_research_slot = 1
+	#	}
+	#}
 
 	focus = {
 		id = SOV_aviation_cult

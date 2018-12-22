@@ -954,7 +954,7 @@ war_measures = {
                 }
 				AND = {
 					tag = GER
-                    date > 1942.1.01
+                    date > 1943.2.01
 					has_war_support > 0.89
                     
                 }

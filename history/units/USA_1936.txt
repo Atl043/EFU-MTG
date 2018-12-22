@@ -35,9 +35,6 @@ division_template = {
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
-		infantry = { x = 3 y = 0 }
-		infantry = { x = 3 y = 1 }
-		infantry = { x = 3 y = 2 }
 	}
 	support = {
 		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
@@ -89,7 +86,6 @@ units = {
 		location = 1440
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.15
 
 	}			
 	division = {			
@@ -97,7 +93,6 @@ units = {
 		location = 7617
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.15
 
 	}
 
@@ -111,7 +106,6 @@ units = {
 		location = 6732
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}			
 	division= {			
@@ -122,7 +116,6 @@ units = {
 		location = 6732
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}
 	# II Army Corps #
@@ -143,7 +136,6 @@ units = {
 		location = 3878
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}			
 	division= {			
@@ -154,7 +146,6 @@ units = {
 		location = 3878
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}			
 	# III Army Corps #
@@ -166,7 +157,6 @@ units = {
 		location = 6984
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}			
 	division= {			
@@ -177,7 +167,6 @@ units = {
 		location = 6984
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}			
 
@@ -192,7 +181,6 @@ units = {
 		location = 6855
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}			
 	division= {			
@@ -203,7 +191,6 @@ units = {
 		location = 6855
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}			
 	# VI Army Corps #
@@ -215,7 +202,6 @@ units = {
 		location = 9450
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}			
 	division= {			
@@ -226,7 +212,6 @@ units = {
 		location = 9450
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}			
 
@@ -241,7 +226,6 @@ units = {
 		location = 12384
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}			
 	division= {			
@@ -252,7 +236,6 @@ units = {
 		location = 12384
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}			
 	# VIII Army Corps #
@@ -264,7 +247,6 @@ units = {
 		location = 12782
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}			
 	division= {			
@@ -275,8 +257,6 @@ units = {
 		location = 12782
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
 	}			
 	division= {			
 		division_name = {
@@ -286,7 +266,6 @@ units = {
 		location = 12782
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}			
 	division= {			
@@ -309,7 +288,6 @@ units = {
 		location = 12586
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}			
 	division= {			
@@ -320,7 +298,6 @@ units = {
 		location = 12586
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}			
 	# IX Army Corps (CO: DeWitt) #
@@ -341,7 +318,6 @@ units = {
 		location = 9671
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}			
 	division= {			
@@ -352,7 +328,6 @@ units = {
 		location = 9671
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}			
 					
@@ -364,7 +339,6 @@ units = {
 		location = 13091
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.15
 
 	}			
 	division= {			
@@ -372,7 +346,6 @@ units = {
 		location = 13067
 		division_template = "Garrison Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
 
 	}
 			
@@ -382,7 +355,6 @@ units = {
 		location = 4180
 		division_template = "National Guard Division"		# older equipment, less training than NG division
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}
 
@@ -392,7 +364,6 @@ units = {
 		location = 13052
 		division_template = "Garrison Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
 
 	}				
 	division= {				
@@ -400,7 +371,6 @@ units = {
 		location = 13047
 		division_template = "Garrison Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
 
 	}				
 	division= {				
@@ -408,7 +378,6 @@ units = {
 		location = 12140
 		division_template = "Garrison Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
 
 	}				
 	
@@ -418,7 +387,6 @@ units = {
 		location = 13048
 		division_template = "Garrison Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
 
 	}			
 	division= {			
@@ -426,7 +394,6 @@ units = {
 		location = 13049
 		division_template = "Garrison Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
 
 	}			
 	division= {			
@@ -434,7 +401,6 @@ units = {
 		location = 13050
 		division_template = "Garrison Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
 
 	}			
 	division= {			
@@ -442,7 +408,6 @@ units = {
 		location = 13053
 		division_template = "Garrison Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
 
 	}			
 	division= {			
@@ -450,7 +415,6 @@ units = {
 		location = 13051
 		division_template = "Garrison Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
 
 	}			
 
@@ -460,21 +424,12 @@ units = {
 		location = 10265
 		division_template = "Infantry Division"			# older equipment, less training than NG division
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}				
 
 
 	##### NAVAL UNITS #####
-	### PACIFIC FLEET -- San Diego
-	navy = {					
-		name = "Battleship Division 1"				
-		base = 1562
-		location = 1562 # San Diego
-		ship = { name = "USS Nevada" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Pennsylvania Class" } } }				
-		ship = { name = "USS Arizona" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Pennsylvania Class" } } }				
-		ship = { name = "USS Pennsylvania" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Pennsylvania Class" } } }				
-	}					
+	### PACIFIC FLEET -- San Diego				
 	navy = {					
 		name = "Battleship Division 2"				
 		base = 1562
@@ -482,19 +437,12 @@ units = {
 		ship = { name = "USS Oklahoma" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Pennsylvania Class" } } }				
 		ship = { name = "USS Tennessee" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "New Mexico Class" } } }				
 		ship = { name = "USS California" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "New Mexico Class" } } }				
-	}					
-	navy = {					
-		name = "Battleship Division 4"				
-		base = 1562
-		location = 1562 # San Diego
+		ship = { name = "USS Nevada" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Pennsylvania Class" } } }				
+		ship = { name = "USS Arizona" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Pennsylvania Class" } } }				
+		ship = { name = "USS Pennsylvania" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Pennsylvania Class" } } }				
 		ship = { name = "USS Colorado" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Colorado Class" } } }				
 		ship = { name = "USS West Virginia" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Colorado Class" } } }				
 		ship = { name = "USS Maryland" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Colorado Class" } } }				
-	}				
-	navy = {					
-		name = "Carrier Division"				
-		base = 1562
-		location = 1562 # San Diego
 		ship = { name = "USS Lexington" definition = carrier equipment = { carrier_1 = { amount = 1 owner = USA } } 
 			air_wings = {
 				cv_fighter_equipment_0 =  { owner = "USA" amount = 8 } # historical: 16
@@ -509,46 +457,21 @@ units = {
 				cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 8 } # historical: 12
 			}
 		}
-	}					
-	navy = {					
-		name = "Cruiser Division 3"				
-		base = 1562
-		location = 1562 # San Diego
 		ship = { name = "USS Richmond" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = USA } } }				
 		ship = { name = "USS Trenton" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = USA } } }				
 		ship = { name = "USS Concord" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = USA } } }				
-	}					
-	navy = {					
-		name = "Cruiser Division 4"				
-		base = 1562
-		location = 1562 # San Diego
 		ship = { name = "USS Pensacola" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA } } }				
 		ship = { name = "USS Salt Lake City" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA } } }				
 		ship = { name = "USS Chicago" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA } } }				
 		ship = { name = "USS Indianapolis" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }				
-	}					
-	navy = {					
-		name = "Cruiser Division 5"				
-		base = 1562
-		location = 1562 # San Diego
 		ship = { name = "USS Northampton" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA } } }				
 		ship = { name = "USS Chester" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA } } }				
 		ship = { name = "USS Louisville" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA } } }					
 		ship = { name = "USS Portland" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }				
-	}					
-	navy = {					
-		name = "Cruiser Division 6"				
-		base = 1562
-		location = 1562 # San Diego
 		ship = { name = "USS New Orleans" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }				
 		ship = { name = "USS Astoria" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }				
 		ship = { name = "USS Minneapolis" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }				
 		ship = { name = "USS San Francisco" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }				
-	}					
-	navy = {					
-		name = "Destroyer Flotilla  1"				
-		base = 1562
-		location = 1562 # San Diego
 		ship = { name = "USS Raleigh" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = USA } } }				
 		# 1st Destroyer Division				
 		ship = { name = "USS Dewey" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
@@ -571,11 +494,6 @@ units = {
 		ship = { name = "USS Litchfield" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 		ship = { name = "USS Zane" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 		ship = { name = "USS Wasmuth" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
-	}				
-	navy = {					
-		name = "Destroyer Flotilla  5"				
-		base = 1562
-		location = 1562 # San Diego
 		ship = { name = "USS Detroit" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = USA } } }				
 		# 15th Destroyer Division				
 		ship = { name = "USS Hatfield" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
@@ -598,11 +516,6 @@ units = {
 		ship = { name = "USS Kilty" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 		ship = { name = "USS Kennison" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 		ship = { name = "USS Crosby" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
-	}					
-	navy = {					
-		name = "4th Submarine Squadron"				
-		base = 1562
-		location = 1562 # San Diego
 		# 41st Submarine Division				
 		ship = { name = "USS S-18" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 		ship = { name = "USS S-23" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
@@ -621,12 +534,6 @@ units = {
 		ship = { name = "USS Porpoise" definition = submarine equipment = { submarine_2 = { amount = 1 owner = USA } } }
 		ship = { name = "USS Pike" definition = submarine equipment = { submarine_2 = { amount = 1 owner = USA } } }
 		ship = { name = "USS Shark" definition = submarine equipment = { submarine_2 = { amount = 1 owner = USA } } }
-	}					
-	navy = {					
-		name = "6th Submarine Squadron"				
-		base = 1562
-		location = 1562 # San Diego
-		# 61st Submarine Division				
 		ship = { name = "USS R-11" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 		ship = { name = "USS R-13" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 		ship = { name = "USS R-14" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
@@ -641,13 +548,6 @@ units = {
 		ship = { name = "USS S-25" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 		ship = { name = "USS S-26" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 		ship = { name = "USS S-32" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
-	}					
-
-	### ASIATIC FLEET -- Manilla, PHI
-	navy = {					
-		name = "Asiatic Fleet"				
-		base = 10265
-		location = 10265 # Manilla
 		ship = { name = "USS Houston" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA } } }				
 		ship = { name = "USS Marblehead" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = USA } } }
 		# 23rd Destroyer Division				
@@ -666,12 +566,6 @@ units = {
 		ship = { name = "USS Peary" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 		ship = { name = "USS Pillsbury" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 		ship = { name = "USS John D Ford" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
-	}					
-	navy = {					
-		name = "2nd Submarine Squadron"				
-		base = 10265
-		location = 10265 # Manilla
-		# 21st Submarine Division				
 		ship = { name = "USS S-36" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 		ship = { name = "USS S-37" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 		ship = { name = "USS S-38" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
@@ -685,45 +579,18 @@ units = {
 		ship = { name = "USS R-17" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 		ship = { name = "USS R-18" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 		ship = { name = "USS R-19" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
-	}					
-
-	### ATLANTIC FLEET -- Norfolk
-	navy = {					
-		name = "Battleship Division 3"				
-		base = 788
-		location = 788 # Norfolk
 		ship = { name = "USS New Mexico" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "New Mexico Class" } } }				
 		ship = { name = "USS Mississippi" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "New Mexico Class" } } }				
 		ship = { name = "USS Idaho" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "New Mexico Class" } } }				
-	}					
-	navy = {					
-		name = "Battleship Division 5"				
-		base = 788
-		location = 788 # Norfolk
 		ship = { name = "USS Arkansas" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA } } }				
 		ship = { name = "USS New York" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA } } }				
 		ship = { name = "USS Texas" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA } } }				
-	}					
-	navy = {					
-		name = "Cruiser Division 2"				
-		base = 788
-		location = 788 # Norfolk
 		ship = { name = "USS Omaha" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = USA } } }				
 		ship = { name = "USS Milwaukee" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = USA } } }				
 		ship = { name = "USS Cincinnati" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = USA } } }				
 		ship = { name = "USS Memphis" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = USA } } }				
-	}					
-	navy = {					
-		name = "Cruiser Division 7"				
-		base = 788
-		location = 788 # Norfolk
 		ship = { name = "USS Augusta" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA } } }				
 		ship = { name = "USS Tuscaloosa" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }				
-	}					
-	navy = {					
-		name = "USS Ranger"				
-		base = 788
-		location = 788 # Norfolk
 		ship = { name = "USS Ranger" definition = carrier equipment = { carrier_2 = { amount = 1 owner = USA } } 
 			air_wings = {
 				cv_fighter_equipment_0 =  { owner = "USA" amount = 8 } # historical: 36
@@ -731,11 +598,6 @@ units = {
 				cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 8 } # historical: 12
 			}
 		}
-	}					
-	navy = {					
-		name = "Destroyer Flotilla  3"				
-		base = 788
-		location = 788 # Norfolk
 		# 13th Destroyer Division				
 		ship = { name = "USS Clemson" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 		ship = { name = "USS Chandler" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
@@ -774,12 +636,6 @@ units = {
 		ship = { name = "USS Simpson" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 		ship = { name = "USS McCormick" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 		ship = { name = "USS Truxtun" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
-	}					
-	navy = {					
-		name = "Destroyer Flotilla  4"				
-		base = 788
-		location = 788 # Norfolk
-		# 3rd Destroyer Division				
 		ship = { name = "USS Decatur" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 		ship = { name = "USS Badger" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 		ship = { name = "USS Babbitt" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
@@ -801,12 +657,7 @@ units = {
 		ship = { name = "USS Tarbell" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 		ship = { name = "USS Upshur" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 		ship = { name = "USS Greer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
-	}					
-	navy = {					
-		name = "Destroyer Flotilla  6"				
-		base = 788
-		location = 788 # Norfolk
-		# 36th Destroyer Division			
+			# 36th Destroyer Division			
 		ship = { name = "USS Trever" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 		ship = { name = "USS Perry" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 		ship = { name = "USS Hulbert" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
@@ -817,12 +668,6 @@ units = {
 		ship = { name = "USS Hogan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 		ship = { name = "USS Howard" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 		ship = { name = "USS Stansbury" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
-	}					
-	navy = {					
-		name = "1st Submarine Squadron"				
-		base = 788
-		location = 788 # Norfolk
-		# 11th Submarine Division			
 		ship = { name = "USS O-2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 		ship = { name = "USS O-3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 		ship = { name = "USS O-4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
@@ -838,12 +683,6 @@ units = {
 		ship = { name = "USS R-7" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 		ship = { name = "USS R-9" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 		ship = { name = "USS R-10" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
-	}					
-	navy = {					
-		name = "3rd Submarine Squadron"				
-		base = 788
-		location = 788 # Norfolk
-		# 31st Submarine Division			
 		ship = { name = "USS S-1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 		ship = { name = "USS S-11" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 		ship = { name = "USS S-12" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
@@ -856,12 +695,6 @@ units = {
 		ship = { name = "USS Barracuda" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA version_name = "Barracuda Class" } } }
 		ship = { name = "USS Bass" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA version_name = "Barracuda Class" } } }
 		ship = { name = "USS Bonita" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA version_name = "Barracuda Class" } } }
-	}					
-	navy = {					
-		name = "5th Submarine Squadron"				
-		base = 788
-		location = 788 # Norfolk
-		# 51st Submarine Division			
 		ship = { name = "USS S-20" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 		ship = { name = "USS S-21" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 		ship = { name = "USS S-22" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
@@ -876,14 +709,6 @@ units = {
 		ship = { name = "USS S-43" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 		ship = { name = "USS S-44" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 		ship = { name = "USS S-45" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
-	}					
-	
-	# CARRIBEAN FLEET -- Panama Canal
-	navy = {					
-		name = "Caribbean Fleet"				
-		base = 7617
-		location = 7617 # Canal Zone
-		# 26th Destroyer Division				
 		ship = { name = "USS Borie" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 		ship = { name = "USS Breckinridge" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 		ship = { name = "USS Barney" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
@@ -894,23 +719,11 @@ units = {
 		ship = { name = "USS J Fred Talbott" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 		ship = { name = "USS Dahlgren" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 		ship = { name = "USS Goff" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
-		ship = { name = "USS Barry" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
-	}	
+		ship = { name = "USS Barry" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }
+	}
 }
 		
 air_wings = {
-	### 1 USAAF Wing -- Los Angeles
-	378 = {
-	}
-
-	### 2 USAAF Wing -- Norfolk
-	362 = { 
-
-	}
-
-	### 3 USAAF Wing -- Louisiana
-	371 = { 
-	}
 
 	### 18th Composite Wing -- Hawaii
 	629 = { 
@@ -930,37 +743,6 @@ air_wings = {
 		CAS_equipment_1 = {
 			owner = "USA" 
 			amount = 150
-		}
-	}
-
-	### 19th Composite Wing -- Panama Canal
-	685 = { 
-	}
-
-	### Philippines Composite Group -- Manilla
-#	327 = { 
-#		# 4th Composite Group 
-#		fighter_equipment_0 =  {
-#			owner = "USA" 
-#			amount = 36
-#		}
-#	}
-
-	### USN Atlantic Naval Patrol Division -- Norfolk
-	362 = { 
-		# Naval Patrol Wing 3 
-		nav_bomber_equipment_1 =  {
-			owner = "USA" 
-			amount = 100
-		}
-	}
-	### USN Pacific Naval Patrol Division -- San Diego
-	378 = { 
-		# Naval Patrol Wing 1 
-		# Naval Patrol Wing 2 
-		nav_bomber_equipment_1 =  {
-			owner = "USA" 
-			amount = 100
 		}
 	}
 }
