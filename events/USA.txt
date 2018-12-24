@@ -209,8 +209,11 @@ country_event = {
 	trigger = {
 		tag = USA
 		democratic > 0.5
-		date > 1936.1.1
-		date < 1937.1.1
+		date > 1936.11.1
+		#date < 1937.1.1
+	}
+	mean_time_to_happen = {
+		days = 1	# Historical outbreak time after elections
 	}
 	
 	option = { 	
@@ -219,40 +222,6 @@ country_event = {
 			factor = 75
 		}		
 		add_ideas = new_deal
-	}
-
-	option = { 
-		name = usa.6.b
-		ai_chance = {
-			factor = 25
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}		
-		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
-		if = {
-			limit = {
-				has_idea = standard_oil_california
-			}
-			add_political_power = 150
-		}
-		if = {
-			limit = {
-				NOT = { has_idea = standard_oil_california }
-			}
-			add_ideas = standard_oil_california
-		}
-		create_country_leader = {
-			name = "Alf Landon"
-			desc = "POLITICS_ALF_LANDON_DESC"
-			picture = "Portrait_USA_Generic_2.dds"
-			expire = "1965.1.1"
-			ideology = conservatism
-			traits = {
-				staunch_constitutionalist
-			}
-		}
 	}
 }
 
@@ -268,9 +237,13 @@ country_event = {
 	trigger = {
 		tag = USA
 		democratic > 0.5
-		date > 1940.1.1
-		date < 1941.1.1
+		date > 1940.11.1
+		#date < 1941.1.1
 		has_idea = new_deal
+	}
+
+	mean_time_to_happen = {
+		days = 1	# Historical outbreak time after elections
 	}
 	
 	option = {
@@ -279,31 +252,6 @@ country_event = {
 			factor = 75
 		}
 		add_political_power = 150
-		remove_ideas = great_depression
-	}
-
-	option = {
-		name = usa.7.b
-		ai_chance = {
-			factor = 25
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}	
-		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
-		remove_ideas = new_deal
-		add_ideas = wilkies_new_deal
-		create_country_leader = {
-			name = "Wendell Wilkie"
-			desc = "POLITICS_WENDELL_WILKIE_DESC"
-			picture = "Portrait_USA_Wendell_Willkie.dds"
-			expire = "1965.1.1"
-			ideology = liberalism
-			traits = {
-				
-			}
-		}
 		remove_ideas = great_depression
 	}
 }

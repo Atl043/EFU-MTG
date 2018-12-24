@@ -133,15 +133,15 @@ GER_case_anton_category = {
 				is_puppet_of = GER
 				NOT = { has_country_flag = case_anton }
 			}
-			divisions_in_state = { state = 31 size < 1 }
-			divisions_in_state = { state = 25 size < 1 }
-			divisions_in_state = { state = 22 size < 1 }
-			divisions_in_state = { state = 21 size < 1 }
-			divisions_in_state = { state = 32 size < 1 }
-			divisions_in_state = { state = 22 size < 1 }
-			divisions_in_state = { state = 26 size < 1 }
-			divisions_in_state = { state = 33 size < 1 }
-			divisions_in_state = { state = 20 size < 1 }
+			divisions_in_state = { state = 31 size < 5 }
+			divisions_in_state = { state = 25 size < 5 }
+			divisions_in_state = { state = 22 size < 5 }
+			divisions_in_state = { state = 21 size < 5 }
+			divisions_in_state = { state = 32 size < 5 }
+			divisions_in_state = { state = 22 size < 5 }
+			divisions_in_state = { state = 26 size < 5 }
+			divisions_in_state = { state = 33 size < 5 }
+			divisions_in_state = { state = 20 size < 5 }
 			OR = {
 				ITA = { owns_state = 735 }
 				divisions_in_state = { state = 735 size < 1 }
@@ -621,6 +621,73 @@ GER_reichskommissariats = {
 }
 
 political_actions = {
+
+	annex_bulgaria = {
+		ai_will_do = { factor = 0 }
+		cost = 20
+		visible = {
+			tag = GER
+			BUL = { is_ai = yes }
+			country_exists = BUL
+			date > 1939.1.1
+		}
+		fire_only_once = yes
+		complete_effect = {
+			GER = {
+				annex_country = { target = BUL transfer_troops = yes }
+				#add_ideas = annex_bulgaria_idea
+			}
+		}
+	}
+
+	annex_vichy = {
+		ai_will_do = { factor = 0 }
+		cost = 20
+		visible = {
+			tag = GER
+			country_exists = EFR
+			EFR = { is_ai = yes }
+			date > 1943.1.1
+		}
+		fire_only_once = yes
+		complete_effect = {
+			GER = {
+				annex_country = { target = EFR transfer_troops = yes }
+			}
+		}
+	}
+
+	Puppet_ROM = {
+		ai_will_do = { factor = 0 }
+		cost = 0
+		fire_only_once = yes
+		visible = {
+			tag = GER
+			ROM = { is_ai = yes }
+			country_exists = ROM
+			date > 1936.1.1
+		}
+
+		complete_effect = {
+			GER = { puppet = ROM }
+		}
+	}
+
+
+	puppet_vichy_france = {
+		ai_will_do = { factor = 0 }
+		cost = 25
+		fire_only_once = yes
+		visible = {
+			tag = GER
+			country_exists = EFR
+			date > 1942.1.1
+		}
+
+		complete_effect = {
+			GER = { puppet = EFR }
+		}
+	}
 
 	# Reinstate Wilhelm IV into the line of succession
 	reinstate_wilhelm_iv_succession_rights = {

@@ -11,6 +11,7 @@ set_technology = {
 }
 add_ideas = {
 	free_trade
+	trade_unionism
 }
 set_convoys = 150
 1939.1.1 = {

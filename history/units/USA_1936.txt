@@ -728,10 +728,9 @@ air_wings = {
 	### 18th Composite Wing -- Hawaii
 	629 = { 
 		# 18th Pursuit Group 
-		fighter_equipment_1 =  {
+		fighter_equipment_0 =  {
 			owner = "USA" 
-			amount = 400
-			creator = "ENG"
+			amount = 100
 		}
 		# 5th Composite Group 
 		tac_bomber_equipment_1 = {
@@ -742,7 +741,7 @@ air_wings = {
 		# 3rd Attack Group 
 		CAS_equipment_1 = {
 			owner = "USA" 
-			amount = 150
+			amount = 450
 		}
 	}
 }

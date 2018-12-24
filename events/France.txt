@@ -496,14 +496,14 @@ country_event = {
 				ideology = fascism
 				size = 0.9
 				capital = 26
-				states = { 26 21 22 31 25 20 32 33 1 735 677 680 554 458 462 461 513 459 460 665 553 272 556 268 557 514 515 670 671 286 741}
+				states = { 26 21 22 31 25 20 32 33 1 735 677 680 554 458 462 461 513 459 460 665 553 557 514 515 670 671 286 741}
 					states_filter = {
 					owner = { original_tag = FRA }
 					OR = {		
 						# lets not involve syria, somaliland, or tunisia in civil war flip if occupied by other party
 						AND = {
 							OR = {
-								state = 268
+								#state = 268
 								state = 553
 								state = 554
 								state = 680
@@ -517,11 +517,11 @@ country_event = {
 						}
 						NOT = {
 							OR = {
-								state = 268
-								state = 553
-								state = 554
-								state = 680
-								state = 677
+								#state = 268
+								#state = 553
+								#state = 554
+								#state = 680
+								#state = 677
 								state = 458
 								state = 665
 							}						
@@ -563,7 +563,7 @@ country_event = {
 		}
 		EFR = {
 			set_capital = 26
-			add_ideas = french_neutrality
+			#add_ideas = french_neutrality
 			diplomatic_relation = { country = ITA relation = non_aggression_pact }
 			diplomatic_relation = { country = GER relation = non_aggression_pact }
 			every_state = { 
