@@ -159,6 +159,7 @@ GER_case_anton_category = {
 				has_government = fascism
 				is_subject_of = GER
 			}
+			date > 1941.1.1
 		}
 		ai_will_do = {
 			factor = 1
