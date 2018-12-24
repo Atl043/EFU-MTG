@@ -2512,4 +2512,6 @@
  BUL_research_collaboration_desc:0 "If we combine our research efforts, we have a bigger chance of succeeding."
  BUL_modernize_navy:0 "Modernize our Navy"
  BUL_modernize_navy_desc:0 "We have gotten our naval production back on track, now to modernize it."
+ USA_lend_lease_act:0 "USA Lend Lease Act"
+ GER_total_war_focus:0 "German Total War"
  unlocks_decision:0 "Unlocks Decision: "

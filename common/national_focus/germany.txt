@@ -1548,10 +1548,9 @@ focus_tree = {
 		id = GER_Albert_Speer_reforms
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = GER_ussr_war_goal }
-		will_lead_to_war_with = SOV
 
 		available = {
-			date > 1943.2.1
+			date > 1942.2.1
 		}
 
 		cancel = {
@@ -1569,11 +1568,38 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			remove_ideas = GER_short_war
 			add_timed_idea = { idea = speer_reforms days = 30 }
 		}
 	}
 
+	focus = {
+		id = GER_total_war_focus
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = GER_Albert_Speer_reforms }
+
+		available = {
+			date > 1943.2.1
+		}
+
+		cancel = {
+			NOT = { country_exists = SOV }
+		}
+		x = 17
+		y = 4
+		cost = 1
+		historical_ai = {
+			NOT = {
+				any_home_area_neighbor_country = {
+					has_war_with = ROOT					
+				}		
+			}
+		}
+		
+		completion_reward = {
+			remove_ideas = GER_short_war
+			add_ideas = GER_total_war
+		}
+	}
 	
 	focus = {
 		id = GER_anschluss

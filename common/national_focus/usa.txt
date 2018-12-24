@@ -1215,39 +1215,59 @@ focus_tree = {
 			add_war_support = 0.1
 		}
 	}
-
 	focus = {
-		id = USA_fascist_menace
-		icon = GFX_goal_support_democracy
+		id = USA_lend_lease_act
+		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = USA_destroyers_for_bases }
-		prerequisite = { focus = USA_limited_intervention }
-		available = {
-			GER = {
-				exists = yes
-				NOT = { has_government = ROOT }
-			}
-			date > 1942.1.1
-		}
-		will_lead_to_war_with = GER
 		x = 0
 		y = 1
 		relative_position_id = USA_destroyers_for_bases
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
 		completion_reward = {
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = GER
-			}
-			hidden_effect = {
-				news_event = { hours = 6 id = news.213 }
+			add_political_power = 150
+			army_experience = 50
+			air_experience = 100
+			122 = {
+				add_extra_state_shared_building_slots = 10
+					add_building_construction = {
+						type = arms_factory
+						level = 5
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 5
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 377
+						instant_build = yes
+					}
+					add_resource = {
+						type = oil
+						amount = 20
+					}
+					add_resource = {
+						type = aluminium
+						amount = 20
+					}
+					add_resource = {
+						type = steel
+						amount = 20
+					}
+				}
+			338 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					province = 6378
+					instant_build = yes
+				}
 			}
 		}
 	}
-
-	
 
 	focus = {
 		id = USA_defense_of_the_pacific

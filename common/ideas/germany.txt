@@ -40,6 +40,25 @@ ideas = {
 
 		}
 
+		GER_total_war = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_fascism_drift_2
+
+			modifier = {
+				stability_factor = 0.05
+				army_defence_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+
 		speer_reforms = {
 			picture = generic_production_bonus
 			allowed = {

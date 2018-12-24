@@ -59,6 +59,7 @@ add_ideas = {
 	give_guarantee = DEN
 	give_guarantee = NOR
 	give_guarantee = GRE
+	give_guarantee = YUG
 
 set_convoys = 1200
 

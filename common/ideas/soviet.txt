@@ -482,9 +482,9 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.05
+				army_org_factor = -0.10
 				send_volunteer_factor = -0.26
-				training_time_factor = 0.05
+				#training_time_factor = 0.05
 			}
 		}
 
@@ -1408,7 +1408,7 @@ ideas = {
 				air_equipment = 0.10
 			}
 			
-			traits = { light_aircraft_manufacturer }
+			traits = { mig_design_bureau_aircraft_manufacturer }
 			
 			modifier = {
 			}
