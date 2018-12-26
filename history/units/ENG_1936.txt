@@ -887,26 +887,23 @@ air_wings = {
 	}
 	125 = { 
 		### No. 2 Bomber Command, East Anglia area -- HP Heyford, Harrows, AW Whitleys
-		tac_bomber_equipment_1 = {
+		tac_bomber_equipment_0 = {
 			owner = "ENG" 
-			amount = 50
-			creator = "FRA"
+			amount = 100
 		}
 	}
 	126 = { 
 		### No. 3 Bomber Command, Suffolk area -- HP Heyford, Harrows, AW Whitleys
-		tac_bomber_equipment_1 = {
+		tac_bomber_equipment_0 = {
 			owner = "ENG" 
-			amount = 150
-			creator = "FRA"
+			amount = 200
 		}
 	}
 	130 = { 
 		### No. 4 Bomber Command, York area -- HP Heyford, Harrows, AW Whitleys
-		tac_bomber_equipment_1 = {
+		tac_bomber_equipment_0 = {
 			owner = "ENG" 
 			amount = 100
-			creator = "FRA"
 		}
 	}
 	128 = { 
@@ -928,10 +925,9 @@ air_wings = {
 
 	### RAF Middle East and Africa
 	447 = { 
-		tac_bomber_equipment_1 = {
+		tac_bomber_equipment_0 = {
 			owner = "ENG" 
 			amount = 100
-			creator = "FRA"
 		}
 		CAS_equipment_1 = {
 			owner = "ENG" 

@@ -93,7 +93,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_finish_five_year_plan
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -150,7 +150,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_move_industry_to_urals
-		cost = 5
+		cost = 15
 		ai_will_do = {
 			factor = 100
 		}	
@@ -1568,42 +1568,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_permanent_revolution
-		icon = GFX_goal_support_fourth_int
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = SOV_permanent_revolution_tt
-				has_country_flag = counter_purge
-			}
-			has_government = communism
-			has_civil_war = no
-		}
-		x = 19
-		y = 0
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			if = {
-				limit = { has_country_flag = counter_purge }
-				remove_country_leader_trait = permanent_revolutionary
-				add_country_leader_trait = triumphant_revolutionary
-			}
-			if = {
-				limit = { NOT = { has_country_flag = counter_purge } }
-				custom_effect_tooltip = SOV_permanent_revolution_tt2
-			}
-		}
-	}
-
-	focus = {
 		id = SOV_rehabilitated_military
 		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = SOV_great_purge focus = SOV_permanent_revolution }
+		prerequisite = { focus = SOV_great_purge }
 		mutually_exclusive = { focus = SOV_nkvd_primacy }
 		x = -2
 		y = 1

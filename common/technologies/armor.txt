@@ -929,7 +929,7 @@ technologies = {
 	advanced_medium_tank = { #Panther
 
 		allow = {
-			date > 1941.1.1 
+			date > 1941.6.1 
 		}
 		enable_equipments = {
 			medium_tank_equipment_3 
@@ -1116,7 +1116,7 @@ technologies = {
 	
 	main_battle_tank = { #E-50
 		allow = {
-			date > 1943.1.1 
+			date > 1943.6.1 
 		}
 		enable_equipments = {
 			modern_tank_equipment_1
@@ -1562,7 +1562,7 @@ technologies = {
 	advanced_heavy_tank = { #King Tiger
 
 		allow = {
-			date > 1941.1.1 
+			date > 1941.6.1 
 		}
 		enable_equipments = {
 			heavy_tank_equipment_3 

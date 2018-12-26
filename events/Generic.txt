@@ -1273,7 +1273,7 @@ country_event = {
 			FROM = {
 				add_timed_unit_leader_trait = {
 					trait = wounded
-					days = 7
+					days = 1
 				}
 			}
 		}

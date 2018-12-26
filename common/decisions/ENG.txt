@@ -56,7 +56,7 @@ political_actions = {
 				add_state_core = 723
 				add_state_core = 284
 				annex_country = { target = NZL transfer_troops = yes }
-				add_ideas = annex_new_zealand_idea
+				#add_ideas = annex_new_zealand_idea
 			}
 		}
 	}

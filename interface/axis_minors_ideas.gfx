@@ -1,0 +1,73 @@
+spriteTypes = {
+
+	
+	##Etat français/Vichy France and Free France
+	spriteType = {
+		name = "GFX_idea_EFR_STO"
+		texturefile = "gfx/interface/ideas/EFR_STO.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_EFR_joseph_darnand"
+		texturefile = "gfx/interface/ideas/EFR_joseph_darnand.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_EFR_eugene_bridoux"
+		texturefile = "gfx/interface/ideas/EFR_eugene_bridoux.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_EFR_henri_bineau"
+		texturefile = "gfx/interface/ideas/EFR_henri_bineau.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_EFR_jacques_doriot"
+		texturefile = "gfx/interface/ideas/EFR_jacques_doriot.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_EFR_jean_bergeret"
+		texturefile = "gfx/interface/ideas/EFR_jean_bergeret.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_EFR_marcel_deat"
+		texturefile = "gfx/interface/ideas/EFR_marcel_deat.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_EFR_pierre_laval"
+		texturefile = "gfx/interface/ideas/EFR_pierre_laval.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_EFR_rene_belin"
+		texturefile = "gfx/interface/ideas/EFR_rene_belin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_EFR_pierre_hering"
+		texturefile = "gfx/interface/ideas/EFR_pierre_hering.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_EFR_gabriel_auphan"
+		texturefile = "gfx/interface/ideas/EFR_gabriel_auphan.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_EFR_bertrand_pujo"
+		texturefile = "gfx/interface/ideas/EFR_bertrand_pujo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_EFR_charles_huntziger"
+		texturefile = "gfx/interface/ideas/idea_charles_huntziger.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_EFR_odilon_picquendar"
+		texturefile = "gfx/interface/ideas/EFR_odilon_picquendar.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_EFR_emile_mollard"
+		texturefile = "gfx/interface/ideas/EFR_emile_mollard.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_EFR_francois_darlan"
+		texturefile = "gfx/interface/ideas/idea_francois_darlan.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_EFR_jean_romatet"
+		texturefile = "gfx/interface/ideas/EFR_jean_romatet.dds"
+	}
+}

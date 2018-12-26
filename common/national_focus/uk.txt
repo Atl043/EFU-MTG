@@ -311,7 +311,7 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			air_experience = 100
+			air_experience = 50
 			if = {
 				limit = { has_country_flag = air_defense_focus_built_max }
 				custom_effect_tooltip = air_defense_focus_tt
@@ -330,7 +330,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			air_experience = 100
+			air_experience = 50
 			if = {
 				limit = {
 					NOT = {
@@ -853,7 +853,7 @@ focus_tree = {
 				uses = 2
 				category = air_doctrine
 			}
-			air_experience = 100
+			air_experience = 50
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1037,7 +1037,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 100
+			air_experience = 50
 			add_tech_bonus = {
 				name = fighter_command_focus
 				bonus = 0.5
@@ -1067,7 +1067,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 100
+			air_experience = 50
 			add_tech_bonus = {
 				name = bomber_command_focus
 				bonus = 0.5

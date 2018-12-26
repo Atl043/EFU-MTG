@@ -619,7 +619,7 @@ political_actions = {
 		}
 
 		days_remove = 360
-		cost = 100
+		cost = 50
 
 		ai_will_do = {
 			factor = 0
@@ -642,7 +642,7 @@ political_actions = {
 		}
 
 		days_remove = 360
-		cost = 100
+		cost = 50
 
 		ai_will_do = {
 			factor = 0
@@ -665,7 +665,7 @@ political_actions = {
 		}
 
 		days_remove = 360
-		cost = 100
+		cost = 50
 
 		ai_will_do = {
 			factor = 0
@@ -688,7 +688,7 @@ political_actions = {
 		}
 
 		days_remove = 360
-		cost = 100
+		cost = 50
 
 		ai_will_do = {
 			factor = 0

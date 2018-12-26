@@ -1657,7 +1657,8 @@ focus_tree = {
 				name = SAF_armor_effort
 				bonus = 0.5
 				uses = 1
-				category = armor
+				category = cat_light_armor
+				category = cat_medium_armor
 			}
 		}
 	}
