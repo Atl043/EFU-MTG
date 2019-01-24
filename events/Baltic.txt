@@ -10,9 +10,9 @@ country_event = {
 	title = baltic.1.t
 	desc = baltic.1.d
 	picture = GFX_report_event_soviet_soldiers
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # Accept demands
 		name = baltic.1.a
 		ai_chance = {
@@ -45,9 +45,9 @@ country_event = {
 	title = baltic.1.t
 	desc = baltic.1.d
 	picture = GFX_report_event_soviet_soldiers
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # Accept demands
 		name = baltic.1.a
 		ai_chance = {
@@ -72,7 +72,6 @@ country_event = {
 			country_event = { days = 5 id = soviet.8 }
 		}
 	}
-	
 }
 
 # Soviet Ultimatum (Lithuania)
@@ -81,9 +80,9 @@ country_event = {
 	title = baltic.1.t
 	desc = baltic.1.d
 	picture = GFX_report_event_soviet_soldiers
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # Accept demands
 		name = baltic.1.a
 		ai_chance = {
@@ -116,12 +115,12 @@ country_event = {
 	title = baltic.4.t
 	desc = baltic.4.d
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # Accept demands
 		name = baltic.4.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 90
 			modifier = {
 				factor = 0
@@ -178,7 +177,7 @@ country_event = {
 			tag = FIN
 			tag = EST
 			tag = LAT
-		} 
+		}
 		has_government = communism
 	}
 
@@ -186,7 +185,7 @@ country_event = {
 		FROM = { set_country_flag = baltic.5_fired }
 		save_event_target_as = baltic_annexation
 	}
-	
+
 	option = { # Annexed by SOV
 		name = baltic.5.a
 		ai_chance = {
@@ -206,6 +205,23 @@ country_event = {
 		}
 		SOV =	{ country_event = { id = soviet.35 days = 1 } }
 	}
+	option = { # Become Puppet state
+		name = baltic.5.b
+		ai_chance = { factor = 55
+			modifier = {
+				factor = 2
+				tag = FIN
+			}
+		}
+		SOV = { country_event = { id = soviet.36 days = 1 } }
+	}
+	option = { # Stay as own communist state
+		name = baltic.5.c
+		trigger = {
+			is_puppet = no
+		}
+		ai_chance = { factor = 5 }
+	}
 
 	mean_time_to_happen = {
 		days = 2
@@ -217,7 +233,7 @@ country_event = {
 	id = baltic.6
 
 	hidden = yes
-	
+
 	is_triggered_only = yes
 
 	immediate = {
@@ -226,7 +242,7 @@ country_event = {
 	}
 }
 
-#Poland Seeks Alliance With ROOT  
+#Poland Seeks Alliance With ROOT
 #Event fired by Poland seeking to make a Baltic faction
 country_event = {
 	id = baltic.7

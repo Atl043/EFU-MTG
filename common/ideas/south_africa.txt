@@ -37,8 +37,8 @@ ideas = {
 			picture = saf_ossewabrandwag_2
 
 			modifier = {
-				industrial_capacity_factory = -0.10
-				industrial_capacity_dockyard = -0.10
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
 			}
 		}
 
@@ -302,7 +302,6 @@ ideas = {
 
 			modifier = {
 				conscription = 0.01
-				war_support_factor = 0.05
 			}
 		}
 
@@ -341,7 +340,6 @@ ideas = {
 
 			modifier = {
 				subversive_activites_upkeep = -0.5
-				war_support_factor = 0.05
 			}
 		}
 
@@ -544,17 +542,14 @@ ideas = {
 				
 			}
 
-			available = {
-				if = {
-					limit = { has_dlc = "Together for Victory"}
-					has_completed_focus = SAF_support_the_policy_of_appeasement
-				}
-			}
-			
 			picture = generic_democratic_reformer_western_european_2d
 			
 			traits = { democratic_reformer }
-
+		
+			on_add = {
+				country_event = political.13
+			}
+		
 			do_effect = {
 				NOT = {
 					has_government = democratic
@@ -565,6 +560,7 @@ ideas = {
 				factor = 0
 			}
 		}
+
 
 
 		SAF_nicolaas_havenga = {

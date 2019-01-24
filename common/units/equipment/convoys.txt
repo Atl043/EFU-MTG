@@ -17,18 +17,18 @@ equipments = {
 		port_capacity_usage = 0
 
 		# Combat abilities
-		ap_attack = 1
+		ap_attack = 0
 		armor_value = 0
 		reliability = 0.8
 		surface_visibility = 10
-		fire_range = 1
+		fire_range = 0
 		evasion = 15
 		torpedo_attack = 0
-		attack = 0.5
+		attack = 0.0
 		naval_speed = 12
 		max_strength = 30
 		max_organisation = 30
-		anti_air_attack = 0.5
+		anti_air_attack = 0.0
 
 
         #Space taken in convoy

@@ -2,16 +2,12 @@ state={
 	id=718
 	name="STATE_718"
 	
-	state_category = town
-
-	resources={
-		rubber=5 # was: 6.000
-	}
+	state_category = pastoral
 
 	history={
 		owner = BEL
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 
 		}
 	}

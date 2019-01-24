@@ -44,6 +44,7 @@ country_event = {
 	
 	option = {
 		name = ace_promoted.1.a
+		add_war_support = 0.00		
 	}
 }
 
@@ -122,6 +123,7 @@ country_event = {
 	
 	option = {
 		name = ace_died.1.a
+		add_war_support = -0.00
 	}
 }
 
@@ -373,5 +375,6 @@ country_event = {
 	
 	option = {
 		name = aces_killed_each_other.1.a
+		add_war_support = -0.00
 	}
 }

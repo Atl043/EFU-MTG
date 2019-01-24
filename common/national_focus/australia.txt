@@ -58,6 +58,34 @@ focus_tree = {
 #	}
 
 	############################
+	#### Annex NON-PLAYERS ####
+	############################
+
+#	focus = {
+#		id = AST_annex_new_zealand
+#		icon = GFX_goal_generic_military_deal
+#		x = 22
+#		y = 6
+#
+#		cost = 0
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			NZL = { is_ai = yes }
+#		}
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			annex_country = { target = NZL transfer_troops = yes }
+#		}
+#	}
+
+	############################
 	####### ARMY SECTION #######
 	############################
 
@@ -173,10 +201,6 @@ focus_tree = {
 					gfx = "GFX_AST_iven_mackay"
 					traits = { }
 					skill = 3
-					attack_skill = 2
-					defense_skill = 2
-					planning_skill = 3
-					logistics_skill = 2
 				}
 			}
 		}
@@ -436,8 +460,9 @@ focus_tree = {
 			add_tech_bonus = {
 				name = AST_sentinel_tank_project
 				bonus = 0.5
-				uses = 2
-				category = armor
+				uses = 1
+				category = cat_light_armor
+				category = cat_medium_armor
 			}
 		}
 	}
@@ -741,7 +766,10 @@ focus_tree = {
 
 		complete_tooltip = {
 			air_experience = 25
-			520 = {
+			random_state = {
+				limit = {
+					has_state_flag = AST_expand_northern_presence_AB
+				}
 				add_building_construction = {
 					type = air_base
 					level = 2
@@ -758,7 +786,14 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 25
-			520 = {
+			random_owned_controlled_state = {
+				prioritize = { 521 520 }
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
 				add_building_construction = {
 					type = air_base
 					level = 2
@@ -804,17 +839,21 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_cac_woomera
-				bonus = 0.75
+				bonus = 0.30
 				uses = 1
-				category = cat_strategic_bomber
-				category = tactical_bomber
-				category = naval_air
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = tactical_bomber1
+				technology = tactical_bomber2
+				technology = naval_bomber1
+				technology = naval_bomber2
 			}
 			add_tech_bonus = {
 				name = AST_cac_woomera
-				bonus = 0.5
+				bonus = 0.3
 				uses = 1
-				category = cat_strategic_bomber
+				technology = strategic_bomber1
+				technology = strategic_bomber2
 			}
 		}
 	}
@@ -827,7 +866,7 @@ focus_tree = {
 
 		x = -1
 		y = 3
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -894,7 +933,15 @@ focus_tree = {
 
 			if = {
 				limit = { has_tech = radio_detection }
-				521 = {
+				random_owned_controlled_state = {
+					prioritize = { 521 }
+					limit = {
+						is_in_home_area = yes
+						free_building_slots = {
+							building = radar_station
+							size > 0
+						}
+					}
 					add_building_construction = {
 						type = radar_station
 						level = 1
@@ -903,7 +950,16 @@ focus_tree = {
 					set_state_flag = AST_volunteer_air_observers_corps_radar1
 				}
 
-				285 = {
+				random_owned_controlled_state = {
+					prioritize = { 285 }
+					limit = {
+						NOT = { has_state_flag = AST_volunteer_air_observers_corps_radar1 }
+						is_in_home_area = yes
+						free_building_slots = {
+							building = radar_station
+							size > 0
+						}
+					}
 					add_building_construction = {
 						type = radar_station
 						level = 1
@@ -912,7 +968,17 @@ focus_tree = {
 					set_state_flag = AST_volunteer_air_observers_corps_radar2
 				}
 
-				520 = {
+				random_owned_controlled_state = {
+					prioritize = { 520 }
+					limit = {
+						NOT = { has_state_flag = AST_volunteer_air_observers_corps_radar1 }
+						NOT = { has_state_flag = AST_volunteer_air_observers_corps_radar2 }
+						is_in_home_area = yes
+						free_building_slots = {
+							building = radar_station
+							size > 0
+						}
+					}
 					add_building_construction = {
 						type = radar_station
 						level = 1
@@ -925,7 +991,11 @@ focus_tree = {
 						radio_detection = 1
 					}
 					effect_tooltip = {
-						521 = {
+						random_owned_controlled_state = {
+							prioritize = { 521 }
+							limit = {
+								is_in_home_area = yes
+							}
 							add_building_construction = {
 								type = radar_station
 								level = 1
@@ -933,7 +1003,12 @@ focus_tree = {
 							}
 						}
 
-						285 = {
+						random_owned_controlled_state = {
+							prioritize = { 285 }
+							limit = {
+								NOT = { has_state_flag = AST_volunteer_air_observers_corps_radar1 }
+								is_in_home_area = yes
+							}
 							add_building_construction = {
 								type = radar_station
 								level = 1
@@ -941,7 +1016,15 @@ focus_tree = {
 							}
 						}
 					}
-					520 = {
+					random_owned_controlled_state = {
+						prioritize = { 521 }
+						limit = {
+							is_in_home_area = yes
+							free_building_slots = {
+								building = radar_station
+								size > 0
+							}
+						}
 						add_building_construction = {
 							type = radar_station
 							level = 1
@@ -951,6 +1034,7 @@ focus_tree = {
 					}
 
 					random_owned_controlled_state = {
+						prioritize = { 285 }
 						limit = {
 							NOT = { has_state_flag = AST_volunteer_air_observers_corps_radar1 }
 							is_in_home_area = yes
@@ -1003,7 +1087,8 @@ focus_tree = {
 				bonus = 0.5
 				ahead_reduction = 1
 				uses = 1
-				category = naval_bomber
+				technology = naval_bomber1
+				technology = naval_bomber2
 			}
 		}
 	}
@@ -1314,6 +1399,7 @@ focus_tree = {
 		completion_reward = {
 			navy_experience = 25
 			random_owned_controlled_state = {
+				prioritize = { 285 }
 				limit = {
 					is_coastal = yes
 					free_building_slots = {
@@ -1609,59 +1695,25 @@ focus_tree = {
 			factor = 4
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = AST_standard_gauge_railway_Inf1
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-
-			random_state = {
-				limit = {
-					has_state_flag = AST_standard_gauge_railway_Inf2
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-
 		completion_reward = {
-			521 = {
+			random_owned_controlled_state = {
+				prioritize = { 285 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = AST_standard_gauge_railway_Inf1
-			}
-
-			285 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = AST_standard_gauge_railway_Inf2
 			}
 		}
 	}
@@ -1677,14 +1729,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 5
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -1716,14 +1760,6 @@ focus_tree = {
 			factor = 5
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1735,40 +1771,27 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-
-			random_owned_controlled_state = {
-				limit = {
-					has_state_flag = AST_western_australian_government_railways_Inf2
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 		}
 
 		completion_reward = {
-			522 = {
+			random_owned_controlled_state = {
+				prioritize = { 522 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = AST_western_australian_government_railways_Inf1
-			}
-
-			519 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = AST_western_australian_government_railways_Inf2
 			}
 		}
 	}
@@ -1815,6 +1838,7 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
+				prioritize = { 519 }
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -1875,6 +1899,7 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
+				prioritize = { 285 517 }
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -1936,6 +1961,7 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
+				prioritize = { 285 }
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -2078,7 +2104,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2086,6 +2112,7 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
+				prioritize = { 520 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
@@ -2094,7 +2121,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = AST_expand_the_northern_railway_Inf
@@ -2116,24 +2143,20 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_ideas = AST_australian_arms_production
+			285 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -2150,14 +2173,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -2196,14 +2211,15 @@ focus_tree = {
 
 		available = {
 			threat > 0.10
+			date > 1936.8.1
 		}
 
 		bypass = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -2455,7 +2471,6 @@ focus_tree = {
 					}
 					division_template = {
 						name = "Rats of Tobruk"
-						division_names_group = AST_INF_01
 						regiments = {
 							infantry = { x = 0 y = 0 }
 							infantry = { x = 0 y = 1 }
@@ -2466,8 +2481,11 @@ focus_tree = {
 							infantry = { x = 2 y = 0 }
 							infantry = { x = 2 y = 1 }
 							infantry = { x = 2 y = 2 }
-							infantry = { x = 3 y = 0 }
-							infantry = { x = 3 y = 1 }
+
+							artillery_brigade = { x = 3 y = 0 }
+							artillery_brigade = { x = 3 y = 1 }
+							artillery_brigade = { x = 3 y = 2 }
+							artillery_brigade = { x = 3 y = 3 }
 						}
 						support = {
 					        recon = { x = 0 y = 0 }
@@ -2478,7 +2496,6 @@ focus_tree = {
 					else = {
 						division_template = {
 							name = "Rats of Tobruk"
-							division_names_group = AST_INF_01
 							regiments = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
@@ -2489,8 +2506,11 @@ focus_tree = {
 								infantry = { x = 2 y = 0 }
 								infantry = { x = 2 y = 1 }
 								infantry = { x = 2 y = 2 }
-								infantry = { x = 3 y = 0 }
-								infantry = { x = 3 y = 1 }
+
+								artillery_brigade = { x = 3 y = 0 }
+								artillery_brigade = { x = 3 y = 1 }
+								artillery_brigade = { x = 3 y = 2 }
+								artillery_brigade = { x = 3 y = 3 }
 							}
 							support = {
 						        recon = { x = 0 y = 0 }
@@ -2579,6 +2599,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			hidden_effect = { set_technology = { jungle_warfare = 1 } }
 			#if effect is there for the tooltips sake
 			if = {
 				limit = { has_idea = AST_great_depression_1 }
@@ -2617,16 +2638,9 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject = no
 			has_war = yes
 			is_in_faction = yes
-			OR = {
-				num_of_factories > 50
-				any_other_country = {
-					is_in_faction_with = ROOT
-					num_of_factories > 50
-				}
-			}
+				num_of_factories > 40
 		}
 
 		bypass = {
@@ -2883,6 +2897,7 @@ focus_tree = {
 		available = {
 			is_subject_of = ENG
 			ENG = { has_war = no }
+			GER = { has_completed_focus = GER_rhineland }
 		}
 
 		bypass = {
@@ -2899,7 +2914,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
 			modify_tech_sharing_bonus = {
  				id = commonwealth_research
  				bonus = 0.03
@@ -2918,7 +2932,7 @@ focus_tree = {
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		prerequisite = { focus = AST_support_the_policy_of_appeasement }
 		relative_position_id = AST_support_the_policy_of_appeasement
-		x = -1
+		x = 0
 		y = 1
 
 		cost = 10
@@ -2954,67 +2968,67 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = AST_the_singapore_strategy
-		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = AST_support_the_policy_of_appeasement }
-		x = 1
-		y = 1
-		relative_position_id = AST_support_the_policy_of_appeasement
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 0.2
-		}
-
-		available = {
-			is_in_faction_with = ENG
-			ENG = { has_government = ROOT }
-			MAL = {
-				is_puppet_of = ENG
-			}
-		}
-
-		bypass = {
-			OR = {
-				NOT = {
-					OR = {
-						336 = {
-							is_owned_by = MAL
-						}
-						333 = {
-							is_owned_by = MAL
-						}
-					}
-				}
-				NOT = {
-					MAL = {
-						is_puppet_of = ENG
-					}
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			ENG = {
-				country_event = { id = tfv_australia.1 }
-			}
-		}
-	}
+#	focus = {
+#		id = AST_the_singapore_strategy
+#		icon = GFX_goal_generic_fortify_city
+#		prerequisite = { focus = AST_support_the_policy_of_appeasement }
+#		x = 1
+#		y = 1
+#		relative_position_id = AST_support_the_policy_of_appeasement
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 0.2
+#		}
+#
+#		available = {
+#			is_in_faction_with = ENG
+#			ENG = { has_government = ROOT }
+#			MAL = {
+#				is_puppet_of = ENG
+#			}
+#		}
+#
+#		bypass = {
+#			OR = {
+#				NOT = {
+#					OR = {
+#						336 = {
+#							is_owned_by = MAL
+#						}
+#						333 = {
+#							is_owned_by = MAL
+#						}
+#					}
+#				}
+#				NOT = {
+#					MAL = {
+#						is_puppet_of = ENG
+#					}
+#				}
+#			}
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#			ENG = {
+#				country_event = { id = tfv_australia.1 }
+#			}
+#		}
+#	}
 
 	focus = {
 		id = AST_adopt_westminster
 		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = AST_strengthen_ties_with_uk focus = AST_the_singapore_strategy }
+		prerequisite = { focus = AST_strengthen_ties_with_uk }
 		x = 0
 		y = 2
 		relative_position_id = AST_support_the_policy_of_appeasement
@@ -3165,6 +3179,13 @@ focus_tree = {
 				add_building_construction = {
 					type = bunker
 					province = 4310
+					level = 4
+					instant_build = yes
+				}
+
+				add_building_construction = {
+					type = bunker
+					province = 7342
 					level = 2
 					instant_build = yes
 				}

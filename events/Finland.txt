@@ -10,14 +10,15 @@ country_event = {
 	title = finland.1.t
 	desc = finland.1.d
 	picture = GFX_report_event_soviet_tanks_snow
-	
+
 	is_triggered_only = yes
-	
+	fire_only_once = yes
+
 	option = { # Refuse
 		name = finland.1.b
 		ai_chance = { factor = 75 }
+		set_global_flag = soviet_demand
 		SOV = {
-			country_event = { days = 5 id = soviet.13 }
 			effect_tooltip = {
 				create_wargoal = {
 					type = take_state
@@ -35,7 +36,7 @@ country_event = {
 	title = finland.2.t
 	desc = finland.2.d
 	picture = GFX_report_event_soviet_finnish_pact
-	
+
 	fire_only_once = yes
 
 	trigger = {
@@ -70,31 +71,8 @@ country_event = {
 	title = finland.3.t
 	desc = finland.3.d
 	picture = GFX_report_event_finnish_letter
-	
+
 	is_triggered_only = yes
-
-	option = {
-		name = finland.3.a
-
-		ai_chance = {
-			factor = 10 
-			modifier = {
-				factor = 10
-				OR = {
-					has_war = yes
-					has_government = communism
-				}
-			}
-		}
-
-		FIN = {
-			country_event = { id = finland.4 days = 3 }
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = refused_help
-			}
-		}
-	}
 
 	option = {
 		name = finland.3.b
@@ -102,7 +80,7 @@ country_event = {
 		ai_chance = {
 			factor = 25
 			modifier = {
-				factor = 5							
+				factor = 5
 				has_government = democratic
 				FIN = {
 				 has_government = democratic
@@ -116,7 +94,7 @@ country_event = {
 				NOT = {
 					has_government = communism
 				}
-			}	
+			}
 			has_manpower > 8402
 		}
 		add_manpower = -8402
@@ -170,11 +148,11 @@ country_event = {
 				FIN = {
 					has_government = democratic
 					strength_ratio = {
-						tag = SOV 
+						tag = SOV
 						ratio > 0.3
 					}
 				}
-			}			
+			}
 		}
 
 		declare_war_on = {
@@ -197,7 +175,7 @@ country_event = {
 	title = finland.4.t
 	desc = finland.4.d
 	picture = GFX_report_event_finnish_soldiers_snow
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -210,7 +188,7 @@ country_event = {
 	title = finland.5.t
 	desc = finland.5.d
 	picture = GFX_report_event_swedish_soldier
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -253,7 +231,7 @@ country_event = {
 	title = finland.6.t
 	desc = finland.6.d
 	picture = GFX_report_event_swedish_soldier
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -267,7 +245,7 @@ country_event = {
 	title = finland.7.t
 	desc = finland.7.d
 	picture = GFX_report_event_soviet_tanks_snow
-	
+
 	trigger = {
 		tag = FIN
 		has_war_with = SOV
@@ -288,18 +266,12 @@ country_event = {
 		}
 		SOV = {
 			country_event = { id = finland.8 }
-		}
-		custom_effect_tooltip = finland.7.a_tt
-		effect_tooltip = {
-			SOV = { 
-				white_peace = {
-					tag = FIN 
-					message = FIN_agree_peace 
-				} 
-			}
+			white_peace = FIN
 			transfer_state = 146
 			transfer_state = 147
+			transfer_state = 770
 		}
+		GER = { add_to_faction = FIN }
 	}
 }
 
@@ -309,7 +281,7 @@ country_event = {
 	title = finland.8.t
 	desc = finland.8.d
 	picture = GFX_report_event_finnish_soldiers_snow
-	
+
 	is_triggered_only = yes
 
 	#Accept surrender
@@ -318,24 +290,7 @@ country_event = {
 		ai_chance = {
 			base = 9
 		}
-		white_peace = FIN
-		transfer_state = 146
-		transfer_state = 147
 	}
 
-	 	
-}
-
-#Soviet says no!
-country_event = {
-	id = finland.9
-	title = finland.9.t
-	desc = finland.9.d
-	picture = GFX_report_event_finnish_soldiers_snow
-	
-	is_triggered_only = yes
-
-	option = {
-		name = finland.9.a
-	}
-}
+	#Take it all
+ }

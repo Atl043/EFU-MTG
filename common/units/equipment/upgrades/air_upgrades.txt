@@ -16,8 +16,9 @@ upgrades = {
 		cost = air
 
 		air_attack = 0.1
+		naval_strike_attack = 0.05
 		maximum_speed = -0.01
-		reliability = -0.15
+		reliability = -0.1
 		air_agility = -0.05
 	}
 	plane_range_upgrade = {
@@ -65,7 +66,7 @@ upgrades = {
 		cost = air
 		
 		naval_strike_attack = 0.05
-		reliability = -0.15
+		reliability = -0.10
 	}
 	plane_bomb_upgrade = {
 		max_level = 5

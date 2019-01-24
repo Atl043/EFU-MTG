@@ -1,6 +1,6 @@
 focus_tree = {
 	id = manchukuo_focus
-	
+
 	country = {
 		factor = 0
 		modifier = {
@@ -9,7 +9,7 @@ focus_tree = {
 			has_dlc = "Waking the Tiger"
 		}
 	}
-	
+
 
 	default = no
 
@@ -22,7 +22,7 @@ focus_tree = {
 #		mutually_exclusive = { focus =  }
 #		x = -3
 #		y = 0
-#		relative_position_id = 
+#		relative_position_id =
 #
 #		cost = 10
 #
@@ -33,7 +33,7 @@ focus_tree = {
 #		available = {
 #
 #		}
-#		
+#
 #		bypass = {
 #
 #		}
@@ -137,7 +137,7 @@ focus_tree = {
 
 		available = {
 
-		}	
+		}
 
 		bypass = {
 
@@ -199,10 +199,10 @@ focus_tree = {
 			random_owned_state = {
 				limit = { is_fully_controlled_by = ROOT }
 				add_manpower = 25417
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = MAN_invite_japanese_settlers_2IC
@@ -210,10 +210,10 @@ focus_tree = {
 			random_owned_state = {
 				limit = { is_fully_controlled_by = ROOT }
 				add_manpower = 33846
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = MAN_invite_japanese_settlers_2IC
@@ -257,7 +257,7 @@ focus_tree = {
 					is_fully_controlled_by = ROOT
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 			}
 		}
 	}
@@ -341,7 +341,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_research_slot = 1			
+			add_research_slot = 1
 		}
 	}
 
@@ -450,8 +450,8 @@ focus_tree = {
 		id = MAN_obedience
 		icon = GFX_focus_CZE_german_puppet
 		prerequisite = { focus = MAN_army_modernization }
-		x = -2
-		y = 4
+		x = -1
+		y = 2
 		relative_position_id = MAN_army_modernization
 
 		cost = 10
@@ -461,6 +461,7 @@ focus_tree = {
 		}
 
 		available = {
+
 		}
 
 		bypass = {
@@ -477,6 +478,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 120
+			#TODO_WTT_CD maybe something sexier...
 		}
 	}
 
@@ -511,7 +513,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_stability = 0.1
+			add_stability = 0.15
 		}
 	}
 
@@ -583,10 +585,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = MAN_invite_japanese_investors_IC
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -605,10 +607,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = MAN_invite_japanese_investors_IC
@@ -637,10 +639,10 @@ focus_tree = {
 				}
 				328 = {
 					is_fully_controlled_by = ROOT
-				} 
+				}
 				610 = {
 					is_fully_controlled_by = ROOT
-				} 
+				}
 				717 = {
 					is_fully_controlled_by = ROOT
 				}
@@ -665,7 +667,7 @@ focus_tree = {
 				716 = {
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -675,27 +677,27 @@ focus_tree = {
 				328 = {
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 2
 						instant_build = yes
 					}
-				} 
+				}
 			}
 			if = {
 				limit = { 610 = { is_fully_controlled_by = ROOT } }
 				610 = {
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 2
 						instant_build = yes
 					}
-				} 
+				}
 			}
 			if = {
 				limit = { 717 = { is_fully_controlled_by = ROOT } }
 				717 = {
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -782,10 +784,10 @@ focus_tree = {
 
 		completion_reward = {
 			716 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -951,10 +953,10 @@ focus_tree = {
 
 		completion_reward = {
 			716 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1004,7 +1006,7 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = MAN_first_five_year_plan }
 		x = 3
-		y = 1
+		y = 2
 		relative_position_id = MAN_first_five_year_plan
 
 		cost = 10
@@ -1147,10 +1149,34 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			every_state = {
-				limit = { is_core_of = CHI }
-				add_core_of = ROOT
-			}
+			614 = { add_core_of = ROOT }
+			615 = { add_core_of = ROOT }
+			620 = { add_core_of = ROOT }
+			621 = { add_core_of = ROOT }
+			613 = { add_core_of = ROOT }
+			608 = { add_core_of = ROOT }
+			606 = { add_core_of = ROOT }
+			603 = { add_core_of = ROOT }
+			602 = { add_core_of = ROOT }
+			600 = { add_core_of = ROOT }
+			599 = { add_core_of = ROOT }
+			598 = { add_core_of = ROOT }
+			597 = { add_core_of = ROOT }
+			596 = { add_core_of = ROOT }
+			595 = { add_core_of = ROOT }
+			591 = { add_core_of = ROOT }
+			760 = { add_core_of = ROOT }
+			758 = { add_core_of = ROOT }
+			759 = { add_core_of = ROOT }
+			594 = { add_core_of = ROOT }
+			593 = { add_core_of = ROOT }
+			592 = { add_core_of = ROOT }
+			622 = { add_core_of = ROOT }
+			764 = { add_core_of = ROOT }
+			765 = { add_core_of = ROOT }
+			763 = { add_core_of = ROOT }
+			762 = { add_core_of = ROOT }
+			761 = { add_core_of = ROOT }
 		}
 	}
 
@@ -1171,8 +1197,8 @@ focus_tree = {
 
 		available = {
 			is_subject_of = JAP
-			compare_autonomy_state > autonomy_wtt_imperial_protectorate			
-			MAN = { 
+			compare_autonomy_state > autonomy_wtt_imperial_protectorate
+			MAN = {
 				ic_ratio = {
 					tag = JAP
 					ratio > 0.2
@@ -1203,7 +1229,5 @@ focus_tree = {
 			}
 		}
 	}
-
-
 	shared_focus = CHI_invite_foreign_investors
 }

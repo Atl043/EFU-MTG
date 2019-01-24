@@ -15,7 +15,7 @@ focus_tree = {
 
 	focus = {
 		id = EFR_marechal_nous_voila
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_FRA_VIC_Petain
 		x = 4
 		y = 0
 		cost = 5
@@ -243,13 +243,19 @@ focus_tree = {
 
 	focus = {
 		id = EFR_famille
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_SLO_slovak_birth
 		prerequisite = { focus = EFR_marechal_nous_voila }
 		relative_position_id = EFR_marechal_nous_voila
 		available = {
 			OR = {
 				has_government = fascism
 				has_government = neutrality
+			}
+			if = {
+				limit = {
+					SLO = { is_subject = yes }
+				}
+				SLO = { OVERLORD = { has_government = fascism } }
 			}
 		}
 		x = 0
@@ -278,41 +284,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
+			add_ideas = CRO_catholic_dominance
 		}
 	}
 	focus = {
 		id = EFR_rationning
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_FRA_VIC_rationning
 		prerequisite = { focus = EFR_famille }
 		prerequisite = { focus = EFR_travail }
 		relative_position_id = EFR_marechal_nous_voila
@@ -363,7 +340,7 @@ focus_tree = {
 
 	focus = {
 		id = EFR_patrie_focus
-		icon = GFX_goal_generic_attack_allies #icon = GFX_goal_tripartite_pact
+		icon = GFX_FRA_VIC_francisque #icon = GFX_goal_tripartite_pact
 		prerequisite = { focus = EFR_marechal_nous_voila }
 		relative_position_id = EFR_marechal_nous_voila
 		available = {
@@ -493,7 +470,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EFR_milice_francaise
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_FRA_VIC_milice_francaise
 		prerequisite = { focus = EFR_negociate_the_release_of_officers }
 		relative_position_id = EFR_negociate_the_release_of_officers
 		x = 1
@@ -1450,7 +1427,7 @@ focus_tree = {
 		available = {
 			country_exists = GER
 			EFR = {
-				#is_puppet_of = GER
+				is_puppet_of = GER
 			}
 		}
 
@@ -1479,7 +1456,7 @@ focus_tree = {
 
 	focus = {
 		id = EFR_STO
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_FRA_VIC_goal_STO
 		relative_position_id = EFR_economic_help
 		prerequisite = {focus = EFR_economic_help}
 		x = 1
@@ -1534,7 +1511,7 @@ focus_tree = {
 
 	focus = {
 		id = EFR_STO_2
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_FRA_VIC_goal_STO
 		prerequisite = { focus = EFR_STO }
 		relative_position_id = EFR_STO
 		x = 0
@@ -1543,7 +1520,7 @@ focus_tree = {
 
 		available_if_capitulated = no
 		available = {
-			#is_puppet_of = GER
+			is_puppet_of = GER
 		}
 
 		ai_will_do = {

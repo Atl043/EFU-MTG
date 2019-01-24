@@ -8,11 +8,11 @@ state= {
 	history= 	{
 		owner = ENG
 		buildings = {
-			infrastructure = 2
 			12960 = {
 				naval_base = 1
 			}
 		}
+		add_claim_by = ARG
 	}
 	provinces= { 12960 }
 }

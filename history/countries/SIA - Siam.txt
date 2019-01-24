@@ -28,9 +28,8 @@ set_technology = {
 }
 
 set_convoys = 200
-set_stability = 0.75
+set_stability = 0.37
 set_war_support = 0.71
-set_research_slots = 3
 1939.1.1 = {
 
 	add_political_power = 1198
@@ -87,7 +86,7 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 0
+			popularity = 20
 		}
 
 		fascism = {
@@ -95,12 +94,12 @@ set_politics = {
 		}
 		
 		communism = {
-			popularity = 0
+			popularity = 20
 			#banned = no #default is no
 		}
 		
 		neutrality = {
-			popularity = 60
+			popularity = 20
 		}
 	}
 	
@@ -119,14 +118,47 @@ add_ideas = {
 create_country_leader = {
 	name = "Phraya Phahon"
 	desc = "POLITICS_PHRAYA_PHAHON_DESC"
-	picture = "Portrait_Siam_Phraya_Phahon.dds"
+    picture = "Portrait_Siam_Phraya_Phahon.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
 		#
 	}
 }
-create_corps_commander = {
+
+create_country_leader = {
+	name = "Chin Peng"
+	desc = "POLITICS_CHIN_PENG_DESC"
+	picture = "Portrait_Siam_Chin_Peng.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+		name = "Pridi Banomyong"
+		desc = "POLITICS_Pridi_Banomyong_DESC"
+		picture = "Pridi_Banomyong.dds"
+		expire = "1965.1.1"
+		ideology = conservatism
+		traits = {
+			#
+		}
+	}
+
+	create_country_leader = {
+		name = "Phraya Phahon"
+		desc = "POLITICS_PLAEK_PHIBUNSONGKHRAM_DESC"
+		picture = "Portrait_Siam_Phraya_Phahon.dds"
+		expire = "1965.1.1"
+		ideology = fascism_ideology
+		traits = {
+			#
+		}
+	}
+	create_corps_commander = {
 	name = "TommyKay Fully Nippon"
 	picture = "japTommyKay.dds"
 	traits = { commando  fortress_buster panzer_leader}
@@ -191,4 +223,6 @@ create_corps_commander = {
 			#
 		}
 	}
+
+
 }

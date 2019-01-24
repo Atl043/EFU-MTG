@@ -941,7 +941,6 @@ war_measures = {
                 }
                 AND = {
                     has_government = fascism
-					NOT = { tag = GER }
                     OR = {
                         has_war_support > 0.89
                         surrender_progress > 0
@@ -952,13 +951,13 @@ war_measures = {
                     has_war_support > 0.89
                     has_stability > 0.7
                 }
-				AND = {
-					tag = GER
-                    date > 1943.2.01
-					has_war_support > 0.89
-                    
-                }
             }
+            if = {
+					limit = {
+						original_tag = GER
+					}
+					NOT = { has_idea = GER_short_war }
+				}
         }
         visible = {
             has_war = yes
@@ -1154,7 +1153,7 @@ economy_decisions = {
 					}
 					NOT = { has_state_flag = infrastructure_building_slot_flag }
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				set_state_flag = infrastructure_building_slot_flag
 			}
 		}

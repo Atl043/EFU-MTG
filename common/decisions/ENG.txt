@@ -1,66 +1,5 @@
 political_actions = {
 
-	Puppet_Indonesia = {
-		ai_will_do = { factor = 0 }
-		cost = 25
-
-		visible = {
-			tag = ENG
-			country_exists = INS
-			ENG = { has_war_with = JAP }
-		}
-
-		complete_effect = {
-			#INS = {
-			#		set_autonomy = {
-			#			target = INS
-			#			autonomy_state = autonomy_free
-			#		}
-			#	}
-			#ENG = { puppet = INS }
-			ENG = {
-					set_autonomy = {
-						target = INS
-						autonomy_state = autonomy_integrated_puppet
-					}
-				}
-		}
-	}
-
-	force_vichy_france_war = {
-		ai_will_do = { factor = 0 }
-		cost = 25
-		fire_only_once = yes
-		visible = {
-			tag = ENG
-			country_exists = EFR
-		}
-
-		complete_effect = {
-			GER = { puppet = EFR }
-		}
-	}
-
-	annex_new_zealand_uk = {
-		ai_will_do = { factor = 0 }
-		cost = 20
-		visible = {
-			tag = ENG
-			NZL = { is_ai = yes }
-			country_exists = NZL
-			date > 1939.1.1
-		}
-		fire_only_once = yes
-		complete_effect = {
-			ENG = {
-				add_state_core = 723
-				add_state_core = 284
-				annex_country = { target = NZL transfer_troops = yes }
-				#add_ideas = annex_new_zealand_idea
-			}
-		}
-	}
-
 	hold_blood_toil_tears_sweat_speech = {
 
 		icon = generic_political_discourse
@@ -75,7 +14,7 @@ political_actions = {
 			has_war_with = GER
 		}
 
-		cost = 50
+		cost = 25
 
 		fire_only_once = yes
 
@@ -179,17 +118,18 @@ political_actions = {
 	}
 
 	macdonald_proposal = {
-	
+
 		allowed = {
 			tag = ENG
 		}
-		
+
 		available = {
 			tag = ENG
 			has_government = democratic
 			has_war_with = GER
 			IRE = { exists = yes }
 			NOT = { is_in_faction_with = IRE }
+			NOT = { has_war_with = IRE }
 			NOR = { has_capitulated = yes }
 			is_in_faction_with = NOR
 			FRA = { has_capitulated = yes }
@@ -197,14 +137,14 @@ political_actions = {
 		}
 
 		cost = 50
-		
+
 		visible = {
 			tag = ENG
 			has_government = democratic
 			has_war_with = GER
 			IRE = { exists = yes }
 		}
-		
+
 		complete_effect = {
 			IRE = { country_event = { id = wtt_britain.24 } }
 			add_popularity = { ideology = democratic popularity = 0.03 }
@@ -216,56 +156,13 @@ political_actions = {
 		}
 	}
 
-	ENG_invoke_the_alliance_of_1373 = {
-
-		icon = generic_prepare_civil_war
-	
-		allowed = {
-			tag = ENG
-		}
-		
-		available = {
-			has_war = yes
-			POR = {
-				OR = {
-					has_government = ROOT
-					has_government = neutrality
-				}
-			}
-			POR = { is_in_faction = no }
-		}
-
-		cost = 1000
-		
-		visible = {
-			has_war = yes
-			NOT = { has_war_with = POR }
-		}
-		
-		complete_effect = {
-			POR = { country_event = generic.5 }
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				NOT = {
-					any_other_country = {
-						original_tag = SPR
-						has_war_with = ROOT
-					}
-				}
-			}
-		}
-	}
 
 	ENG_request_azores_lease = {
-	
+
 		allowed = {
 			tag = ENG
 		}
-		
+
 		available = {
 			has_war = yes
 			POR = {
@@ -276,6 +173,7 @@ political_actions = {
 				}
 			}
 			POR = { is_in_faction = no }
+			NOT = { has_war_with = POR }
 		}
 
 		cost = 50
@@ -283,7 +181,7 @@ political_actions = {
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		visible = {
 			has_war = yes
 			POR = {
@@ -291,12 +189,136 @@ political_actions = {
 				NOT = { has_war_with = ROOT }
 			}
 		}
-		
+
 		complete_effect = {
 			POR = { country_event = wtt_britain_lease_azores.1 }
 		}
 	}
+	puppet_france = {
+		ai_will_do = { factor = 0 }
+		cost = 25
 
+		visible = {
+			tag = ENG
+			country_exists = FRA
+			date > 1940.6.1
+			FRA = { is_ai = yes }
+
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ENG = { puppet = FRA }
+		}
+	}
+
+	annex_canada = {
+		ai_will_do = { factor = 0 }
+		cost = 50	
+		visible = {
+			tag = ENG
+			CAN = { is_ai = yes }
+			country_exists = CAN
+			date > 1939.1.1
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ENG = {
+				annex_country = { target = CAN transfer_troops = yes }
+				add_ideas = annex_canada_idea
+			}
+		}
+	}
+
+	annex_ireland = {
+		ai_will_do = { factor = 0 }
+		cost = 50	
+		visible = {
+			tag = ENG
+			IRE = { is_ai = yes }
+			country_exists = IRE
+			date > 1939.1.1
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ENG = {
+				annex_country = { target = IRE transfer_troops = yes }
+			}
+		}
+	}
+
+	annex_british_raj = {
+		ai_will_do = { factor = 0 }
+		cost = 50
+		visible = {
+			tag = ENG
+			RAJ = { is_ai = yes }
+			country_exists = RAJ
+			date > 1939.1.1
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ENG = {
+				annex_country = { target = RAJ transfer_troops = yes }
+				add_ideas = annex_british_raj_idea
+			}
+		}
+	}
+
+	annex_south_africa = {
+		ai_will_do = { factor = 0 }
+		cost = 30
+		visible = {
+			tag = ENG
+			SAF = { is_ai = yes }
+			country_exists = SAF
+			date > 1939.1.1
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ENG = {
+				annex_country = { target = SAF transfer_troops = yes }
+				add_ideas = annex_south_africa_idea
+			}
+		}
+	}
+
+	annex_australia = {
+		ai_will_do = { factor = 0 }
+		cost = 30
+		visible = {
+			tag = ENG
+			AST = { is_ai = yes }
+			country_exists = AST
+			date > 1939.1.1
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ENG = {
+				annex_country = { target = AST transfer_troops = yes }
+				add_ideas = annex_australia_idea
+			}
+		}
+	}
+
+	annex_new_zealand_uk = {
+		ai_will_do = { factor = 0 }
+		cost = 20
+		visible = {
+			tag = ENG
+			NZL = { is_ai = yes }
+			country_exists = NZL
+			date > 1939.1.1
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ENG = {
+				add_state_core = 723
+				add_state_core = 284
+				annex_country = { target = NZL transfer_troops = yes }
+				add_ideas = annex_new_zealand_idea
+			}
+		}
+	}
 }
 
 operations = {
@@ -304,11 +326,11 @@ operations = {
 	operation_fork = {
 
 		icon = generic_operation
-	
+
 		allowed = {
 			tag = ENG
 		}
-		
+
 		available = {
 			tag = ENG
 			has_government = democratic
@@ -323,33 +345,34 @@ operations = {
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		visible = {
 			tag = ENG
 			has_war_with = GER
 			ICE = { exists = yes }
 			NOT = { ICE = { is_in_faction_with = ROOT } }
 		}
-		
+
 		complete_effect = {
 			declare_war_on = { target = ICE type = puppet_wargoal_focus }
 			add_popularity = { ideology = democratic popularity = -0.05 }
 		}
 	}
-	
+
 	invade_ireland = {
 
 		icon = generic_operation
-	
+
 		allowed = {
 			tag = ENG
 		}
-		
+
 		available = {
 			tag = ENG
 			has_government = democratic
 			has_war_with = GER
 			IRE = { exists = yes }
+			NOT = { has_war_with = IRE }
 			NOT = { is_in_faction_with = IRE }
 			NOR = { has_capitulated = yes }
 			is_in_faction_with = NOR
@@ -376,13 +399,13 @@ operations = {
 				IRE = { has_added_tension_amount > 0.05 }
 			}
 		}
-		
+
 		visible = {
 			tag = ENG
 			has_war_with = GER
 			IRE = { exists = yes }
 		}
-		
+
 		complete_effect = {
 			declare_war_on = { target = IRE type = annex_everything }
 			add_popularity = { ideology = democratic popularity = -0.03 }
@@ -392,11 +415,11 @@ operations = {
 	mers_el_kebir_raid = {
 
 		icon = generic_naval
-	
+
 		allowed = {
 			tag = ENG
 		}
-		
+
 		available = {
 			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
 			tag = ENG
@@ -415,7 +438,7 @@ operations = {
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		visible = {
 			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
 			tag = ENG
@@ -432,7 +455,7 @@ operations = {
 				}
 			}
 		}
-		
+
 		complete_effect = {
 			random_other_country = {
 				limit = {

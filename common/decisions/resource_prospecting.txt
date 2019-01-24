@@ -14,12 +14,10 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation3
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 597
 			controls_state = 597
 		}
 
 		visible = {
-			owns_state = 597
 			controls_state = 597
 			597 = {
 				NOT = {
@@ -64,12 +62,10 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation2
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 621
 			controls_state = 621
 		}
 
 		visible = {
-			owns_state = 621
 			controls_state = 621
 			621 = {
 				NOT = {
@@ -114,12 +110,12 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation2
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 714
+			
 			controls_state = 714
 		}
 
 		visible = {
-			owns_state = 714
+			
 			controls_state = 714
 			714 = {
 				NOT = {
@@ -164,12 +160,12 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation4
 			num_of_civilian_factories_available_for_projects > 4
-			owns_state = 714
+			
 			controls_state = 714
 		}
 
 		visible = {
-			owns_state = 714
+			
 			controls_state = 714
 			714 = {
 				has_state_flag = daqing_oil_developed_1
@@ -213,7 +209,7 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation3
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 325
+			
 			controls_state = 325
 		}
 		highlight_states = {
@@ -221,7 +217,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 325
+			
 			controls_state = 325
 			325 = {
 				NOT = {
@@ -258,13 +254,13 @@ prospect_for_resources = {
 		icon = aluminium
 
 		allowed = {
-			NOT = { tag = MAN }
+			#NOT = { tag = MAN }
 		}
 
 		available = {
 			has_tech = excavation2
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 328
+			
 			controls_state = 328
 		}
 		highlight_states = {
@@ -272,7 +268,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 328
+			
 			controls_state = 328
 			328 = {
 				NOT = {
@@ -315,7 +311,7 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation3
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 605
+			
 			controls_state = 605
 		}
 		highlight_states = {
@@ -323,7 +319,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 605
+			
 			controls_state = 605
 			605 = {
 				NOT = {
@@ -364,7 +360,7 @@ prospect_for_resources = {
 		}
 
 		available = {
-			owns_state = 623
+			
 			controls_state = 623
 			num_of_civilian_factories_available_for_projects > 2
 			has_tech = excavation3
@@ -374,7 +370,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 623
+			
 			controls_state = 623
 			623 = {
 				NOT = {
@@ -421,12 +417,12 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation4
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 627
+			
 			controls_state = 627
 		}
 
 		visible = {
-			owns_state = 627
+			
 			controls_state = 627
 			627 = {
 				NOT = {
@@ -469,7 +465,7 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation3
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 625
+			
 			controls_state = 625
 		}
 
@@ -478,7 +474,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 625
+			
 			controls_state = 625
 			625 = {
 				NOT = {
@@ -522,7 +518,7 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation4
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 725
+			
 			controls_state = 725
 		}
 
@@ -531,7 +527,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 725
+			
 			controls_state = 725
 			725 = {
 				NOT = {
@@ -575,7 +571,7 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation4
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 671
+			
 			controls_state = 671
 		}
 
@@ -584,7 +580,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 671
+			
 			controls_state = 671
 			671 = {
 				NOT = {
@@ -628,7 +624,7 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation2
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 336
+			
 			controls_state = 336
 		}
 
@@ -637,7 +633,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 336
+			
 			controls_state = 336
 			336 = {
 				NOT = {
@@ -675,15 +671,13 @@ prospect_for_resources = {
 		icon = oil
 
 		allowed = {
-			NOT = {
-				tag = ITA
-			}
+			#NOT = {tag = ITA}
 		}
 
 		available = {
 			has_tech = excavation3
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 662
+			
 			controls_state = 662
 		}
 
@@ -692,7 +686,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 662
+			
 			controls_state = 662
 			662 = {
 				NOT = {
@@ -732,15 +726,13 @@ prospect_for_resources = {
 		icon = oil
 
 		allowed = {
-			NOT = {
-				tag = ITA
-			}
+			#NOT = {tag = ITA}
 		}
 
 		available = {
 			has_tech = excavation4
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 450
+			
 			controls_state = 450
 		}
 
@@ -749,7 +741,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 450
+			
 			controls_state = 450
 			has_tech = excavation3
 			450 = {
@@ -796,7 +788,7 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation3
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 518
+			
 			controls_state = 518
 		}
 
@@ -805,7 +797,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 518
+			
 			controls_state = 518
 			518 = {
 				NOT = {
@@ -851,7 +843,7 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation3
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 556
+			
 			controls_state = 556
 		}
 
@@ -860,7 +852,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 556
+			
 			controls_state = 556
 			556 = {
 				NOT = {
@@ -906,7 +898,7 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation5
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 556
+			
 			controls_state = 556
 		}
 
@@ -915,7 +907,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 556
+			
 			controls_state = 556
 			has_tech = excavation3
 			556 = {
@@ -963,7 +955,7 @@ prospect_for_resources = {
 		}
 
 		available = {
-			owns_state = 543
+			
 			controls_state = 543
 			num_of_civilian_factories_available_for_projects > 2
 		}
@@ -973,7 +965,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 543
+			
 			controls_state = 543
 			543 = {
 				NOT = {
@@ -1017,7 +1009,7 @@ prospect_for_resources = {
 		}
 
 		available = {
-			owns_state = 543
+			
 			controls_state = 543
 			num_of_civilian_factories_available_for_projects > 4
 		}
@@ -1027,7 +1019,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 543
+			
 			controls_state = 543
 			543 = {
 				has_state_flag = madagascar_rubber_developed
@@ -1074,7 +1066,7 @@ prospect_for_resources = {
 		}
 
 		available = {
-			owns_state = 558
+			
 			controls_state = 558
 			num_of_civilian_factories_available_for_projects > 2
 		}
@@ -1084,7 +1076,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 558
+			
 			controls_state = 558
 			558 = {
 				NOT = {
@@ -1134,13 +1126,11 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation4
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 56
-			controls_state = 56
+						controls_state = 56
 		}
 
 		visible = {
-			owns_state = 56
-			controls_state = 56
+						controls_state = 56
 			has_tech = excavation3
 			56 = {
 				NOT = {
@@ -1186,8 +1176,7 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation5
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 4
-			controls_state = 4
+					controls_state = 4
 		}
 
 		highlight_states = {
@@ -1195,8 +1184,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 4
-			controls_state = 4
+					controls_state = 4
 			has_tech = excavation3
 			4 = {
 				NOT = {
@@ -1246,13 +1234,11 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation4
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 36
-			controls_state = 36
+						controls_state = 36
 		}
 
 		visible = {
-			owns_state = 36
-			controls_state = 36
+						controls_state = 36
 			has_tech = excavation3
 			36 = {
 				NOT = {
@@ -1300,12 +1286,12 @@ prospect_for_resources = {
 		available = {
 			has_tech = construction3
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 347
+			
 			controls_state = 347
 		}
 
 		visible = {
-			owns_state = 347
+			
 			controls_state = 347
 			347 = {
 				NOT = {
@@ -1353,12 +1339,12 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation3
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 331
+			
 			controls_state = 331
 		}
 
 		visible = {
-			owns_state = 331
+			
 			controls_state = 331
 			331 = {
 				NOT = {
@@ -1405,7 +1391,7 @@ prospect_for_resources = {
 			466 = {
 				infrastructure > 2
 			}
-			owns_state = 466
+			
 			controls_state = 466
 		}
 		highlight_states = {
@@ -1413,7 +1399,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 466
+			
 			controls_state = 466
 			466 = {
 				NOT = {
@@ -1462,12 +1448,12 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation3
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 315
+			
 			controls_state = 315
 		}
 
 		visible = {
-			owns_state = 315
+			
 			controls_state = 315
 			315 = {
 				NOT = {
@@ -1517,12 +1503,12 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation2
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 372
+			
 			controls_state = 372
 		}
 
 		visible = {
-			owns_state = 372
+			
 			controls_state = 372
 			372 = {
 				NOT = {
@@ -1597,12 +1583,12 @@ prospect_for_resources = {
 		available = {
 			has_tech = construction2
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 358
+			
 			controls_state = 358
 		}
 
 		visible = {
-			owns_state = 358
+			
 			controls_state = 358
 			358 = {
 				NOT = {
@@ -1674,7 +1660,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = construction2
-			owns_state = 368
+			
 			controls_state = 368
 			num_of_civilian_factories_available_for_projects > 2
 		}
@@ -1684,7 +1670,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 368
+			
 			controls_state = 368
 			368 = {
 				NOT = {
@@ -1758,7 +1744,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = construction2
-			owns_state = 386
+			
 			controls_state = 386
 			num_of_civilian_factories_available_for_projects > 2
 		}
@@ -1768,7 +1754,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 386
+			
 			controls_state = 386
 			386 = {
 				NOT = {
@@ -1847,12 +1833,12 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation3
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 387
+			
 			controls_state = 387
 		}
 
 		visible = {
-			owns_state = 387
+			
 			controls_state = 387
 			387 = {
 				NOT = {
@@ -1931,12 +1917,12 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation3
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 378
+			
 			controls_state = 378
 		}
 
 		visible = {
-			owns_state = 378
+			
 			controls_state = 378
 			378 = {
 				NOT = {
@@ -2011,7 +1997,7 @@ prospect_for_resources = {
 		available = {
 			has_tech = construction3
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 391
+			
 			controls_state = 391
 		}
 
@@ -2020,7 +2006,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 391
+			
 			controls_state = 391
 			391 = {
 				NOT = {
@@ -2099,12 +2085,12 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation3
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 360
+			
 			controls_state = 360
 		}
 
 		visible = {
-			owns_state = 360
+			
 			controls_state = 360
 			360 = {
 				NOT = {
@@ -2179,7 +2165,7 @@ prospect_for_resources = {
 		available = {
 			has_tech = construction3
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 261
+			
 			controls_state = 261
 		}
 
@@ -2188,7 +2174,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 261
+			
 			controls_state = 261
 			261 = {
 				NOT = {
@@ -2266,12 +2252,12 @@ prospect_for_resources = {
 		available = {
 			has_tech = construction3
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 396
+			
 			controls_state = 396
 		}
 
 		visible = {
-			owns_state = 396
+			
 			controls_state = 396
 			396 = {
 				NOT = {
@@ -2350,12 +2336,12 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation4
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 388
+			
 			controls_state = 388
 		}
 
 		visible = {
-			owns_state = 388
+			
 			controls_state = 388
 			has_tech = excavation3
 			388 = {
@@ -2435,12 +2421,12 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation4
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 378
+			
 			controls_state = 378
 		}
 
 		visible = {
-			owns_state = 378
+			
 			controls_state = 378
 			has_tech = excavation3
 			378 = {
@@ -2609,7 +2595,7 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation2
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 123
+			
 			controls_state = 123
 		}
 
@@ -2618,7 +2604,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 123
+			
 			controls_state = 123
 			123 = {
 				NOT = {
@@ -2661,7 +2647,7 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation4
 			num_of_civilian_factories_available_for_projects > 4
-			owns_state = 123
+			
 			controls_state = 123
 		}
 
@@ -2670,7 +2656,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 123
+			
 			controls_state = 123
 			123 = {
 				NOT = {
@@ -2852,7 +2838,7 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation3
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 233
+			
 			controls_state = 233
 		}
 
@@ -2861,7 +2847,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 233
+			
 			controls_state = 233
 			233 = {
 				NOT = {
@@ -2904,7 +2890,7 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation5
 			num_of_civilian_factories_available_for_projects > 4
-			owns_state = 233
+			
 			controls_state = 233
 		}
 
@@ -2913,7 +2899,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 233
+			
 			controls_state = 233
 			233 = {
 				NOT = {
@@ -2957,7 +2943,7 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation4
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 404
+			
 			controls_state = 404
 		}
 
@@ -2966,7 +2952,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 404
+			
 			controls_state = 404
 			has_tech = excavation3
 			404 = {
@@ -3010,7 +2996,7 @@ prospect_for_resources = {
 		available = {
 			has_tech = construction4
 			num_of_civilian_factories_available_for_projects > 4
-			owns_state = 572
+			
 			controls_state = 572
 			has_tech = construction3
 		}
@@ -3020,7 +3006,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 572
+			
 			controls_state = 572
 			has_tech = construction3
 			572 = {
@@ -3085,7 +3071,7 @@ prospect_for_resources = {
 		available = {
 			has_tech = construction3
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 573
+			
 			controls_state = 573
 		}
 
@@ -3094,7 +3080,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 573
+			
 			controls_state = 573
 			573 = {
 				NOT = {
@@ -3137,7 +3123,7 @@ prospect_for_resources = {
 		available = {
 			has_tech = construction4
 			num_of_civilian_factories_available_for_projects > 4
-			owns_state = 573
+			
 			controls_state = 573
 		}
 
@@ -3146,7 +3132,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 573
+			
 			controls_state = 573
 			573 = {
 				NOT = {
@@ -3194,12 +3180,12 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation2
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 220
+			
 			controls_state = 220
 		}
 
 		visible = {
-			owns_state = 220
+			
 			controls_state = 220
 			220 = {
 				NOT = {
@@ -3277,12 +3263,12 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation3
 			num_of_civilian_factories_available_for_projects > 3
-			owns_state = 220
+			
 			controls_state = 220
 		}
 
 		visible = {
-			owns_state = 220
+			
 			controls_state = 220
 			220 = {
 				NOT = {
@@ -3364,12 +3350,12 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation4
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 220
+			
 			controls_state = 220
 		}
 
 		visible = {
-			owns_state = 220
+			
 			controls_state = 220
 			220 = {
 				NOT = {
@@ -3451,12 +3437,12 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation2
 			num_of_civilian_factories_available_for_projects > 3
-			owns_state = 240
+			
 			controls_state = 240
 		}
 
 		visible = {
-			owns_state = 240
+			
 			controls_state = 240
 			240 = {
 				NOT = {
@@ -3534,12 +3520,12 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation3
 			num_of_civilian_factories_available_for_projects > 3
-			owns_state = 240
+			
 			controls_state = 240
 		}
 
 		visible = {
-			owns_state = 240
+			
 			controls_state = 240
 			240 = {
 				NOT = {
@@ -3621,12 +3607,12 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation4
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 240
+			
 			controls_state = 240
 		}
 
 		visible = {
-			owns_state = 240
+			
 			controls_state = 240
 			240 = {
 				NOT = {
@@ -3704,7 +3690,7 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation3
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 407
+			
 			controls_state = 407
 		}
 
@@ -3713,7 +3699,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 407
+			
 			controls_state = 407
 			407 = {
 				NOT = {
@@ -3755,7 +3741,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation5
-			owns_state = 407
+			
 			controls_state = 407
 			num_of_civilian_factories_available_for_projects > 4
 		}
@@ -3765,7 +3751,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			owns_state = 407
+			
 			controls_state = 407
 			407 = {
 				NOT = {
@@ -3814,12 +3800,12 @@ prospect_for_resources = {
 			has_tech = construction3
 			num_of_civilian_factories_available_for_projects > 2
 			has_tech = excavation1
-			owns_state = 716
+			
 			controls_state = 716
 		}
 
 		visible = {
-			owns_state = 716
+			
 			controls_state = 716
 			716 = {
 				NOT = {
@@ -3894,7 +3880,7 @@ prospect_for_resources = {
 			291 = {
 				add_resource = {
 					type = oil
-					amount = 13
+					amount = 30
 				}
 			}
 		}
@@ -3943,7 +3929,7 @@ prospect_for_resources = {
 			291 = {
 				add_resource = {
 					type = oil
-					amount = 17
+					amount = 35
 				}
 			}
 		}
@@ -3964,12 +3950,12 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation3
 			num_of_civilian_factories_available_for_projects > 4
-			owns_state = 527
+			
 			controls_state = 527
 		}
 
 		visible = {
-			owns_state = 527
+			
 			controls_state = 527
 			527 = {
 				NOT = {
@@ -4046,12 +4032,12 @@ prospect_for_resources = {
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 4
-			owns_state = 500
+			
 			controls_state = 500
 		}
 
 		visible = {
-			owns_state = 500
+			
 			controls_state = 500
 			500 = {
 				NOT = {
@@ -4129,12 +4115,12 @@ prospect_for_resources = {
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 4
-			owns_state = 500
+			
 			controls_state = 500
 		}
 
 		visible = {
-			owns_state = 500
+			
 			controls_state = 500
 			500 = {
 				NOT = {

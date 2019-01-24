@@ -170,29 +170,11 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 3989;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
 1129;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
 5042;4973;impassable;-1;-1;-1;-1;-1;;Himalayas
-5014;1822;impassable;-1;-1;-1;-1;-1;;Iran-Iraq
-6826;1822;impassable;-1;-1;-1;-1;-1;;Iran-Iraq
-6826;4943;impassable;-1;-1;-1;-1;-1;;Iran-Iraq
-6826;5098;impassable;-1;-1;-1;-1;-1;;Iran-Iraq
-10793;5098;impassable;-1;-1;-1;-1;-1;;Iran-Iraq
-12855;5098;impassable;-1;-1;-1;-1;-1;;Iran-Iraq
-12855;829;impassable;-1;-1;-1;-1;-1;;Iran-Iraq
-78;829;impassable;-1;-1;-1;-1;-1;;Iran-Iraq
-78;10774;impassable;-1;-1;-1;-1;-1;;Iran-Iraq
-78;7953;impassable;-1;-1;-1;-1;-1;;Iran-Iraq
-12726;7953;impassable;-1;-1;-1;-1;-1;;Iran-Iraq
-2089;7953;impassable;-1;-1;-1;-1;-1;;Iran-Iraq
-2089;5005;impassable;-1;-1;-1;-1;-1;;Iran-Iraq
 4558;10826;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 4558;12653;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 4558;7519;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 12763;10826;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 2084;7519;impassable;-1;-1;-1;-1;-1;;peshawar mountains
-5042;4973;impassable;-1;-1;-1;-1;-1;;peshawar mountains
-5042;8112;impassable;-1;-1;-1;-1;-1;;peshawar mountains
-5042;1970;impassable;-1;-1;-1;-1;-1;;peshawar mountains
-10821;1970;impassable;-1;-1;-1;-1;-1;;peshawar mountains
-10821;5087;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 10821;7519;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 4998;12831;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 4998;5082;impassable;-1;-1;-1;-1;-1;;peshawar mountains
@@ -274,4 +256,35 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4135;1048;impassable;-1;-1;-1;-1;-1;;gibraltar
 4135;10094;impassable;-1;-1;-1;-1;-1;;gibraltar
 4135;7153;impassable;-1;-1;-1;-1;-1;;gibraltar
+1920;4924;impassable;-1;-1;-1;-1;-1;;Yemen
+10840;4924;impassable;-1;-1;-1;-1;-1;;Yemen
+1172;4656;impassable;-1;-1;-1;-1;-1;;China Protection
+1172;10459;impassable;-1;-1;-1;-1;-1;;China Protection
+1172;1625;impassable;-1;-1;-1;-1;-1;;China Protection
+1653;1625;impassable;-1;-1;-1;-1;-1;;China Protection
+7606;4192;impassable;-1;-1;-1;-1;-1;;China Protection
+7606;1884;impassable;-1;-1;-1;-1;-1;;China Protection
+7446;4192;impassable;-1;-1;-1;-1;-1;;China Protection
+1319;4192;impassable;-1;-1;-1;-1;-1;;China Protection
+1319;12841;impassable;-1;-1;-1;-1;-1;;China Protection
+7294;12841;impassable;-1;-1;-1;-1;-1;;China Protection
+2067;5072;impassable;-1;-1;-1;-1;-1;;China Protection
+5072;12819;impassable;-1;-1;-1;-1;-1;;China Protection
+531;7256;impassable;-1;-1;-1;-1;-1;;China Protection
+531;4295;impassable;-1;-1;-1;-1;-1;;China Protection
+7911;4295;impassable;-1;-1;-1;-1;-1;;China Protection
+7911;2006;impassable;-1;-1;-1;-1;-1;;China Protection
+1933;10733;impassable;-1;-1;-1;-1;-1;;China Protection
+1647;10733;impassable;-1;-1;-1;-1;-1;;China Protection
+1647;517;impassable;-1;-1;-1;-1;-1;;China Protection
+5025;517;impassable;-1;-1;-1;-1;-1;;China Protection
+5025;4939;impassable;-1;-1;-1;-1;-1;;China Protection
+3745;4939;impassable;-1;-1;-1;-1;-1;;China Protection
+3745;10880;impassable;-1;-1;-1;-1;-1;;China Protection
+8081;4986;impassable;-1;-1;-1;-1;-1;;China Protection
+1625;7606;impassable;-1;-1;-1;-1;-1;;China Protection
+2067;12841;impassable;-1;-1;-1;-1;-1;;China Protection
+11972;12819;impassable;-1;-1;-1;-1;-1;;China Protection
+8081;10880;impassable;-1;-1;-1;-1;-1;;China Protection
+1933;2006;impassable;-1;-1;-1;-1;-1;;China Protection
 -1;-1;;-1;-1;-1;-1;-1;-1;

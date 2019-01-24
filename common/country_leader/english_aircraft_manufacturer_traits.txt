@@ -6,13 +6,10 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			fighter_equipment = {
-				air_agility = 0.15 maximum_speed = 0.15
-			}
-			cv_fighter_equipment = {
-				air_agility = 0.15 maximum_speed = 0.15
+				air_agility = 0.15 maximum_speed = 0.20
 			}
 			jet_fighter_equipment = {
-					maximum_speed = 0.1
+					maximum_speed = 0.1 
 			}
 		}
 	}
@@ -32,13 +29,9 @@ leader_traits = {
 	hawker_aircraft_manufacturer = {
 		random = no
 		equipment_bonus = {
-			fighter_equipment = {
-				air_agility = 0.10 maximum_speed = 0.1
-			}
 			CAS_equipment = {
 				air_ground_attack = 0.1 reliability = 0.1 maximum_speed = 0.1
 			}
-			
 		}
 	}
 	
@@ -72,6 +65,9 @@ leader_traits = {
 			}
 			cv_nav_bomber_equipment = {
 				air_range = 0.1 naval_strike_attack = 0.1 reliability = 0.1
+			}
+			cv_fighter_equipment = {
+				reliability = 0.2 air_agility = 0.15 maximum_speed = 0.15 
 			}
 			
 			cv_CAS_equipment = {

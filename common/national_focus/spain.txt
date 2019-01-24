@@ -50,10 +50,10 @@ focus_tree = {
 
 		completion_reward = {
 			174 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -205,10 +205,10 @@ focus_tree = {
 
 		completion_reward = {
 			41 = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 				instant_build = yes
 			    }
 			}
@@ -317,10 +317,10 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = 1
 			170 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -407,6 +407,7 @@ focus_tree = {
 				category = infantry_weapons
 				category = artillery
 			}
+			add_ideas = Instalaza_SA
 		}
 	}
 
@@ -633,6 +634,7 @@ focus_tree = {
 				bonus = 0.5
 				technology = CAS1
 				technology = CAS2
+				technology = CAS3
 			}
 		}
 	}
@@ -680,6 +682,7 @@ focus_tree = {
 				bonus = 0.5
 				technology = strategic_bomber1
 				technology = strategic_bomber2
+				technology = strategic_bomber3
 			}
 		}
 	}
@@ -856,35 +859,34 @@ focus_tree = {
 #		}
 #	}
 #
-	focus = {
-		id = SPR_Take_Por
-		icon = GFX_goal_generic_occupy_start_war
-		prerequisite = { focus = SPR_Fascist_Rec }
-		x = 19
-		y = 3
-		cost = 10
-		available = {
-			has_government = fascism
-			NOT = {
-				is_in_faction_with = POR
-			}
-			date > 1939.1.1
-		}
-		ai_will_do = {
-			factor = 5
-		}
-
-		completion_reward = {
-			add_state_claim = 179
-			add_state_claim = 181
-			add_state_claim = 112
-			add_state_claim = 180
-			create_wargoal = {
-				type = annex_everything
-				target = POR
-			}
-		}
-	}
+#	focus = {
+#		id = SPR_Take_Por
+#		icon = GFX_goal_generic_occupy_start_war
+#		prerequisite = { focus = SPR_Join_Germany }
+#		x = 24
+#		y = 4
+#		cost = 10
+#		available = {
+#			has_government = fascism
+#			NOT = {
+#				is_in_faction_with = POR
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 5
+#		}
+#
+#		completion_reward = {
+#			add_state_claim = 179
+#			add_state_claim = 181
+#			add_state_claim = 112
+#			add_state_claim = 180
+#			create_wargoal = {
+#				type = annex_everything
+#				target = POR
+#			}
+#		}
+#	}
 
 	focus = {
 		id = SPR_Communist_Propaganda
@@ -901,6 +903,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_ideas = SPR_Communism_Idea
 			add_political_power = 150
 		}
 	}
@@ -949,7 +952,7 @@ focus_tree = {
 	#Army#
 	######
 
-	focus = {
+		focus = {
 		id = SPR_Mil
 		icon = GFX_goal_generic_build_tank
 		x = 7

@@ -4,25 +4,25 @@ state={
 	name="STATE_310"
 	manpower = 47341
 	resources={
-		aluminium=64 # was: 12
+		aluminium=95
 	}
 
-	state_category = pastoral
+	state_category = rural
 
 	history={
 		owner = FRA
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
 			12885 = {
-				naval_base = 1
+				naval_base = 2
 			}
 		}
 		victory_points = {
-			12885 1 
+			12885 1
 		}
 	}
 
 	provinces={
-		4934 12885 
+		4934 12885
 	}
 }

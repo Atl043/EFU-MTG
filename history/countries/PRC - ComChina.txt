@@ -5,7 +5,6 @@ oob = "PRC_1936"
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-	infantry_weapons1 = 1
 	mass_assault = 1
 }
 set_stability = 0.6
@@ -30,6 +29,7 @@ save_global_event_target_as = WTT_communist_china
 		complete_national_focus = PRC_agrarian_socialism
 		complete_national_focus = PRC_the_yanan_base_area
 		complete_national_focus = PRC_focus_on_china
+		complete_national_focus = PRC_infiltration
 		complete_national_focus = PRC_revolutionary_military_commission
 		complete_national_focus = PRC_literacy_programs
 		complete_national_focus = CHI_mission_to_the_soviet_union
@@ -66,7 +66,7 @@ save_global_event_target_as = WTT_communist_china
 			complete_national_focus = production_effort
 		}
 	}
-	
+
 	# Chinese Popular Front effects
 	add_to_war = {
 		targeted_alliance = CHI
@@ -97,7 +97,7 @@ save_global_event_target_as = WTT_communist_china
 		service_by_requirement
 		closed_economy
 	}
-	
+
 	set_technology = {
 		tech_mountaineers = 1
 		#doctrines
@@ -133,20 +133,20 @@ save_global_event_target_as = WTT_communist_china
 set_politics = {
 
 	parties = {
-		democratic = { 
+		democratic = {
 			popularity = 0
 		}
 
 		fascism = {
 			popularity = 0
 		}
-		
+
 		communism = {
 			popularity = 100
 			#banned = no #default is no
 		}
 	}
-	
+
 	ruling_party = communism
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -157,20 +157,20 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			democratic = {
 				popularity = 0
 			}
 
 			fascism = {
 				popularity = 0
 			}
-			
+
 			communism = {
 				popularity = 100
 				#banned = no #default is no
 			}
 		}
-		
+
 		ruling_party = communism
 		last_election = "1936.1.1"
 		election_frequency = 48
@@ -179,10 +179,11 @@ set_politics = {
 }
 
 add_ideas = {
-	free_trade
-	extensive_conscription
+	closed_economy
+	service_by_requirement
 	partial_economic_mobilisation
 }
+
 if = {
 	limit = {
 		has_dlc = "Waking the Tiger"
@@ -205,6 +206,7 @@ create_country_leader = {
 	ideology = marxism
 	traits = {
 		cornered_fox
+		easy_surrender
 	}
 }
 

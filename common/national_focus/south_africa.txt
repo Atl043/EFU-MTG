@@ -77,17 +77,18 @@ focus_tree = {
 
 		available = {
 			OR = {
-				threat > 0.1
+				threat > 0.10
 				NOT = { has_government = democratic }
 			}
+			date > 1936.8.1
 		}
 
 		bypass = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 
 		complete_tooltip = {
@@ -113,14 +114,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -137,23 +130,15 @@ focus_tree = {
 	focus = {
 		id = SAF_cape_garrison_artillery
 		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = SAF_emergency_workers }
+		prerequisite = { focus = SAF_reconstitute_the_cape_corps }
 		x = -1
-		y = 2
+		y = 4
 		relative_position_id = SAF_war_measures_act
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -195,23 +180,15 @@ focus_tree = {
 	focus = {
 		id = SAF_reconstitute_the_cape_corps
 		icon = GFX_goal_generic_allies_build_infantry
-		prerequisite = { focus = SAF_cape_garrison_artillery}
+		prerequisite = { focus = SAF_emergency_workers}
 		x = -1
-		y = 4
+		y = 2
 		relative_position_id = SAF_war_measures_act
 
 		cost = 10
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -233,24 +210,16 @@ focus_tree = {
 	focus = {
 		id = SAF_expand_the_cape_corps
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = SAF_reconstitute_the_cape_corps }
+		prerequisite = { focus = SAF_cape_garrison_artillery }
 		mutually_exclusive = { focus = SAF_outlaw_strikes }
 		x = 0
 		y = 5
 		relative_position_id = SAF_war_measures_act
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -324,6 +293,8 @@ focus_tree = {
 
 		available = {
 			is_subject_of = ENG
+			ENG = { has_war = no }
+			GER = { has_completed_focus = GER_rhineland }
 		}
 
 		bypass = {
@@ -339,7 +310,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+		add_political_power = 120
 		}
 	}
 
@@ -431,7 +402,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -466,7 +437,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -502,7 +473,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -547,25 +518,57 @@ focus_tree = {
 		available = {
 			NOT = { has_war_with = ENG }
 			ENG = { is_puppet = no }
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
-		ENG = { custom_effect_tooltip = needs_approval
-				country_event = tfv_south_africa.1
-				}
+			#if = {
+			#	limit = { 544 = { is_owned_and_controlled_by = ENG } }
+			#	transfer_state = 544
+			#}
+			#if = {
+			#	limit = { 540 = { is_owned_and_controlled_by = ENG } }
+			#	transfer_state = 540
+			#}
+			if = {
+				limit = { 542 = { is_owned_and_controlled_by = ENG } }
+				transfer_state = 542
+			}
+			if = {
+				limit = { 545 = { is_owned_and_controlled_by = ENG } }
+				transfer_state = 545
+			}
+			if = {
+				limit = { 546 = { is_owned_and_controlled_by = ENG } }
+				transfer_state = 546
+			}
+			if = {
+				limit = { 547 = { is_owned_and_controlled_by = ENG } }
+				transfer_state = 547
+			}
+			if = {
+				limit = { 548 = { is_owned_and_controlled_by = ENG } }
+				transfer_state = 548
+			}
+			if = {
+				limit = { 295 = { is_owned_and_controlled_by = BEL } }
+				transfer_state = 295
+			}
+			if = {
+				limit = { 538 = { is_owned_and_controlled_by = BEL } }
+				transfer_state = 538
+			}
+			if = {
+				limit = { 718 = { is_owned_and_controlled_by = BEL } }
+				transfer_state = 718
+			}
+
+			hidden_effect = {
+				news_event = { id = news.260 hours = 6 }
+			}
 		}
 	}
 
@@ -605,40 +608,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = SAF_cheap_labor_1
-		}
-	}
-
-	focus = {
-		id = SAF_voortrekker_monument
-		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = SAF_native_laws_amendment_act }
-		x = -2
-		y = 2
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_ideas = SAF_voortrekker_monument
 		}
 	}
 
@@ -709,15 +678,13 @@ focus_tree = {
 		available_if_capitulated = no
 
 		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = SAF_south_african_railways_Inf
-				}
+			275 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 1
 					instant_build = yes
 				}
+				set_state_flag = SAF_south_african_railways_Inf
 			}
 		}
 
@@ -725,7 +692,7 @@ focus_tree = {
 			275 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = SAF_south_african_railways_Inf
@@ -857,14 +824,6 @@ focus_tree = {
 			factor = 20
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -876,23 +835,17 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 2
-					}
-				}
+			275 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = SAF_infrastructure_effort_Inf
@@ -1110,14 +1063,6 @@ focus_tree = {
 			factor = 45
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1130,53 +1075,12 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
-
-	focus = {
-		id = SAF_establish_the_atomics_energy_board
-		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = SAF_fund_the_university_of_south_africa }
-		x = 0
-		y = 6
-		relative_position_id = SAF_south_african_railways
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = SAF_establish_the_atomics_energy_board
-				bonus = 0.5
-				uses = 2
-				category = nuclear
-			}
-		}
-	}
-
 	focus = {
 		id = SAF_the_cape_defense_institute
 		icon = GFX_focus_research
-		prerequisite = { focus = SAF_establish_the_atomics_energy_board }
+		prerequisite = { focus = SAF_fund_the_university_of_south_africa}
 		x = -1
-		y = 7
+		y = 6
 		relative_position_id = SAF_south_african_railways
 
 		cost = 10
@@ -1186,32 +1090,23 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject = no
-		}
-
-		bypass = {
-
+			has_war = yes
+			is_in_faction = yes
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_research_slot = 1
-		}
+		completion_reward = { add_research_slot = 1 }
 	}
 
 	focus = {
 		id = SAF_defense_collaboration_initiative
 		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = SAF_establish_the_atomics_energy_board }
+		prerequisite = { focus = SAF_fund_the_university_of_south_africa }
 		x = 1
-		y = 7
+		y = 6
 		relative_position_id = SAF_south_african_railways
 
 		cost = 10
@@ -1221,33 +1116,16 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject = no
 			has_war = yes
 			is_in_faction = yes
-			OR = {
-				num_of_factories > 50
-				any_other_country = {
-					is_in_faction_with = ROOT
-					num_of_factories > 50
-				}
-			}
-		}
-
-		bypass = {
-
+			num_of_factories > 35
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_research_slot = 1
-		}
+		completion_reward = { add_research_slot = 1 }
 	}
 
 
@@ -1502,7 +1380,7 @@ focus_tree = {
 	focus = {
 		id = SAF_equipment_effort
 		icon = GFX_goal_generic_army_artillery
-		prerequisite = { focus = SAF_expand_the_south_african_artillery focus = SAF_sa_engineer_corps }
+		prerequisite = { focus = SAF_expand_the_south_african_artillery focus = SAF_sa_engineer_corps focus = SAF__south_african_military_college}
 		x = 0
 		y = 4
 		relative_position_id = SAF_special_service_battalion
@@ -1543,7 +1421,7 @@ focus_tree = {
 	focus = {
 		id = SAF_mechanization_effort
 		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = SAF_equipment_effort }
+		prerequisite = { focus = SAF_equipment_effort focus = SAF_expand_the_south_african_artillery }
 		x = -1
 		y = 5
 		relative_position_id = SAF_special_service_battalion
@@ -1816,8 +1694,10 @@ focus_tree = {
 				name = SAF_replace_the_blenheim
 				bonus = 0.5
 				uses = 1
-				category = tactical_bomber
-				category = cas_bomber
+				technology = tactical_bomber1
+				technology = tactical_bomber2
+				technology = CAS1
+				technology = CAS2
 				category = naval_bomber
 			}
 		}
@@ -1899,7 +1779,8 @@ focus_tree = {
 				name = SAF_desert_air_force
 				bonus = 0.5
 				uses = 1
-				category = cas_bomber
+				technology = CAS1
+				technology = CAS2
 			}
 		}
 	}
@@ -2002,14 +1883,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2020,10 +1893,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = SAF_seaward_defence_force_DY
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2041,10 +1914,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = SAF_seaward_defence_force_DY
@@ -2073,27 +1946,15 @@ focus_tree = {
 			factor = 0.8
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_protect_the_trade
 				bonus = 0.5
-				uses = 1
+				uses = 2
 				category = convoy_defense_tree
 			}
 		}
@@ -2118,27 +1979,15 @@ focus_tree = {
 			}
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_disrupt_the_trade
 				bonus = 0.5
-				uses = 1
+				uses = 2
 				category = cat_trade_interdiction
 			}
 		}
@@ -2156,14 +2005,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -2186,11 +2027,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = SAF_expand_the_simons_town_base_NB
 				}
-				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = coastal_bunker
 					province = 12589
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -2207,10 +2047,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = SAF_expand_the_simons_town_base_DY

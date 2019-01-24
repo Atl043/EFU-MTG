@@ -11,6 +11,40 @@ focus_tree = {
 	}
 
 	default = no
+##################################################
+###########Special PFU EVENTS
+##################################################
+focus = {
+		id = ENG_Operation_Husky
+		icon = GFX_goal_generic_position_armies
+		
+	    available = {
+			ENG = { controls_state = 448 }
+			ENG = { controls_state = 450 }
+			ENG = { controls_state = 116 }
+			ITA = { controls_state = 115 }
+		}
+
+		x = 9
+		y = 0
+		cost = 0.2
+
+		completion_reward = {
+			add_timed_idea = { idea = ENG_OPERATION_HUSKY days = 25 }
+			USA = { add_timed_idea = { idea = USA_OPERATION_HUSKY days = 25 } }
+			CAN = { add_timed_idea = { idea = COM_OPERATION_HUSKY days = 25 } }
+			SAF = { add_timed_idea = { idea = COM_OPERATION_HUSKY days = 25 } }
+			FRA = { add_timed_idea = { idea = COM_OPERATION_HUSKY days = 25 } }
+			AST = { add_timed_idea = { idea = COM_OPERATION_HUSKY days = 25 } }
+			NZL = { add_timed_idea = { idea = COM_OPERATION_HUSKY days = 25 } }
+			custom_effect_tooltip = ENG_Operation_Husky_tt
+		}
+	}
+
+
+##################################################
+###########End of Special PFU EVENTS
+##################################################
 
 
 	focus = {
@@ -311,7 +345,7 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			air_experience = 50
+			air_experience = 100
 			if = {
 				limit = { has_country_flag = air_defense_focus_built_max }
 				custom_effect_tooltip = air_defense_focus_tt
@@ -330,7 +364,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			air_experience = 50
+			air_experience = 100
 			if = {
 				limit = {
 					NOT = {
@@ -846,14 +880,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = ENG_the_plan
+
 			add_tech_bonus = {
 				name = op_dest_bonus
 				bonus = 0.5
 				uses = 2
 				category = air_doctrine
 			}
-			air_experience = 50
+			air_experience = 100
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1037,7 +1071,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 50
+			air_experience = 100
 			add_tech_bonus = {
 				name = fighter_command_focus
 				bonus = 0.5
@@ -1067,7 +1101,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 50
+			air_experience = 100
 			add_tech_bonus = {
 				name = bomber_command_focus
 				bonus = 0.5
@@ -1191,11 +1225,55 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 50
-			122 = {
-				add_extra_state_shared_building_slots = 3
+			remove_ideas = london_naval_treaty
+			add_ideas = britannia_rules_the_waves
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = ENG_naval_rearmament_focus_1dockyard
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = ENG_naval_rearmament_focus_1dockyard
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = ENG_naval_rearmament_focus_1dockyard
@@ -1334,10 +1412,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = special_forces
 			add_tech_bonus = {
 				name = uk_amphibious_focus
-				bonus = 0.75
+				bonus = 0.5
 				uses = 1
 				category = marine_tech
 			}
@@ -1681,9 +1758,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 50
+			army_experience = 5
 			navy_experience = 25
-			air_experience = 50
+			air_experience = 25
 		}
 	}
 	focus = {
@@ -1787,7 +1864,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = bunker
-					level = 5
+					level = 2
 					province = 1071
 					instant_build = yes
 				}
@@ -1851,6 +1928,8 @@ focus_tree = {
 	focus = {
 		id = uk_asia_focus
 		prerequisite = { focus = uk_colonial_focus }
+
+		available = { 336 = { is_controlled_by = ENG } }
 
 		icon = GFX_goal_generic_construct_civilian
 		x = 16
@@ -2058,6 +2137,7 @@ focus_tree = {
 		y = 4
 		cost = 4.3
 
+		available = { 336 = { is_controlled_by = ENG } }
 
 		ai_will_do = { factor = 1 }
 
@@ -2094,7 +2174,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = { 336 = { is_controlled_by = MAL } }
+		available = { 336 = { is_controlled_by = ENG } }
 
 		available_if_capitulated = yes
 
@@ -2146,7 +2226,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = { 336 = { is_controlled_by = MAL } }
+		available = { 336 = { is_controlled_by = ENG } }
 
 		available_if_capitulated = yes
 
@@ -2309,6 +2389,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_political_power = 150
 			custom_effect_tooltip = ENG_commonwealth_focus_tt
 			hidden_effect = {
 				CAN = {
@@ -2466,7 +2547,6 @@ focus_tree = {
 				date > 1942.1.01
 				RAJ = {
 					is_subject_of = ENG
-					has_war = no
 				}
 				else = {
 					has_global_flag = indian_national_army_setup

@@ -17,8 +17,8 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.20
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
 				stability_factor = -0.10
 			}
 		}
@@ -38,9 +38,9 @@ ideas = {
 			picture = great_depression
 			
 			modifier = {
-				consumer_goods_factor = 0.10
-				industrial_capacity_factory = -0.10
-				industrial_capacity_dockyard = -0.10
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
 			}
 		}
 		
@@ -60,8 +60,8 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.05
-				industrial_capacity_factory = -0.05
-				industrial_capacity_dockyard = -0.05
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
 			}
 		}
 
@@ -84,6 +84,8 @@ ideas = {
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
 				conscription = 0.02
+				conscription_factor = 0.15
+				training_time_factor = -0.25
 			}
 		}
 
@@ -250,7 +252,7 @@ ideas = {
 			modifier = {
 				drift_defence_factor = 0.25
 				foreign_subversive_activites = -0.25
-				stability_factor = -0.05
+				stability_factor = -0.03
 			}
 		}
 
@@ -503,6 +505,23 @@ ideas = {
 			traits = { backroom_backstabber }
 		}
 
+		AST_ben_chifley = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = AST
+				has_dlc = "Together for Victory"
+			}
+			
+			cost = 100
+
+			traits = { smooth_talking_charmer }
+
+			available = {
+				has_completed_focus = AST_never_another_gallipoli
+			}
+		}
 
 		AST_herbert_v_evatt = {
 
@@ -537,35 +556,19 @@ ideas = {
 		}
 		
 
-		AST_frank_forde = {
-
-			picture = generic_political_advisor_europe_3
-			
-			allowed = {
-				original_tag = AST
-				has_dlc = "Together for Victory"
-			}
-			
-			traits = { captain_of_industry }
-		}
-
-
 		AST_arthur_calwell = {
 			
 			allowed = {
 				original_tag = AST
 			}
-			available = {
-				if = {
-					limit = { has_dlc = "Together for Victory" }
-					OR = {
-					}
-				}
-			}
 			
 			picture = generic_democratic_reformer_western_european_2d
 			
 			traits = { democratic_reformer }
+		
+			on_add = {
+				country_event = political.13
+			}
 		
 			do_effect = {
 				NOT = {
@@ -612,7 +615,20 @@ theorist = {
 		traits = { air_warfare_theorist }
 	}
 
-	
+	AST_thomas_blamey = {
+				
+		picture = generic_political_advisor_europe_3
+			
+		allowed = {
+			original_tag = AST
+		}
+		
+		research_bonus = {
+			land_doctrine = 0.07
+		}
+		
+		traits = { military_theorist }
+	}
 }
 
 high_command = {
@@ -670,7 +686,7 @@ high_command = {
 			original_tag = AST
 		}
 		
-		traits = { army_commando_1 }
+		traits = { army_commando_2 }
 		
 		ai_will_do = {
 			factor = 1
@@ -749,7 +765,7 @@ high_command = {
 				original_tag = AST
 			}
 			
-			traits = { army_chief_offensive_1 }
+			traits = { army_chief_offensive_2 }
 			
 			ai_will_do = {
 				factor = 1

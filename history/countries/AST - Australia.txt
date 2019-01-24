@@ -3,39 +3,30 @@
 oob = "AST_1936"
 set_stability = 0.8
 set_war_support = 0.3
-set_research_slots = 3
 
+set_research_slots = 3
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
-	motorised_infantry = 1
 	gw_artillery = 1
-	interwar_antiair = 1
 	gwtank = 1
-	basic_light_tank = 1
-	#improved_light_tank = 1  # PLACEHOLDER
-	#basic_heavy_tank = 1  # PLACEHOLDER
-	#basic_medium_tank = 1 # PLACEHOLDER
 	early_fighter = 1
 	cv_early_fighter = 1
 	cv_naval_bomber1 = 1
 	naval_bomber1 = 1
 	early_bomber = 1
 	CAS1 = 1
-	early_submarine = 1
 	early_destroyer = 1
-	basic_destroyer = 1
 	early_light_cruiser = 1
 	early_heavy_cruiser = 1
-	early_battleship = 1
-	early_battlecruiser = 1
+	early_submarine = 1
+	transport = 1
 	trench_warfare = 1
 
-	transport = 1
 	fleet_in_being = 1
 }
 
@@ -51,7 +42,7 @@ if = {
 1939.1.1 = {
 	add_political_power = 1198
 	oob = "AST_1939"
-	
+
 	if = {
 		limit = { has_dlc = "Together for Victory" }
 		complete_national_focus = AST_additional_militia_training
@@ -64,7 +55,7 @@ if = {
 		complete_national_focus = AST_industries_assistance_corporation
 		complete_national_focus = AST_western_australian_government_railways
 		complete_national_focus = AST_south_australian_housing_trust
-		
+
 		else = {
 			#generic focuses
 			complete_national_focus = army_effort
@@ -80,12 +71,12 @@ if = {
 	}
 
 	add_ideas = {
-		#laws		
+		#laws
 		volunteer_only
 		low_economic_mobilisation
 	}
 
-	
+
 	set_technology = {
 		fighter1 = 1
 		tactical_bomber1 = 1
@@ -121,7 +112,7 @@ if = {
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
 		oil_processing = 1
-		improved_oil_processing = 1
+		rubber_processing = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1
@@ -132,20 +123,20 @@ if = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		democratic = {
 			popularity = 98
 		}
 
 		fascism = {
 			popularity = 0
 		}
-		
+
 		communism = {
 			popularity = 2
 			#banned = no #default is no
 		}
 	}
-	
+
 	ruling_party = democratic
 	last_election = "1934.9.15"
 	election_frequency = 36
@@ -207,26 +198,26 @@ create_country_leader = {
 	}
 }
 
-set_convoys = 200
+set_convoys = 100
 
 1939.1.1 = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			democratic = {
 				popularity = 99
 			}
 
 			fascism = {
 				popularity = 0
 			}
-			
+
 			communism = {
 				popularity = 1
 				#banned = no #default is no
 			}
 		}
-		
+
 		ruling_party = democratic
 		last_election = "1937.10.23"
 		election_frequency = 36
@@ -238,12 +229,13 @@ set_convoys = 200
 create_corps_commander = {
 	name = "Leslie Morshead"
 	gfx = "GFX_AST_leslie_morshead"
-	traits = { war_hero hill_fighter jungle_rat infantry_leader naval_invader}
-	skill = 4
-    attack_skill = 5
-    defense_skill = 4
-    planning_skill = 5
-    logistics_skill = 3
+	traits = { naval_invader infantry_leader }
+	skill = 5
+
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 5
 }
 
 
@@ -251,52 +243,63 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Thomas Blamey"
 	gfx = "GFX_AST_thomas_blamey"
-	traits = { }
+	traits = { panzer_leader }
 	skill = 4
-    attack_skill = 4
-    defense_skill = 3
-    planning_skill = 3
-    logistics_skill = 3
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 5
 }
 create_corps_commander = {
 	name = "Henry Wynter"
 	gfx = "GFX_AST_henry_wynter"
 	traits = { }
 	skill = 4
-    attack_skill = 5
-    defense_skill = 4
-    planning_skill = 3
-    logistics_skill = 3
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
 }
 create_corps_commander = {
 	name = "Alan Vasey"
 	gfx = "GFX_AST_alan_vasey"
-	traits = { hill_fighter }
-	skill = 3
-    attack_skill = 4
-    defense_skill = 4
-    planning_skill = 3
-    logistics_skill = 1
+	traits = { trickster jungle_rat trait_engineer }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
 }
 create_corps_commander = {
 	name = "Horace Robertson"
 	gfx = "GFX_AST_horace_robertson"
-	traits = { desert_fox }
-	skill = 4
-    attack_skill = 4
-    defense_skill = 4
-    planning_skill = 3
-    logistics_skill = 3
+	traits = { desert_fox infantry_leader }
+	skill = 3
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 3
 }
 create_corps_commander = {
 	name = "John Northcott"
 	gfx = "GFX_AST_john_northcott"
-	traits = { armor_officer panzer_leader desert_fox  }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 4
+	traits = { panzer_leader}
+	skill = 1
+	attack_skill = 3
+	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Dropbear"
+	picture = "dropbears.dds"
+	traits = {}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 create_navy_leader = {
 	name = "Harold Farncomb"
@@ -337,7 +340,7 @@ create_equipment_variant = {
 }
 
 1939.1.1 = {
-	
+
 	create_equipment_variant = {
 		name = "Arunta Class"
 		type = destroyer_1

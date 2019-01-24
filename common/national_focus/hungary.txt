@@ -1,9 +1,9 @@
 focus_tree = {
 	id = hungarian_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = HUN
@@ -11,7 +11,7 @@ focus_tree = {
 			has_dlc = "Death or Dishonor"
 		}
 	}
-	
+
 	default = no
 
 	continuous_focus_position = { x = 50 y = 1600 }
@@ -23,7 +23,7 @@ focus_tree = {
 #		mutually_exclusive = { focus =  }
 #		x = -3
 #		y = 0
-#		relative_position_id = 
+#		relative_position_id =
 #
 #		cost = 10
 #
@@ -34,7 +34,7 @@ focus_tree = {
 #		available = {
 #
 #		}
-#		
+#
 #		bypass = {
 #
 #		}
@@ -71,21 +71,9 @@ focus_tree = {
 			factor = 100
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = HUN_interventionism
@@ -112,25 +100,13 @@ focus_tree = {
 			factor = 90
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_ideas = HUN_strengthen_fascists
-			add_popularity = { ideology = fascism popularity = 0.10 }
+			add_popularity = { ideology = fascism popularity = 0.05 }
 			set_party_name = { ideology = fascism long_name = HUN_arrow_cross_party_long name = HUN_arrow_cross_party }
 			hidden_effect = {
 				create_country_leader = {
@@ -182,17 +158,30 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
+			add_threat = 1
+			if = {
+				limit = {
+					FRA = {
+						exists = yes
+						is_subject = no
+					}
 
-			#Romania gets the event if France not engaged in Balkans
-			ROM = { country_event = { id = DOD_hungary.40 } }
+				}
+				FRA = { country_event = { id = DOD_hungary.40 } }
+			}
+			if = {
+				limit = {
+					OR = {
+						FRA = { exists = no }
+						FRA = { is_subject = yes }
+					}
+				} #Romania gets the event if France not engaged in Balkans
+				ROM = { country_event = { id = DOD_hungary.40 } }
+			}
 
 			#make Horthy or King dude leader. depending on focus picked earlier
-			
+
 			if = {
 				limit = {
 					has_completed_focus = HUN_strengthen_fascists
@@ -202,8 +191,8 @@ focus_tree = {
 					limit = {
 						has_country_leader = { id = 500 }
 					}
-					hidden_effect = { 
-						retire_country_leader = yes 
+					hidden_effect = {
+						retire_country_leader = yes
 					}
 				}
 			}
@@ -229,7 +218,6 @@ focus_tree = {
 					custom_effect_tooltip = HUN_renounce_the_treaty_of_trianon_tt
 				}
 
-				
 			}
 			if = {
 				limit = {
@@ -252,7 +240,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 80
@@ -262,17 +250,9 @@ focus_tree = {
 			NOT = { has_war_with = GER }
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_opinion_modifier = { target = GER modifier = HUN_trade_deal_with_germany }
@@ -302,23 +282,23 @@ focus_tree = {
 			ROOT = { has_full_control_of_state = 43 }
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			43 = {
 				add_resource = {
 					type = aluminium
 					amount = 16
+				}
+			}
+			GER = {
+				64 = {
+					add_resource = {
+						type = aluminium
+						amount = 6
+					}
 				}
 			}
 		}
@@ -332,13 +312,13 @@ focus_tree = {
 		y = 3
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 
-		cost = 10
+		cost = 0.2
 
 		ai_will_do = {
 			factor = 100
 			modifier = {
 				factor = 0
-					GER = { has_capitulated = yes }
+				GER = { has_capitulated = yes }
 			}
 			modifier = {
 				GER = { surrender_progress > 0.25 }
@@ -357,13 +337,13 @@ focus_tree = {
 		}
 
 		bypass = {
-			AND = { 
+			AND = {
 				is_in_faction_with = GER
 				GER = {
 					is_faction_leader = yes
-					has_government = fascist
+					has_government = fascism
 				}
-			} 
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -389,7 +369,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 40
@@ -400,8 +380,8 @@ focus_tree = {
 						is_in_faction = yes
 					}
 					ROM = {
-						is_in_faction = yes 
-					}					
+						is_in_faction = yes
+					}
 				}
 			}
 			modifier = {
@@ -419,10 +399,6 @@ focus_tree = {
 
 		available = {
 			is_puppet = no
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -449,7 +425,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_reaffirm_territorial_claims
 		will_lead_to_war_with = ROM
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 80
@@ -469,9 +445,9 @@ focus_tree = {
 			NOT = {
 				has_war_with = ROM
 			}
-			strength_ratio = { tag = ROM ratio > 0.66 }
-			has_army_manpower = { size > 200000 }
-		
+			strength_ratio = { tag = ROM ratio > 0.35 }
+			has_army_manpower = { size > 100000 }
+
 		}
 
 		bypass = {
@@ -492,8 +468,8 @@ focus_tree = {
 
 		}
 
-		completion_reward = {	
-			custom_effect_tooltip = HUN_demands_tt		
+		completion_reward = {
+			custom_effect_tooltip = HUN_demands_tt
 			ROM = { country_event = { id = DOD_hungary.50 } }
 			hidden_effect = {
 				news_event = { id = news.300 }
@@ -510,31 +486,31 @@ focus_tree = {
 		relative_position_id = HUN_reaffirm_territorial_claims
 		will_lead_to_war_with = CZE
 		will_lead_to_war_with = SLO
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 80
 		}
 
 		available = {
-			
+
 			if = {
-				limit = { 
-					country_exists = CZE 
+				limit = {
+					country_exists = CZE
 					664 = { is_owned_by = CZE }
 				}
-				strength_ratio = { tag = CZE ratio > 0.75 }
+				strength_ratio = { tag = CZE ratio > 0.35 }
 			}
 			if = {
-				limit = { 
-					country_exists = SLO 
+				limit = {
+					country_exists = SLO
 					664 = { is_owned_by = SLO }
 				}
-				strength_ratio = { tag = SLO ratio > 0.75 }
+				strength_ratio = { tag = SLO ratio > 0.35 }
 			}
-				
-			
-			has_army_manpower = { size > 120000 }
+
+
+			has_army_manpower = { size > 60000 }
 		}
 
 		bypass = {
@@ -559,8 +535,8 @@ focus_tree = {
 			custom_effect_tooltip = HUN_demands_tt
 			if = {
 				limit = {
-					CZE = { 
-						exists = yes 
+					CZE = {
+						exists = yes
 						owns_state = 664
 					}
 				}
@@ -573,7 +549,7 @@ focus_tree = {
 						target = CZE
 						generator = { 664 }
 					}
-					else = { 
+					else = {
 						CZE = { country_event = DOD_hungary.80 }
 					}
 				}
@@ -590,8 +566,8 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					SLO = { 
-						exists = yes 
+					SLO = {
+						exists = yes
 						owns_state = 664
 					}
 				}
@@ -612,15 +588,15 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_reaffirm_territorial_claims
 		will_lead_to_war_with = YUG
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 70
 		}
 
 		available = {
-			strength_ratio = { tag = YUG ratio > 0.75 }
-			has_army_manpower = { size > 175000 }
+			strength_ratio = { tag = YUG ratio > 0.35 }
+			has_army_manpower = { size > 80000 }
 		}
 
 		bypass = {
@@ -635,10 +611,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			custom_effect_tooltip = HUN_demands_tt
@@ -678,27 +650,15 @@ focus_tree = {
 		y = 3
 		relative_position_id = HUN_reaffirm_territorial_claims
 
-		cost = 10
+		cost = 0.25
 
 		ai_will_do = {
 			factor = 80
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			custom_effect_tooltip = HUN_GREATER_tt
@@ -782,47 +742,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = HUN_reintegrate_the_railroads_Inf
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = HUN_reintegrate_the_railroads_Inf_2
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = HUN_reintegrate_the_railroads_Inf_3
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			if = {
-				limit = { country_exists = AUS }
-				reverse_add_opinion_modifier = { target = AUS modifier = HUN_reintegrate_the_railroads }
-			}
-			if = {
-				limit = { country_exists = CZE }
-				reverse_add_opinion_modifier = { target = CZE modifier = HUN_reintegrate_the_railroads }
-			}
-		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				prioritize = { 155 }
@@ -849,7 +768,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = HUN_reintegrate_the_railroads_Inf_2
@@ -1097,7 +1016,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		complete_tooltip = {
 			random_state = {
 				limit = {
@@ -1132,7 +1051,7 @@ focus_tree = {
 		}
 	}
 
-	
+
 
 	focus = {
 		id = HUN_invite_foreign_investors
@@ -1166,6 +1085,21 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = HUN_invite_foreign_investors
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -1203,12 +1137,12 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				add_resource = {
 					type = steel
-					amount = 8
+					amount = 20
 				}
 			}
 		}
@@ -1217,23 +1151,23 @@ focus_tree = {
 			random_owned_controlled_state = {
 				prioritize = { 43 }
 				limit = {
-					ROOT = { has_full_control_of_state = PREV } 
+					ROOT = { has_full_control_of_state = PREV }
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = HUN_expand_the_manfred_weiss_steel_works_IC
 				add_resource = {
 					type = steel
-					amount = 12
+					amount = 20
 				}
 			}
 		}
@@ -1272,8 +1206,8 @@ focus_tree = {
 		completion_reward = {
 			43 = {
 				add_resource = {
-					type = aluminium
-					amount = 16
+					type = steel
+					amount = 36
 				}
 			}
 		}
@@ -1407,7 +1341,7 @@ focus_tree = {
 		}
 	}
 
-	
+
 
 	focus = {
 		id = HUN_aeronautic_technology_institute
@@ -1534,9 +1468,9 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		complete_tooltip = {
-			
+
 		}
 
 		completion_reward = {
@@ -1574,7 +1508,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		complete_tooltip = {
 
 			random_state = {
@@ -1762,6 +1696,7 @@ focus_tree = {
 						OR = {
 							exists = no
 							is_puppet = yes
+							NOT = { has_completed_focus = FRA_little_entente }
 						}
 					}
 				}
@@ -1777,6 +1712,15 @@ focus_tree = {
 
 		completion_reward = {
 			if = {
+				limit = {
+					FRA = { has_completed_focus = FRA_little_entente }
+				}
+				FRA = { country_event = DOD_hungary.140 }
+			}
+			if = {
+				limit = {
+					NOT = { FRA = { has_completed_focus = FRA_little_entente } }
+				}
 				ROM = { country_event = DOD_hungary.140 }
 			}
 		}
@@ -1904,7 +1848,7 @@ focus_tree = {
 				uses = 1
 				technology = heavy_fighter1
 				technology = heavy_fighter2
-				
+
 			}
 		}
 	}
@@ -1948,7 +1892,7 @@ focus_tree = {
 				technology = early_fighter
 				technology = fighter1
 				technology = fighter2
-				
+
 			}
 		}
 	}
@@ -2031,8 +1975,9 @@ focus_tree = {
 				name = HUN_tac_focus
 				bonus = 0.5
 				uses = 1
-				technology = tactical_bomber1 
+				technology = tactical_bomber1
 				technology = tactical_bomber2
+				technology = tactical_bomber3
 			}
 		}
 	}
@@ -2074,7 +2019,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 0.5
-				uses = 1
+				uses = 3
 				category = air_doctrine
 			}
 		}
@@ -2285,7 +2230,6 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_develop_tanks
-				ahead_reduction = 1
 				bonus = 0.5
 				uses = 1
 				category = armor
@@ -2429,14 +2373,6 @@ focus_tree = {
 			factor = 80
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -2449,7 +2385,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = HUN_home_defense
 				bonus = 0.5
-				uses = 1
+				uses = 2
 				category = cat_grand_battle_plan
 			}
 		}
@@ -2574,12 +2510,12 @@ focus_tree = {
 					division_template = {
 						name = "Light Division"
 						priority = 2
-		
+
 						regiments = {
 							infantry = { x = 0 y = 0 }
 							infantry = { x = 0 y = 1 }
 							infantry = { x = 0 y = 2 }
-				
+
 		    	   		 	infantry = { x = 1 y = 0 }
 							infantry = { x = 1 y = 1 }
 							infantry = { x = 1 y = 2 }
@@ -2594,12 +2530,12 @@ focus_tree = {
 						division_template = {
 							name = "Light Division"
 							priority = 2
-			
+
 							regiments = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
-					
+
 			    	   		 	infantry = { x = 1 y = 0 }
 								infantry = { x = 1 y = 1 }
 								infantry = { x = 1 y = 2 }
@@ -2609,14 +2545,14 @@ focus_tree = {
 								artillery = { x = 0 y = 1 }
 								engineer = { x = 0 y = 1 }
 							}
-						}					
+						}
 					}
-				}	
+				}
 				random_owned_controlled_state = {
 					prioritize = { 43 }
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					create_unit = {
-						division = "name = \"1. Light Division\" division_template = \"Light Division\" start_experience_factor = 1.0" 
+						division = "name = \"1. Light Division\" division_template = \"Light Division\" start_experience_factor = 1.0"
 						owner = HUN
 					}
 				}

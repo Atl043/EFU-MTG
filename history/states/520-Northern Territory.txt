@@ -5,17 +5,16 @@ state={
 
 	manpower = 13000
 	
-	state_category = town
+	state_category = large_town
 	
 	
 	resources={
-		steel=22 # was: 28
+		steel=28
 	}
 
 	history={
 		owner = AST
 		buildings = {
-			infrastructure = 3
 			air_base = 1
 			7669 = {
 				naval_base = 1

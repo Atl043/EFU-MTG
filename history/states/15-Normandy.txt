@@ -4,7 +4,7 @@ state={
 	name="STATE_15"
 	manpower = 2332100
 	resources={
-		steel=21 # was: 36
+		steel=36
 	}
 	
 	state_category = city
@@ -20,15 +20,19 @@ state={
 		victory_points = {
 			11563 5
 		}
+		victory_points = {
+			11535 3
+		}
 		buildings = {
 			infrastructure = 7
-			industrial_complex = 3
+			industrial_complex = 5
 			air_base = 6
 			6449 = {
 				naval_base = 5
+				coastal_bunker = 1
 			}
 			485= {
-				naval_base = 2
+				naval_base = 1
 			}
 		}
 		add_core_of = FRA

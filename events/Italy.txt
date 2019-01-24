@@ -61,22 +61,12 @@ country_event = {
 			modifier = {
 				factor = 0				
 				any_other_country = {
-					OR = {
-						is_major = yes
-						tag = YUG
-					}
+					is_major = yes
 					NOT = { tag = ITA }
 					OR = {
 						has_guaranteed = ALB
 						is_in_faction_with = ALB
 					}
-				}
-			}
-			modifier = {
-				factor = 0.5
-				OR = {
-					has_government = communism
-					has_government = fascism #glorious Albania will never yield!
 				}
 			}
 		}
@@ -233,12 +223,6 @@ country_event = {
 			uses = 1
 			category = synth_resources
 		}
-		add_tech_bonus = {
-			name = armor_bonus
-			bonus = 0.5
-			uses = 2
-			category = armor
-		}
 		ITA = {
 			add_opinion_modifier = { target = GER modifier = ger_ita_tech_treaty }
 		}
@@ -285,13 +269,6 @@ country_event = {
 			add_ai_strategy = {
 				type = alliance
 				id = "FRA"
-				value = 200
-			}
-		}
-		FRA = {
-			add_ai_strategy = {
-				type = alliance
-				id = "ITA"
 				value = 200
 			}
 		}
@@ -425,7 +402,6 @@ country_event = {
 			}			
 		}
 		GER = { country_event = { id = germany.96 hours = 6 } }
-		YUG = { country_event = { id = yugoslavia.6 hours = 6 } }
 	}	
 	option = {
 		ai_chance = {
@@ -561,38 +537,4 @@ country_event = {
 
 		transfer_state = 735
 	}
-}
-
-country_event = {
-	id = italy.17
-	title = italy.17.t
-	desc = italy.17.d
-	picture = GFX_italy_Pizza_Time
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = ITA
-		FRA = {
-			has_capitulated = yes
-		}
-	}
-
-	option = {
-		name = italy.17.a
-		hidden_effect = {
-			news_event = { hours = 6 id = news.334 }
-		}
-		ITA = {
-				declare_war_on = {
-					target = FRA
-					type = annex_everything
-				}
-				declare_war_on = {
-					target = ENG
-					type = annex_everything
-				}
-		}
-	}
-	mean_time_to_happen = { days = 30 }
 }

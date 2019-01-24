@@ -4,10 +4,10 @@ state={
 	name="STATE_52"
 	manpower = 2679413
 	resources={
-		aluminium=30 # was: 30
+		aluminium=60
 	}
 	
-	state_category = city
+	state_category = metropolis
 
 	history={
 		owner = GER
@@ -16,7 +16,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 7
-			arms_factory = 7
+			arms_factory = 2
 			industrial_complex = 1
 			air_base = 6
 		}

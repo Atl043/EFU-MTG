@@ -2,8 +2,8 @@ state={
 	id=160
 	name="STATE_160"
 	resources={
-		steel=22 # was: 32.000
-		aluminium=18 # was: 18.000
+		steel=20 # was: 32.000
+		aluminium=60 # was: 18.000
 	}
 	
 	state_category = large_city
@@ -14,11 +14,11 @@ state={
 			6626 1 
 		}
 		victory_points = {
-			11584 10 
+			11584 30 
 		}
 		buildings = {
 			infrastructure = 6
-			arms_factory = 5
+			arms_factory = 3
 			industrial_complex = 4
 			dockyard = 1
 			air_base = 3

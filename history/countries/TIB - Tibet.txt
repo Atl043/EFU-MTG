@@ -1,13 +1,10 @@
-﻿capital = 757
+﻿capital = 322
 
 oob = "TIB_1936"
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-}
-add_ideas = {
-	trade_unionism
 }
 
 1939.1.1 = {
@@ -76,6 +73,10 @@ set_politics = {
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+			add_ideas = {
+	tib_neutrality
+    neutrality_idea		
 }
 
 create_country_leader = {

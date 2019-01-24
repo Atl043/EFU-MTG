@@ -1,9 +1,9 @@
 focus_tree = {
 	id = china_warlord_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			OR = {
@@ -16,7 +16,7 @@ focus_tree = {
 			has_dlc = "Waking the Tiger"
 		}
 	}
-	
+
 	default = no
 
 	continuous_focus_position = { x = 50 y = 1350 }
@@ -28,7 +28,7 @@ focus_tree = {
 #		mutually_exclusive = { focus =  }
 #		x = -3
 #		y = 0
-#		relative_position_id = 
+#		relative_position_id =
 #
 #		cost = 10
 #
@@ -39,7 +39,7 @@ focus_tree = {
 #		available = {
 #
 #		}
-#		
+#
 #		bypass = {
 #
 #		}
@@ -275,7 +275,7 @@ focus_tree = {
 		id = CHI_cooperation_with_the_nationalists
 		icon = GFX_focus_chi_cooperation_with_the_nationalists
 		prerequisite = { focus = CHI_secure_internal_politics }
-		mutually_exclusive = { focus = CHI_cooperation_with_the_communists  }
+		mutually_exclusive = { focus = CHI_cooperation_with_the_communists }
 		x = -5
 		y = 1
 		relative_position_id = CHI_secure_internal_politics
@@ -359,7 +359,7 @@ focus_tree = {
 				custom_effect_tooltip = CHI_anti_opposition_campaigns_effect_tooltip_no_communists
 			}
 			if = {
-				limit = {			
+				limit = {
 					AND = {
 						has_completed_focus = CHI_cooperation_with_the_communists
 						NOT = { any_other_country = { has_completed_focus = CHI_cooperation_with_the_nationalists } }
@@ -377,11 +377,11 @@ focus_tree = {
 						has_completed_focus = CHI_cooperation_with_the_nationalists
 						NOT = { any_other_country = { has_completed_focus = CHI_cooperation_with_the_communists } }
 					}
-				} 
+				}
 				custom_effect_tooltip = CHI_anti_opposition_campaigns_effect_tooltip_no_communists
 			}
 			if = {
-				limit = {			
+				limit = {
 					AND = {
 						has_completed_focus = CHI_cooperation_with_the_communists
 						NOT = { any_other_country = { has_completed_focus = CHI_cooperation_with_the_nationalists } }
@@ -395,7 +395,7 @@ focus_tree = {
 	focus = {
 		id = CHI_technological_cooperation
 		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = CHI_cooperation_with_the_nationalists }		
+		prerequisite = { focus = CHI_cooperation_with_the_nationalists }
 		x = -1
 		y = 1
 		relative_position_id = CHI_cooperation_with_the_nationalists
@@ -437,7 +437,7 @@ focus_tree = {
 	focus = {
 		id = CHI_new_model_province
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = CHI_cooperation_with_the_nationalists }		
+		prerequisite = { focus = CHI_cooperation_with_the_nationalists }
 		x = 1
 		y = 1
 		relative_position_id = CHI_cooperation_with_the_nationalists
@@ -576,7 +576,7 @@ focus_tree = {
 				limit = {
 					is_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 1 
+				add_extra_state_shared_building_slots = 1
 			}
 		}
 	}
@@ -643,7 +643,7 @@ focus_tree = {
 			NOT = { has_war_with = CHI }
 			if = {
 				limit = {
-					WTT_not_taking_over_national_leadership = no				
+					WTT_not_taking_over_national_leadership = no
 				}
 				WTT_not_taking_over_national_leadership = yes
 			}
@@ -709,7 +709,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			load_focus_tree = china_nationalist_focus
+			load_focus_tree = china
 			set_cosmetic_tag = CHI_warlord_leader
 			every_state = {
 				limit = {
@@ -718,7 +718,7 @@ focus_tree = {
 				add_core_of = ROOT
 			}
 		}
-	}	
+	}
 
 	#######################
 	##### Communists ######
@@ -798,7 +798,7 @@ focus_tree = {
 	focus = {
 		id = CHI_land_redistribution
 		icon = GFX_goal_generic_soviet_construction
-		prerequisite = { focus = CHI_cooperation_with_the_communists }		
+		prerequisite = { focus = CHI_cooperation_with_the_communists }
 		x = 0
 		y = 1
 		relative_position_id = CHI_cooperation_with_the_communists
@@ -830,7 +830,7 @@ focus_tree = {
 				limit = {
 					is_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 1 
+				add_extra_state_shared_building_slots = 1
 			}
 		}
 	}
@@ -1010,10 +1010,10 @@ focus_tree = {
 				any_neighbor_country = {
 					tag = event_target:WTT_communist_china
 				}
-			}			
+			}
 			NOT = { has_war_with = PRC }
 			NOT = { has_war_with = SOV }
-			SOV = { has_government = communism }			
+			SOV = { has_government = communism }
 			is_subject = no
 		}
 
@@ -1101,6 +1101,114 @@ focus_tree = {
 		}
 	}
 
+	#############################
+	##### Opposition/Share ######
+	#############################
+
+	focus = {
+		id = CHI_public_works
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = CHI_cooperation_with_the_communists }
+		x = 4
+		y = 1
+		relative_position_id = CHI_cooperation_with_the_communists
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = CHI_public_works
+		}
+	}
+
+	focus = {
+		id = CHI_labor_reform
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = CHI_public_works }
+		x = -1
+		y = 1
+		relative_position_id = CHI_public_works
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = CHI_labor_reform
+		}
+	}
+
+	focus = {
+		id = CHI_rural_militias
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = CHI_public_works }
+		x = 1
+		y = 1
+		relative_position_id = CHI_public_works
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = CHI_rural_militias
+		}
+	}
 	#####################
 	##### Industry ######
 	#####################
@@ -1108,7 +1216,7 @@ focus_tree = {
 	focus = {
 		id = CHI_industrial_investment
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 12
+		x = 8
 		y = 0
 		relative_position_id = CHI_secure_internal_politics
 

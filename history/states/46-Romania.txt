@@ -4,10 +4,10 @@ state={
 	name="STATE_46" # Muntenia
 	manpower = 4461400
 	resources={
-		oil=50 # was: 70
+		oil=70
 	}
 
-	state_category = large_city
+	state_category = city
 
 	history={
 		owner = ROM
@@ -16,8 +16,7 @@ state={
 		victory_points = { 657 3 }
 		buildings = {
 			infrastructure = 6
-			arms_factory = 1
-			industrial_complex = 3
+			industrial_complex = 2
 			air_base = 3
 			657 = {
 				naval_base = 8
