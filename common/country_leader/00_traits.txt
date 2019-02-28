@@ -265,7 +265,7 @@ leader_traits = {
 
 	chamberlain_appeaser = {
 		random = no
-		war_support_factor = -0.05
+		conscription = -0.01
 		
 		ai_will_do = {
 			factor = 1
