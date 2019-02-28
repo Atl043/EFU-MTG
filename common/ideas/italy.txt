@@ -22,7 +22,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_factor = 0.05				
+				stability_factor = 0.1			
 			}
 		}
 		vittoria_mutilata = {			
@@ -68,9 +68,9 @@ ideas = {
 						}
 					}
 					AND = {
-						has_government = communism
+						has_government = communsim
 						GER = {
-							has_government = communism
+							has_government = communsim
 						}
 					}
 					AND = {
@@ -92,61 +92,7 @@ ideas = {
 			}				
 		}
 	}
-		
-	political_advisor = {
-		amadeo_bordiga = {
-			
-			
-			allowed = {
-				original_tag = "ITA"
-			}
-			
-			available = {
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-			
-			traits = { communist_revolutionary }
-
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}	
-			
-		ivanoe_bonomi = {
-			
-			
-			allowed = {
-				original_tag = "ITA"
-			}
-			
-			available = {
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-			
-			traits = { democratic_reformer }
-
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
+		political_advisor = {
 		
 		carlo_scorza = {
 			
@@ -155,15 +101,14 @@ ideas = {
 				original_tag = "ITA"
 			}
 			
-			available = {
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
+
 			
 			traits = { fascist_demagogue }
-
+	
+			on_add = {
+				country_event = political.7
+			}
+	
 			do_effect = {
 				NOT = {
 					has_government = fascism
@@ -181,7 +126,7 @@ ideas = {
 				original_tag = "ITA"
 			}
 
-			picture = generic_political_advisor_europe_5
+			picture = generic_political_advisor_europe_1
 						
 			traits = { prince_of_terror }
 	
@@ -200,7 +145,7 @@ ideas = {
 				original_tag = "ITA"
 			}
 
-			picture = generic_political_advisor_europe_6
+			picture = generic_political_advisor_europe_2
 						
 			traits = { compassionate_gentleman }
 	
@@ -221,7 +166,7 @@ ideas = {
 
 			picture = generic_army_europe_1
 						
-			traits = { backroom_backstabber }
+			traits = { silent_workhorse}
 
 			ai_will_do = {
 				factor = 0
@@ -662,7 +607,46 @@ ideas = {
 				armor = 0.10
 			}
 			
-			traits = { tank_manufacturer }
+			equipment_bonus = {
+				medium_tank_equipment = {
+					reliability = 0.1
+					defense = 0.1
+				}
+				light_tank_equipment = {
+					reliability = 0.1
+					soft_attack = 0.05
+				}
+				light_tank_destroyer_equipment = {
+					reliability = 0.1
+					soft_attack = 0.05
+				}
+				light_tank_artillery_equipment = {
+					reliability = 0.1
+					soft_attack = 0.05
+				}
+			}
+		}
+		
+		ansaldo_fossati = {
+			
+			
+			allowed = {
+				original_tag = ITA
+			}
+			
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			equipment_bonus = {
+				medium_tank_equipment = {
+					hard_attack = 0.10
+					ap_attack = 0.10
+					armor_value = 0.10
+					reliability = 0.05
+				}
+			}
 		}
 	}
 	
@@ -699,6 +683,9 @@ ideas = {
 			research_bonus = {
 				motorized_equipment = 0.10
 			}
+			research_bonus = {
+				mechanized_equipment = 0.10
+			}
 			
 			traits = { motorized_equipment_manufacturer }
 		}
@@ -731,12 +718,14 @@ ideas = {
 			allowed = {
 				original_tag = ITA
 			}
+			cost = 75
+			#removal_cost = 10
 			
 			research_bonus = {
 				air_equipment = 0.10
 			}
 			
-			traits = { light_aircraft_manufacturer }
+			traits = { macchi_aircraft_manufacturer }
 		}
 		
 		savoia_marchetti = {
@@ -745,25 +734,29 @@ ideas = {
 			allowed = {
 				original_tag = ITA
 			}
-
+			cost = 75
+			#removal_cost = 10
+			
 			research_bonus = {
 				air_equipment = 0.10
 			}
 			
-			traits = { medium_aircraft_manufacturer }
+			traits = { savoia_marchetti_aircraft_manufacturer }
 		}
 		
-		caproni = {
+		crdaair = {
 						
 			allowed = {
 				original_tag = ITA
 			}
+			cost = 75
+			#removal_cost = 10
 						
 			research_bonus = {
 				air_equipment = 0.10
 			}
 			
-			traits = { naval_aircraft_manufacturer }
+			traits = { crda_aircraft_manufacturer }
 		}
 		
 		piaggio = {
@@ -771,12 +764,62 @@ ideas = {
 			allowed = {
 				original_tag = ITA
 			}
+			cost = 75
+			#removal_cost = 10
 						
 			research_bonus = {
 				air_equipment = 0.10
 			}
 			
-			traits = { heavy_aircraft_manufacturer }
+			traits = { piaggio_aircraft_manufacturer }
+		}
+		
+		fiatair = {
+						
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				date > 1940.12.12
+			}
+			cost = 75
+			#removal_cost = 10
+						
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { fiat_aircraft_manufacturer }
+		}
+		
+		bredaair = {
+						
+			allowed = {
+				original_tag = ITA
+			}
+			cost = 75
+			#removal_cost = 10
+						
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { breda_aircraft_manufacturer }
+		}
+		
+		imam = {
+						
+			allowed = {
+				original_tag = ITA
+			}
+			cost = 75
+			#removal_cost = 10
+						
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { imam_aircraft_manufacturer }
 		}
 	}
 	
@@ -812,18 +855,58 @@ ideas = {
 				naval_equipment = 0.10
 			}
 			
-			traits = { naval_manufacturer }
+			traits = { atlantic_fleet_naval_manufacturer }
+		}
+		
+		ansaldo = {
+						
+			allowed = {
+				original_tag = ITA
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { med_fleet_naval_manufacturer }
+		}
+
+		odero_terni_orlando = {
+						
+			allowed = {
+				original_tag = ITA
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { convoy_escort_naval_manufacturer }
 		}
 	}
 	
-	theorist = {	
+	theorist = {
+		guglielmo_nasi = {
+
+
+			allowed = {
+				original_tag = ITA
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { military_theorist }
+	}
+	
 		giovanni_messe = {
 						
 			allowed = {
 				original_tag = ITA
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_mobile_warfare = 0.10
@@ -838,7 +921,7 @@ ideas = {
 				original_tag = ITA
 			}
 			
-			cost = 250
+			cost = 150
 						
 			research_bonus = {
 				cat_grand_battle_plan = 0.10
@@ -857,7 +940,7 @@ ideas = {
 				original_tag = ITA
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_fleet_in_being = 0.10
@@ -885,7 +968,7 @@ ideas = {
 				original_tag = ITA
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_operational_integrity = 0.10
