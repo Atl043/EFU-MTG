@@ -4,9 +4,9 @@ state={
 
 	history={
 		owner = SOV
-		add_core_of = KAZ
 		buildings = {
 			infrastructure = 4
+			fuel_silo = 1
 
 		}
 		add_core_of = SOV

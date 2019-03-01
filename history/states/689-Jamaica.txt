@@ -6,7 +6,7 @@ state={
 	state_category = town
 
 	history={
-		add_core_of = JAM
+		fuel_silo = 1
 		owner = ENG
 		victory_points = {
 			12304 1 

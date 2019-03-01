@@ -6,12 +6,11 @@ state={
 
 	resources={
 		chromium=35 # was: 64.000
-		tungsten=8 # was: 16.000
+		tungsten=15 # was: 16.000
 	}
 
 	history={
 		owner = ENG
-		add_core_of = ZAM
 		victory_points = {
 			5199 1
 		}

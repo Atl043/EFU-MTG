@@ -5,9 +5,9 @@ state={
 	state_category = small_island
 
 	history={
-		add_core_of = BAS
 		owner = ENG
 		buildings = {
+			fuel_silo = 1
 			infrastructure = 4
 			11350 = {
 				naval_base = 1
