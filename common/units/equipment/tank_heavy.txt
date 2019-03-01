@@ -31,22 +31,21 @@ equipments = {
 		armor_value = 70
 
 		#Offensive Abilities
-		soft_attack = 15
+		soft_attack = 12
 		hard_attack = 12
-		ap_attack = 35
+		ap_attack = 61
 		air_attack = 0
 
 		#Space taken in convoy
-		lend_lease_cost = 14
+		lend_lease_cost = 5
 		
-		build_cost_ic = 25 
+		build_cost_ic = 32
 		resources = {
-			#oil = 1
 			steel = 3
 			chromium = 3
 		}
 		
-		fuel_consumption = 4.4
+		fuel_consumption = 2.3
 	}
 
 	# 1934
@@ -78,13 +77,12 @@ equipments = {
 		armor_value = 110
 
 		#Offensive Abilities
-		soft_attack = 27
+		soft_attack = 22
 		hard_attack = 30
 		ap_attack = 111
 		
-		build_cost_ic = 27 
+		build_cost_ic = 32
 		resources = {
-#			oil = 1
 			steel = 3
 			chromium = 3
 		}
@@ -109,13 +107,12 @@ equipments = {
 		armor_value = 130
 
 		#Offensive Abilities
-		soft_attack = 35
+		soft_attack = 28
 		hard_attack = 40
 		ap_attack = 131
 		
-		build_cost_ic = 30
+		build_cost_ic = 35
 		resources = {
-			#oil = 1
 			steel = 4
 			chromium = 3
 		}
@@ -155,18 +152,17 @@ equipments = {
 		armor_value = 45
 
 		#Offensive Abilities
-		soft_attack = 55
+		soft_attack = 70
 		hard_attack = 1
 		ap_attack = 8
 		air_attack = 0
 		
-		build_cost_ic = 25
+		build_cost_ic = 32
 		resources = {
-			#oil = 1
 			steel = 3
 			chromium = 3
 		}
-		fuel_consumption = 2.2
+		fuel_consumption = 1.2
 	}
 
 	heavy_tank_artillery_equipment_1 = {
@@ -203,12 +199,11 @@ equipments = {
 		armor_value = 68
 
 		#Offensive Abilities 
-		soft_attack = 74
+		soft_attack = 97
 		hard_attack = 2
 		
-		build_cost_ic = 27
+		build_cost_ic = 35
 		resources = {
-			#oil = 1
 			steel = 4
 			chromium = 3
 		}
@@ -236,12 +231,11 @@ equipments = {
 		armor_value = 90
 
 		#Offensive Abilities
-		soft_attack = 80
+		soft_attack = 117
 		hard_attack = 2.5
 		
-		build_cost_ic = 30
+		build_cost_ic = 39
 		resources = {
-			#oil = 1
 			steel = 5
 			chromium = 3
 		}
@@ -286,13 +280,12 @@ equipments = {
 		ap_attack = 96
 		air_attack = 0
 		
-		build_cost_ic = 25
+		build_cost_ic = 32
 		resources = {
-			#oil = 1
 			steel = 3
 			chromium = 3
 		}
-		fuel_consumption = 2.2
+		fuel_consumption = 1.2
 	}
 
 	heavy_tank_destroyer_equipment_1 = {
@@ -334,9 +327,8 @@ equipments = {
 		ap_attack = 140
 		air_attack = 0
 		
-		build_cost_ic = 27
+		build_cost_ic = 32
 		resources = {
-			#oil = 1
 			steel = 4
 			chromium = 3
 		}
@@ -369,9 +361,8 @@ equipments = {
 		ap_attack = 160
 		air_attack = 0
 		
-		build_cost_ic = 30
+		build_cost_ic = 35
 		resources = {
-			#oil = 2
 			steel = 4
 			chromium = 4
 		}
@@ -414,15 +405,14 @@ equipments = {
 		soft_attack = 4.5
 		hard_attack = 4
 		ap_attack = 25
-		air_attack = 17
+		air_attack = 12
 		
-		build_cost_ic = 25
+		build_cost_ic = 32
 		resources = {
-			#oil = 1
 			steel = 3
 			chromium = 3
 		}
-		fuel_consumption = 1.1
+		fuel_consumption = 0.60
 	}
 
 	heavy_tank_aa_equipment_1 = {
@@ -462,11 +452,10 @@ equipments = {
 		soft_attack = 6
 		hard_attack = 4.5
 		ap_attack = 60
-		air_attack = 33
+		air_attack = 18
 		
-		build_cost_ic = 27
+		build_cost_ic = 32
 		resources = {
-			#oil = 1
 			steel = 3
 			chromium = 3
 		}
@@ -499,11 +488,10 @@ equipments = {
 		soft_attack = 7.5
 		hard_attack = 6
 		ap_attack = 88
-		air_attack = 44
+		air_attack = 23
 		
-		build_cost_ic = 30
+		build_cost_ic = 35
 		resources = {
-			#oil = 1
 			steel = 4
 			chromium = 3
 		}

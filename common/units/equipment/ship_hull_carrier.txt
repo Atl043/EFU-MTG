@@ -97,7 +97,7 @@ equipments = {
 		max_strength = 250
 		
 
-		fuel_consumption = 87
+		fuel_consumption = 43.5
 
 		# (Describes combat behaviour - hidden stat)
 		offensive_weapons = no
@@ -387,7 +387,7 @@ equipments = {
 		max_strength = 250
 		
 
-		fuel_consumption = 87
+		fuel_consumption = 43.5
 
 		# (Describes combat behaviour - hidden stat)
 		offensive_weapons = no

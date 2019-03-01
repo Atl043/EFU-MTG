@@ -113,7 +113,7 @@ equipments = {
 		
 		max_strength = 350
 
-		fuel_consumption = 67
+		fuel_consumption = 33.5
 		
 		build_cost_ic = 3300
 		resources = {

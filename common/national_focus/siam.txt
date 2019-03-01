@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
    id = siam_focus
 
    country = {
@@ -23,7 +23,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = industry
 			}
@@ -414,7 +414,7 @@
 			add_tech_bonus = {
 				name = SIA_newspapers
 				uses = 1
-				bonus = 0.5
+				bonus = 1
 				category = electronics
 				category = support_tech
 			}
@@ -511,7 +511,7 @@
 			air_experience = 25
 			add_tech_bonus = {
 				name = radar_focus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = radar_tech
 			}
@@ -531,7 +531,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = nuclear
 			}
@@ -712,7 +712,7 @@
 			navy_experience = 20
 			add_tech_bonus = {
 				name = SIA_japanese_ships
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = ss_tech
 				category = dd_tech
@@ -779,7 +779,7 @@
 			army_experience = 20
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = land_doctrine
 			}
@@ -799,7 +799,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_weapons_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = infantry_weapons
 				category = artillery
@@ -820,7 +820,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_weapons_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = support_tech
 			}
@@ -840,7 +840,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = motorized_equipment
 			}
@@ -860,7 +860,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = tanks_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = armor
 			}
@@ -880,7 +880,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = doctrine_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = land_doctrine
 			}
@@ -901,7 +901,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = doctrine_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = land_doctrine
 			}
@@ -921,7 +921,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = doctrine_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = land_doctrine
 			}
@@ -949,7 +949,7 @@
 			}
 			add_tech_bonus = {
 				name = air_doc_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = air_doctrine
 			}
@@ -1004,7 +1004,7 @@
 			}
 			add_tech_bonus = {
 				name = air_doc_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = air_doctrine
 			}
@@ -1024,7 +1024,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = air_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				technology = fighter1
 				technology = fighter2
@@ -1049,7 +1049,7 @@
 
 			add_tech_bonus = {
 				name = air_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				technology = CAS1
 				technology = CAS2
@@ -1073,7 +1073,7 @@
 		completion_reward = {
 					add_tech_bonus = {
 				name = air_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = naval_air
 				technology = strategic_bomber1
@@ -1122,7 +1122,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = air_doc_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = air_doctrine
 			}
@@ -1141,7 +1141,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = air_doc_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = air_doctrine
 			}
@@ -1204,7 +1204,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = naval_doctrine_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = fleet_in_being_tree
 			}
@@ -1225,7 +1225,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = naval_doctrine_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = trade_interdiction_tree
 			}
@@ -1259,7 +1259,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = naval_doctrine_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = ss_tech
 			}
@@ -1294,7 +1294,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = naval_doctrine_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = dd_tech
 			}
@@ -1328,7 +1328,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = naval_doctrine_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = bc_tech
 				category = bb_tech
@@ -1365,7 +1365,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = naval_doctrine_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = naval_doctrine
 			}

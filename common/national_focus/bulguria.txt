@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = bulgarian_focus
 
 	country = {
@@ -1570,3 +1570,4 @@
 			}
 		}
 	}
+}

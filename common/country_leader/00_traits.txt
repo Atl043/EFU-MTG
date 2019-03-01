@@ -1471,7 +1471,7 @@ leader_traits = {
 	
 	military_theorist = {
 		sprite = 14
-		experience_gain_army = 0.05
+		experience_gain_army = 0.1
 		
 		ai_will_do = {
 			factor = 500
@@ -1480,7 +1480,7 @@ leader_traits = {
 	
 	mobile_warfare_expert = { 
 		sprite = 14
-		experience_gain_army = 0.05
+		experience_gain_army = 0.1
 		
 		ai_will_do = {
 			factor = 500
@@ -1489,7 +1489,7 @@ leader_traits = {
 	
 	superior_firepower_expert = {
 		sprite = 14
-		experience_gain_army = 0.05
+		experience_gain_army = 0.1
 		
 		ai_will_do = {
 			factor = 500
@@ -1498,7 +1498,7 @@ leader_traits = {
 	
 	grand_battle_plan_expert = {
 		sprite = 14
-		experience_gain_army = 0.05
+		experience_gain_army = 0.1
 		
 		ai_will_do = {
 			factor = 500
@@ -1507,7 +1507,7 @@ leader_traits = {
 	
 	mass_assault_expert = {
 		sprite = 14
-		experience_gain_army = 0.05
+		experience_gain_army = 0.1
 		
 		ai_will_do = {
 			factor = 500
@@ -1516,7 +1516,7 @@ leader_traits = {
 	
 	air_warfare_theorist = {
 		sprite = 14
-		experience_gain_air = 0.05
+		experience_gain_air = 0.1
 		
 		ai_will_do = {
 			factor = 500
@@ -1531,7 +1531,7 @@ leader_traits = {
 					air_ground_attack = 0.1 
 			}
 		}
-		experience_gain_air = 0.05
+		experience_gain_air = 0.1
 		
 		ai_will_do = {
 			factor = 100
@@ -1540,7 +1540,7 @@ leader_traits = {
 	
 	victory_through_airpower = {
 		sprite = 14
-		experience_gain_air = 0.05
+		experience_gain_air = 0.1
 		
 		ai_will_do = {
 			factor = 100
@@ -1549,7 +1549,7 @@ leader_traits = {
 	
 	close_air_support_proponent = {
 		sprite = 14
-		experience_gain_air = 0.05
+		experience_gain_air = 0.1
 		
 		ai_will_do = {
 			factor = 100
@@ -1558,7 +1558,7 @@ leader_traits = {
 	
 	assault_avaition = {
 		sprite = 14
-		experience_gain_air = 0.05
+		experience_gain_air = 0.1
 		
 		ai_will_do = {
 			factor = 100
@@ -1567,7 +1567,7 @@ leader_traits = {
 	
 	naval_theorist = {
 		sprite = 14
-		experience_gain_navy = 0.05
+		experience_gain_navy = 0.1
 		
 		ai_will_do = {
 			factor = 100
@@ -1576,7 +1576,7 @@ leader_traits = {
 	
 	naval_aviation_pioneer = {
 		sprite = 14
-		experience_gain_navy = 0.05
+		experience_gain_navy = 0.1
 		
 		ai_will_do = {
 			factor = 100
@@ -1585,7 +1585,7 @@ leader_traits = {
 	
 	grand_fleet_proponent = {
 		sprite = 14
-		experience_gain_navy = 0.05
+		experience_gain_navy = 0.1
 		
 		ai_will_do = {
 			factor = 100
@@ -1594,7 +1594,7 @@ leader_traits = {
 	
 	submarine_specialist = {
 		sprite = 14
-		experience_gain_navy = 0.05
+		experience_gain_navy = 0.1
 		
 		ai_will_do = {
 			factor = 100
@@ -1610,7 +1610,7 @@ leader_traits = {
 				maximum_speed = 0.10
 			}
 		}
-		experience_gain_army = 0.05
+		experience_gain_army = 0.1
 		
 		ai_will_do = {
 			factor = 500

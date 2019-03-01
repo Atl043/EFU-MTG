@@ -34,7 +34,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 12
 		
-		build_cost_ic = 60
+		build_cost_ic = 12
 		resources = {
 			#oil = 1
 			aluminium = 3
@@ -42,7 +42,7 @@ equipments = {
 		}
 		
 		manpower = 80
-		fuel_consumption = 0.8
+		fuel_consumption = 0.4
 	}
 	
 	jet_strat_bomber_equipment = {
@@ -76,7 +76,7 @@ equipments = {
 		naval_strike_attack = 1.5
 		naval_strike_targetting = 0.6
 		
-		build_cost_ic = 80
+		build_cost_ic = 160
 		resources = {
 			aluminium = 3
 			tungsten = 3
@@ -84,7 +84,7 @@ equipments = {
 		}
 		
 		manpower = 160
-		fuel_consumption = 1.6
+		fuel_consumption = 0.8
 	}
 
 	
@@ -120,7 +120,7 @@ equipments = {
 		air_defence = 45
 		air_bombing = 45
 		
-		build_cost_ic = 62
+		build_cost_ic = 124
 		resources = {
 			#oil = 1
 			aluminium = 4
@@ -143,7 +143,7 @@ equipments = {
 		air_defence = 60
 		air_bombing = 60
 		
-		build_cost_ic = 64
+		build_cost_ic = 128
 		resources = {
 			#oil = 1
 			aluminium = 5
@@ -191,7 +191,7 @@ equipments = {
 		naval_strike_attack = 0.0
 		naval_strike_targetting = 0.0
 		
-		build_cost_ic = 180
+		build_cost_ic = 50
 		resources = {
 			#oil = 1
 			aluminium = 3
