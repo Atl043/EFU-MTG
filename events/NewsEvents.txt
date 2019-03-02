@@ -13136,7 +13136,7 @@ news_event = {
 	major = yes
 	is_triggered_only = yes
 	option = {
-		name = news.334.a
+		name = news.337.a
 		trigger = {
 
 			NOT = {
@@ -13151,25 +13151,25 @@ news_event = {
 
 
 	option = {
-		name = news.334.b
+		name = news.337.b
 		trigger = { TAG = GER }
 	}
 	option = {
-		name = news.334.c
+		name = news.337.c
 		trigger = { TAG = FRA }
 	}
 
 
 
 	option = {
-		name = news.334.e
+		name = news.337.e
 		trigger = { TAG = ENG }
 	}
 
 
 
 	option = {
-		name = news.334.f
+		name = news.337.f
 		trigger = {
 			NOT = {
 				TAG = GER
