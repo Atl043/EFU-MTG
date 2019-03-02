@@ -40,12 +40,12 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 10
 		
-		build_cost_ic = 10
+		build_cost_ic = 12
 		resources = {
 			steel = 2
 		}
 
-		fuel_consumption = 4
+		fuel_consumption = 8
 	}
 
 	amphibious_tank_equipment_1 = {
@@ -87,7 +87,7 @@ equipments = {
 		ap_attack = 61
 		air_attack = 0	
 		
-		build_cost_ic = 13
+		build_cost_ic = 15.5
 		resources = {
 			steel = 2
 			tungsten = 2

@@ -37,7 +37,7 @@ equipments = {
 			rubber = 1
 		}
 		
-		fuel_consumption = 2.4
+		fuel_consumption = 4.8
 	}
 
 	# ~1941
