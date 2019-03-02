@@ -22,7 +22,7 @@ ideas = {
 				lend_lease_tension = 0.50
 				send_volunteers_tension = 0.20
 				guarantee_tension = 0.75
-				max_fuel_factor = -0.45
+				max_fuel_factor = -0.75
 			}
 			
 			allowed_to_remove = {
