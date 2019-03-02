@@ -6,13 +6,12 @@ state= {
 	state_category = rural
 
 	resources={
-		chromium=1 # was: 2
-		tungsten=16 # was: 22
-		aluminium=9 # was: 12
+		chromium=11 # was: 2
+		tungsten=22 # was: 22
+		aluminium=12 # was: 12
 	}
 
 	history= {
-		add_core_of = SCO
 		owner = ENG
 		victory_points = { 11064 1 }
 		buildings = {

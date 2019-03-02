@@ -5,11 +5,11 @@ state={
 
 	manpower = 13000
 	
-	state_category = wasteland
+	state_category = town
 	
 	
 	resources={
-		steel=22 # was: 28
+		steel=28 # was: 28
 	}
 
 	history={

@@ -4,17 +4,17 @@ state={
 	name="STATE_65"
 	manpower = 5592576
 	resources={
-		steel=53 # was: 90
+		steel=90 # was: 90
 	}
 
-	state_category = metropolis
+	state_category = megalopolis
 
 
 	history={
 		owner = GER
 		buildings = {
-			infrastructure = 7
-			arms_factory = 2
+			infrastructure = 8
+			arms_factory = 8
 			industrial_complex = 7
 		}
 		victory_points = {

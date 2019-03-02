@@ -4,12 +4,12 @@ state={
 	name="STATE_379"
 	manpower = 91057
 	
-	state_category = rural
+	state_category = megalopolis
 	
 	resources={
 		steel=70 # was: 136
 		tungsten=32 # was: 62
-		aluminium=25 # was: 44
+		aluminium=44 # was: 44
 	}
 
 	history={

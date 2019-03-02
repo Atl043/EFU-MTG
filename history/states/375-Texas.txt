@@ -5,10 +5,10 @@ state={
 	manpower = 5824712
 	
 	
-	state_category = metropolis
+	state_category = megalopolis
 	
 	resources={
-		oil=320 # was: 580
+		oil=400 # was: 580
 		aluminium=50 # was: 96
 	}
 
