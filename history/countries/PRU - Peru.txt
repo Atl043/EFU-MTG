@@ -125,7 +125,9 @@ set_politics = {
 	election_frequency = 96
 	elections_allowed = yes
 }
-
+add_ideas = {
+		generic_neutral_country
+	}
 create_country_leader = {
 	name = "Óscar Benavides"
 	desc = "POLITICS_OSCAR_BENAVIDES_DESC"

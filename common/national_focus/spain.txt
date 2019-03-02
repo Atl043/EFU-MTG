@@ -1,11 +1,12 @@
 ﻿focus_tree = {
-	id = Spain_focus
+	id = spain_focus
 	country = {
 		factor = 0
 
 		modifier = {
 			add = 10
 			original_tag = SPR
+			
 		}
 	}
 
