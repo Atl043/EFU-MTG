@@ -107,11 +107,11 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 49
+			popularity = 90
 		}
 
 		fascism = {
-			popularity = 51
+			popularity = 10
 		}
 		
 		communism = {
@@ -120,7 +120,7 @@ set_politics = {
 		}
 	}
 	
-	ruling_party = fascism
+	ruling_party = democratic
 	last_election = "1931.10.11"
 	election_frequency = 96
 	elections_allowed = yes

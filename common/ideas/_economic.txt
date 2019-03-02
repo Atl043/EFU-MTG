@@ -104,9 +104,15 @@ ideas = {
 						has_completed_focus = USA_limited_intervention
 						has_defensive_war = no
 					}
-					has_war_support > 0.3
+					has_war_support > 0.4
 					congress_high_support_trigger = yes
 				}	
+				OR = {
+					has_government = fascism
+					has_government = communism
+					has_war = yes
+					threat > 0.05
+				}
 			}
 			on_add = {
 				if = {
@@ -146,7 +152,12 @@ ideas = {
 			
 			available = {
 				has_war_support > 0.15
-
+				OR = {
+					has_government = fascism
+					has_government = communism
+					has_war = yes
+					threat > 0.15
+				}
 				if = {
 					limit = {
 						original_tag = HUN
@@ -203,7 +214,9 @@ ideas = {
 			
 			
 			available = {
-				has_war_support > 0.5
+
+				threat > 0.15
+				has_war_support > 0.40
 				OR = {
 					has_government = fascism
 					has_government = communism
