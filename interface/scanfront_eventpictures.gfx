@@ -1,0 +1,27 @@
+spriteTypes = {
+
+
+
+	
+
+	spriteType = {
+
+		name = "GFX_italy_Pizza_Time"
+
+		texturefile = "gfx/event_pictures/italy_Pizza_Time.dds"
+
+	}
+
+	spriteType = {
+
+		name = "GFX_italy_Pizza_Time_news"
+
+		texturefile = "gfx/event_pictures/italy_Pizza_Time_news.dds"
+
+	}
+
+	
+
+
+
+}
