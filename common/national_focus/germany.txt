@@ -731,7 +731,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_coal_liquidization
-				bonus = 0.75
+				bonus = 3
 				uses = 1
 				category = synth_resources
 			}

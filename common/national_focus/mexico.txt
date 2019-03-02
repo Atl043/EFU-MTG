@@ -540,10 +540,10 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_oil_field_expansion
 		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = MEX_focus_rural_schools focus = MEX_focus_cientifico_camarilla }
-		x = 1
+		prerequisite = {  focus = MEX_focus_cientifico_camarilla }
+		x = -1
 		y = 2
-		relative_position_id = MEX_focus_rural_schools
+		relative_position_id = MEX_focus_cientifico_camarilla
 
 		cost = 5
 
@@ -1029,107 +1029,6 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = MEX_focus_new_world_order
-		icon = GFX_focus_chi_mission_to_germany
-		prerequisite = { focus = MEX_focus_german_resource_exchange }
-		x = 0
-		y = 1
-		relative_position_id = MEX_focus_german_resource_exchange
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-			is_subject = no
-			NOT = {
-				has_war_with = GER
-			}
-			GER = {
-				is_in_faction = yes
-			}
-		}
-
-		bypass = {
-			OR = {
-				is_in_faction = yes
-				GER = {
-					exists = no
-				}
-				GER = {
-					is_subject = yes
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			if = {
-				limit = {
-					GER = { has_government = neutrality }
-				}
-				add_popularity = {
-					ideology = neutrality
-					popularity = 0.1
-				}
-			}
-			else_if = {
-				limit = {
-					GER = { has_government = democratic }
-				}
-				add_popularity = {
-					ideology = democratic
-					popularity = 0.1
-				}
-			}
-			else_if = {
-				limit = {
-					GER = { has_government = fascism }
-				}
-				add_popularity = {
-					ideology = fascism
-					popularity = 0.1
-				}
-			}
-			else_if = {
-				limit = {
-					GER = { has_government = communism }
-				}
-				add_popularity = {
-					ideology = communism
-					popularity = 0.1
-				}
-			}
-
-			add_opinion_modifier = {
-				target = GER
-				modifier = german_mexican_diplomacy
-			}
-			
-			GER = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = german_mexican_diplomacy
-				}
-				if = {
-					limit = {
-						is_in_faction = yes
-					}
-					country_event = {
-						id = mexico.8
-						days = 1
-					}
-				}
-			}
-		}
-	}
-
 	focus = {
 		id = MEX_focus_compensation
 		icon = GFX_focus_generic_concessions
@@ -2245,7 +2144,7 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_church_schools
 		icon = GFX_focus_research
-		prerequisite = { focus = MEX_focus_knights_of_columbus focus = MEX_focus_legion_of_christ }
+		prerequisite = { focus = MEX_focus_knights_of_columbus }
 		x = 1
 		y = 1
 		relative_position_id = MEX_focus_knights_of_columbus
@@ -2276,7 +2175,7 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_synarchist_communes
 		icon = GFX_focus_generic_industry_2
-		prerequisite = { focus = MEX_focus_social_catholicism focus = MEX_focus_triumph_of_synarchism }
+		prerequisite = { focus = MEX_focus_social_catholicism }
 		x = 1
 		y = 1
 		relative_position_id = MEX_focus_social_catholicism

@@ -55,17 +55,8 @@ focus_tree = {
 	focus = {
 		id = USA_continue_the_new_deal
 		icon = GFX_focus_generic_self_management
-		x = 14
+		x = 6
 		y = 0
-		offset = {
-			x = -12
-			y = 0
-			trigger = {
-				not = { has_dlc = "Man the Guns" }
-			}
-		}
-
-		mutually_exclusive = { focus = USA_reestablish_the_gold_standard }
 		cost = 10
 
 		ai_will_do = {
@@ -207,6 +198,8 @@ focus_tree = {
 		}
 
 		available = {
+			has_war = yes
+			date> 1940.9.1
 			congress_medium_support_trigger = yes
 			has_government = democratic
 			not = { has_country_flag = USA_great_depression_cooldown }
@@ -353,18 +346,17 @@ focus_tree = {
 		}
 	}
 
-	
 	focus = {
 		id = USA_office_of_strategic_services
 		icon = GFX_goal_generic_major_war
-		prerequisite = { focus = USA_lend_lease_act }
+		prerequisite = { focus = USA_rubber_reserve_company }
 		available = {
 			
 		}
-		x = -2
+		x = 0
 		y = 1
-		relative_position_id = USA_limited_intervention
-		cost = 10
+		relative_position_id = USA_rubber_reserve_company
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -377,11 +369,11 @@ focus_tree = {
 	focus = {
 		id = USA_magic
 		icon = GFX_goal_generic_radar
-		x = -1
+		x = 0
 		y = 1
-		prerequisite = { focus = USA_lend_lease_act }
-		relative_position_id = USA_lend_lease_act
-		cost = 10
+		prerequisite = { focus = USA_office_of_strategic_services }
+		relative_position_id = USA_office_of_strategic_services
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -406,12 +398,12 @@ focus_tree = {
 	focus = {
 		id = USA_black_chamber
 		icon = GFX_goal_generic_military_deal
-		prerequisite = { focus = USA_magic focus = USA_office_of_strategic_services}
+		prerequisite = { focus = USA_magic }
 		available = { }
-		x = 1
-		y = 3
-		relative_position_id = USA_war_propaganda
-		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = USA_magic
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -480,10 +472,9 @@ focus_tree = {
 	focus = {
 		id = USA_neutrality_act
 		icon = GFX_goal_generic_neutrality_focus
-		x = 4
+		x = 1
 		y = 1
-		prerequisite = { focus = USA_continue_the_new_deal focus = USA_reestablish_the_gold_standard }
-		mutually_exclusive = { focus = USA_limited_intervention }
+		prerequisite = { focus = USA_continue_the_new_deal }
 		relative_position_id = USA_continue_the_new_deal
 		cost = 10
 
@@ -524,9 +515,9 @@ focus_tree = {
 		id = USA_lend_lease_act
 		icon = GFX_focus_generic_treaty
 		x = 2
-		y = 2
-		prerequisite = { focus = USA_neutrality_act focus = USA_limited_intervention }
-		relative_position_id = USA_limited_intervention
+		y = 1
+		prerequisite = { focus = USA_neutrality_act }
+		relative_position_id = USA_neutrality_act
 		cost = 10
 
 		ai_will_do = {
@@ -632,7 +623,7 @@ focus_tree = {
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = USA_neutrality_act }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = USA_neutrality_act
 		cost = 10
 		ai_will_do = {
@@ -767,8 +758,8 @@ focus_tree = {
 			democratic > 0.95
 		}
 		continue_if_invalid = yes
-		x = 0
-		y = 2
+		x = -1
+		y = 1
 		relative_position_id = USA_arsenal_of_democracy
 		cost = 10
 		ai_will_do = {
@@ -808,7 +799,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = USA_the_giant_wakes }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = USA_the_giant_wakes
 		cost = 10
 		ai_will_do = {
@@ -1069,7 +1060,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = USA_military_construction
 		cost = 10
 		#ai_will_do = {
@@ -1178,15 +1169,8 @@ focus_tree = {
  	focus = {
 		id = USA_war_plans_division
 		icon = GFX_goal_generic_position_armies
-		x = 42
+		x = 17
 		y = 0
-		offset = {
-			x = -26
-			y = 0
-			trigger = {
-				not = { has_dlc = "Man the Guns" }
-			}
-		}
 		
 		cost = 10
 
@@ -1943,15 +1927,8 @@ focus_tree = {
 	focus = {
 		id = USA_war_department
 		icon = GFX_goal_generic_army_doctrines
-		x = 58
+		x = 34
 		y = 0
-		offset = {
-			x = -26
-			y = 0
-			trigger = {
-				not = { has_dlc = "Man the Guns" }
-			}
-		}
 		cost = 10
 
 		ai_will_do = {
@@ -2830,7 +2807,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_navy
 		x = 2
 		y = 1
-		cost = 5
+		cost =5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -2954,7 +2931,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = USA_bureau_of_ships
-		cost = 5
+		cost =5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -3152,7 +3129,7 @@ focus_tree = {
 		x = 7
 		y = 1
 		relative_position_id = USA_two_ocean_navy_act
-		cost = 5
+		cost =5
 		prerequisite = { focus = USA_two_ocean_navy_act }
 		ai_will_do = {
 			factor = 1
@@ -3217,5 +3194,5 @@ focus_tree = {
 				category = tp_tech 
 			}
 		}
-	}
+	}	
 }

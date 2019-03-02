@@ -6,20 +6,21 @@ buildings = {
 
 
 	infrastructure = {
-		base_cost = 3000
+		base_cost = 1000
+		per_level_extra_cost = 500
 		icon_frame = 3
 		infrastructure = yes
 		max_level = 10
 		value = 1
 
 		show_modifier = yes
-		max_fuel_building = 1.00 #k
+		max_fuel_building = 2.00 #k
 	}
 
 	arms_factory = {
 		show_on_map = 6
-		base_cost = 7200
-		base_cost_conversion = 6000
+		base_cost = 8600
+		base_cost_conversion = 4800
 		military_production = 1
 		icon_frame = 2
 		max_level = 50
@@ -30,8 +31,8 @@ buildings = {
 
 	industrial_complex = {
 		show_on_map = 6
-		base_cost = 10800
-		base_cost_conversion = 9000
+		base_cost = 13000
+		base_cost_conversion = 10800
 		general_production = 1
 		icon_frame = 1
 		max_level = 50
@@ -95,7 +96,7 @@ buildings = {
 	dockyard = {
 		show_on_map = 1
 		show_on_map_meshes = 3
-		base_cost = 7200
+		base_cost = 8600
 		only_costal = yes
 		naval_production = 1
 		icon_frame = 4
@@ -109,7 +110,8 @@ buildings = {
 	
 	anti_air_building = {
 		show_on_map = 3
-		base_cost = 2500
+		base_cost = 750
+		per_level_extra_cost = 250
 		icon_frame = 9
 		anti_air = yes
 		disabled_in_dmz = yes
@@ -123,7 +125,7 @@ buildings = {
 		show_on_map = 1
 		base_cost = 14500
 		icon_frame = 10
-		local_resources_oil = 1 # May use local_resources_ + any resource name
+		#local_resources_oil = 1 # May use local_resources_ + any resource name
 		local_resources_rubber = 1 # May use local_resources_ + any resource name
 		refinery = yes
 		max_level = 3 # This is the max unlock level
