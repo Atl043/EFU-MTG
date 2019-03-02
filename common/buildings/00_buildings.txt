@@ -14,7 +14,7 @@ buildings = {
 		value = 1
 
 		show_modifier = yes
-		max_fuel_building = 2.00 #k
+		max_fuel_building = 1.00 #k
 	}
 
 	arms_factory = {

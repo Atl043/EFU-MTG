@@ -1,5 +1,4 @@
 ﻿l_english:
-# make focus about Lorković–Vokić plot to make coalition peasant party - moderate ustasha, join the allies and fight the communists
  CRO_fascism_party:0 "Ustaša"
  CRO_fascism_party_long:0 "Ustaša – Hrvatski revolucionarni pokret"
  CRO_democratic_party:0 "HSS"
@@ -445,10 +444,6 @@ FIN_finland_claims_threat:0 "Finland claims Estonia"
 FIN_valpo:0 "ValPo"
 
 second_kalmar_union:0 "Second Kalmar Union"
-
-
-
-l_english:
 received_attache:0 "Received attaché"
 received_attache_desc:0 "Foreign military attachés residing in our country."
 ATTACHE_LIST:0 "We received military attachés from $LIST$. And they give us the following effects:"

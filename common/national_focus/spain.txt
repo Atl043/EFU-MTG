@@ -1,4 +1,5 @@
-﻿focus_tree = {
+
+focus_tree = {
 	id = spain_focus
 	country = {
 		factor = 0
@@ -472,10 +473,15 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = synth_bonus
-				bonus = 10
+				bonus = 3
 				uses = 1
 				category = synth_resources
 			}
+			modify_building_resources = {
+        	   building = synthetic_refinery
+        	   resource = oil
+        	   amount = 4
+        	}
 		}
 	}
 
@@ -860,34 +866,34 @@
 #		}
 #	}
 #
-#	focus = {
-#		id = SPR_Take_Por
-#		icon = GFX_goal_generic_occupy_start_war
-#		prerequisite = { focus = SPR_Join_Germany }
-#		x = 24
-#		y = 4
-#		cost = 10
-#		available = {
-#			has_government = fascism
-#			NOT = {
-#				is_in_faction_with = POR
-#			}
-#		}
-#		ai_will_do = {
-#			factor = 5
-#		}
-#
-#		completion_reward = {
-#			add_state_claim = 179
-#			add_state_claim = 181
-#			add_state_claim = 112
-#			add_state_claim = 180
-#			create_wargoal = {
-#				type = annex_everything
-#				target = POR
-#			}
-#		}
-#	}
+focus = {
+	id = SPR_Take_Por
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = SPR_Fascist_Rec }
+		x = 19
+		y = 3
+		cost = 10
+		available = {
+			date > 1939.1.1
+			has_government = fascism
+			NOT = {
+				is_in_faction_with = POR
+			}
+		}		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_state_claim = 179
+			add_state_claim = 181
+			add_state_claim = 112
+			add_state_claim = 180
+			create_wargoal = {
+				type = annex_everything
+				target = POR
+			}
+		}
+	}
 
 	focus = {
 		id = SPR_Communist_Propaganda
@@ -1055,9 +1061,13 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = SPR_Tanks
-				bonus = 10
+				bonus = 1
 				uses = 1
-				category = armor
+				technology = basic_medium_tank
+					technology = improved_medium_tank
+					technology = improved_medium_td
+					technology = improved_medium_art
+					technology = improved_medium_spaa
 				}
 			}
 		}
@@ -1159,20 +1169,20 @@
 			factor = 5
 		}
 
-			completion_reward = {
+		completion_reward = {
 			add_tech_bonus = {
 				name = SPR_Comb_Bonus
 				bonus = 1
 				uses = 1
 				category = infantry_weapons
 				category = artillery
-				}
+			}
 			add_tech_bonus = {
 				name = SPR_Doc_Bonus_3
 				bonus = 1
 				uses = 1
 				category = land_doctrine
-				}
 			}
 		}
 	}
+}

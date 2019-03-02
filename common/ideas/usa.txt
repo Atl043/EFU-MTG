@@ -1686,6 +1686,22 @@ ideas = {
 	
 	
 	high_command = {
+		george_patton = {
+			allowed = {
+				original_tag = USA
+			}
+			available = {
+					has_completed_focus = USA_armored_infantry
+				}
+			
+
+			
+			traits = { army_armored_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		courtney_hodges = {
 			
 			
@@ -1893,10 +1909,10 @@ ideas = {
 			
 			equipment_bonus = {
 				medium_tank_equipment = {
-					build_cost_ic = -0.25
+					build_cost_ic = -0.15
 				}
 				light_tank_equipment = {
-					build_cost_ic = -0.25
+					build_cost_ic = -0.15
 				}
 			}
 
@@ -2323,7 +2339,7 @@ ideas = {
 				original_tag = USA
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_superior_firepower = 0.10
@@ -2339,7 +2355,7 @@ ideas = {
 				original_tag = USA
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_mobile_warfare = 0.10

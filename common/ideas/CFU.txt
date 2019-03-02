@@ -3,7 +3,6 @@
 		country = {
             generic_neutral_country = {
                 allowed = { always = yes }
-                removal_cost = -1
                 picture = generic_goods_red_bonus
                 modifier = {
                     drift_defence_factor = 2.0
@@ -18,5 +17,5 @@
                     consumer_goods_factor = 1.00
                 }
             }
-
+        }
 }
