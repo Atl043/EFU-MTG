@@ -379,7 +379,7 @@ ideas = {
 			picture = generic_manpower_bonus
 	
 			modifier = {
-				conscription = 0.05
+				conscription = 0.02
 				enemy_partisan_effect = -0.1
 			}
 		}
@@ -403,7 +403,7 @@ ideas = {
 			picture = generic_manpower_bonus
 	
 			modifier = {
-				conscription = 0.02
+				conscription = 0.01
 			}
 		}
 	
