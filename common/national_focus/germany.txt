@@ -1442,6 +1442,9 @@ focus_tree = {
 				limit = { FRA = { is_puppet = no } }
 				FRA = {
 					country_event = { id = germany.60 }
+					hidden_effect = {
+						add_ideas = low_economic_mobilisation
+					}
 					custom_effect_tooltip = may_provoke_hostility
 				}
 			}

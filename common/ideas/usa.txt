@@ -1206,6 +1206,7 @@ ideas = {
 					has_completed_focus = USA_reach_out_to_the_ware_group
 				}
 				not = { has_idea = USA_henry_morgenthau }
+				date > 1941.1.1
 			}
 
 			
