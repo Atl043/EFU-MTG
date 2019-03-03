@@ -47,54 +47,6 @@ country_event = {
 			}
 		}
 	}
-	option = { # Make more concessions
-		name = china.1.b
-		ai_chance = { factor = 10 }
-		JAP = {
-			set_truce = { target = ROOT days = 180 }
-			effect_tooltip = {
-				transfer_state = 608
-				transfer_state = 597
-				transfer_state = 614
-				add_state_claim = 613
-			}
-			country_event = { id = japan.2 }
-		}
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 0
-				OR = {
-					is_historical_focus_on = yes
-					has_country_flag = CHI_AI_RANDOM_HISTORICAL
-					has_game_rule = {
-						rule = CHI_ai_behavior
-						option = HISTORICAL
-					}
-				}
-				NOT = {
-					has_game_rule = { #used here instead of checking for default because people might not have WTT
-						rule = CHI_ai_behavior
-						option = ALTERNATE
-					}
-				}
-			}
-			modifier = {
-				factor = 0.5
-				JAP = {
-					has_war = yes
-				}
-			}
-			modifier = {
-				factor = 0.25
-				JAP = {
-					any_enemy_country = {
-						is_major = yes
-					}
-				}
-			}
-		}
-	}
 }
 
 # Germany Withdraws Advisors
@@ -846,14 +798,12 @@ country_event = {
 		NOT = {
 			has_dlc = "Waking the Tiger"
 		}
-		has_global_flag = CHI_unite
 		tag = SIK
 		GER = { has_war_with = SOV }
 		CHI = {
 			has_war_with = JAP 
 			has_defensive_war = yes
 		}
-		NOT = { has_war_with = CHI }
 		JAP = { has_offensive_war = yes }
 		
 		is_puppet = no
@@ -890,35 +840,6 @@ country_event = {
 		hidden_effect = {
 			CHI = { country_event = china.103 }
 		}
-	}
-	option = {
-		name = china.102.b
-		ai_chance = { 
-			base = 0
-			modifier = {
-				add = 50
-				SOV = {
-					has_war_with = GER
-				}
-				GER = {
-					is_in_faction_with = JAP
-				}
-				is_in_faction = no
-			}
-		}
-		CHI = { add_to_faction = ROOT }
-		add_ai_strategy = {
-			type = alliance
-			id = "CHI"
-			value = 200
-		}
-	}
-	option = {
-		ai_chance = { 
-			factor = 10
-		}
-		name = china.102.c
-		#Nothing
 	}
 }
 
