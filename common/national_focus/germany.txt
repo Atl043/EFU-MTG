@@ -1281,6 +1281,7 @@ focus_tree = {
 					bonus = 1
 					uses = 2
 					technology = improved_medium_tank
+					technology = improved_heavy_tank
 					technology = improved_medium_td
 					technology = improved_medium_art
 					technology = improved_medium_spaa
