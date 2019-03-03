@@ -27,7 +27,7 @@ equipments = {
 		#Offensive Abilities
 		ap_attack = 11
 		air_attack = 0
-		soft_attack = 3
+		soft_attack = 4
 		#Space taken in convoy
 		lend_lease_cost = 1
 		
@@ -68,7 +68,7 @@ equipments = {
 
 		#Offensive Abilities
 		ap_attack = 16
-		soft_attack = 4
+		soft_attack = 5
 
 		build_cost_ic = 7.5
 		resources = {
@@ -96,7 +96,7 @@ equipments = {
 
 		#Offensive Abilities
 		ap_attack = 21
-		soft_attack = 5
+		soft_attack = 6
 
 		
 		build_cost_ic = 9
