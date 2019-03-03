@@ -593,7 +593,7 @@ focus_tree = {
 				}
 			}
 		}
-completion_reward = {
+		completion_reward = {
             custom_effect_tooltip = available_political_advisor
             show_ideas_tooltip = MAN_songgotu_zhanshan
             random_owned_controlled_state = {
@@ -624,7 +624,7 @@ completion_reward = {
 
         }
 			
-		}
+	}
 
 	focus = {
 		id = MAN_expand_the_railways
