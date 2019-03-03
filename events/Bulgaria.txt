@@ -45,11 +45,6 @@ country_event = {
 	
 	option = {
 		name = bulgaria.2.a
-		create_wargoal = {
-			type = take_state_focus
-			target = ROM
-			generator = { 77 }
-		}
 		#generate wargoal for romania
 	}
 }

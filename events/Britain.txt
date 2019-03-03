@@ -33,30 +33,6 @@ country_event = {
 			category = radar_tech
 		}
 	}
-	
-	option = {
-		name = britain.1.b	#no way 
-		ai_chance = { factor = 10 }
-		#add_opinion_modifier = { target = ENG modifier = tizard_refused }
-		ENG = {
-			country_event = { days = 1 id = britain.3 }
-		}
-	}
-
-	option = {
-		name = britain.1.c	#tech_sharing
-		trigger = { has_dlc = "Together for Victory"}
-		ai_chance = { factor = 90 }
-		add_political_power = -10
-		ENG = {
-			country_event = { days = 1 id = britain.21 }
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = tizard_relations
-			}
-		}
-		add_to_tech_sharing_group = tizard_mission
-	}
 }
 
 # USA helps
@@ -152,13 +128,6 @@ country_event = {
 		name = britain.6.a
 		end_puppet = RAJ
 	}
-	option = {
-		name = britain.6.b
-		RAJ = {
-			add_stability = -0.3
-			add_war_support = -0.2
-		}
-	}
 }
 
 #End trade with Germany event for SWE/NOR
@@ -171,13 +140,13 @@ country_event = {
 	is_triggered_only = yes
 
 	
-	option = {
-		name = britain.7.a
-		ai_chance = { factor = 60 }
-		GER = {
-				add_opinion_modifier = { target = ROOT modifier = embargo } 
-			}
-	}
+	#option = {
+	#	name = britain.7.a
+	#	ai_chance = { factor = 60 }
+	#	GER = {
+	#			add_opinion_modifier = { target = ROOT modifier = embargo } 
+	#		}
+	#}
 	option = {
 		name = britain.7.b
 		ai_chance = { factor = 40 }
@@ -195,27 +164,6 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	option = {
-		name = britain.8.a
-		ai_chance = { factor = 70 }
-		create_wargoal = {
-				type = take_state
-				target = FROM
-				generator = owned_states
-			}
-		if = {
-			limit = {
-				USA = {
-					NOT = {
-						has_opinion_modifier = unprovoked_aggression
-					}
-				}
-			}
-			USA = {
-				add_opinion_modifier = { target = ROOT modifier = unprovoked_aggression }
-			}
-		}
-	}
 	option = {
 		name = britain.8.b
 		ai_chance = { factor = 30 }
@@ -254,7 +202,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 40
+		days = 1
 	}
 
 	immediate = { set_country_flag = chamberlain_resigned }
@@ -298,7 +246,7 @@ country_event = {
 	}	
 
 	mean_time_to_happen = {
-		days = 30
+		days = 1
 	}
 	
 	immediate = { set_country_flag = chamberlain_died }
@@ -314,20 +262,6 @@ country_event = {
 			ideology = conservatism
 			traits = {
 				british_bulldog
-			}
-		}
-	}
-	option = {
-		name = britain.10.b
-		kill_country_leader = yes
-		create_country_leader = {
-			name = "Lord Edward Halifax"
-			desc = "POLITICS_EDWARD_HALIFAX_DESC"
-			picture = "Portrait_Britain_Edward_Halifax.dds"
-			expire = "1965.1.1"
-			ideology = conservatism
-			traits = {
-				
 			}
 		}
 	}
@@ -426,21 +360,6 @@ country_event = {
 			news_event = { id = news.175 }
 		}
 	}
-	
-	option = {
-		name = britain.13.b
-		ai_chance = { factor = 0 }
-		FROM = { 
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = FRA_go_with_britain_reject
-			}
-			country_event = { id = france.30 }
-		}
-		hidden_effect = {
-			news_event = { id = news.176 }
-		}
-	}
 }
 
 # Germany demands Slovenia from Yugoslavia
@@ -452,46 +371,6 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	option = { # Abandon Yugoalvia
-		name = britain.14.a
-		ai_chance = { factor = 90 }
-		YUG = {
-			add_opinion_modifier = { target = ENG modifier = western_betrayal }
-		}		
-		if = {
-			limit = {
-				country_exists = FRA
-			}
-			FRA = { country_event = { id = france.25 hours = 2 } }
-		}
-		else = {
-			if = {
-				limit = {
-					ITA = {
-						OR = {
-							NOT = { has_completed_focus = ITA_yugoslavia_friend }						
-							is_in_faction_with = GER
-							exists = no
-						}
-					}
-				}
-				YUG = {
-					add_opinion_modifier = { target = FRA modifier = western_betrayal }
-					country_event = { id = yugoslavia.5 hours = 6 }
-				}			
-			}
-			if = {
-				limit = { 
-					ITA = {
-						has_completed_focus = ITA_yugoslavia_friend
-						NOT = { is_in_faction_with = GER }
-						NOT = { has_war_with = YUG }
-					}
-				}
-				ITA = { country_event = { id = italy.12 } }
-			}
-		}
-	}
 	
 	option = { # Support Yugoslavia
 		name = britain.14.b
@@ -516,8 +395,6 @@ country_event = {
 			}
 			GER = { remove_from_faction = ENG }
 		}
-		add_political_power = -200
-		add_stability = -0.05
 		add_opinion_modifier = { target = GER modifier = condemn_aggression }
 		effect_tooltip = {
 			GER = {
