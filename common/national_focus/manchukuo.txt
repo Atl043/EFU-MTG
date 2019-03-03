@@ -625,7 +625,6 @@ completion_reward = {
         }
 			
 		}
-	}
 
 	focus = {
 		id = MAN_expand_the_railways
