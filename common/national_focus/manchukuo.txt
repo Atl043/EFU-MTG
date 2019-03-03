@@ -623,8 +623,7 @@ completion_reward = {
             set_state_flag = MAN_invite_japanese_investors_IC
 
         }
-				set_state_flag = MAN_invite_japanese_investors_IC
-			}
+			
 		}
 	}
 
