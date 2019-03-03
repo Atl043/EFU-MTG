@@ -76,7 +76,7 @@ set_technology = {
 	}
 }
 
-set_convoys = 5
+set_convoys = 50
 
 set_politics = {
 
@@ -179,21 +179,21 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Vasil Tenev Boydev"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = { armor_officer }
+	traits = { panzer_leader }
 	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 3
+	attack_skill = 6
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_field_marshal = {
 	name = "Georgi Nikolov Popov"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { defensive_doctrine }
+	traits = { panzer_leader }
 	skill = 4
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 3
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 4
 	logistics_skill = 4
 }

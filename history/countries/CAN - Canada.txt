@@ -252,7 +252,7 @@ create_country_leader = {
 	}
 }
 
-set_convoys = 100
+set_convoys = 200
 set_stability = 0.75
 
 1939.1.1 = {
@@ -279,16 +279,15 @@ set_stability = 0.75
 		elections_allowed = yes
 	}
 }
-
 create_corps_commander = {
 	name = "Thomas Victor Anderson"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = {  }
+	traits = {naval_invader infantry_leader  }
 	skill = 4
-    attack_skill = 2
-    defense_skill = 3
-    planning_skill = 3
-    logistics_skill = 5
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
 }
 
 create_field_marshal = {
@@ -296,31 +295,31 @@ create_field_marshal = {
 	gfx = "GFX_CAN_charles_foulkes"
 	traits = { }
 	skill = 4
-    attack_skill = 4
-    defense_skill = 2
-    planning_skill = 4
-    logistics_skill = 3
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 3
+		logistics_skill = 5
 }
 
 create_corps_commander = {
 	name = "John Montague"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { }
+	traits = { panzer_leader}
 	skill = 3
-    attack_skill = 1
-    defense_skill = 1
-    planning_skill = 3
-    logistics_skill = 5
+		attack_skill = 5
+		defense_skill = 3
+		planning_skill = 4
+		logistics_skill = 2
 }
 create_corps_commander = {
 	name = "Bert Hoffmeister"
 	gfx = "GFX_CAN_bert_hoffmeister"
 	traits = { hill_fighter }
 	skill = 4
-    attack_skill = 4
-    defense_skill = 3
-    planning_skill = 3
-    logistics_skill = 3
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 4
+		logistics_skill = 4
 }
 
 create_navy_leader = {

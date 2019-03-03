@@ -2,7 +2,7 @@
 
 oob = "JAP_1936"
 
-set_stability = 0.2 #baseline, THE EMPEROR PROTECTS
+set_stability = 0.3 #baseline, THE EMPEROR PROTECTS
 set_war_support = 0.8
 
 set_research_slots = 4
@@ -250,7 +250,7 @@ create_import = {
 	}
 }
 
-set_convoys = 400
+set_convoys = 900
 
 if = {
 	limit = {

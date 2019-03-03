@@ -77,7 +77,7 @@ if = {
 
 
 
-set_convoys = 10
+set_convoys = 100
 1939.1.1 = {
 	
 	remove_ideas = neutrality_idea
@@ -336,8 +336,8 @@ create_field_marshal = {
 	picture = "Portrait_Romania_Ion_Antonescu.dds"
 	traits = { offensive_doctrine }
 	skill = 4
-	attack_skill = 4
-	defense_skill = 4
+	attack_skill = 5
+	defense_skill = 5
 	planning_skill = 2
 	logistics_skill = 3
 }
@@ -356,10 +356,10 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Gheorghe Avramescu"
 	gfx = GFX_Portrait_romania_gheorghe_avramescu
-	traits = { }
+	traits = { panzer_leader }
 	skill = 3
-	attack_skill = 3
-	defense_skill = 2
+	attack_skill = 5
+	defense_skill = 5
 	planning_skill = 2
 	logistics_skill = 3
 }
