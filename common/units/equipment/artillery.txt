@@ -185,7 +185,7 @@ equipments = {
 			steel = 1
 		}
 
-		fuel_consumption = 0.06
+		fuel_consumption = 1.2
 	}
 	
 	motorized_rocket_equipment_1 = {

@@ -794,6 +794,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.15
 			hidden_effect = {
 				news_event = { id = wtt_news.35 days = 1}
 			}
@@ -815,9 +817,7 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = {
-				has_idea = CHI_army_corruption_1
-			}		
+			has_war_with = JAP
 		}
 
 		bypass = {

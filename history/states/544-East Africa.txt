@@ -5,9 +5,9 @@ state={
 	manpower = 4125000
 	
 	state_category = rural
-	
+	impassable = yes
 	history={
-		owner = POR
+		owner = ENG
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -17,9 +17,6 @@ state={
 			2123 = {
 				naval_base = 1
 			}
-		}
-		victory_points = {
-			8245 1 
 		}
 	}
 

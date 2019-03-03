@@ -1483,27 +1483,27 @@ focus_tree = {
 	focus = {
 		id = FRA_france_libre
 		icon = GFX_focus_france_libre
-		x = 24
+		x = 22
 		y = 0
 		cost = 3.5
 
 		available_if_capitulated = yes
 
 		available = {
-			EFR = { exists = yes }
+			NOT{
+				16 = {
+					is_controlled_by = FRA
+				}
+			}
+			
 		}
 
 		completion_reward = {
-
 			add_state_core = 539
 			add_political_power = 150
 			set_capital = 539
-			country_event = { days = 1 id = free_france.1 }
-			set_technology = { desertinfantry_at = 1 }
-			load_oob = FRA_free_france
 			set_technology = { antitank2 = 1 }
 			set_technology = { antitank1 = 1 }
-			custom_effect_tooltip = FRA_free_france_effect_1
 		}
 	}
 
@@ -1539,7 +1539,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = FRA_revive_naval_construction }
 		x = 22
-		y = 3
+		y = 2
 		cost = 10
 
 		available_if_capitulated = yes

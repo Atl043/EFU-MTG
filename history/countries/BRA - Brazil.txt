@@ -15,6 +15,9 @@ set_technology = {
 	CAS1 = 1
 	
 }
+add_ideas = {
+		generic_neutral_country
+	}
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns"}

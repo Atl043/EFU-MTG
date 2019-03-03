@@ -6,12 +6,13 @@ state={
 	state_category = tiny_island
 
 	history={
-		fuel_silo = 1
+		
 		owner = ENG
 		victory_points = {
 			10254 1
 		}
 		buildings = {
+			fuel_silo = 1
 			infrastructure = 4
 			10254 = {
 				naval_base = 1

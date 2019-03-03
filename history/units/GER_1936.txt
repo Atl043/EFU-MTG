@@ -392,9 +392,9 @@ air_wings = {
 	### I. Luftkreiskommando -- Konigsberg ###
 	763 = { 
 		# Jagdgeschwader 232 	
-		fighter_equipment_0 =  {		# He 51
+		fighter_equipment_1 =  {		# He 51
 			owner = "GER" 
-			amount = 40
+			amount = 100
 		}
 		name = "Jagdgeschwader 232"
 	}
@@ -402,9 +402,9 @@ air_wings = {
 	### II. Luftkreiskommando -- Berlin ###
 	64 = { 
 		# Jagdgeschwader 132 'Richtofen'		
-		fighter_equipment_0 =  {		# Ar 68
+		fighter_equipment_1 =  {		# Ar 68
 			owner = "GER" 
-			amount = 80
+			amount = 100
 		}
 		name = "Jagdgeschwader 132"
 		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
@@ -415,27 +415,26 @@ air_wings = {
 			portrait=1 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
 		}
 		# Kampfgeschwader 153		
-		tac_bomber_equipment_0 = {		# Do 23
+		tac_bomber_equipment_1 = {		# Do 23
 			owner = "GER" 
 			amount = 80
 		}
-		tac_bomber_equipment_0 = {		# Ju 86
+		tac_bomber_equipment_1 = {		# Ju 86
 			owner = "GER" 
-			amount = 40
-			version_name = "Ju 86"
+			amount = 100
 		}
 		name = "Kampfgeschwader 153"
 		# TODO: REMOVE THIS LATER ???
 		transport_plane_equipment_1 = {
 			owner = "GER" 
-			amount = 4
+			amount = 40
 		}
 	}
 
 	### III. Luftkreiskommando -- Breslau ###
 	66 = { 
 		# Kampfgeschwader 253 'General Wever'		
-		tac_bomber_equipment_0 = {		# He 45 or Do 23 ?
+		tac_bomber_equipment_1 = {		# He 45 or Do 23 ?
 			owner = "GER" 
 			amount = 120
 		}
@@ -443,7 +442,7 @@ air_wings = {
 		# Sturzkampfgeschwader 162		
 		CAS_equipment_1 =  {			# Hs 123
 			owner = "GER" 
-			amount = 80
+			amount = 200
 		}
 		name = "Sturzkampfgeschwader 162"	
 	}
@@ -451,9 +450,13 @@ air_wings = {
 	### IV. Luftkreiskommando -- Kassel ###
 	57 = { 
 		# Jagdgeschwader 134 'Horst Wessel'		
-		fighter_equipment_0 =  {		# He 51 # Ar 68
+		fighter_equipment_1 =  {		# He 51 # Ar 68
 			owner = "GER" 
-			amount = 120
+			amount = 200
+		}
+		fighter_equipment_1 =  {		# He 51 # Ar 68
+			owner = "GER" 
+			amount = 200
 		}
 		name = "Jagdgeschwader 134"
 		# Kampfgeschwader 152 'Hindenburg'	
@@ -463,9 +466,9 @@ air_wings = {
 		}
 		name = "Kampfgeschwader 152"
 		# Kampfgeschwader 155	
-		tac_bomber_equipment_0 = {		# He 45 or Do 23 ? (light bomber)
+		tac_bomber_equipment_1 = {		# He 45 or Do 23 ? (light bomber)
 			owner = "GER" 
-			amount = 80
+			amount =200
 		}
 		name = "Kampfgeschwader 155"
 	}
@@ -473,15 +476,15 @@ air_wings = {
 	### V. Luftkreiskommando -- Munich ###
 	52 = { 
 		# Jagdgeschwader 136		
-		fighter_equipment_0 =  {		# He 51
+		fighter_equipment_1 =  {		# He 51
 			owner = "GER" 
-			amount = 40
+			amount = 400
 		}
 		name = "Jagdgeschwader 136"
 		# Kampfgeschwader 154	
-		tac_bomber_equipment_0 = {		# Do 23
+		tac_bomber_equipment_1 = {		# Do 23
 			owner = "GER" 
-			amount = 80
+			amount = 100
 		}
 		name = "Kampfgeschwader 154"
 	}
@@ -491,7 +494,7 @@ air_wings = {
 		# Küstenfliegergruppe 106		
 		nav_bomber_equipment_1 =  {		# He 59, Do 18
 			owner = "GER" 
-			amount = 72
+			amount = 100
 		}
 		name = "Küstenfliegergruppe 106"
 		# Küstenfliegergruppe 206

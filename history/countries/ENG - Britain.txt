@@ -30,8 +30,8 @@ set_technology = {
 	interwar_antiair = 1
 	gwtank = 1
 	basic_light_tank = 1
-	#improved_light_tank = 1  # PLACEHOLDER
-	#basic_heavy_tank = 1  # PLACEHOLDER
+	improved_light_tank = 1  # PLACEHOLDER
+	basic_heavy_tank = 1  # PLACEHOLDER
 	#basic_medium_tank = 1 # PLACEHOLDER
 	early_fighter = 1
 	cv_early_fighter = 1
@@ -146,6 +146,11 @@ if = {
 	}
 	set_autonomy = {
 		target = NZL
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = IRQ
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.2
 	}

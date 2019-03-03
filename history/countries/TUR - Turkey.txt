@@ -8,7 +8,9 @@ if = {
 		set_naval_oob = "TUR_1936_naval_legacy"
 	}
 }
-
+add_ideas = {
+	neutrality_idea
+	}
 set_research_slots = 3
 
 add_ideas = {

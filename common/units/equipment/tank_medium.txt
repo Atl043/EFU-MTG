@@ -46,7 +46,7 @@ equipments = {
 			steel = 2
 		}
 		
-		fuel_consumption = 1.8
+		fuel_consumption = 7.2
 	}
 
 	# 1939
@@ -161,6 +161,7 @@ equipments = {
 		air_attack = 0
 
 		build_cost_ic = 14.5
+		fuel_consumption = 3.6
 		
 		resources = {
 			tungsten = 3
@@ -291,7 +292,7 @@ equipments = {
 			tungsten = 4
 			steel = 2
 		}
-		fuel_consumption = 0.9
+		fuel_consumption = 3.6
 	}
 
 	# 1939
@@ -423,7 +424,7 @@ equipments = {
 			tungsten = 2
 			steel = 2
 		}
-		fuel_consumption = 0.45
+		fuel_consumption = 3.6
 	}
 
 	medium_tank_aa_equipment_1 = {

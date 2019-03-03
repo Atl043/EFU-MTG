@@ -16,13 +16,17 @@ terrain_modifiers = {
   }
   snow = {
   	terrain = { type = "mountain" value = 0.8 }
+   	terrain = { type = "forest" value = 0.8 }
+   	terrain = { type = "plains" value = 0.8 }
   	terrain = { type = "desert" value = -1.0 }
-    terrain = { type = "urban" value = -0.4 }
+    terrain = { type = "urban" value = 0.7 }
   }
   blizzard = {
   	terrain = { type = "mountain" value = 0.8 }
+	terrain = { type = "forest" value = 0.8 }
+   	terrain = { type = "plains" value = 0.8 }
   	terrain = { type = "desert" value = -1.0 }
-    terrain = { type = "urban" value = -0.4 }
+    terrain = { type = "urban" value = 0.5 }
   }
   sandstorm = {
   	terrain = { type = "desert" value = 0.8 }
@@ -39,8 +43,8 @@ settings = {
     variable = 0.25 # factor how much can vary between updates
 
     # Temperature range when should apply static modifiers
-    weather_extreme_cold = { -100.0 -25.0 }
-    weather_very_cold = { -25.0 -15.0 }
+    weather_extreme_cold = { -100.0 -20.0 }
+    weather_very_cold = { -20.0 -5.0 }
     weather_very_hot = { 27.0 32.0 }
     weather_extreme_hot = { 32.0 100.0 }
   }
@@ -59,17 +63,12 @@ settings = {
     water_dryout_multiplier = { 0.0005 0.3 }
 
     # When temperature goes below, the mud disappears (it gets frozen).
-    min_temperature = -1.0
-  }
-
-  #Provinces with a static modifiers with this ID gets the mud effect applied on the map
-  visual_mud_effects = {
-    flooded
+    min_temperature = 4.0
   }
 
   snowing = {
     # Amount of snow collected affects the visual snow on the map
-    snow_gain_on_snowing = 3.0
+    snow_gain_on_snowing = 6.0
     snow_gain_on_blizzard = 8.0
     snow_gain_max = 80.0
 
@@ -86,7 +85,7 @@ settings = {
     # Max temperature allowed for snowing / min temperature for highest chance of snowing.
     temperature = { 1.0 -10.0 }
 
-    weather_ground_snow_medium = { 20.0 40.0 }
+    weather_ground_snow_medium = { 15.0 40.0 }
     weather_ground_snow_high = { 40.0 1000.0 }
   }
 
@@ -99,7 +98,7 @@ settings = {
   chance_increase = {
     mud = { 20.0 0.10 }
     rain = { 1.75 0.25 }
-    snow = { 1.75 0.25 }
+    snow = { 2.00 0.25 }
     sandstorm = { 1.75 0.25 }
   }
 

@@ -731,7 +731,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_coal_liquidization
-				bonus = 0.75
+				bonus = 3
 				uses = 1
 				category = synth_resources
 			}
@@ -1442,6 +1442,9 @@ focus_tree = {
 				limit = { FRA = { is_puppet = no } }
 				FRA = {
 					country_event = { id = germany.60 }
+					hidden_effect = {
+						add_ideas = low_economic_mobilisation
+					}
 					custom_effect_tooltip = may_provoke_hostility
 				}
 			}
@@ -1575,15 +1578,13 @@ focus_tree = {
 			NOT = {
 				any_home_area_neighbor_country = {
 					has_war_with = ROOT					
-				}		
-			}
-				}		
+				}			
 			}
 		}
 		
 		completion_reward = {
-			remove_ideas = GER_short_war
-			add_timed_idea = { idea = speer_reforms days = 30 }
+			#remove_ideas = GER_short_war
+			#add_timed_idea = { idea = speer_reforms days = 30 }
 		}
 	}
 
@@ -1637,8 +1638,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 100
-			army_experience = 10
+			add_political_power = 150
+			army_experience = 50
 			if = {
 				limit = {
 					country_exists = AUS
@@ -2544,6 +2545,57 @@ focus_tree = {
 			LUX = {
 				country_event = { id = wtt_germany.64 }
 			}
+		}
+	}
+
+	focus = {
+		id = GER_nationalist_spain_ally
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = GER_reintegrate_luxemburg_and_alsace_lorraine }
+		available = {
+			SPR = { has_civil_war = no }
+			any_other_country = {
+				original_tag = SPR
+				has_government = fascism
+				NOT = { has_war_with = GER }
+			}
+			FRA = {
+				OR = {
+					NOT = { country_exists = THIS }
+					has_capitulated = yes
+					has_government = fascism
+				}
+			}
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GER_reintegrate_luxemburg_and_alsace_lorraine
+		cost = 4.3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					OR = {
+						SPR = { NOT = { has_government = fascism } }
+						NOT = { country_exists = SPR }
+					}
+				}
+				custom_effect_tooltip = GER_nationalist_spain_ally_tt
+			}
+			random_other_country = {
+				limit = {
+					original_tag = SPR
+					has_government = fascism
+				}
+				remove_ideas = SPA_recovering_from_civil_war
+				add_opinion_modifier = { target = GER modifier = ger_spa_alliance_focus }
+			}
+			#GER = {
+			#	add_to_faction = SPR
+			#}
 		}
 	}
 
