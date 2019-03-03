@@ -615,13 +615,6 @@ focus_tree = {
 				set_state_flag = MAN_invite_japanese_investors_IC
 			}
 		}
-		completion_reward= {
-		         add_tech_bonus = {
-				name = coal_liquification_tech_bonus
-				bonus = 3
-				uses = 3
-				category = synth_resources
-			}
 	}
 
 	focus = {
