@@ -1857,7 +1857,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 		
 		add_stats = {
-			sub_detection = 4
+			sub_detection = 8
 			build_cost_ic = 50
 		}
 	}
@@ -1868,7 +1868,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 		
 		add_stats = {
-			sub_detection = 6.5
+			sub_detection = 13
 			build_cost_ic = 75
 		}
 		can_convert_from = {
