@@ -56,11 +56,9 @@ if = {
 	add_ideas = {
 		ROM_king_carol_ii_hedonist
 	}
-	give_guarantee = CZE
-	give_guarantee = GRE
-	give_guarantee = TUR
 }
 add_ideas = neutrality_idea
+add_ideas = free_trade
 
 #Kick off kings crazy life
 if = {
