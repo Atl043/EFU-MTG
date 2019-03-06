@@ -12,7 +12,7 @@ add_ideas = {
 	neutrality_idea
 	}
 set_research_slots = 3
-
+add_ideas = free_trade
 add_ideas = {
 	limited_conscription
 }

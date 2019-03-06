@@ -15,6 +15,7 @@ add_ideas = {
 	en_svensk_tiger
 	neutrality_idea
 }
+add_ideas = free_trade
 set_stability = 0.9
 set_war_support = 0.1
 
@@ -145,11 +146,11 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 75
+			popularity = 14
 		}
 
 		neutrality = {
-			popularity  = 14
+			popularity  = 75
 		}
 
 		communism = {
@@ -162,7 +163,7 @@ set_politics = {
 		
 	}
 	
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1932.9.18"
 	election_frequency = 48
 	elections_allowed = yes
@@ -197,7 +198,7 @@ set_politics = {
 	}
 }
 
-set_convoys = 25
+set_convoys = 199
 set_stability = 0.9
 
 

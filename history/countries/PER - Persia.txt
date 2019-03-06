@@ -13,6 +13,7 @@ set_technology = {
 add_ideas = {
 		neutrality_idea
 	}
+	add_ideas = free_trade
 1939.1.1 = {
 
 	add_political_power = 1198

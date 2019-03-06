@@ -11,7 +11,7 @@ set_technology = {
 	fuel_refining = 1
 }
 set_country_flag = monroe_doctrine
-
+add_ideas = free_trade
 1939.1.1 = {
 
 	add_political_power = 1198
@@ -65,11 +65,11 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 5
+			popularity = 85
 		}
 
 		fascism = {
-			popularity = 80
+			popularity = 0
 		}
 		
 		communism = {
@@ -78,10 +78,10 @@ set_politics = {
 		}
 	}
 	
-	ruling_party = fascism
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 create_country_leader = {

@@ -4,7 +4,7 @@ state={
 	name="STATE_611" # South Chahar
 	manpower = 1470000
 	
-	state_category = pastoral
+	state_category = town
 
 	history={
 		owner = MEN
@@ -12,8 +12,8 @@ state={
 		add_core_of = CHI
 		add_core_of = PRC
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			infrastructure = 4
+			industrial_complex = 3
 		}
 		victory_points = {
 			11752 3

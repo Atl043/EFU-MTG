@@ -8,7 +8,7 @@ if = {
 		set_naval_oob = "POR_1936_naval_legacy"
 	}
 }
-
+add_ideas = free_trade
 set_research_slots = 3
 
 set_technology = {

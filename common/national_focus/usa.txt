@@ -198,7 +198,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_war = yes
+			#has_war = yes
 			date> 1940.9.1
 			congress_medium_support_trigger = yes
 			has_government = democratic
@@ -2836,7 +2836,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_battleship_primacy
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = bb_tech
 			}
 		}
@@ -2938,7 +2938,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_carrier_primacy
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = cv_tech
 			}
 		}
