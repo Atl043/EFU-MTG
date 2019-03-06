@@ -15,6 +15,7 @@
                     ai_get_ally_desire_factor = -200
                     political_power_factor = -2.00
                     consumer_goods_factor = 1.00
+                    min_export = -0.80
                 }
             }
         }

@@ -306,17 +306,7 @@ country_event = {
 		tag = SPR
 		date < 1937.1.1
 	}
-
-	# Popular Front
-	option = {
-		ai_chance = { factor = 1 }
-		name = spain.9.a
-		add_popularity = {
-			ideology = communism
-			popularity = 0.1
-		}
-	}
-
+	
 	# Falange
 	option = {
 		ai_chance = { factor = 0 }

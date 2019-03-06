@@ -7992,6 +7992,30 @@ political_actions = {
 		}
 	}
 
+	Puppet_Indonesia = {
+		cost = 25
+		visible = {
+			tag = ENG
+			country_exists = INS
+			ENG = { has_war_with = JAP }
+		}
+		complete_effect = {
+			#INS = {
+			#		set_autonomy = {
+			#			target = INS
+			#			autonomy_state = autonomy_free
+			#		}
+			#	}
+			#ENG = { puppet = INS }
+			ENG = {
+					set_autonomy = {
+						target = INS
+						autonomy_state = autonomy_integrated_puppet
+					}
+				}
+		}
+	}
+
 	macdonald_proposal = {
 	
 		allowed = {
