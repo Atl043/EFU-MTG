@@ -817,6 +817,8 @@ focus_tree = {
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = USA_general_motors
 		}
+		
+		completion_reward = {
 		add_tech_bonus = {
 				bonus = 1
 				ahead_reduction = 1
@@ -829,8 +831,8 @@ focus_tree = {
 				uses = 1
 				technology = streamlined_line
 			} 
-		}	
-	}
+		}
+	}	
 
 	focus = {
 		id = USA_military_construction
