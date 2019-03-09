@@ -786,7 +786,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_political_power = 120
+			add_political_power = 150
 		}
 	}
 
@@ -896,13 +896,13 @@ focus_tree = {
 		}
 		available = {
 			OR = {
-				date > 1937.9.1
+				date > 1937.7.1
 			}
 		}
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_political_power = 120
+			add_political_power = 150
 			add_ideas = peoples_commissariat_focus
 			if = {
 				limit = {
