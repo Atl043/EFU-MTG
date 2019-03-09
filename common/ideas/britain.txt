@@ -1896,39 +1896,13 @@ ideas = {
 			#picture = generic_political_advisor_europe_2
 
 			available = {
-				has_government = fascism
 			}
 			
 			allowed = {
 				original_tag = ENG
-				has_dlc = "Man the Guns"
 			}
 			
 			traits = { princess_of_terror }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		ENG_george_orwell = {
-			
-			#picture = generic_communist_revolutionary_western_european_2d
-
-			available = {
-				has_government = communism
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-			
-			allowed = {
-				original_tag = ENG
-				has_dlc = "Man the Guns"
-			}
-			
-			traits = { socialist_novelist }
 
 			ai_will_do = {
 				factor = 1
@@ -1940,40 +1914,13 @@ ideas = {
 			#picture = generic_political_advisor_europe_1
 
 			available = {
-				has_government = communism
 			}
 			
 			allowed = {
 				original_tag = ENG
-				has_dlc = "Man the Guns"
 			}
 			
 			traits = { red_suffragette }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		ENG_winston_churchill = {
-			
-			#picture = generic_democratic_reformer_western_european_2d
-
-			available = {
-				has_government = neutrality
-				has_completed_focus = ENG_the_kings_party
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-			
-			allowed = {
-				original_tag = ENG
-				has_dlc = "Man the Guns"
-			}
-			
-			traits = { royalist_bulldog }
 
 			ai_will_do = {
 				factor = 1
@@ -1985,8 +1932,7 @@ ideas = {
 			#picture = generic_political_advisor_europe_3
 
 			available = {
-				has_government = neutrality
-				has_completed_focus = ENG_the_kings_party
+				date > 1939.1.1
 			}
 			
 			allowed = {
@@ -2001,26 +1947,6 @@ ideas = {
 			}
 		}
 
-		ENG_david_lloyd_george = {
-			
-			#picture = generic_political_advisor_europe_4
-
-			available = {
-				has_government = neutrality
-				has_completed_focus = ENG_the_kings_party
-			}
-			
-			allowed = {
-				original_tag = ENG
-				has_dlc = "Man the Guns"
-			}
-			
-			traits = { old_figurehead }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
 
 		# Crap communist ministers, intentionally without loc so they are 'randomized'
 
@@ -3062,12 +2988,14 @@ ideas = {
 			picture = generic_army_europe_1
 
 			available = {
-				has_government = fascism
 			}
 			
 			allowed = {
 				original_tag = ENG
 				has_dlc = "Man the Guns"
+			}
+			research_bonus = {
+				land_doctrine = 0.07
 			}
 			
 			traits = { blitzkrieg_theorist }

@@ -1157,69 +1157,6 @@ ideas = {
 	
 	
 	political_advisor = {
-		earl_browder = {
-			
-			
-			allowed = {
-				original_tag = "USA"
-			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = USA_suspend_the_presecution
-				}
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-
-			
-			traits = { communist_revolutionary }
-
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-			
-			ai_will_do = {
-				factor = 10
-			}
-		}	
-		harry_white = {
-			
-			picture = USA_harry_white
-			allowed = {
-				original_tag = "USA"
-			}
-			allowed_civil_war = {
-				has_government = communism
-			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = USA_reach_out_to_the_ware_group
-				}
-				not = { has_idea = USA_henry_morgenthau }
-				date > 1941.1.1
-			}
-
-			
-			traits = { financial_expert }
-			cost = 0
-			do_effect = {
-		
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
 		victor_perlo = {
 			
 			picture = generic_political_advisor_europe_1
@@ -1227,20 +1164,13 @@ ideas = {
 				original_tag = "USA"
 			}
 			allowed_civil_war = {
-				has_government = communism
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = USA_reach_out_to_the_ware_group
-				}
 			}
 
 			
 			traits = { economist }
-			cost = 0
+			cost = 150
 			do_effect = {
 		
 			}
@@ -1256,20 +1186,13 @@ ideas = {
 				original_tag = "USA"
 			}
 			allowed_civil_war = {
-				has_government = communism
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = USA_reach_out_to_the_ware_group
-				}
 			}
 
 			
 			traits = { editor }
-			cost = 0
+			cost = 150
 			do_effect = {
 		
 			}
@@ -1288,12 +1211,6 @@ ideas = {
 				not = { has_government = communism }
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = USA_america_first
-				}
 			}
 
 			
@@ -1317,17 +1234,11 @@ ideas = {
 				not = { has_government = communism }
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = USA_america_first
-				}
 			}
 
 			
 			traits = { captain_of_industry }
-			cost = 50
+			cost = 150
 			do_effect = {
 		
 			}
@@ -1344,10 +1255,6 @@ ideas = {
 			}
 			
 			available = {
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
 			}
 			
 			traits = { democratic_reformer }
@@ -1360,39 +1267,6 @@ ideas = {
 			
 			ai_will_do = {
 				factor = 0
-			}
-		}
-		
-		charles_coughlin = {
-			
-			
-			allowed = {
-				original_tag = "USA"
-			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = USA_america_first
-				}
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-
-			
-			traits = { fascist_demagogue }
-	
-			do_effect = {
-				NOT = {
-					has_government = fascism
-				}
-			}
-			
-			ai_will_do = {
-				factor = 10
 			}
 		}
 
@@ -1413,7 +1287,6 @@ ideas = {
 				original_tag = USA
 			}
 			available = {
-				has_completed_focus = USA_empower_the_huac
 			}
 			
 			traits = { anti_communist_crusader }
@@ -1446,8 +1319,10 @@ ideas = {
 			
 			allowed = {
 				original_tag = USA
+				
 			}
 			available = {
+				date > 1941.1.1
 				not = { has_idea = harry_white }
 			}
 			
