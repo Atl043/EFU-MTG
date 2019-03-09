@@ -2235,6 +2235,8 @@ focus_tree = {
 					technology = improved_medium_td
 					technology = improved_medium_art
 					technology = improved_medium_spaa
+					technology = amphibious_tank
+					technology = amphibious_tank_2
 			}
 		}
 	}
