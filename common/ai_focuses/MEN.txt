@@ -1,4 +1,4 @@
-﻿
+
 ai_historical_focus_list_MEN = {
 	ai_national_focuses = {
 		industrial_effort
