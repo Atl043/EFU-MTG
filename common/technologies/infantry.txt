@@ -1132,27 +1132,25 @@ technologies = {
 			breakthrough = 0.02
 		}		
 		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.05
+			breakthrough = 0.05
 		}
 		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.05
+			breakthrough = 0.05
 		}
 		marine = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.05
+			breakthrough = 0.05
 		}
 		motorized = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
 		mechanized = {
-			defense = 0.05
 			breakthrough = 0.05
 		}
 		amphibious_mechanized = {
-			defense = 0.05
 			breakthrough = 0.05
 		}
 		
@@ -1223,27 +1221,25 @@ technologies = {
 			breakthrough = 0.02
 		}		
 		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.05
+			breakthrough = 0.05
 		}
 		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.05
+			breakthrough = 0.05
 		}
 		marine = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.05
+			breakthrough = 0.05
 		}
 		motorized = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
 		mechanized = {
-			defense = 0.05
 			breakthrough = 0.05
 		}
 		amphibious_mechanized = {
-			defense = 0.05
 			breakthrough = 0.05
 		}
 		
@@ -1320,27 +1316,25 @@ technologies = {
 			breakthrough = 0.02
 		}		
 		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.05
+			breakthrough = 0.05
 		}
 		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.05
+			breakthrough = 0.05
 		}
 		marine = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.05
+			breakthrough = 0.05
 		}
 		motorized = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
 		mechanized = {
-			defense = 0.05
 			breakthrough = 0.05
 		}
 		amphibious_mechanized = {
-			defense = 0.05
 			breakthrough = 0.05
 		}
 		
@@ -1404,27 +1398,25 @@ technologies = {
 			breakthrough = 0.02
 		}		
 		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.05
+			breakthrough = 0.05
 		}
 		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.05
+			breakthrough = 0.05
 		}
 		marine = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.05
+			breakthrough = 0.05
 		}
 		motorized = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
 		mechanized = {
-			defense = 0.05
 			breakthrough = 0.05
 		}
 		amphibious_mechanized = {
-			defense = 0.05
 			breakthrough = 0.05
 		}
 		
@@ -1547,19 +1539,8 @@ technologies = {
 		enable_equipments = {
 			motorized_rocket_equipment_1
 		}
-	
 		research_cost = 1.5
 		start_year = 1939
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				tag = SOV
-			}
-		}
-		
 		categories = {
 			mot_rockets
 		}
@@ -1570,7 +1551,6 @@ technologies = {
 		enable_equipments = {
 			mechanized_equipment_1
 		}
-		
 		motorized = {
 			hardness = 1.0
 		}
@@ -1586,7 +1566,6 @@ technologies = {
 		mot_rocket_artillery_brigade = {
 			hardness = 1.0
 		}
-
 		path = {
 			leads_to_tech = mechanised_infantry2
 			research_cost_coeff = 1
@@ -1603,19 +1582,10 @@ technologies = {
 			name = infantry_folder
 			position = { x = 0 y = @1940 }
 		}
-		
 		categories = {
 			motorized_equipment
 			infantry_tech
 			cat_mechanized_equipment
-		}
-		
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				tag = USA
-				factor = 2
-			}
 		}
 	}
 
