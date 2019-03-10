@@ -18,8 +18,8 @@ equipments = {
 		reliability = 0.8
 
 		#Defensive Abilities
-		defense = 10
-		breakthrough = 6
+		defense = 11
+		breakthrough = 7
 		hardness = 0
 		armor_value = 0
 
@@ -55,8 +55,8 @@ equipments = {
 		priority = 50
 		visual_level = 1
 
-		defense = 17
-		breakthrough = 7
+		defense = 18
+		breakthrough = 8
 		soft_attack = 36
 		
 		build_cost_ic = 4
@@ -104,7 +104,7 @@ equipments = {
 		reliability = 0.8
 
 		#Defensive Abilities
-		defense = 12
+		defense = 13
 		breakthrough = 9
 		hardness = 0
 		armor_value = 0
@@ -139,7 +139,7 @@ equipments = {
 		visual_level = 1
 		
 		defense = 15
-		breakthrough = 12
+		breakthrough = 13
 		soft_attack = 55
 		
 		build_cost_ic = 5

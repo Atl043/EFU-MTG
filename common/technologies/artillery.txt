@@ -62,9 +62,11 @@ technologies = {
 		}
 		artillery_brigade = {
 			soft_attack = 0.1
+			breakthrough = 0.10
 		}
 		mot_artillery_brigade = {
 			soft_attack = 0.1
+			breakthrough = 0.10
 		}
 		
 		path = {
@@ -114,9 +116,9 @@ technologies = {
 		#artillery = {
 		#	soft_attack = 0.1
 		#}
-		#artillery_brigade = {
-		#	soft_attack = 0.1
-		#}
+		artillery_brigade = {
+			breakthrough = 0.10
+		}
 		
 		path = {
 			leads_to_tech = artillery2
@@ -163,9 +165,11 @@ technologies = {
 		}
 		artillery_brigade = {
 			soft_attack = 0.1
+			breakthrough = 0.10
 		}
 		mot_artillery_brigade = {
 			soft_attack = 0.1
+			breakthrough = 0.10
 		}
 		
 		path = {
@@ -218,9 +222,11 @@ technologies = {
 		}
 		artillery_brigade = {
 			soft_attack = 0.1
+			breakthrough = 0.10
 		}
 		mot_artillery_brigade = {
 			soft_attack = 0.1
+			breakthrough = 0.10
 		}
 		
 		path = {
@@ -265,9 +271,9 @@ technologies = {
 		#artillery = { 
 		#	soft_attack = 0.1
 		#}
-		#artillery_brigade = {
-		#	soft_attack = 0.1
-		#}
+		artillery_brigade = {
+			breakthrough = 0.10
+		}
 		
 		path = {
 			leads_to_tech = artillery5
@@ -314,9 +320,11 @@ technologies = {
 		}
 		artillery_brigade = {
 			soft_attack = 0.1
+			breakthrough = 0.10
 		}
 		mot_artillery_brigade = {
 			soft_attack = 0.1
+			breakthrough = 0.10
 		}
 		
 		research_cost = 1
