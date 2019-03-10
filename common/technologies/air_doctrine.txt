@@ -1708,9 +1708,9 @@ technologies = {
 		#same as naval_strike_torpedo_tactics
 		# EFFECT ########
 		air_nav_efficiency = 0.2
-		category_naval_air = {
-				air_agility = 0.1
-			}
+		category_nav_bomber = {
+			air_agility = 0.1
+		}
 		category_heavy_fighter = {
 			air_agility = 0.1
 		}
