@@ -499,13 +499,13 @@ demobilization = {
 		complete_effect = {
 			if = {
 				limit = {
-					has_war_support < 0.15
+					has_war_support < 0.09
 				}
 				add_ideas = civilian_economy
 			}
 			else_if = {
 				limit = {
-					has_war_support < 0.25
+					has_war_support < 0.14
 				}
 				add_ideas = low_economic_mobilisation
 			}
@@ -517,7 +517,7 @@ demobilization = {
 			}
 			else_if = {
 				limit = {
-					has_war_support < 0.8
+					has_war_support < 0.7
 				}
 				add_ideas = war_economy
 			}

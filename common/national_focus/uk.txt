@@ -926,6 +926,12 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 100
+			add_tech_bonus = {
+				name = fighter_command_focus
+				bonus = 2
+				uses = 2
+				category = air_doctrine
+			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1137,13 +1143,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
+			air_experience = 100
 			add_tech_bonus = {
 				name = fighter_command_focus
 				bonus = 1.0
-				uses = 2
-				category = light_fighter
-				category = cat_heavy_fighter
+				ahead_reduction = 2
+				uses = 1
+				technology = fighter2
 			}
 		}
 	}
@@ -1226,14 +1232,18 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available={
+			date > 1942.6.1
+		}
 
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = uk_jet_focus
-				bonus = 1.0
+				bonus = 2.0
 				uses = 4
+				category = light_fighter
 				category = jet_technology
 			}
 		}
