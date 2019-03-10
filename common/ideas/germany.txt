@@ -34,8 +34,11 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_org_Factor = 0.05
 				planning_speed = 0.25
+				army_org_Factor = 0.10
+				army_morale_factor = 0.10
+				max_planning = 0.1
+				training_time_factor = -0.15
 			}
 		}
 
@@ -72,6 +75,7 @@ ideas = {
 			picture = generic_air_bonus
 		
 			research_bonus = {
+				air_doctrine = 0.1
 				battlefield_support_tree = 0.10
 				jet_technology = 0.10
 			}
@@ -2002,7 +2006,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			cost = 250
+			cost =150
 			
 			research_bonus = {
 				cat_mobile_warfare = 0.10
@@ -2019,7 +2023,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_battlefield_support = 0.10
@@ -2063,7 +2067,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_trade_interdiction = 0.20

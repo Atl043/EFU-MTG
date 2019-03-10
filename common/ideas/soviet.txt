@@ -285,7 +285,7 @@ ideas = {
 			modifier = {
 				army_org_factor = -0.45
 				send_volunteer_factor = -0.74
-				industrial_capacity_factory = -0.18
+				industrial_capacity_factory = -0.15
 				training_time_factor = 0.45
 			}
 		}
@@ -311,7 +311,7 @@ ideas = {
 			modifier = {
 				army_org_factor = -0.4
 				send_volunteer_factor = -0.68
-				industrial_capacity_factory = -0.16
+				industrial_capacity_factory = -0.10
 				training_time_factor = 0.4
 			}
 		}
@@ -337,7 +337,7 @@ ideas = {
 			modifier = {
 				army_org_factor = -0.35
 				send_volunteer_factor = -0.62
-				industrial_capacity_factory = -0.14
+				industrial_capacity_factory = -0.05
 				training_time_factor = 0.35
 			}
 		}
@@ -363,7 +363,7 @@ ideas = {
 			modifier = {
 				army_org_factor = -0.30
 				send_volunteer_factor = -0.56
-				industrial_capacity_factory = -0.12
+				industrial_capacity_factory = -0.1
 				training_time_factor = 0.3
 			}
 		}
@@ -389,7 +389,6 @@ ideas = {
 			modifier = {
 				army_org_factor = -0.25
 				send_volunteer_factor = -0.5
-				industrial_capacity_factory = -0.10
 				training_time_factor = 0.25
 			}
 		}
@@ -415,7 +414,6 @@ ideas = {
 			modifier = {
 				army_org_factor = -0.20
 				send_volunteer_factor = -0.44
-				industrial_capacity_factory = -0.08
 				training_time_factor = 0.2
 			}
 		}
@@ -441,7 +439,6 @@ ideas = {
 			modifier = {
 				army_org_factor = -0.15
 				send_volunteer_factor = -0.38
-				industrial_capacity_factory = -0.06
 				training_time_factor = 0.15
 			}
 		}
@@ -467,7 +464,6 @@ ideas = {
 			modifier = {
 				army_org_factor = -0.10
 				send_volunteer_factor = -0.32
-				industrial_capacity_factory = -0.04
 				training_time_factor = 0.1
 			}
 		}
@@ -493,7 +489,6 @@ ideas = {
 			modifier = {
 				army_org_factor = -0.05
 				send_volunteer_factor = -0.26
-				industrial_capacity_factory = -0.02
 				training_time_factor = 0.05
 			}
 		}
@@ -1633,7 +1628,7 @@ ideas = {
 				NOT = { has_country_flag = purge_1_group_a }
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_mass_assault = 0.10
@@ -1674,7 +1669,7 @@ ideas = {
 				has_completed_focus = SOV_positive_heroism
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_mass_assault = 0.10
@@ -1711,7 +1706,7 @@ ideas = {
 				original_tag = SOV
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_fleet_in_being = 0.10
@@ -1732,7 +1727,7 @@ ideas = {
 				NOT = { has_country_flag = counter_purge }
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_battlefield_support = 0.10

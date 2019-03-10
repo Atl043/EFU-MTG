@@ -2263,7 +2263,7 @@ ideas = {
 				original_tag = USA
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_base_strike = 0.10
@@ -2279,7 +2279,7 @@ ideas = {
 				original_tag = USA
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_strategic_destruction = 0.10
