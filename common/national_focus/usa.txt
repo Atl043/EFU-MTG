@@ -2010,8 +2010,9 @@ focus_tree = {
 				limit = {
 					has_war_support < 0.1
 				}
-				set_war_support = 0.1
+				set_war_support = 0.15
 			}
+			add_war_support = 0.10
 			if = {
 				limit = {
 					has_war_support < 0.4 
