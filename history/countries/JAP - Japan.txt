@@ -18,6 +18,7 @@ add_ideas = {
 	JAP_militarism
 	student_mobilization_idea
 	JAP_interservice_rivalry_balanced
+	MTG_naval_treaty_adherent
 }
 
 set_technology = {
