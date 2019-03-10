@@ -16,19 +16,8 @@ add_ideas = {
 	JAP_zaibatsus
 	JAP_duplicate_research_efforts
 	JAP_militarism
-}
-
-if = {
-	limit = { has_dlc = "Waking the Tiger" }
-	add_ideas = {
-		JAP_interservice_rivalry_balanced		
-	}
-}
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	add_ideas = MTG_naval_treaty_adherent
+	student_mobilization_idea
+	JAP_interservice_rivalry_balanced
 }
 
 set_technology = {
