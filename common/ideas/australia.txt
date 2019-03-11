@@ -518,7 +518,6 @@ ideas = {
 			traits = { smooth_talking_charmer }
 
 			available = {
-				has_completed_focus = AST_never_another_gallipoli
 			}
 		}
 

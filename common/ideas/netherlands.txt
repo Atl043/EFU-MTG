@@ -1967,55 +1967,6 @@ ideas = {
 
 		}
 
-		HOL_saul_de_groot = {
-
-			picture = generic_communist_revolutionary_western_european_2d
-
-			allowed = {
-				original_tag = HOL
-			}
-
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = HOL_legacy_of_the_de_zeven_provincien_mutiny
-				}
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-
-			traits = { communist_revolutionary }
-
-		}
-
-		HOL_meinout_rost_van_tonningen = {
-
-			picture = generic_fascist_demagogue_western_european_2d
-
-			allowed = {
-				original_tag = HOL
-			}
-
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = HOL_volk_en_vaderland
-				}
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-
-			traits = { fascist_demagogue }
-		}
-
 		HOL_jan_goudriaan = {
 
 			picture = generic_political_advisor_europe_2
@@ -2113,23 +2064,6 @@ ideas = {
 			}
 			
 			traits = { resistance_banker }
-		}
-
-		HOL_anton_de_kom = {
-
-			picture = generic_communist_africa
-			
-			allowed = {
-				original_tag = HOL
-				has_dlc = "Man the Guns"
-			}
-
-			available = {
-				has_government = communism
-				has_completed_focus = HOL_decolonization
-			}
-			
-			traits = { colonial_communist }
 		}
 
 		HOL_prince_bernhard = {

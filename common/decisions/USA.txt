@@ -771,7 +771,6 @@ foreign_support = {
 			original_tag = USA
 			has_government = democratic
 			OR = {
-				has_completed_focus = USA_limited_intervention
 				has_completed_focus = USA_lend_lease_act
 			}
 		}

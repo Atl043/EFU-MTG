@@ -3772,34 +3772,6 @@ country_event = {
 		set_country_flag = bessarabia_ceded
 		HUN = { country_event = DOD_hungary.51 } 
 	}
-
-	option = {# compromise on territorial demands
-		name = DOD_hungary.111.b
-		ai_chance = {
-			factor = 50
-		}
-		SOV = { country_event = DOD_hungary.113 }
-	}
-
-	option = {# offer to put a communist government in charge
-		name = DOD_hungary.111.c
-		ai_chance = {
-			factor = 75 #if available
-		}
-		trigger = {
-			NOT = { has_completed_focus = ROM_appoint_soviet_friendly_government }
-		}
-		SOV = { country_event = DOD_hungary.114 }
-		
-	}	
-	option = {# no deals!
-		name = DOD_hungary.111.d
-		ai_chance = {
-			factor = 25
-		}
-		SOV = { country_event = DOD_hungary.115 }
-		
-	}
 }
 
 #Pressure Romania - SOV refuses

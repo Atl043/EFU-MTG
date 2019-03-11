@@ -260,7 +260,6 @@ focus_tree = {
 				OR = {
 					threat > 0.05
 					has_war = yes
-					has_idea = ENG_no_further_appeasement_idea
 					NOT = { has_government = democratic }
 				}
 			}
@@ -561,7 +560,6 @@ focus_tree = {
 				OR = {
 					threat > 0.05
 					has_war = yes
-					has_idea = ENG_no_further_appeasement_idea
 					NOT = { has_government = democratic }
 				}
 			}
@@ -647,7 +645,6 @@ focus_tree = {
 				OR = {
 					threat > 0.1 
 					has_war = yes
-					has_idea = ENG_no_further_appeasement_idea
 					NOT = { has_government = democratic }
 				}
 			}
@@ -718,7 +715,6 @@ focus_tree = {
 						has_completed_focus = GER_rhineland
 					}
 					threat > 0.2
-					has_idea = ENG_no_further_appeasement_idea
 					NOT = { has_government = democratic }
 				}
 			}

@@ -966,13 +966,7 @@ leader_traits = {
 	ambitious_union_boss = {
 		random = no
 		sprite = 13
-
-		communism_drift = 0.1
 		consumer_goods_factor = -0.05
-		
-		ai_will_do = {
-			factor = 1
-		}
 	}
 
 	popular_figurehead = {

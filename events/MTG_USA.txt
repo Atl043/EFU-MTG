@@ -2068,7 +2068,6 @@ country_event = {
 	}
 	option = {
 		trigger = {
-			has_completed_focus = USA_send_lindbergh_to_germany
 		}
 		ai_chance = {
 			factor = 30
@@ -4038,15 +4037,6 @@ country_event = {
 		name = panay_incident.5.b
 		ai_chance = {
 			factor = 40
-		}
-		if = {
-			limit = {
-				not = {
-					has_completed_focus = USA_limited_intervention
-				}
-			}
-			add_war_support = -0.05
-			add_stability = -0.1
 		}
 		if = {
 			limit = {

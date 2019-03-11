@@ -1520,18 +1520,6 @@ focus_tree = {
 
 		cost = 10
 
-		ai_will_do = {
-			factor = 90
-			modifier = {
-				factor = 0
-				has_completed_focus = CZE_go_right
-			}
-			modifier = {
-				factor = 2
-				has_completed_focus = CZE_go_left
-			}
-		}
-
 		available = {
 
 		}

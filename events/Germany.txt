@@ -911,12 +911,6 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_completed_focus = ENG_no_further_appeasement
-			}
-			add_political_power = -200
-		}
-		if = {
-			limit = {
 				tag = HOL
 			}
 			ENG = { country_event = germany.40 }
@@ -1761,9 +1755,6 @@ country_event = {
 	
 	option = {
 		name = germany.62.a
-		trigger = {
-			NOT = { has_completed_focus = ENG_a_change_in_course }
-		}
 		hidden_effect = {
 			news_event = { hours = 6 id = news.25 }
 		}
@@ -1775,9 +1766,6 @@ country_event = {
 
 	option = {
 		name = germany.62.b
-		trigger = {
-			has_completed_focus = ENG_a_change_in_course
-		}
 		hidden_effect = {
 			news_event = { hours = 6 id = news.25 }
 		}

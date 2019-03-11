@@ -1767,16 +1767,6 @@ ideas = {
 		clement_attlee = {
 
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = { has_completed_focus = ENG_a_change_in_course }
-				}
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
 			}
 			
 			allowed = {
@@ -2138,7 +2128,6 @@ ideas = {
 
 			available = {
 				has_government = neutrality
-				has_completed_focus = ENG_the_kings_party
 				has_country_leader = {
 				    name = "Elizabeth II"
 				    ruling_only = yes
@@ -2169,7 +2158,6 @@ ideas = {
 
 			available = {
 				has_government = neutrality
-				has_completed_focus = ENG_the_kings_party
 				has_country_leader = {
 				    name = "Elizabeth II"
 				    ruling_only = yes
@@ -2200,7 +2188,6 @@ ideas = {
 
 			available = {
 				has_government = neutrality
-				has_completed_focus = ENG_the_kings_party
 				has_country_leader = {
 				    name = "Elizabeth II"
 				    ruling_only = yes
@@ -2235,9 +2222,6 @@ ideas = {
 			}
 			
 			available = {
-				NOT = {
-					has_completed_focus = ENG_eliminate_the_upper_class
-				}
 			}
 			
 			traits = { army_chief_offensive_2 }
@@ -2269,9 +2253,6 @@ ideas = {
 			}
 			
 			available = {
-				NOT = {
-					has_completed_focus = ENG_eliminate_the_upper_class
-				}
 			}
 			
 			traits = { army_chief_maneuver_3 }
@@ -2387,9 +2368,6 @@ ideas = {
 			}
 			
 			available = {
-				NOT = {
-					has_completed_focus = ENG_eliminate_the_upper_class
-				}
 			}
 			
 			traits = { army_regrouping_2 }
@@ -2481,9 +2459,6 @@ ideas = {
 			}
 			
 			available = {
-				NOT = {
-					has_completed_focus = ENG_eliminate_the_upper_class
-				}
 			}
 			
 			traits = { navy_amphibious_assault_3 }
@@ -2831,9 +2806,6 @@ ideas = {
 			}
 
 			available = {
-				NOT = {
-					has_completed_focus = ENG_eliminate_the_upper_class
-				}
 			}
 			
 			cost = 150
@@ -2852,9 +2824,6 @@ ideas = {
 			}
 			
 			available = {
-				NOT = {
-					has_completed_focus = ENG_eliminate_the_upper_class
-				}
 			}
 			
 			research_bonus = {
@@ -2864,28 +2833,6 @@ ideas = {
 			traits = { military_theorist }
 		}
 
-		ENG_raymond_briggs = {
-
-			picture = generic_army_europe_2
-
-			visible = {
-				has_completed_focus = ENG_eliminate_the_upper_class
-			}
-
-			available = {
-				has_completed_focus = ENG_eliminate_the_upper_class
-			}
-			
-			allowed = {
-				original_tag = ENG
-			}
-
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
 		
 		james_somerville = {
 			
@@ -2894,9 +2841,6 @@ ideas = {
 			}
 
 			available = {
-				NOT = {
-					has_completed_focus = ENG_eliminate_the_upper_class
-				}
 			}
 			
 			cost = 150
