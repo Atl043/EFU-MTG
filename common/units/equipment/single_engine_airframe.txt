@@ -42,7 +42,7 @@ equipments = {
 		}
 		
 		manpower = 20
-		fuel_consumption = 0.2
+		fuel_consumption = 0.15
 	}
 
 	cv_fighter_equipment = {
@@ -89,7 +89,7 @@ equipments = {
 		}
 		
 		manpower = 20
-		fuel_consumption = 0.2
+		fuel_consumption = 0.15
 	}
 	
 	CAS_equipment = {
@@ -134,7 +134,7 @@ equipments = {
 		}
 		
 		manpower = 20
-		fuel_consumption = 0.26
+		fuel_consumption = 0.15
 	}
 
 	cv_CAS_equipment = {
@@ -222,7 +222,7 @@ equipments = {
 		}
 		
 		manpower = 20
-		fuel_consumption = 0.28
+		fuel_consumption = 0.20
 	}
 
 	cv_nav_bomber_equipment = {
