@@ -743,8 +743,8 @@ NMilitary = {
 	}, 
 	
 	UNIT_LEADER_TRAIT_SLOT_PER_LEVEL = { 			-- num extra traits on each level
-		0.5, -- field marshal
-		0.5, -- corps commander
+		1, -- field marshal
+		1, -- corps commander
 		0.5  -- navy general
 	}, 
 	
