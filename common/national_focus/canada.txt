@@ -74,14 +74,6 @@ focus_tree = {
 
 		cost = 10
 
-		ai_will_do = {
-			factor = 25
-			modifier = {
-				factor = 3
-				has_completed_focus = CAN_rowell_sirois_commission
-			}
-		}
-
 		available = {
 
 		}

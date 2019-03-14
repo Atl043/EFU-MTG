@@ -409,7 +409,7 @@ focus_tree = {
 				category = infantry_weapons
 				category = artillery
 			}
-			add_ideas = Instalaza_SA
+			#add_ideas = Instalaza_SA
 		}
 	}
 
@@ -911,7 +911,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = SPR_Communism_Idea
+			#add_ideas = SPR_Communism_Idea
 			add_political_power = 150
 		}
 	}

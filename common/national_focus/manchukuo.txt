@@ -613,7 +613,7 @@ focus_tree = {
                 uses = 3
                 category = synth_resources
             }
-            set_state_flag = MAN_invite_japanese_investors_IC
+           # set_state_flag = MAN_invite_japanese_investors_IC
 
         }
 			

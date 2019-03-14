@@ -503,7 +503,6 @@ MAN_banditry_category = {
 
 		available = {
 			has_country_flag = MAN_northern_bandits
-			has_completed_focus = MAN_bolster_nationalism
 		}
 		visible = {
 			has_country_flag = MAN_northern_bandits
@@ -563,7 +562,6 @@ MAN_banditry_category = {
 
 		available = {
 			has_country_flag = MAN_western_bandits
-			has_completed_focus = MAN_bolster_nationalism
 		}
 		visible = {
 			has_country_flag = MAN_western_bandits
@@ -623,7 +621,6 @@ MAN_banditry_category = {
 
 		available = {
 			has_country_flag = MAN_eastern_bandits
-			has_completed_focus = MAN_bolster_nationalism
 		}
 		visible = {
 			has_country_flag = MAN_eastern_bandits
@@ -684,12 +681,11 @@ MAN_banditry_category = {
 		available = {
 		}
 		visible = {
-			has_completed_focus = MAN_bolster_nationalism
 		}
 		ai_will_do = {
 			factor = 10
 		}
-		cost = 50
+		cost = 100
 		fire_only_once = yes
 		complete_effect = {
 			if = {
@@ -741,18 +737,6 @@ MAN_banditry_category = {
 		}
 		visible = {
 			has_country_flag = MAN_bandits_recruited
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				OR = {
-					not = {
-						has_completed_focus = MAN_independence_war
-					}
-					has_war = yes	
-				}
-				factor = 0
-			}
 		}
 		cost = 0
 		
@@ -991,7 +975,6 @@ MAN_war_preparations = {
 	}
 	MAN_seize_arms = {
 		available = {
-			has_completed_focus = MAN_independence_war
 			has_war_with = JAP
 		}
 		visible = {

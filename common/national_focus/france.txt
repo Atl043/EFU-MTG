@@ -179,7 +179,7 @@ focus_tree = {
 				industrial_complex > 6
 			}
 			NOT = {
-				EFR = { exists = yes }
+			#	EFR = { exists = yes }
 			}
 
 		}

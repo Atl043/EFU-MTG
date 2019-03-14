@@ -3090,7 +3090,7 @@ focus_tree = {
 
 	focus = {
 		id = HOL_the_battlecruiser_plan
-		prerequisite = { focus = HOL_rely_on_submarines focus = HOL_modernize_the_cruiser_fleet focus = HOL_join_germany }
+		prerequisite = { focus = HOL_rely_on_submarines focus = HOL_modernize_the_cruiser_fleet }
 		available = {
 			GER = {
 				AND = {
@@ -3418,7 +3418,6 @@ focus_tree = {
 			NOT = { has_completed_focus = HOL_curtail_colonial_autonomy }
 		}
 		prerequisite = { focus = HOL_maintain_trade_neutrality }
-		mutually_exclusive = { focus = HOL_legacy_of_the_de_zeven_provincien_mutiny }
 		icon = GFX_focus_hol_oranje_boven
 		x = 2
 		y = 1
@@ -3957,7 +3956,6 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = HOL_oranje_boven focus = HOL_unity_through_democracy }
-		mutually_exclusive = { focus = HOL_lead_the_minor_democracies }
 		icon = GFX_focus_chi_british_cooperation
 		x = 3
 		y = 1

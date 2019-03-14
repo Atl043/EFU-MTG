@@ -1323,7 +1323,7 @@ ideas = {
 			}
 			available = {
 				date > 1941.1.1
-				not = { has_idea = harry_white }
+				#not = { has_idea = harry_white }
 			}
 			
 			traits = { financial_expert }

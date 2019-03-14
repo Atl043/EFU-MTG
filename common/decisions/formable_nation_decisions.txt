@@ -1106,7 +1106,6 @@ form_european_union_category = {
 				AND = {
 					original_tag = ENG
 					has_government = fascism
-					has_completed_focus = ENG_organize_the_blackshirts
 					has_country_leader = { ruling_only = yes name = "Oswald Mosley" }
 				}		
 			}

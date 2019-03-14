@@ -1496,7 +1496,6 @@ country_event = {
 
 	trigger = {
 		tag = ENG
-		has_completed_focus = ENG_organize_the_blackshirts
 		NOT = { has_government = fascism }
 		has_stability < 0.5
 	}
@@ -3221,7 +3220,6 @@ country_event = {
 
 	trigger = {
 		tag = ENG
-		has_completed_focus = ENG_concessions_to_the_trade_unions
 		NOT = { has_completed_focus = ENG_decolonization }
 		has_government = communism
 		has_country_flag = ENG_switched_to_communism_civil_war_flag

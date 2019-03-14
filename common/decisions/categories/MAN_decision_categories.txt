@@ -22,7 +22,7 @@ MAN_war_preparations = {
 	}
 
 	visible = {
-		has_completed_focus = MAN_assertiveness
+		date> 1949.1.1
 	}
 
 }

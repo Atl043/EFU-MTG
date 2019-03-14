@@ -6,8 +6,8 @@ state={
 	
 	state_category = city
 	resources={
-		aluminium=10 # was: 16
-		steel = 15 # was: 24
+		aluminium=16 # was: 16
+		steel = 24 # was: 24
 	}
 
 	history={
@@ -17,7 +17,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 6
-			arms_factory = 1
+			arms_factory = 2
 			industrial_complex = 2
 			air_base = 3
 			819 = {

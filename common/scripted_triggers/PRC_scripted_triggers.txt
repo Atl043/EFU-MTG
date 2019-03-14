@@ -56,7 +56,6 @@ PRC_is_not_infiltrating_a_state = {
 			has_decision = PRC_infiltrate_shanxi
 			has_decision = PRC_infiltrate_suiyuan
 			has_decision = PRC_infiltrate_xian
-			has_decision = PRC_infiltrate_ordos
 
 			#Anti Japan
 			has_decision = PRC_infiltrate_east_hebei

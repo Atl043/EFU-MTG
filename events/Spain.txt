@@ -381,9 +381,9 @@ country_event = {
 }
 
 country_event = {
-	id = veren.2
-	title = veren.2.t
-	desc = veren.2.d
+	id = spain.11
+	title = spain.11.t
+	desc = spain.11.d
 	picture = GFX_report_event_fascists_posing
 	trigger = {
 		OR = {
@@ -406,7 +406,7 @@ country_event = {
 
 	option = {
 
-		name = veren.2.a
+		name = spain.11.a
 		ai_chance = {
 		factor = 100
 		}

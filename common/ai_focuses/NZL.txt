@@ -8,7 +8,7 @@ ai_historical_focus_list_NZL = {
 		NZL_industrial_conscription
 		NZL_taranaki_oil
 		NZL_army_reforms
-		NZL_chariton_automatic_rifle
+		NZL_charlton_automatic_rifle
 		NZL_domestic_arms_industry									#1941
 		NZL_think_big												#1942
 	}
