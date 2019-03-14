@@ -1253,10 +1253,6 @@ country_event = {
 			add_war_support = 0.1
 		}
 	}
-
-	option = {
-		name = germany.62.b
-	}
 }
 
 # France (Britain Refuses Support)

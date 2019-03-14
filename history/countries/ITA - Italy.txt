@@ -3,8 +3,9 @@
 oob = "ITA_1936"
 
 set_research_slots = 4
-set_stability = 0.6
+set_stability = 0.65
 set_war_support = 0.7
+set_fuel_ratio = 1.0
 add_ideas = {
 	victor_emmanuel
 	vittoria_mutilata
@@ -71,6 +72,12 @@ if = {
 		basic_ship_hull_heavy = 1
 		mtg_transport = 1
 		coastal_defense_ships = 1
+		basic_light_battery = 1
+			basic_heavy_battery = 1
+			basic_medium_battery = 1
+			improved_secondary_battery = 1
+			improved_airplane_launcher = 1
+			basic_heavy_armor_scheme = 1
 	}
 	set_naval_oob = "ITA_1936_naval_mtg"
 }
