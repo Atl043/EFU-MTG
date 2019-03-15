@@ -1691,102 +1691,140 @@ ideas = {
 		designer = yes
 		
 		messerschmitt = {
-			
+
 			allowed = {
 				original_tag = GER
 			}
-			
+
+			cost = 75
+			#removal_cost = 10
+
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
-			traits = { light_aircraft_manufacturer }
-			
+
+			traits = { messerschmitt_aircraft_manufacturer }
+
 			equipment_bonus = {
-				
+
 			}
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
-		junkers = { 
+
+		junkers = {
 			allowed = {
 				original_tag = GER
 			}
-						
+
+			cost = 75
+			#removal_cost = 10
+
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
-			traits = { CAS_manufacturer }
-			
+
+			traits = { junkers_aircraft_manufacturer }
+
 			equipment_bonus = {
-				
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
-		
 
-		focke_wulf = { 
+			}
 
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-						
-			research_bonus = {
-				air_equipment = 0.10
-			}
-			
-			traits = { medium_aircraft_manufacturer }
-			
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+
+
+		focke_wulf = {
+
+
+			allowed = {
+				original_tag = GER
+			}
+
+			cost = 75
+			#removal_cost = 10
+
+
+			research_bonus = {
+				air_equipment = 0.10
+			}
+
+			traits = { focke_wulf_aircraft_manufacturer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
 		heinkel = {
 
-			
+
 			allowed = {
 				original_tag = GER
 			}
-			
-			
+
+			cost = 75
+			#removal_cost = 10
+
+
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
-			traits = { heavy_aircraft_manufacturer }
-			
+
+			traits = { heinkel_aircraft_manufacturer }
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+
 		dornier = {
 
 			allowed = {
 				original_tag = GER
 			}
-			
-						
+
+			cost = 75
+			#removal_cost = 10
+
+
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
-			traits = { naval_aircraft_manufacturer }
-			
+
+			traits = { dornier_aircraft_manufacturer }
+
 			ai_will_do = {
 				factor = 1
 			}
-		}	
+		}
+
+		arado = {
+
+			allowed = {
+				original_tag = GER
+			}
+
+			cost = 75
+			#removal_cost = 10
+
+
+			research_bonus = {
+				air_equipment = 0.10
+			}
+
+			traits = { arado_aircraft_manufacturer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+
 
 
 	}

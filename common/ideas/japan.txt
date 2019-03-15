@@ -1703,70 +1703,89 @@ ideas = {
 	aircraft_manufacturer = {
 		
 		designer = yes
-		
 		mitsubishi = {
-						
+
 			allowed = {
-				original_tag = JAP		
+				original_tag = JAP
 			}
-			
-			available = {
-				has_completed_focus = JAP_agility_focus
-			}
-			
+			cost = 75
+			#removal_cost = 10
+
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
-			traits = { light_aircraft_manufacturer_2 }
+			available = {
+				has_completed_focus = JAP_agility_focus
+			}
+
+			traits = { mitsubishi_aircraft_manufacturer }
 
 			modifier = {
-
 			}
 		}
 
 		aichi = {
-			
+
 			allowed = {
 				original_tag = JAP
 			}
+			cost = 75
+			#removal_cost = 10
 
-			available = {
-				has_completed_focus = JAP_range_focus
-			}
-						
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
-			traits = { fuel_efficient_aircraft_manufacturer }
+
+			traits = { aichi_aircraft_manufacturer }
 		}
-		
+
 		nakajima = {
-						
+
 			allowed = {
 				original_tag = JAP
 			}
-			
+			cost = 75
+			#removal_cost = 10
+
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
-			traits = { heavy_aircraft_manufacturer }
+
+			traits = { nakajima_aircraft_manufacturer }
 
 		}
-		
+
 		yokosuka = {
-						
+
 			allowed = {
 				original_tag = JAP
 			}
-						
+			available = {
+				date > 1940.1.1
+			}
+			cost = 75
+			#removal_cost = 10
+
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
-			traits = { naval_aircraft_manufacturer }
+
+			traits = { yokosuka_aircraft_manufacturer }
+		}
+
+		kawasaki2 = {
+
+			allowed = {
+				original_tag = JAP
+			}
+			cost = 75
+			#removal_cost = 10
+
+			research_bonus = {
+				air_equipment = 0.10
+			}
+
+			traits = { kawasaki_aircraft_manufacturer }
 		}
 	}
 	

@@ -2583,93 +2583,149 @@ ideas = {
 		designer = yes
 		
 		supermarine = {
-			
+
 			allowed = {
 				original_TAG = ENG
 			}
-			
 
-			
+			cost = 75
+			#removal_cost = 10
+
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
-			traits = { light_aircraft_manufacturer }
-			
+
+			traits = { supermarine_aircraft_manufacturer }
+
 			modifier = {
 			}
 		}
-		
+
 		hawker = {
-			
+
 			allowed = {
 				original_TAG = ENG
 			}
-			
 
-			
+
+			cost = 75
+			#removal_cost = 10
+
+
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
-			traits = { CAS_manufacturer } 
-			
+
+			traits = { hawker_aircraft_manufacturer }
+
 			modifier = {
 			}
-		}	
+		}
 		de_havilland = {
-			
+
 			allowed = {
 				original_TAG = ENG
 			}
-			
+			available = {
+				date > 1941.1.1
+			}
 
-			
+			cost = 75
+			#removal_cost = 10
+
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
-			traits = { medium_aircraft_manufacturer }
-			
+
+			traits = { de_havilland_aircraft_manufacturer }
+
 			modifier = {
 			}
 		}
-		
+
 		avro = {
-			
+
 			allowed = {
 				original_TAG = ENG
 			}
-			
 
-			
+
+			cost = 75
+			#removal_cost = 10
+
+
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
-			traits = { heavy_aircraft_manufacturer }
-			
+
+			traits = { avro_aircraft_manufacturer }
+
 			modifier = {
 			}
 		}
-		
+
 		fairey_aviation = {
-			
+
 			allowed = {
 				original_TAG = ENG
 			}
-			
 
-			
+			cost = 75
+			#removal_cost = 10
+
+
+
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
-			traits = { naval_aircraft_manufacturer }
-			
+
+			traits = { fairey_aircraft_manufacturer }
+
 			modifier = {
 			}
-		}			
+		}
+
+		bristol = {
+
+			allowed = {
+				original_TAG = ENG
+			}
+
+			cost = 75
+			#removal_cost = 10
+
+
+
+			research_bonus = {
+				air_equipment = 0.10
+			}
+
+			traits = { bristol_aircraft_manufacturer }
+
+			modifier = {
+			}
+		}
+
+		vickers = {
+
+			allowed = {
+				original_TAG = ENG
+			}
+
+			cost = 75
+			#removal_cost = 10
+
+
+
+			research_bonus = {
+				air_equipment = 0.10
+			}
+
+			traits = { vickers_aircraft_manufacturer }
+
+			modifier = {
+			}
+		}
 	}
 	
 	materiel_manufacturer = {

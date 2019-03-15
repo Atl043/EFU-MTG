@@ -1941,137 +1941,230 @@ ideas = {
 		designer = yes
 		
 		north_american_aviation = {
-			
-			
+
+
 			allowed = {
 				original_tag = USA
 			}
-			
+			available = {
+				date > 1940.10.11
+			}
+			cost = 50
+			#removal_cost = 10
 
-			
+
 			research_bonus = {
 				air_equipment = 0.10
+				light_fighter = 0.10
 			}
-			
-			traits = { light_aircraft_manufacturer }
-			
+
+			traits = { north_american_aviation_aircraft_manufacturer }
+
 			modifier = {
 			}
 		}
-		
+
 		#bell = {
-		#	
-		#	
+		#
+		#
 		#	allowed = {
 		#		original_tag = USA
 		#	}
-		#	
 		#
-		#	
+		#
+		#
 		#	research_bonus = {
 		#		air_equipment = 0.10
 		#	}
-		#	
+		#
 		#	traits = { light_aircraft_manufacturer }	#TODO, make different from north american
-		#	
+		#
 		#	modifier = {
 		#	}
-		#}	
-		
+		#}
+
 		lockheed = {
-			
-			
+
+
 			allowed = {
 				original_tag = USA
 			}
-			
+			cost = 50
+			#removal_cost = 10
 
-			
+
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
-			traits = { medium_aircraft_manufacturer }
-			
+
+			traits = { lockheed_aircraft_manufacturer }
+
 			modifier = {
 			}
 		}
-		
+
 		douglas_aircraft_company = {
-			
-			
+
+
 			allowed = {
 				original_tag = USA
 			}
-			
+			cost = 50
+			#removal_cost = 10
 
-			
+
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
-			traits = { CAS_manufacturer }
-			
+
+			traits = { douglas_aircraft_company_aircraft_manufacturer }
+
 			modifier = {
 			}
 		}
 
-		
+
 		boeing = {
-			
-			
+
+
 			allowed = {
 				original_tag = USA
 			}
-			
+			cost = 50
+			#removal_cost = 10
 
-			
+
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
-			traits = { heavy_aircraft_manufacturer }
-			
+
+			traits = { boeing_aircraft_manufacturer }
+
 			modifier = {
 			}
 		}
-		
+
 		#consolidated_aircraft = {
-		#	
-		#	
+		#
+		#
 		#	allowed = {
 		#		original_tag = USA
 		#	}
-		#	
 		#
-		#	
+		#
+		#
 		#	research_bonus = {
 		#		air_equipment = 0.10
 		#	}
-		#	
+		#
 		#	traits = { heavy_aircraft_manufacturer } #TODO remove?
-		#	
+		#
 		#	modifier = {
 		#	}
 		#}
 		grumman = {
-			
-			
+
+
 			allowed = {
 				original_tag = USA
 			}
-			
+			cost = 50
+			#removal_cost = 10
 
-			
+
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
-			traits = { naval_aircraft_manufacturer }
-			
+
+			traits = { grumman_aircraft_manufacturer }
+
 			modifier = {
 			}
-		}		
+		}
+
+		bell = {
+
+
+			allowed = {
+				original_tag = USA
+			}
+			cost = 50
+			#removal_cost = 10
+
+
+			research_bonus = {
+				air_equipment = 0.10
+			}
+
+			traits = { bell_aircraft_manufacturer }
+
+			modifier = {
+			}
+		}
+
+		republic = {
+
+
+			allowed = {
+				original_tag = USA
+			}
+			cost = 50
+			#removal_cost = 10
+
+
+			research_bonus = {
+				air_equipment = 0.10
+			}
+
+			traits = { republic_aircraft_manufacturer }
+
+			modifier = {
+			}
+		}
+
+		consolidated_aircraft = {
+
+
+			allowed = {
+				original_tag = USA
+			}
+			cost = 50
+			#removal_cost = 10
+
+
+			research_bonus = {
+				air_equipment = 0.10
+			}
+
+			traits = { consolidated_aircraft_manufacturer }
+
+			modifier = {
+			}
+		}
+
+		curtiss_wright = {
+
+
+			allowed = {
+				original_tag = USA
+			}
+			cost = 50
+			#removal_cost = 10
+
+			equipment_bonus = {
+				fighter_equipment = {
+					air_agility = 0.15 maximum_speed = 0.15
+				}
+			}
+
+			research_bonus = {
+				air_equipment = 0.10
+			}
+
+
+			modifier = {
+			}
+		}
 	}
 	
 	

@@ -901,59 +901,95 @@ ideas = {
 	}
 	
 	aircraft_manufacturer = {
-			
 		designer = yes
-		
 		morane_saulnier = {
-			
+
+			cost = 150
+
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = EFR
+				}
 			}
-			
+
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
-			traits = { light_aircraft_manufacturer }
+
+			traits = { morane_saulnier_aircraft_manufacturer }
 		}
-		
+
 		bloch = {
-						
+
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = EFR
+				}
 			}
-						
+
+			cost = 150
+			available = {
+				date > 1939.1.1
+			}
+
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
-			traits = { medium_aircraft_manufacturer }
+
+			traits = { bloch_aircraft_manufacturer }
 		}
-		
+
 		amiot = {
-						
+
+			cost = 150
+
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = EFR
+				}
 			}
-						
+
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
-			traits = { heavy_aircraft_manufacturer }
+
+			traits = { amiot_aircraft_manufacturer }
 		}
-		
-		levasseur = {
-						
+
+
+		latecoere = {
+
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = EFR
+				}
 			}
-						
+			cost = 150
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
-			traits = { naval_aircraft_manufacturer }
+
+			traits = { latecoere_aircraft_manufacturer }
+		}
+
+		dewoitine = {
+
+			allowed = {
+				OR = {
+					original_tag = FRA
+					original_tag = EFR
+				}
+			}
+			cost = 150
+			research_bonus = {
+				air_equipment = 0.10
+			}
+
+			traits = { dewoitine_aircraft_manufacturer }
 		}
 		
 	}
