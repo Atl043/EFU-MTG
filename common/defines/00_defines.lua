@@ -545,7 +545,7 @@ NMilitary = {
 	BASE_LEADER_TRAIT_GAIN_XP = 1,			   -- og is 0.45 Base xp gain for traits per hour for armies
 	MAX_NUM_TRAITS = 10,						   -- cant have more, -1 to disable og is -1
 	ENEMY_AIR_SUPERIORITY_IMPACT = -0.4,          -- og is -0.35 effect on defense due to enemy air superiorty
-	ENEMY_AIR_SUPERIORITY_DEFENSE = 0.70,	       -- more AA attack will approach this amount of help (diminishing returns)
+	ENEMY_AIR_SUPERIORITY_DEFENSE = 0.50,	       -- og is 0.7 more AA attack will approach this amount of help (diminishing returns)
 	ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 112, -- how quickly defense approaches the max impact diminishing returns curve
 	ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.3,     -- effect on speed due to enemy air superiority
 	ENCIRCLED_PENALTY = -0.3,                      -- penalty when completely encircled
@@ -737,8 +737,8 @@ NMilitary = {
 	NAVY_LEADER_LEVEL_UP_STAT_WEIGHTS = {5, 5, 5, 5}, -- level up stat random base weights attack, defense, maneuvering, coordination
 	
 	UNIT_LEADER_INITIAL_TRAIT_SLOT = { 				-- trait slot for 0 level leader
-		1.0, -- field marshal
-		0.0, -- corps commander
+		2.0, -- field marshal
+		1.0, -- corps commander
 		1.0  -- navy general
 	}, 
 	
@@ -890,8 +890,8 @@ NAir = {
 	AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.12,				-- 5x levels = 60% defense from bombing
 	NAVAL_STRIKE_DETECTION_BALANCE_FACTOR = 0.7,		-- Value used to scale the surface_visibility stats to balance the gameplay, so 100% detection chance still won't spam the strikes.
 	LEND_LEASED_EQUIPMENT_EXPERIENCE_GAIN = 0.5,		-- Value used for equipment
-	ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.8,					-- Anti Air Gun Damage factor
-	ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.1,					-- Anti Air Gun hit chance
+	ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.75,					-- og .8 Anti Air Gun Damage factor
+	ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.07,					-- og 0.1 Anti Air Gun hit chance
 	ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 0.75,	-- og is 1 Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
 	ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.50,	-- og is 0.75 Maximum damage reduction factor applied to incoming air attacks against units with AA.
 	AIR_DEPLOYMENT_DAYS = 2,							-- Days to deploy one air wing
@@ -940,7 +940,7 @@ NAir = {
 	DISRUPTION_DEFENCE_SPEED_FACTOR = 1.0,
 	DISRUPTION_DEFENCE_ATTACK_FACTOR = 2.0,  -- og is 0.5
 	
-	CAS_NIGHT_ATTACK_FACTOR = 0.1,                      -- CAS damaged get multiplied by this in land combats at night
+	CAS_NIGHT_ATTACK_FACTOR = 0.35,                      -- og is 0.1 CAS damaged get multiplied by this in land combats at night
 	
 	MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
 		0.0, -- AIR_SUPERIORITY
@@ -961,15 +961,15 @@ NAir = {
 	MISSION_FUEL_COSTS = {  -- fuel cost per plane for each mission
 		1.0, -- AIR_SUPERIORITY
 		1.0, -- CAS		
-		0.2, -- INTERCEPTION	
-		1.0, -- STRATEGIC_BOMBER
+		1.0, -- INTERCEPTION	
+		2.0, -- STRATEGIC_BOMBER
 		1.0, -- NAVAL_BOMBER	
 		1.0, -- DROP_NUKE		
 		1.0, -- PARADROP		
 		0.75, -- NAVAL_KAMIKAZE	
 		1.2, -- PORT_STRIKE		
 		1.0, -- AIR_SUPPLY		
-		0.8, -- TRAINING
+		0.5, -- TRAINING
 		1.0, -- NAVAL_MINES_PLANTING
 		1.0, -- NAVAL_MINES_SWEEPING
 	},
