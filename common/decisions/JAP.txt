@@ -847,16 +847,6 @@ JAP_southern_expansion = {
 
 		available = {
 			16 = { NOT = { is_controlled_by = FRA } }
-			custom_trigger_tooltip = {
-				tooltip = demand_indochina_focus_tt
-				NOT = { has_war_with = FRA }
-				NOT = { is_in_faction_with = FRA }
-				OR = {
-					286 = { is_fully_controlled_by = ERF }
-					670 = { is_fully_controlled_by = ERF }
-					671 = { is_fully_controlled_by = ERF }
-				}
-			}
 		}
 
 		visible = {
@@ -870,31 +860,13 @@ JAP_southern_expansion = {
 
 		}
 
-		cost = 75
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 0
-				FRA = { has_war = no }
-			}			
-			modifier = {
-				factor = 3
-				FRA = { has_war = yes } 
-				OR = {
-					16 = { NOT = { is_controlled_by = FRA } } #Paris
-					strength_ratio = {
-						tag = FRA
-						ratio > 0.9
-					}
-				}
-			}
-		}
+		cost = 25
 
 		complete_effect = {
-			FRA = { country_event = { id = france.1 } }
+			JAP = {
+				country_event = { days = 5 id = japan.6 }
+			}
 		}
-
 	}
 }
 
