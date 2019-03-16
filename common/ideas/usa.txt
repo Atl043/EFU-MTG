@@ -1224,7 +1224,7 @@ ideas = {
 				factor = 1
 			}
 		}
-		USA_Dezert = {
+		USA_william_regnery = {
 			
 			picture = generic_political_advisor_europe_2
 			allowed = {
