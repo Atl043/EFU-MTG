@@ -5,7 +5,10 @@ oob = "BUL_1936"
 add_ideas = {
 	limited_conscription
 }
+set_stability = 0.8
+set_war_support = 0.71
 add_ideas = free_trade
+set_research_slots = 3
 
 set_technology = {
 	infantry_weapons = 1
