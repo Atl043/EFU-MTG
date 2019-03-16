@@ -994,17 +994,7 @@ country_event = {
 	title = usa.40.t
 	desc = usa.40.desc
 	picture = GFX_report_event_FDR_speech
-
 	is_triggered_only = yes
-	trigger = {
-		tag = USA
-		NOT = {
-			OR = {
-				#has_completed_focus = USA_voter_registration_act
-				has_completed_focus = USA_union_representation_act
-			}
-		}
-	}
 
 	option = {
 		name = usa.40.a
@@ -1021,17 +1011,7 @@ country_event = {
 	title = usa.41.t
 	desc = usa.41.desc
 	picture = GFX_report_event_FDR_speech
-
 	is_triggered_only = yes
-	trigger = {
-		tag = USA
-		NOT = {
-			OR = {
-				#has_completed_focus = USA_voter_registration_act
-				has_completed_focus = USA_union_representation_act
-			}
-		}
-	}
 
 	option = {
 		name = usa.41.a
@@ -1049,18 +1029,7 @@ country_event = {
 	title = usa.42.t
 	desc = usa.42.desc
 	picture = GFX_report_event_journalists_speech
-
 	is_triggered_only = yes
-	
-	trigger = {
-		tag = USA
-		NOT = {
-			OR = {
-				#has_completed_focus = USA_voter_registration_act
-				has_completed_focus = USA_union_representation_act
-			}
-		}
-	}
 
 	option = {
 		name = usa.42.a
@@ -1077,18 +1046,7 @@ country_event = {
 	title = usa.43.t
 	desc = usa.43.desc
 	picture = GFX_report_event_journalists_speech
-
 	is_triggered_only = yes
-	trigger = {
-		tag = USA
-		NOT = {
-			OR = {
-				#has_completed_focus = USA_voter_registration_act
-				has_completed_focus = USA_union_representation_act
-			}
-		}
-	}
-
 	option = {
 		name = usa.43.a
 		USA_house_small_opposition = yes
@@ -1105,18 +1063,7 @@ country_event = {
 	title = usa.44.t
 	desc = usa.44.desc
 	picture = GFX_report_event_FDR_speech
-
 	is_triggered_only = yes
-	trigger = {
-		tag = USA
-		NOT = {
-			OR = {
-				#has_completed_focus = USA_voter_registration_act
-				has_completed_focus = USA_union_representation_act
-			}
-		}
-	}
-
 	option = {
 		name = usa.44.a
 		USA_senate_medium_support = yes
@@ -1132,18 +1079,7 @@ country_event = {
 	title = usa.45.t
 	desc = usa.45.desc
 	picture = GFX_report_event_FDR_speech
-
 	is_triggered_only = yes
-	trigger = {
-		tag = USA
-		NOT = {
-			OR = {
-				#has_completed_focus = USA_voter_registration_act
-				has_completed_focus = USA_union_representation_act
-			}
-		}
-	}
-
 	option = {
 		name = usa.45.a
 		USA_house_medium_support = yes
@@ -1160,18 +1096,7 @@ country_event = {
 	title = usa.46.t
 	desc = usa.46.desc
 	picture = GFX_report_event_journalists_speech
-
 	is_triggered_only = yes
-	trigger = {
-		tag = USA
-		NOT = {
-			OR = {
-				#has_completed_focus = USA_voter_registration_act
-				has_completed_focus = USA_union_representation_act
-			}
-		}
-	}
-
 	option = {
 		name = usa.46.a
 		USA_senate_medium_opposition = yes
@@ -1187,18 +1112,7 @@ country_event = {
 	title = usa.47.t
 	desc = usa.47.desc
 	picture = GFX_report_event_journalists_speech
-
 	is_triggered_only = yes
-	trigger = {
-		tag = USA
-		NOT = {
-			OR = {
-				#has_completed_focus = USA_voter_registration_act
-				has_completed_focus = USA_union_representation_act
-			}
-		}
-	}
-
 	option = {
 		name = usa.47.a
 		USA_house_medium_opposition = yes
@@ -1214,16 +1128,6 @@ country_event = {
 	id = usa.50
 	Hidden = yes
 	is_triggered_only = yes
-	trigger = {
-		tag = USA
-		NOT = {
-			OR = {
-				#has_completed_focus = USA_voter_registration_act
-				has_completed_focus = USA_union_representation_act
-			}
-		}
-	}
-
 	immediate = {
 		random_list = {
 			20 = { 
@@ -1298,15 +1202,6 @@ country_event = {
 	id = usa.51
 	Hidden = yes
 	is_triggered_only = yes
-	trigger = {
-		tag = USA
-		NOT = {
-			OR = {
-				#has_completed_focus = USA_voter_registration_act
-				has_completed_focus = USA_union_representation_act
-			}
-		}
-	}
 
 	immediate = {
 		random_list = {
@@ -1370,15 +1265,6 @@ country_event = {
 	id = usa.60
 	hidden = yes
 	is_triggered_only = yes
-	trigger = {
-		tag = USA
-		NOT = {
-			OR = {
-				#has_completed_focus = USA_voter_registration_act
-				has_completed_focus = USA_union_representation_act
-			}
-		}
-	}
 
 	immediate = {
 		set_country_flag = USA_congress_investment

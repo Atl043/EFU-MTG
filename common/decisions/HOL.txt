@@ -1122,15 +1122,6 @@ HOL_gateway_to_europe_eng_category = {
 				factor = 0
 				HOL = {
 					focus_progress = {
-						focus = HOL_cave_to_the_germans
-						progress > 0
-					}
-				}
-			}
-			modifier = {
-				factor = 0
-				HOL = {
-					focus_progress = {
 						focus = HOL_cave_to_the_british
 						progress > 0
 					}
@@ -1328,15 +1319,6 @@ HOL_gateway_to_europe_ger_category = {
 				factor = 0
 				HOL = {
 					focus_progress = {
-						focus = HOL_cave_to_the_germans
-						progress > 0
-					}
-				}
-			}
-			modifier = {
-				factor = 0
-				HOL = {
-					focus_progress = {
 						focus = HOL_maintain_trade_neutrality
 						progress > 0
 					}
@@ -1488,13 +1470,6 @@ HOL_gateway_to_europe_hol_category = {
 			}
 			modifier = {
 				factor = 0
-				focus_progress = {
-					focus = HOL_cave_to_the_germans
-					progress > 0
-				}
-			}
-			modifier = {
-				factor = 0
 				HOL = {
 					focus_progress = {
 						focus = HOL_maintain_trade_neutrality
@@ -1620,13 +1595,6 @@ HOL_gateway_to_europe_hol_category = {
 				factor = 0
 				focus_progress = {
 					focus = HOL_cave_to_the_british
-					progress > 0
-				}
-			}
-			modifier = {
-				factor = 0
-				focus_progress = {
-					focus = HOL_cave_to_the_germans
 					progress > 0
 				}
 			}

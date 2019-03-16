@@ -1357,7 +1357,9 @@ focus_tree = {
 		available = {
 			country_exists = GER
 		}
-
+		ai_will_do = {
+			factor = 100
+		}
 		completion_reward = {
 			26 = {
 				add_extra_state_shared_building_slots = 2
@@ -1395,7 +1397,9 @@ focus_tree = {
 				has_war_with = SOV
 			}
 		}
-
+		ai_will_do = {
+			factor = 100
+		}
 		completion_reward = {
 			if = {
 				limit = {
@@ -1423,11 +1427,13 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 10
-
+		ai_will_do = {
+			factor = 100
+		}
 		available = {
 			country_exists = GER
-			EFR = {
-				is_puppet_of = GER
+			GER = {
+				has_war_with = SOV
 			}
 		}
 
@@ -1465,11 +1471,13 @@ focus_tree = {
 
 		available_if_capitulated = no
 		available = {
-			is_puppet_of = GER
+			GER = {
+				has_war_with = SOV
+			}
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 100
 		}
 
 		completion_reward = {
@@ -1502,7 +1510,6 @@ focus_tree = {
 
 			hidden_effect = {
 				GER = {
-					load_oob = EFR_german_volunteers
 					add_ideas = EFR_french_volunteer_army_1
 				}
 			}

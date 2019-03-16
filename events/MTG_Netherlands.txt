@@ -945,27 +945,10 @@ country_event = {
 			modifier = {
 				factor = 0
 				original_tag = GER
-				has_government = fascism
-				OR = {
-					NOT = {
-						HOL = { has_completed_focus = HOL_cave_to_the_germans }
-					}
-					HOL = { has_completed_focus = HOL_the_netherlands_first }
-				}
-			}
-			modifier = {
-				factor = 0
-				original_tag = GER
 				has_government = neutrality
 				NOT = {
 					HOL = { has_completed_focus = HOL_oranje_boven }
 				}
-			}
-			modifier = {
-				factor = 0
-				original_tag = ENG
-				NOT = { has_government = neutrality }
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
 				factor = 0
@@ -977,17 +960,6 @@ country_event = {
 						HOL = { is_in_faction_with = GER }
 					}
 				}
-			}
-			modifier = {
-				factor = 0
-				original_tag = FRA
-				has_government = democratic
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
-			}
-			modifier = {
-				factor = 0
-				original_tag = FRA
-				HOL = { has_completed_focus = HOL_the_netherlands_first }
 			}
 			modifier = {
 				factor = 0.1
@@ -1026,27 +998,10 @@ country_event = {
 			modifier = {
 				factor = 0
 				original_tag = GER
-				has_government = fascism
-				OR = {
-					NOT = {
-						HOL = { has_completed_focus = HOL_cave_to_the_germans }
-					}
-					HOL = { has_completed_focus = HOL_the_netherlands_first }
-				}
-			}
-			modifier = {
-				factor = 0
-				original_tag = GER
 				has_government = neutrality
 				NOT = {
 					HOL = { has_completed_focus = HOL_oranje_boven }
 				}
-			}
-			modifier = {
-				factor = 0
-				original_tag = ENG
-				NOT = { has_government = neutrality }
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
 				factor = 0
@@ -1058,17 +1013,6 @@ country_event = {
 						HOL = { is_in_faction_with = GER }
 					}
 				}
-			}
-			modifier = {
-				factor = 0
-				original_tag = FRA
-				has_government = democratic
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
-			}
-			modifier = {
-				factor = 0
-				original_tag = FRA
-				HOL = { has_completed_focus = HOL_the_netherlands_first }
 			}
 			modifier = {
 				factor = 0.1
@@ -1107,27 +1051,10 @@ country_event = {
 			modifier = {
 				factor = 0
 				original_tag = GER
-				has_government = fascism
-				OR = {
-					NOT = {
-						HOL = { has_completed_focus = HOL_cave_to_the_germans }
-					}
-					HOL = { has_completed_focus = HOL_the_netherlands_first }
-				}
-			}
-			modifier = {
-				factor = 0
-				original_tag = GER
 				has_government = neutrality
 				NOT = {
 					HOL = { has_completed_focus = HOL_oranje_boven }
 				}
-			}
-			modifier = {
-				factor = 0
-				original_tag = ENG
-				NOT = { has_government = neutrality }
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
 				factor = 0
@@ -1139,17 +1066,6 @@ country_event = {
 						HOL = { is_in_faction_with = GER }
 					}
 				}
-			}
-			modifier = {
-				factor = 0
-				original_tag = FRA
-				has_government = democratic
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
-			}
-			modifier = {
-				factor = 0
-				original_tag = FRA
-				HOL = { has_completed_focus = HOL_the_netherlands_first }
 			}
 			modifier = {
 				factor = 0.1
@@ -1289,27 +1205,10 @@ country_event = {
 			modifier = {
 				factor = 0
 				original_tag = GER
-				has_government = fascism
-				OR = {
-					NOT = {
-						HOL = { has_completed_focus = HOL_cave_to_the_germans }
-					}
-					HOL = { has_completed_focus = HOL_the_netherlands_first }
-				}
-			}
-			modifier = {
-				factor = 0
-				original_tag = GER
 				has_government = neutrality
 				NOT = {
 					HOL = { has_completed_focus = HOL_oranje_boven }
 				}
-			}
-			modifier = {
-				factor = 0
-				original_tag = ENG
-				NOT = { has_government = neutrality }
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
 				factor = 0
@@ -1321,17 +1220,6 @@ country_event = {
 						HOL = { is_in_faction_with = GER }
 					}
 				}
-			}
-			modifier = {
-				factor = 0
-				original_tag = FRA
-				has_government = democratic
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
-			}
-			modifier = {
-				factor = 0
-				original_tag = FRA
-				HOL = { has_completed_focus = HOL_the_netherlands_first }
 			}
 			modifier = {
 				factor = 0.1
@@ -1371,37 +1259,6 @@ country_event = {
 			modifier = {
 				factor = 0.1
 				has_opinion = { target = HOL value > 99 }
-			}
-			modifier = {
-				factor = 0
-				original_tag = GER
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
-				ENG = {
-					focus_progress = {
-						focus = ENG_benelux_intervention
-						progress > 0
-					}
-				}
-			}
-			modifier = {
-				factor = 0
-				original_tag = FRA
-				has_government = communism
-				HOL = { has_completed_focus = HOL_join_the_french }
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					original_tag = FRA
-					original_tag = ENG
-				}
-				GER = {
-					focus_progress = {
-						focus = GER_around_maginot
-						progress > 0
-					}
-				}
-				NOT = { HOL = { has_completed_focus = HOL_cave_to_the_germans } }
 			}
 			modifier = {
 				factor = 0
@@ -1485,27 +1342,10 @@ country_event = {
 			modifier = {
 				factor = 0
 				original_tag = GER
-				has_government = fascism
-				OR = {
-					NOT = {
-						HOL = { has_completed_focus = HOL_cave_to_the_germans }
-					}
-					HOL = { has_completed_focus = HOL_the_netherlands_first }
-				}
-			}
-			modifier = {
-				factor = 0
-				original_tag = GER
 				has_government = neutrality
 				NOT = {
 					HOL = { has_completed_focus = HOL_oranje_boven }
 				}
-			}
-			modifier = {
-				factor = 0
-				original_tag = ENG
-				NOT = { has_government = neutrality }
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
 				factor = 0
@@ -1517,17 +1357,6 @@ country_event = {
 						HOL = { is_in_faction_with = GER }
 					}
 				}
-			}
-			modifier = {
-				factor = 0
-				original_tag = FRA
-				has_government = democratic
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
-			}
-			modifier = {
-				factor = 0
-				original_tag = FRA
-				HOL = { has_completed_focus = HOL_the_netherlands_first }
 			}
 			modifier = {
 				factor = 0.1
@@ -1594,37 +1423,6 @@ country_event = {
 			modifier = {
 				factor = 0.1
 				has_opinion = { target = HOL value > 99 }
-			}
-			modifier = {
-				factor = 0
-				original_tag = GER
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
-				ENG = {
-					focus_progress = {
-						focus = ENG_benelux_intervention
-						progress > 0
-					}
-				}
-			}
-			modifier = {
-				factor = 0
-				original_tag = FRA
-				has_government = communism
-				HOL = { has_completed_focus = HOL_join_the_french }
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					original_tag = FRA
-					original_tag = ENG
-				}
-				GER = {
-					focus_progress = {
-						focus = GER_around_maginot
-						progress > 0
-					}
-				}
-				NOT = { HOL = { has_completed_focus = HOL_cave_to_the_germans } }
 			}
 			modifier = {
 				factor = 0
@@ -1713,27 +1511,10 @@ country_event = {
 			modifier = {
 				factor = 0
 				original_tag = GER
-				has_government = fascism
-				OR = {
-					NOT = {
-						HOL = { has_completed_focus = HOL_cave_to_the_germans }
-					}
-					HOL = { has_completed_focus = HOL_the_netherlands_first }
-				}
-			}
-			modifier = {
-				factor = 0
-				original_tag = GER
 				has_government = neutrality
 				NOT = {
 					HOL = { has_completed_focus = HOL_oranje_boven }
 				}
-			}
-			modifier = {
-				factor = 0
-				original_tag = ENG
-				NOT = { has_government = neutrality }
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
 				factor = 0
@@ -1745,17 +1526,6 @@ country_event = {
 						HOL = { is_in_faction_with = GER }
 					}
 				}
-			}
-			modifier = {
-				factor = 0
-				original_tag = FRA
-				has_government = democratic
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
-			}
-			modifier = {
-				factor = 0
-				original_tag = FRA
-				HOL = { has_completed_focus = HOL_the_netherlands_first }
 			}
 			modifier = {
 				factor = 0.1
@@ -1804,37 +1574,6 @@ country_event = {
 			modifier = {
 				factor = 0.1
 				has_opinion = { target = HOL value > 99 }
-			}
-			modifier = {
-				factor = 0
-				original_tag = GER
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
-				ENG = {
-					focus_progress = {
-						focus = ENG_benelux_intervention
-						progress > 0
-					}
-				}
-			}
-			modifier = {
-				factor = 0
-				original_tag = FRA
-				has_government = communism
-				HOL = { has_completed_focus = HOL_join_the_french }
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					original_tag = FRA
-					original_tag = ENG
-				}
-				GER = {
-					focus_progress = {
-						focus = GER_around_maginot
-						progress > 0
-					}
-				}
-				NOT = { HOL = { has_completed_focus = HOL_cave_to_the_germans } }
 			}
 			modifier = {
 				factor = 0

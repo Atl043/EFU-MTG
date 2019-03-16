@@ -564,18 +564,4 @@ USA_congress = {
 			}			
 		}
 	}
-	USA_reshuffle_congress = {
-		available = {
-
-		}
-		visible = {
-			has_completed_focus = USA_union_representation_act
-		}
-		days_re_enable = 180
-		cost = 50
-		complete_effect = {
-			add_stability = -0.05
-			USA_return_majority = yes
-		}
-	}
 }

@@ -1599,3 +1599,105 @@ news_event = {
 		}
 	}
 }
+# North Africa Switch
+country_event = {
+	id = france.35
+	title = france.35.t
+	desc = france.35.desc
+	picture = GFX_report_event_french_resistance
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			FRA = {
+				date > 1941.1.1
+				controls_state = 461
+				controls_state = 459
+				controls_state = 460
+				controls_state = 462
+				controls_state = 513
+				controls_state = 665
+				controls_state = 458
+			}
+			ENG = {
+				controls_state = 461
+				controls_state = 459
+				controls_state = 460
+				controls_state = 462
+				controls_state = 513
+				controls_state = 665
+				controls_state = 458
+			}
+			USA = {
+				controls_state = 461
+				controls_state = 459
+				controls_state = 460
+				controls_state = 462
+				controls_state = 513
+				controls_state = 665
+				controls_state = 458
+			}
+		}
+	}
+	mean_time_to_happen = {
+			days = 1
+		}
+	option = {
+		name = france.35.a
+		FRA = { transfer_state = 1 }
+		FRA = { transfer_state = 665 }
+		FRA = { transfer_state = 461 }
+		FRA = { transfer_state = 459 }
+		FRA = { transfer_state = 458 }
+		FRA = { transfer_state = 462 }
+		FRA = { transfer_state = 460 }
+		FRA = { transfer_state = 513 }
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# Syria Switch
+country_event = {
+	id = france.36
+	title = france.36.t
+	desc = france.36.desc
+	picture = GFX_report_event_french_resistance
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			FRA = {
+				date > 1941.1.1
+				controls_state = 680
+				controls_state = 677
+				controls_state = 554
+				controls_state = 553
+			}
+			ENG = {
+				controls_state = 680
+				controls_state = 677
+				controls_state = 554
+				controls_state = 553
+			}
+			USA = {
+				controls_state = 680
+				controls_state = 677
+				controls_state = 554
+				controls_state = 553
+			}
+		}
+	}
+	mean_time_to_happen = {
+			days = 1
+		}
+	option = {
+		name = france.36.a
+		FRA = { transfer_state = 680 }
+		FRA = { transfer_state = 677 }
+		FRA = { transfer_state = 554 }
+		FRA = { transfer_state = 553 }
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

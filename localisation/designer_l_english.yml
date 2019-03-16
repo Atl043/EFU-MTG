@@ -145,6 +145,8 @@
  EQUIPMENT_DESIGNER_AUTO_BUTTON_ACTION_TO_REPLACE:0 "§GShift+Click§! to §Hreplace§! the current design."
  # name list themes
 l_english:
+ SPR_MAN:0 "Spainish MAN"
+ SPR_MAN_desc:1 "Spainish Man, Spainish MAN is just another way Germans can hid their Jewish stolen money in a neutral country."
  # name list themes -- updated to include country-specific and other new list names
  NAME_THEME_RIVERS:0 "Rivers"
  NAME_THEME_FISH:0 "Fish"

@@ -3301,10 +3301,6 @@ focus_tree = {
 						focus = HOL_cave_to_the_british
 						progress > 0
 					}
-					focus_progress = {
-						focus = HOL_cave_to_the_germans
-						progress > 0
-					}
 
 				}
 			}
@@ -3361,10 +3357,6 @@ focus_tree = {
 				OR = {
 					focus_progress = {
 						focus = HOL_maintain_trade_neutrality
-						progress > 0
-					}
-					focus_progress = {
-						focus = HOL_cave_to_the_germans
 						progress > 0
 					}
 

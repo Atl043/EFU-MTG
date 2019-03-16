@@ -112,6 +112,27 @@ ideas = {
 				industry_repair_factor = 0.05
 			}
 		}
+		CRO_catholic_dominance = {
+
+			picture = ENG_the_war_to_end_all_wars
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+                political_power_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
 		idea_EFR_secret_military_researches = {
 			allowed = {
 				always = no
@@ -119,7 +140,7 @@ ideas = {
 			}
 
 			modifier = {
-				research_time_factor = -0.05
+				research_speed_factor = 0.05
 			}
 
 			removal_cost = -1

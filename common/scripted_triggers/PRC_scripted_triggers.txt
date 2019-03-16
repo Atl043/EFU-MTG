@@ -47,15 +47,6 @@ PRC_is_not_infiltrating_a_state = {
 	custom_trigger_tooltip = {
 		tooltip = PRC_is_not_infiltrating_a_state
 		NOT = {
-			has_decision = PRC_infiltrate_gansu
-			has_decision = PRC_infiltrate_shandong
-			has_decision = PRC_infiltrate_jiangsu
-			has_decision = PRC_infiltrate_henan
-			has_decision = PRC_infiltrate_beijing
-			has_decision = PRC_infiltrate_hebei
-			has_decision = PRC_infiltrate_shanxi
-			has_decision = PRC_infiltrate_suiyuan
-			has_decision = PRC_infiltrate_xian
 
 			#Anti Japan
 			has_decision = PRC_infiltrate_east_hebei

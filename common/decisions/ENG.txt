@@ -402,6 +402,27 @@ political_actions = {
 		}
 	}
 
+	Drag_Vichy_Into_the_war = {
+		cost = 25
+		visible = {
+			tag = ENG
+			country_exists = EFR
+			ENG = { has_war_with = GER }
+		}
+		complete_effect = {
+			EFR = {
+				declare_war_on = {
+					target = FRA
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = ENG
+					type = annex_everything
+				}
+			}
+		}
+	}
+
 	macdonald_proposal = {
 	
 		allowed = {

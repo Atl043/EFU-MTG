@@ -1,4 +1,6 @@
 ﻿l_english:
+ EFR_fascism:1 "Vichy France"
+ EFR_fascism_DEF:0 "the French State"
  GER_fascism:0 "German Reich"
  GER_fascism_DEF:0 "the German Reich"
  GER_democratic:0 "German Republic"

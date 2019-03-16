@@ -2769,34 +2769,7 @@ country_event = {
 			OR = {
 				NOT = { FROM = { original_tag = POL } }
 				NOT = { original_tag = GER }
-				NOT = { has_completed_focus = GER_danzig_for_guarantees }
 			}
-		}
-	}
-	title = {
-		text = germany.85.t.b
-		trigger = {
-			FROM = { original_tag = POL }
-			original_tag = GER
-			has_completed_focus = GER_danzig_for_guarantees
-		}
-	}
-	desc = { 
-		text = germany.85.desc.a
-		trigger = {
-			OR = {
-				NOT = { FROM = { original_tag = POL } }
-				NOT = { original_tag = GER }
-				NOT = { has_completed_focus = GER_danzig_for_guarantees }
-			}
-		}
-	}
-	desc = { 
-		text = germany.85.desc.b
-		trigger = {
-			FROM = { original_tag = POL }
-			original_tag = GER
-			has_completed_focus = GER_danzig_for_guarantees
 		}
 	}
 	picture = GFX_report_event_soviet_tanks
@@ -2824,29 +2797,6 @@ country_event = {
 				}
 				country_event = { id = germany.127 days = 7 random = 7 }
 			}
-		}
-	}
-
-	option = {
-		name = germany.85.b
-		trigger = {
-			NOT = { FROM = { original_tag = POL } }
-			NOT = { original_tag = GER }
-			NOT = { has_completed_focus = GER_danzig_for_guarantees }
-		}
-		ai_chance = {
-			factor = 0
-		}
-		remove_ideas = anti_soviet_pact
-		FROM = { add_opinion_modifier = { target = ROOT modifier = anti_soviet_pact_call_refused } }
-		SOV = { remove_opinion_modifier = { target = SOV modifier = worse_pact_against_us } }
-		add_timed_idea = {
-			idea = anti_soviet_pact_refused_call
-			days = 365 
-		}
-		custom_effect_tooltip = germany.85.b_tt
-		hidden_effect = {
-			country_event = { id = germany.112 days = 3 } 
 		}
 	}
 }

@@ -158,7 +158,7 @@ tank_manufacturer = {
 
 		SPR_MAN = {
 			cost = 75
-			picture = generic_tank_manufacturer_1
+			picture = GER_MAN
 
 			allowed = {
 				original_tag = SPR

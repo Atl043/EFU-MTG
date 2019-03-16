@@ -3,6 +3,9 @@
 oob = "EFR_1936"
 
 set_research_slots = 3
+add_ideas = {
+	neutrality_idea
+	}
 add_political_power = 300
 # Starting tech
 	set_technology = {
