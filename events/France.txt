@@ -629,11 +629,22 @@ country_event = {
 
 		EFR = {
 			set_capital = 26
-			add_ideas = french_neutrality
+			add_ideas = idea_EFR_neutrality
+			add_ideas = {
+				neutrality_idea
+			}
 			diplomatic_relation = { country = ITA relation = non_aggression_pact }
 			diplomatic_relation = { country = GER relation = non_aggression_pact }
 			diplomatic_relation = { country = ENG relation = non_aggression_pact }
 			diplomatic_relation = { country = USA relation = non_aggression_pact }
+			diplomatic_relation = { country = SAF relation = non_aggression_pact }
+			diplomatic_relation = { country = RAJ relation = non_aggression_pact }
+			diplomatic_relation = { country = CHI relation = non_aggression_pact }
+			diplomatic_relation = { country = JAP relation = non_aggression_pact }
+			diplomatic_relation = { country = CAN relation = non_aggression_pact }
+			diplomatic_relation = { country = AST relation = non_aggression_pact }
+			diplomatic_relation = { country = NZL relation = non_aggression_pact }
+			diplomatic_relation = { country = MAN relation = non_aggression_pact }
 			
 			
 			every_state = { 
