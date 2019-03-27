@@ -2554,8 +2554,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_carrier_warfare_experiments
-				bonus = 10
-				uses = 2
+				bonus = 2
+				uses = 4
 				category = cat_base_strike
 			}
 		}
@@ -2684,8 +2684,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_modern_escorts
-				bonus = 1
-				uses = 1
+				bonus = 2
+				uses = 2
 				category = dd_tech
 			}
 		}
