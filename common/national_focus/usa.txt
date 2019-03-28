@@ -1967,6 +1967,9 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = USA_war_department
 		}
+		completion_reward = {
+			add_political_power = 150
+		}
 	}
 	focus = {
 		id = USA_selective_training_act
@@ -2084,7 +2087,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_louisiana_maneuvers
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = land_doctrine
 			}
 		}
@@ -2096,7 +2099,7 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = USA_louisiana_maneuvers }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2125,7 +2128,7 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = USA_louisiana_maneuvers }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -2154,7 +2157,7 @@ focus_tree = {
 		y = 3
 		prerequisite = { focus = USA_army_of_the_united_states }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2344,7 +2347,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2373,7 +2376,7 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = USA_build_the_pentagon }
 		relative_position_id = USA_war_department
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2505,7 +2508,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = USA_air_support
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
