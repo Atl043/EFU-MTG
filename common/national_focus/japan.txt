@@ -2141,8 +2141,6 @@ focus_tree = {
 				uses = 1
 				category = cat_heavy_fighter
 			}
-			
-			completion_reward = {
 			add_tech_bonus = {
 				name = JAP_fighter_modernization
 				uses = 3
