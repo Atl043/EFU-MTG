@@ -2148,6 +2148,7 @@ focus_tree = {
 				category = air_doctrine
 			}
 		}
+	}
 
 	focus = {
 		id = JAP_range_focus
