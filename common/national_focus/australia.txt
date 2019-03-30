@@ -1846,7 +1846,6 @@ focus_tree = {
 				set_state_flag = AST_south_australian_housing_trust_IC
 			}
 		}
-	}
 
 	focus = {
 		id = AST_department_of_supply_and_development
