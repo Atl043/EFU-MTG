@@ -1811,17 +1811,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			random_state = {
-				limit = {
-					has_state_flag = AST_south_australian_housing_trust_IC
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
 		}
 
 		completion_reward = {
@@ -1838,6 +1827,8 @@ focus_tree = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
+				}
+				set_state_flag = AST_south_australian_housing_trust_IC
 				}
 				random_owned_controlled_state = {
 				limit = {
@@ -1857,7 +1848,7 @@ focus_tree = {
 				set_state_flag = AST_south_australian_housing_trust_IC
 			}
 		}
-		}
+	}
 	focus = {
 		id = AST_department_of_supply_and_development
 		icon = GFX_goal_generic_construct_mil_factory
